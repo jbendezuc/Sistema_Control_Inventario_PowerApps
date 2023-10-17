@@ -1,0 +1,42 @@
+Inventario As screen:
+
+    Container1 As groupContainer.horizontalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutMode: =LayoutMode.Auto
+        LayoutOverflowX: =LayoutOverflow.Scroll
+        Width: =Parent.Width
+        ZIndex: =1
+
+        main As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.Start
+            FillPortions: =0
+            Height: =Parent.Height
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            Width: =1600
+            ZIndex: =1
+
+            Titulos As groupContainer.manualLayoutContainer:
+                Height: =60
+                Width: =Parent.Width
+                X: =Parent.X
+                Y: =60
+                ZIndex: =1
+
+            Gallery1 As gallery.galleryVertical:
+                DelayItemLoading: =true
+                Height: =Parent.Height-120
+                Items: =INVENTARIO_EQUIPOS_INFORMATICOS
+                Layout: =Layout.Vertical
+                LoadingSpinner: =LoadingSpinner.Data
+                TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))
+                Width: =Parent.Width
+                X: =Parent.X
+                Y: =Titulos.Height+60
+                ZIndex: =2
+
+                Label2 As label:
+                    OnSelect: =Select(Parent)
+                    Text: =ThisItem.LOCAL
+                    ZIndex: =1
+

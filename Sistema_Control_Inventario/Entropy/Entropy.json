@@ -3,17 +3,21 @@
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
     "App": 1,
-    "Gallery3": 5,
-    "galleryTemplate4": 6,
+    "Container1": 7,
+    "Gallery1": 10,
+    "galleryTemplate1": 11,
     "Host": 3,
-    "Screen1": 4
+    "Inventario": 4,
+    "Label2": 13,
+    "main": 8,
+    "Titulos": 9
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "10/17/2023 14:55:54",
+  "HeaderLastSavedDateTimeUTC": "10/17/2023 19:50:59",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
-    "45313806-81ba-4bdf-a64a-b646d32c89a2": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/0beac5f5280d43489566c0f5c36c333b\""
+    "a3a47bd4-af7f-4ed4-a803-86a9f94f8d5e": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/0beac5f5280d43489566c0f5c36c333b\""
   },
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {},
@@ -22,29 +26,39 @@
   "OrderComponentTemplate": {},
   "OrderDataSource": {
     "CustomGallerySample": 1,
-    "FICHAS_TECNICAS": 0
+    "INVENTARIO_EQUIPOS_INFORMATICOS": 0
   },
   "OrderGroupControls": {},
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
   "OrderXMLTemplate": {
-    "gallery": 0
+    "gallery": 1,
+    "groupContainer": 0,
+    "label": 2
   },
   "OverridablePropertiesEntry": {
     "App": {},
-    "Gallery3": {},
-    "galleryTemplate4": {},
+    "Container1": {},
+    "Gallery1": {},
+    "galleryTemplate1": {},
     "Host": {},
-    "Screen1": {}
+    "Inventario": {},
+    "Label2": {},
+    "main": {},
+    "Titulos": {}
   },
   "PCFDynamicSchemaForIRRetrievalEntry": {},
   "PCFTemplateEntry": {},
   "PublishOrderIndices": {
     "App": 0,
-    "Gallery3": 0,
-    "galleryTemplate4": 1,
+    "Container1": 0,
+    "Gallery1": 3,
+    "galleryTemplate1": 4,
     "Host": 0,
-    "Screen1": 0
+    "Inventario": 0,
+    "Label2": 5,
+    "main": 1,
+    "Titulos": 2
   },
   "ResourcesJsonIndices": {
     "Image-SampleImage": 0

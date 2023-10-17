@@ -1,30 +1,24 @@
 {
-  "45313806-81ba-4bdf-a64a-b646d32c89a2": {
-    "appActions": [
-      "providers/PowerPlatform.Governance/Operations/Read"
-    ],
+  "a3a47bd4-af7f-4ed4-a803-86a9f94f8d5e": {
     "connectionRef": {
-      "apiTier": "Standard",
       "displayName": "SharePoint",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1656/1.0.1656.3432/sharepointonline/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
-      "parameterHints": {},
-      "parameterHintsV2": {}
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
     },
     "datasets": {
-      "https://unfvpe.sharepoint.com/sites/OCGTI_FileServer/Of_Operaciones/FichasTecnicas": {
+      "https://unfvpe.sharepoint.com/sites/OCGTI_FileServer/Inventario": {
         "dataSources": {
-          "FICHAS_TECNICAS": {
-            "tableName": "e235fdc4-6dc9-41ea-9642-dc8a48ac34e7"
+          "INVENTARIO_EQUIPOS_INFORMATICOS": {
+            "tableName": "505d001b-dba6-4e30-9e95-0210d509b656"
           }
         }
       }
     },
     "dataSources": [
-      "FICHAS_TECNICAS"
+      "INVENTARIO_EQUIPOS_INFORMATICOS"
     ],
     "dependencies": {},
     "dependents": [],
-    "id": "45313806-81ba-4bdf-a64a-b646d32c89a2"
+    "id": "a3a47bd4-af7f-4ed4-a803-86a9f94f8d5e"
   }
 }
