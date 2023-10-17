@@ -1,0 +1,30 @@
+{
+  "45313806-81ba-4bdf-a64a-b646d32c89a2": {
+    "appActions": [
+      "providers/PowerPlatform.Governance/Operations/Read"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1656/1.0.1656.3432/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://unfvpe.sharepoint.com/sites/OCGTI_FileServer/Of_Operaciones/FichasTecnicas": {
+        "dataSources": {
+          "FICHAS_TECNICAS": {
+            "tableName": "e235fdc4-6dc9-41ea-9642-dc8a48ac34e7"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "FICHAS_TECNICAS"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "45313806-81ba-4bdf-a64a-b646d32c89a2"
+  }
+}

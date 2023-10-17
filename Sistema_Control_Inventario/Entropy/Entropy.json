@@ -1,0 +1,64 @@
+{
+  "ComponentIndexes": {},
+  "ControlUniqueGuids": {},
+  "ControlUniqueIds": {
+    "App": 1,
+    "Gallery3": 5,
+    "galleryTemplate4": 6,
+    "Host": 3,
+    "Screen1": 4
+  },
+  "FunctionParamsInvariantScripts": {},
+  "FunctionParamsInvariantScriptsOnInstances": {},
+  "HeaderLastSavedDateTimeUTC": "10/17/2023 14:55:54",
+  "IsLegacyComponentAllowGlobalScopeCase": false,
+  "LocalConnectionIDReferences": {
+    "45313806-81ba-4bdf-a64a-b646d32c89a2": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/0beac5f5280d43489566c0f5c36c333b\""
+  },
+  "LocalDatabaseReferencesAsEmpty": false,
+  "LocalResourceFileNames": {},
+  "LocalResourceRootPaths": {},
+  "OrderComponentMetadata": {},
+  "OrderComponentTemplate": {},
+  "OrderDataSource": {
+    "CustomGallerySample": 1,
+    "FICHAS_TECNICAS": 0
+  },
+  "OrderGroupControls": {},
+  "OrderPcfTemplate": {},
+  "OrderTemplate": {},
+  "OrderXMLTemplate": {
+    "gallery": 0
+  },
+  "OverridablePropertiesEntry": {
+    "App": {},
+    "Gallery3": {},
+    "galleryTemplate4": {},
+    "Host": {},
+    "Screen1": {}
+  },
+  "PCFDynamicSchemaForIRRetrievalEntry": {},
+  "PCFTemplateEntry": {},
+  "PublishOrderIndices": {
+    "App": 0,
+    "Gallery3": 0,
+    "galleryTemplate4": 1,
+    "Host": 0,
+    "Screen1": 0
+  },
+  "ResourcesJsonIndices": {
+    "Image-SampleImage": 0
+  },
+  "RuleScreenIdWithoutScreen": {},
+  "TemplateVersions": {},
+  "VolatileProperties": {
+    "AnalysisLoadTime": 0.071917,
+    "ControlCount": {
+      "gallery": 1,
+      "galleryTemplate": 1,
+      "screen": 1
+    },
+    "DeserializationLoadTime": 1.5300704
+  },
+  "WasLocalDatabaseReferencesEmpty": true
+}
