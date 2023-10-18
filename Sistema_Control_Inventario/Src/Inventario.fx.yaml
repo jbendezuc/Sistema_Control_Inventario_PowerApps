@@ -14,12 +14,12 @@ Inventario As screen:
             Height: =Parent.Height
             LayoutMinHeight: =100
             LayoutMinWidth: =250
-            Width: =1600
+            Width: =2000
             ZIndex: =1
 
             Titulos As groupContainer.manualLayoutContainer:
                 Height: =50
-                Width: =Parent.Width
+                Width: =2622
                 X: =Parent.X+5
                 Y: =Parent.Y
                 ZIndex: =1
@@ -97,6 +97,90 @@ Inventario As screen:
                     X: =ID_titulo.Width+2+local_titulo.Width+2+facultad_titulo.Width+2+piso_titulo.Width+2+area_titulo.Width+2
                     ZIndex: =6
 
+                nombre_area_titulo As label:
+                    Align: =Align.Center
+                    Color: =RGBA(255, 255, 255, 1)
+                    Fill: =RGBA(39, 67, 125, 1)
+                    FontWeight: =FontWeight.Bold
+                    Height: =50
+                    Size: =14
+                    Text: ="NOMBRE ÁREA"
+                    Width: =nombre_area_text.Width
+                    X: =ID_titulo.Width+2+local_titulo.Width+2+facultad_titulo.Width+2+piso_titulo.Width+2+area_titulo.Width+2+pabellon_titulo.Width+2
+                    ZIndex: =7
+
+                bien_informatico_titulo As label:
+                    Align: =Align.Center
+                    Color: =RGBA(255, 255, 255, 1)
+                    Fill: =RGBA(39, 67, 125, 1)
+                    FontWeight: =FontWeight.Bold
+                    Height: =50
+                    Size: =14
+                    Text: ="BIEN INFORMATICO"
+                    Width: =bien_informatico_text.Width
+                    X: =ID_titulo.Width+2+local_titulo.Width+2+facultad_titulo.Width+2+piso_titulo.Width+2+area_titulo.Width+2+pabellon_titulo.Width+2+nombre_area_titulo.Width+2
+                    ZIndex: =8
+
+                patrimonio_titulo As label:
+                    Align: =Align.Center
+                    Color: =RGBA(255, 255, 255, 1)
+                    Fill: =RGBA(39, 67, 125, 1)
+                    FontWeight: =FontWeight.Bold
+                    Height: =50
+                    Size: =14
+                    Text: ="PATRIMONIO"
+                    Width: =patrimonio_text.Width
+                    X: =ID_titulo.Width+2+local_titulo.Width+2+facultad_titulo.Width+2+piso_titulo.Width+2+area_titulo.Width+2+pabellon_titulo.Width+2+nombre_area_titulo.Width+2+bien_informatico_titulo.Width+2
+                    ZIndex: =9
+
+                patrimonio_referencia_titulo As label:
+                    Align: =Align.Center
+                    Color: =RGBA(255, 255, 255, 1)
+                    Fill: =RGBA(39, 67, 125, 1)
+                    FontWeight: =FontWeight.Bold
+                    Height: =50
+                    Size: =14
+                    Text: ="PATRIMONIO REFERENCIA"
+                    Width: =patrimonio_referencia_text.Width
+                    X: =ID_titulo.Width+2+local_titulo.Width+2+facultad_titulo.Width+2+piso_titulo.Width+2+area_titulo.Width+2+pabellon_titulo.Width+2+nombre_area_titulo.Width+2+bien_informatico_titulo.Width+2+patrimonio_titulo.Width+2
+                    ZIndex: =10
+
+                marca_titulo As label:
+                    Align: =Align.Center
+                    Color: =RGBA(255, 255, 255, 1)
+                    Fill: =RGBA(39, 67, 125, 1)
+                    FontWeight: =FontWeight.Bold
+                    Height: =50
+                    Size: =14
+                    Text: ="MARCA"
+                    Width: =marca_text.Width
+                    X: =ID_titulo.Width+2+local_titulo.Width+2+facultad_titulo.Width+2+piso_titulo.Width+2+area_titulo.Width+2+pabellon_titulo.Width+2+nombre_area_titulo.Width+2+bien_informatico_titulo.Width+2+patrimonio_titulo.Width+2+patrimonio_referencia_titulo.Width+2
+                    ZIndex: =11
+
+                modelo_titulo As label:
+                    Align: =Align.Center
+                    Color: =RGBA(255, 255, 255, 1)
+                    Fill: =RGBA(39, 67, 125, 1)
+                    FontWeight: =FontWeight.Bold
+                    Height: =50
+                    Size: =14
+                    Text: ="MODELO"
+                    Width: =modelo_text.Width
+                    X: =ID_titulo.Width+2+local_titulo.Width+2+facultad_titulo.Width+2+piso_titulo.Width+2+area_titulo.Width+2+pabellon_titulo.Width+2+nombre_area_titulo.Width+2+bien_informatico_titulo.Width+2+patrimonio_titulo.Width+2+patrimonio_referencia_titulo.Width+2+marca_titulo.Width+2
+                    ZIndex: =12
+
+                num_serie_titulo As label:
+                    Align: =Align.Center
+                    Color: =RGBA(255, 255, 255, 1)
+                    Fill: =RGBA(39, 67, 125, 1)
+                    FontWeight: =FontWeight.Bold
+                    Height: =50
+                    Size: =14
+                    Text: ="NUMERO SERIE"
+                    Width: =num_serie_text.Width
+                    X: =ID_titulo.Width+2+local_titulo.Width+2+facultad_titulo.Width+2+piso_titulo.Width+2+area_titulo.Width+2+pabellon_titulo.Width+2+nombre_area_titulo.Width+2+bien_informatico_titulo.Width+2+patrimonio_titulo.Width+2+patrimonio_referencia_titulo.Width+2+marca_titulo.Width+2+modelo_titulo.Width+2
+                    ZIndex: =13
+
             Gallery1 As gallery.galleryVertical:
                 DelayItemLoading: =true
                 Height: =Parent.Height-172
@@ -104,7 +188,7 @@ Inventario As screen:
                 Layout: =Layout.Vertical
                 LoadingSpinner: =LoadingSpinner.Data
                 TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))
-                Width: =Parent.Width
+                Width: =2627
                 X: =Parent.X
                 Y: =Titulos.Height
                 ZIndex: =2
@@ -177,7 +261,99 @@ Inventario As screen:
                     Y: =ID_text.Y
                     ZIndex: =6
 
-    Label5 As label:
+                nombre_area_text As label:
+                    Align: =Align.Center
+                    Fill: =RGBA(186, 202, 226, 1)
+                    Height: =30
+                    OnSelect: =Select(Parent)
+                    Size: =12
+                    Text: =ThisItem.NOMBRE_AREA
+                    Width: =200
+                    X: =ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2+pabellon_text.Width+2
+                    Y: =ID_text.Y
+                    ZIndex: =7
+
+                bien_informatico_text As label:
+                    Align: =Align.Center
+                    Fill: =RGBA(186, 202, 226, 1)
+                    Height: =30
+                    OnSelect: =Select(Parent)
+                    Size: =12
+                    Text: =ThisItem.BIEN_INFORMATICO
+                    Width: =180
+                    X: =ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2+pabellon_text.Width+2+nombre_area_text.Width+2
+                    Y: =ID_text.Y
+                    ZIndex: =8
+
+                patrimonio_text As label:
+                    Align: =Align.Center
+                    Fill: =RGBA(186, 202, 226, 1)
+                    Height: =30
+                    OnSelect: =Select(Parent)
+                    Size: =12
+                    Text: =ThisItem.PATRIMONIO
+                    X: =ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2+pabellon_text.Width+2+nombre_area_text.Width+2+bien_informatico_text.Width+2
+                    Y: =ID_text.Y
+                    ZIndex: =9
+
+                patrimonio_referencia_text As label:
+                    Align: =Align.Center
+                    Fill: =RGBA(186, 202, 226, 1)
+                    Height: =30
+                    OnSelect: =Select(Parent)
+                    Size: =12
+                    Text: =ThisItem.PATRIMONIO_REFERENCIA
+                    X: =ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2+pabellon_text.Width+2+nombre_area_text.Width+2+bien_informatico_text.Width+2+patrimonio_text.Width+2
+                    Y: =ID_text.Y
+                    ZIndex: =10
+
+                marca_text As label:
+                    Align: =Align.Center
+                    Fill: =RGBA(186, 202, 226, 1)
+                    Height: =30
+                    OnSelect: =Select(Parent)
+                    Size: =12
+                    Text: =ThisItem.MARCA
+                    X: =ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2+pabellon_text.Width+2+nombre_area_text.Width+2+bien_informatico_text.Width+2+patrimonio_text.Width+2+patrimonio_referencia_text.Width+2
+                    Y: =ID_text.Y
+                    ZIndex: =11
+
+                modelo_text As label:
+                    Align: =Align.Center
+                    Fill: =RGBA(186, 202, 226, 1)
+                    Height: =30
+                    OnSelect: =Select(Parent)
+                    Size: =12
+                    Text: =ThisItem.MODELO
+                    X: =ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2+pabellon_text.Width+2+nombre_area_text.Width+2+bien_informatico_text.Width+2+patrimonio_text.Width+2+patrimonio_referencia_text.Width+2+marca_text.Width+2
+                    Y: =ID_text.Y
+                    ZIndex: =12
+
+                num_serie_text As label:
+                    Align: =Align.Center
+                    Fill: =RGBA(186, 202, 226, 1)
+                    Height: =30
+                    OnSelect: =Select(Parent)
+                    Size: =12
+                    Text: =ThisItem.NUM_SERIE
+                    Width: =180
+                    X: =ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2+pabellon_text.Width+2+nombre_area_text.Width+2+bien_informatico_text.Width+2+patrimonio_text.Width+2+patrimonio_referencia_text.Width+2+marca_text.Width+2+modelo_text.Width+2
+                    Y: =ID_text.Y
+                    ZIndex: =13
+
+                disco_duro_text As label:
+                    Align: =Align.Center
+                    Fill: =RGBA(186, 202, 226, 1)
+                    Height: =30
+                    OnSelect: =Select(Parent)
+                    Size: =12
+                    Text: =ThisItem.NUM_SERIE
+                    Width: =180
+                    X: =ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2+pabellon_text.Width+2+nombre_area_text.Width+2+bien_informatico_text.Width+2+patrimonio_text.Width+2+patrimonio_referencia_text.Width+2+marca_text.Width+2+modelo_text.Width+2+num_serie_text.Width+2
+                    Y: =ID_text.Y
+                    ZIndex: =14
+
+    TITULO_INVENTARIO As label:
         Align: =Align.Center
         Color: =RGBA(152, 208, 70, 1)
         Fill: =RGBA(0, 13, 75, 1)
