@@ -6,6 +6,13 @@
       "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
     },
     "datasets": {
+      "https://unfvpe.sharepoint.com/sites/OCGTI_FileServer": {
+        "dataSources": {
+          "BIENES_INFORMATICOS": {
+            "tableName": "5927b82c-ea14-4c03-96f2-25681d511349"
+          }
+        }
+      },
       "https://unfvpe.sharepoint.com/sites/OCGTI_FileServer/Inventario": {
         "dataSources": {
           "INVENTARIO_EQUIPOS_INFORMATICOS": {
@@ -15,7 +22,8 @@
       }
     },
     "dataSources": [
-      "INVENTARIO_EQUIPOS_INFORMATICOS"
+      "INVENTARIO_EQUIPOS_INFORMATICOS",
+      "BIENES_INFORMATICOS"
     ],
     "dependencies": {},
     "dependents": [],

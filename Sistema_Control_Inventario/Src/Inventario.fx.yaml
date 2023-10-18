@@ -412,7 +412,22 @@ Inventario As screen:
             Gallery1 As gallery.galleryVertical:
                 DelayItemLoading: =true
                 Height: =522
-                Items: =INVENTARIO_EQUIPOS_INFORMATICOS
+                Items: |-
+                    =//INVENTARIO_EQUIPOS_INFORMATICOS
+                    If(
+                        Not(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo")  && IsBlank(buscar_inventario.Text),
+                        Sort(Filter(
+                            INVENTARIO_EQUIPOS_INFORMATICOS,
+                            BIEN_INFORMATICO = elegir_bien_informatico.SelectedText.BIEN_INFORMATICO
+                        ),ID,SortOrder.Descending),
+                        !IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO) && !IsBlank(buscar_inventario.Text),
+                        Sort(Filter(
+                            INVENTARIO_EQUIPOS_INFORMATICOS,
+                            BIEN_INFORMATICO = elegir_bien_informatico.SelectedText.BIEN_INFORMATICO,
+                            StartsWith(LOCAL,buscar_inventario.Text) || StartsWith(FACULTAD,buscar_inventario.Text) || StartsWith(PATRIMONIO,buscar_inventario.Text) || StartsWith(AREA,buscar_inventario.Text)
+                        ),ID,SortOrder.Descending),
+                        INVENTARIO_EQUIPOS_INFORMATICOS
+                    )
                 Layout: =Layout.Vertical
                 LoadingSpinner: =LoadingSpinner.Data
                 TemplateSize: =28
@@ -821,4 +836,61 @@ Inventario As screen:
         X: =415
         Y: =17
         ZIndex: =2
+
+    Label1 As label:
+        FontWeight: =FontWeight.Bold
+        Size: =12
+        Text: |-
+            ="Bien Informatico: "
+        Width: =119
+        X: =26
+        Y: =105
+        ZIndex: =4
+
+    Button2 As button:
+        Fill: =RGBA(54, 176, 75, 1)
+        Text: ="Agregar"
+        X: =1138
+        Y: =105
+        ZIndex: =6
+
+    buscar_inventario As text:
+        Default: =""
+        Height: =41
+        HintText: ="Busca por Local-Facultad-Area-Patrimonio"
+        Size: =14
+        Width: =395
+        X: =505
+        Y: =105
+        ZIndex: =7
+
+    Label1_1 As label:
+        FontWeight: =FontWeight.Bold
+        Size: =12
+        Text: |-
+            ="Buscar: "
+        Width: =90
+        X: =415
+        Y: =105
+        ZIndex: =8
+
+    Label2 As label:
+        Text: =
+        X: =56
+        Y: =37
+        ZIndex: =9
+
+    Label3 As label:
+        Text: =
+        X: =183
+        Y: =114
+        ZIndex: =11
+
+    elegir_bien_informatico As dropdown:
+        Default: ="Todo"
+        Items: =BIENES_INFORMATICOS
+        Width: =188
+        X: =145
+        Y: =105
+        ZIndex: =12
 
