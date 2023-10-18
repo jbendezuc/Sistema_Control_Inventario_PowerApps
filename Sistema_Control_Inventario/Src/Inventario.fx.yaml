@@ -397,6 +397,18 @@ Inventario As screen:
                     X: =ID_titulo.Width+2+local_titulo.Width+2+facultad_titulo.Width+2+piso_titulo.Width+2+area_titulo.Width+2+pabellon_titulo.Width+2+nombre_area_titulo.Width+2+bien_informatico_titulo.Width+2+patrimonio_titulo.Width+2+patrimonio_referencia_titulo.Width+2+marca_titulo.Width+2+modelo_titulo.Width+2+num_serie_titulo.Width+2+disco_duro_titulo.Width+2+memoria_ram_titulo.Width+2+procesador_titulo.Width+2+procesador_gen_titulo.Width+2+hostname_titulo.Width+2+ip_text.Width+2+anexo_titulo.Width+2+tipo_impresora_titulo.Width+2+conector_impresora_titulo.Width+2+conector_teclado_titulo.Width+2+conector_monitor_titulo.Width+2+estado_titulo.Width+2+situacion_actual_titulo.Width+2+ficha_baja_titulo.Width+2+jefe_inmediato_titulo.Width+2+usuario_responsable_titulo.Width+2+tecnico_responsable_titulo.Width+2
                     ZIndex: =31
 
+                opciones_titulo As label:
+                    Align: =Align.Center
+                    Color: =RGBA(255, 255, 255, 1)
+                    Fill: =RGBA(39, 67, 125, 1)
+                    FontWeight: =FontWeight.Bold
+                    Height: =50
+                    Size: =14
+                    Text: ="OPCIONES"
+                    Width: =fondo_editar.Width
+                    X: =ID_titulo.Width+2+local_titulo.Width+2+facultad_titulo.Width+2+piso_titulo.Width+2+area_titulo.Width+2+pabellon_titulo.Width+2+nombre_area_titulo.Width+2+bien_informatico_titulo.Width+2+patrimonio_titulo.Width+2+patrimonio_referencia_titulo.Width+2+marca_titulo.Width+2+modelo_titulo.Width+2+num_serie_titulo.Width+2+disco_duro_titulo.Width+2+memoria_ram_titulo.Width+2+procesador_titulo.Width+2+procesador_gen_titulo.Width+2+hostname_titulo.Width+2+ip_text.Width+2+anexo_titulo.Width+2+tipo_impresora_titulo.Width+2+conector_impresora_titulo.Width+2+conector_teclado_titulo.Width+2+conector_monitor_titulo.Width+2+estado_titulo.Width+2+situacion_actual_titulo.Width+2+ficha_baja_titulo.Width+2+jefe_inmediato_titulo.Width+2+usuario_responsable_titulo.Width+2+tecnico_responsable_titulo.Width+2+tecnico_correo_titulo.Width+2
+                    ZIndex: =32
+
             Gallery1 As gallery.galleryVertical:
                 DelayItemLoading: =true
                 Height: =522
@@ -424,7 +436,7 @@ Inventario As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =30
                     OnSelect: =Select(Parent)
-                    Size: =10
+                    Size: =12
                     Text: =ThisItem.LOCAL
                     Width: =100
                     X: =ID_text.Width+2
@@ -436,7 +448,7 @@ Inventario As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =30
                     OnSelect: =Select(Parent)
-                    Size: =10
+                    Size: =12
                     Text: =ThisItem.FACULTAD
                     Width: =120
                     X: =ID_text.Width+2+local_text.Width+2
@@ -448,7 +460,7 @@ Inventario As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =30
                     OnSelect: =Select(Parent)
-                    Size: =10
+                    Size: =12
                     Text: =ThisItem.PISO
                     Width: =120
                     X: =ID_text.Width+2+local_text.Width+2+facultad_text.Width+2
@@ -460,7 +472,7 @@ Inventario As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =30
                     OnSelect: =Select(Parent)
-                    Size: =10
+                    Size: =12
                     Text: =ThisItem.AREA
                     X: =ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2
                     Y: =ID_text.Y
@@ -471,7 +483,7 @@ Inventario As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =30
                     OnSelect: =Select(Parent)
-                    Size: =10
+                    Size: =12
                     Text: =ThisItem.PABELLON
                     X: =ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2
                     Y: =ID_text.Y
@@ -482,7 +494,7 @@ Inventario As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =30
                     OnSelect: =Select(Parent)
-                    Size: =10
+                    Size: =12
                     Text: =ThisItem.NOMBRE_AREA
                     Width: =200
                     X: =ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2+pabellon_text.Width+2
@@ -494,7 +506,7 @@ Inventario As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =30
                     OnSelect: =Select(Parent)
-                    Size: =10
+                    Size: =12
                     Text: =ThisItem.BIEN_INFORMATICO
                     Width: =180
                     X: =ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2+pabellon_text.Width+2+nombre_area_text.Width+2
@@ -506,7 +518,7 @@ Inventario As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =30
                     OnSelect: =Select(Parent)
-                    Size: =10
+                    Size: =12
                     Text: =ThisItem.PATRIMONIO
                     X: =ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2+pabellon_text.Width+2+nombre_area_text.Width+2+bien_informatico_text.Width+2
                     Y: =ID_text.Y
@@ -517,7 +529,7 @@ Inventario As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =30
                     OnSelect: =Select(Parent)
-                    Size: =10
+                    Size: =12
                     Text: =ThisItem.PATRIMONIO_REFERENCIA
                     X: =ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2+pabellon_text.Width+2+nombre_area_text.Width+2+bien_informatico_text.Width+2+patrimonio_text.Width+2
                     Y: =ID_text.Y
@@ -761,6 +773,41 @@ Inventario As screen:
                     X: =ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2+pabellon_text.Width+2+nombre_area_text.Width+2+bien_informatico_text.Width+2+patrimonio_text.Width+2+patrimonio_referencia_text.Width+2+marca_text.Width+2+modelo_text.Width+2+num_serie_text.Width+2+disco_duro_text.Width+2+memoria_ram_text.Width+2+procesador_text.Width+2+procesador_gen_text.Width+2+hostname_text.Width+2+ip_text.Width+2+anexo_text.Width+2+tipo_impresora_text.Width+2+conector_impresora_text.Width+2+conector_teclado_text.Width+2+conector_monitor_text.Width+2+estado_text.Width+2+situacion_actual_text.Width+2+ficha_baja_text.Width+2+jefe_inmediato_text.Width+2+usuario_responsable_text.Width+2+tecnico_responsable_text.Width+2
                     Y: =ID_text.Y
                     ZIndex: =31
+
+                fondo_editar As label:
+                    Align: =Align.Center
+                    Fill: =RGBA(186, 202, 226, 1)
+                    Height: =30
+                    OnSelect: =Select(Parent)
+                    Size: =12
+                    Text: =""
+                    Width: =250
+                    X: =ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2+pabellon_text.Width+2+nombre_area_text.Width+2+bien_informatico_text.Width+2+patrimonio_text.Width+2+patrimonio_referencia_text.Width+2+marca_text.Width+2+modelo_text.Width+2+num_serie_text.Width+2+disco_duro_text.Width+2+memoria_ram_text.Width+2+procesador_text.Width+2+procesador_gen_text.Width+2+hostname_text.Width+2+ip_text.Width+2+anexo_text.Width+2+tipo_impresora_text.Width+2+conector_impresora_text.Width+2+conector_teclado_text.Width+2+conector_monitor_text.Width+2+estado_text.Width+2+situacion_actual_text.Width+2+ficha_baja_text.Width+2+jefe_inmediato_text.Width+2+usuario_responsable_text.Width+2+tecnico_responsable_text.Width+2+tecnico_correo_text.Width+2
+                    Y: =ID_text.Y
+                    ZIndex: =32
+
+                editar_button As button:
+                    Fill: =RGBA(54, 176, 75, 1)
+                    Height: =25
+                    OnSelect: =Select(Parent)
+                    Size: =12
+                    Text: ="Editar"
+                    Width: =100
+                    X: =ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2+pabellon_text.Width+2+nombre_area_text.Width+2+bien_informatico_text.Width+2+patrimonio_text.Width+2+patrimonio_referencia_text.Width+2+marca_text.Width+2+modelo_text.Width+2+num_serie_text.Width+2+disco_duro_text.Width+2+memoria_ram_text.Width+2+procesador_text.Width+2+procesador_gen_text.Width+2+hostname_text.Width+2+ip_text.Width+2+anexo_text.Width+2+tipo_impresora_text.Width+2+conector_impresora_text.Width+2+conector_teclado_text.Width+2+conector_monitor_text.Width+2+estado_text.Width+2+situacion_actual_text.Width+2+ficha_baja_text.Width+2+jefe_inmediato_text.Width+2+usuario_responsable_text.Width+2+tecnico_responsable_text.Width+2+tecnico_correo_text.Width+15
+                    Y: =2
+                    ZIndex: =33
+
+                eliminar_button As button:
+                    Fill: =RGBA(168, 0, 0, 1)
+                    Height: =25
+                    OnSelect: =Select(Parent)
+                    Size: =12
+                    Text: ="Eliminar"
+                    Width: =100
+                    X: =ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2+pabellon_text.Width+2+nombre_area_text.Width+2+bien_informatico_text.Width+2+patrimonio_text.Width+2+patrimonio_referencia_text.Width+2+marca_text.Width+2+modelo_text.Width+2+num_serie_text.Width+2+disco_duro_text.Width+2+memoria_ram_text.Width+2+procesador_text.Width+2+procesador_gen_text.Width+2+hostname_text.Width+2+ip_text.Width+2+anexo_text.Width+2+tipo_impresora_text.Width+2+conector_impresora_text.Width+2+conector_teclado_text.Width+2+conector_monitor_text.Width+2+estado_text.Width+2+situacion_actual_text.Width+2+ficha_baja_text.Width+2+jefe_inmediato_text.Width+2+usuario_responsable_text.Width+2+tecnico_responsable_text.Width+2+tecnico_correo_text.Width+15+editar_button.Width+15
+                    Y: |
+                        =2
+                    ZIndex: =34
 
     TITULO_INVENTARIO As label:
         Align: =Align.Center
