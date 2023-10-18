@@ -31,6 +31,7 @@
       "ComplianceAssetId": "Id. de activo de cumplimiento normativo",
       "CONEXION_IMPRESORA": "TIPO_CONECTOR_IMPRESORA",
       "CONEXION_TECLADO": "TIPO_CONECTOR_TECLADO",
+      "CORREO_TECNICO": "CORREO_TECNICO",
       "Created": "Creado",
       "DISCO_DURO": "DISCO_DURO",
       "Editor": "Modificado por",
