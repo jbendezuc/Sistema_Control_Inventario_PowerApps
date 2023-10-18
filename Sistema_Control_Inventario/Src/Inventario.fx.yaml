@@ -424,7 +424,7 @@ Inventario As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =30
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =10
                     Text: =ThisItem.LOCAL
                     Width: =100
                     X: =ID_text.Width+2
@@ -436,7 +436,7 @@ Inventario As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =30
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =10
                     Text: =ThisItem.FACULTAD
                     Width: =120
                     X: =ID_text.Width+2+local_text.Width+2
@@ -448,7 +448,7 @@ Inventario As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =30
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =10
                     Text: =ThisItem.PISO
                     Width: =120
                     X: =ID_text.Width+2+local_text.Width+2+facultad_text.Width+2
@@ -460,7 +460,7 @@ Inventario As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =30
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =10
                     Text: =ThisItem.AREA
                     X: =ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2
                     Y: =ID_text.Y
@@ -471,7 +471,7 @@ Inventario As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =30
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =10
                     Text: =ThisItem.PABELLON
                     X: =ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2
                     Y: =ID_text.Y
@@ -482,7 +482,7 @@ Inventario As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =30
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =10
                     Text: =ThisItem.NOMBRE_AREA
                     Width: =200
                     X: =ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2+pabellon_text.Width+2
@@ -494,7 +494,7 @@ Inventario As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =30
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =10
                     Text: =ThisItem.BIEN_INFORMATICO
                     Width: =180
                     X: =ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2+pabellon_text.Width+2+nombre_area_text.Width+2
@@ -506,7 +506,7 @@ Inventario As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =30
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =10
                     Text: =ThisItem.PATRIMONIO
                     X: =ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2+pabellon_text.Width+2+nombre_area_text.Width+2+bien_informatico_text.Width+2
                     Y: =ID_text.Y
@@ -517,7 +517,7 @@ Inventario As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =30
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =10
                     Text: =ThisItem.PATRIMONIO_REFERENCIA
                     X: =ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2+pabellon_text.Width+2+nombre_area_text.Width+2+bien_informatico_text.Width+2+patrimonio_text.Width+2
                     Y: =ID_text.Y
