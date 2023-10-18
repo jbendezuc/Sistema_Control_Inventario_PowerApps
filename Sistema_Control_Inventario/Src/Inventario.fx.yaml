@@ -14,12 +14,12 @@ Inventario As screen:
             Height: =Parent.Height
             LayoutMinHeight: =100
             LayoutMinWidth: =250
-            Width: =2000
+            Width: =3000
             ZIndex: =1
 
             Titulos As groupContainer.manualLayoutContainer:
                 Height: =50
-                Width: =2622
+                Width: =4620
                 X: =Parent.X+5
                 Y: =Parent.Y
                 ZIndex: =1
@@ -91,7 +91,7 @@ Inventario As screen:
                     Fill: =RGBA(39, 67, 125, 1)
                     FontWeight: =FontWeight.Bold
                     Height: =50
-                    Size: =14
+                    Size: =12
                     Text: ="PABELLÓN"
                     Width: =pabellon_text.Width
                     X: =ID_titulo.Width+2+local_titulo.Width+2+facultad_titulo.Width+2+piso_titulo.Width+2+area_titulo.Width+2
@@ -181,14 +181,146 @@ Inventario As screen:
                     X: =ID_titulo.Width+2+local_titulo.Width+2+facultad_titulo.Width+2+piso_titulo.Width+2+area_titulo.Width+2+pabellon_titulo.Width+2+nombre_area_titulo.Width+2+bien_informatico_titulo.Width+2+patrimonio_titulo.Width+2+patrimonio_referencia_titulo.Width+2+marca_titulo.Width+2+modelo_titulo.Width+2
                     ZIndex: =13
 
+                disco_duro_titulo As label:
+                    Align: =Align.Center
+                    Color: =RGBA(255, 255, 255, 1)
+                    Fill: =RGBA(221, 79, 14, 1)
+                    FontWeight: =FontWeight.Bold
+                    Height: =50
+                    Size: =14
+                    Text: ="DISCO DURO"
+                    Width: =disco_duro_text.Width
+                    X: =ID_titulo.Width+2+local_titulo.Width+2+facultad_titulo.Width+2+piso_titulo.Width+2+area_titulo.Width+2+pabellon_titulo.Width+2+nombre_area_titulo.Width+2+bien_informatico_titulo.Width+2+patrimonio_titulo.Width+2+patrimonio_referencia_titulo.Width+2+marca_titulo.Width+2+modelo_titulo.Width+2+num_serie_titulo.Width+2
+                    ZIndex: =14
+
+                memoria_ram_titulo As label:
+                    Align: =Align.Center
+                    Color: =RGBA(255, 255, 255, 1)
+                    Fill: =RGBA(221, 79, 14, 1)
+                    FontWeight: =FontWeight.Bold
+                    Height: =50
+                    Size: =14
+                    Text: ="MEMORIA RAM"
+                    Width: =memoria_ram_text.Width
+                    X: =ID_titulo.Width+2+local_titulo.Width+2+facultad_titulo.Width+2+piso_titulo.Width+2+area_titulo.Width+2+pabellon_titulo.Width+2+nombre_area_titulo.Width+2+bien_informatico_titulo.Width+2+patrimonio_titulo.Width+2+patrimonio_referencia_titulo.Width+2+marca_titulo.Width+2+modelo_titulo.Width+2+num_serie_titulo.Width+2+disco_duro_titulo.Width+2
+                    ZIndex: =15
+
+                procesador_titulo As label:
+                    Align: =Align.Center
+                    Color: =RGBA(255, 255, 255, 1)
+                    Fill: =RGBA(221, 79, 14, 1)
+                    FontWeight: =FontWeight.Bold
+                    Height: =50
+                    Size: =14
+                    Text: ="PROCESADOR"
+                    Width: =procesador_text.Width
+                    X: =ID_titulo.Width+2+local_titulo.Width+2+facultad_titulo.Width+2+piso_titulo.Width+2+area_titulo.Width+2+pabellon_titulo.Width+2+nombre_area_titulo.Width+2+bien_informatico_titulo.Width+2+patrimonio_titulo.Width+2+patrimonio_referencia_titulo.Width+2+marca_titulo.Width+2+modelo_titulo.Width+2+num_serie_titulo.Width+2+disco_duro_titulo.Width+2+memoria_ram_titulo.Width+2
+                    ZIndex: =16
+
+                procesador_gen_titulo As label:
+                    Align: =Align.Center
+                    Color: =RGBA(255, 255, 255, 1)
+                    Fill: =RGBA(221, 79, 14, 1)
+                    FontWeight: =FontWeight.Bold
+                    Height: =50
+                    Size: =14
+                    Text: ="GENERACIÓN PROCESADOR"
+                    Width: =procesador_gen_text.Width
+                    X: =ID_titulo.Width+2+local_titulo.Width+2+facultad_titulo.Width+2+piso_titulo.Width+2+area_titulo.Width+2+pabellon_titulo.Width+2+nombre_area_titulo.Width+2+bien_informatico_titulo.Width+2+patrimonio_titulo.Width+2+patrimonio_referencia_titulo.Width+2+marca_titulo.Width+2+modelo_titulo.Width+2+num_serie_titulo.Width+2+disco_duro_titulo.Width+2+memoria_ram_titulo.Width+2+procesador_titulo.Width+2
+                    ZIndex: =17
+
+                hostname_titulo As label:
+                    Align: =Align.Center
+                    Color: =RGBA(255, 255, 255, 1)
+                    Fill: =RGBA(221, 79, 14, 1)
+                    FontWeight: =FontWeight.Bold
+                    Height: =50
+                    Size: =14
+                    Text: ="HOSTNAME"
+                    Width: =hostname_text.Width
+                    X: =ID_titulo.Width+2+local_titulo.Width+2+facultad_titulo.Width+2+piso_titulo.Width+2+area_titulo.Width+2+pabellon_titulo.Width+2+nombre_area_titulo.Width+2+bien_informatico_titulo.Width+2+patrimonio_titulo.Width+2+patrimonio_referencia_titulo.Width+2+marca_titulo.Width+2+modelo_titulo.Width+2+num_serie_titulo.Width+2+disco_duro_titulo.Width+2+memoria_ram_titulo.Width+2+procesador_titulo.Width+2+procesador_gen_titulo.Width+2
+                    ZIndex: =18
+
+                ip_titulo As label:
+                    Align: =Align.Center
+                    Color: =RGBA(255, 255, 255, 1)
+                    Fill: =RGBA(127, 178, 57, 1)
+                    FontWeight: =FontWeight.Bold
+                    Height: =50
+                    Size: =14
+                    Text: ="IP - BIEN INFORMATICO"
+                    Width: =ip_text.Width
+                    X: =ID_titulo.Width+2+local_titulo.Width+2+facultad_titulo.Width+2+piso_titulo.Width+2+area_titulo.Width+2+pabellon_titulo.Width+2+nombre_area_titulo.Width+2+bien_informatico_titulo.Width+2+patrimonio_titulo.Width+2+patrimonio_referencia_titulo.Width+2+marca_titulo.Width+2+modelo_titulo.Width+2+num_serie_titulo.Width+2+disco_duro_titulo.Width+2+memoria_ram_titulo.Width+2+procesador_titulo.Width+2+procesador_gen_titulo.Width+2+hostname_titulo.Width+2
+                    ZIndex: =19
+
+                anexo_titulo As label:
+                    Align: =Align.Center
+                    Color: =RGBA(255, 255, 255, 1)
+                    Fill: =RGBA(255, 191, 0, 1)
+                    FontWeight: =FontWeight.Bold
+                    Height: =50
+                    Size: =14
+                    Text: ="ANEXO TELEFONO-FAX"
+                    Width: =anexo_text.Width
+                    X: =ID_titulo.Width+2+local_titulo.Width+2+facultad_titulo.Width+2+piso_titulo.Width+2+area_titulo.Width+2+pabellon_titulo.Width+2+nombre_area_titulo.Width+2+bien_informatico_titulo.Width+2+patrimonio_titulo.Width+2+patrimonio_referencia_titulo.Width+2+marca_titulo.Width+2+modelo_titulo.Width+2+num_serie_titulo.Width+2+disco_duro_titulo.Width+2+memoria_ram_titulo.Width+2+procesador_titulo.Width+2+procesador_gen_titulo.Width+2+hostname_titulo.Width+2+ip_text.Width+2
+                    ZIndex: =20
+
+                tipo_impresora_titulo As label:
+                    Align: =Align.Center
+                    Color: =RGBA(255, 255, 255, 1)
+                    Fill: =RGBA(109, 49, 162, 1)
+                    FontWeight: =FontWeight.Bold
+                    Height: =50
+                    Size: =14
+                    Text: ="TIPO DE IMPRESORA"
+                    Width: =tipo_impresora_text.Width
+                    X: =ID_titulo.Width+2+local_titulo.Width+2+facultad_titulo.Width+2+piso_titulo.Width+2+area_titulo.Width+2+pabellon_titulo.Width+2+nombre_area_titulo.Width+2+bien_informatico_titulo.Width+2+patrimonio_titulo.Width+2+patrimonio_referencia_titulo.Width+2+marca_titulo.Width+2+modelo_titulo.Width+2+num_serie_titulo.Width+2+disco_duro_titulo.Width+2+memoria_ram_titulo.Width+2+procesador_titulo.Width+2+procesador_gen_titulo.Width+2+hostname_titulo.Width+2+ip_text.Width+2+anexo_titulo.Width+2
+                    ZIndex: =21
+
+                conector_impresora_titulo As label:
+                    Align: =Align.Center
+                    Color: =RGBA(255, 255, 255, 1)
+                    Fill: =RGBA(109, 49, 162, 1)
+                    FontWeight: =FontWeight.Bold
+                    Height: =50
+                    Size: =14
+                    Text: ="CONEXIÓN DE IMPRESORA"
+                    Width: =conector_impresora_text.Width
+                    X: =ID_titulo.Width+2+local_titulo.Width+2+facultad_titulo.Width+2+piso_titulo.Width+2+area_titulo.Width+2+pabellon_titulo.Width+2+nombre_area_titulo.Width+2+bien_informatico_titulo.Width+2+patrimonio_titulo.Width+2+patrimonio_referencia_titulo.Width+2+marca_titulo.Width+2+modelo_titulo.Width+2+num_serie_titulo.Width+2+disco_duro_titulo.Width+2+memoria_ram_titulo.Width+2+procesador_titulo.Width+2+procesador_gen_titulo.Width+2+hostname_titulo.Width+2+ip_text.Width+2+anexo_titulo.Width+2+tipo_impresora_titulo.Width+2
+                    ZIndex: =22
+
+                conector_teclado_titulo As label:
+                    Align: =Align.Center
+                    Color: =RGBA(255, 255, 255, 1)
+                    Fill: =RGBA(255, 0, 0, 1)
+                    FontWeight: =FontWeight.Bold
+                    Height: =50
+                    Size: =14
+                    Text: ="CONECTOR TECLADO"
+                    Width: =conector_teclado_text.Width
+                    X: =ID_titulo.Width+2+local_titulo.Width+2+facultad_titulo.Width+2+piso_titulo.Width+2+area_titulo.Width+2+pabellon_titulo.Width+2+nombre_area_titulo.Width+2+bien_informatico_titulo.Width+2+patrimonio_titulo.Width+2+patrimonio_referencia_titulo.Width+2+marca_titulo.Width+2+modelo_titulo.Width+2+num_serie_titulo.Width+2+disco_duro_titulo.Width+2+memoria_ram_titulo.Width+2+procesador_titulo.Width+2+procesador_gen_titulo.Width+2+hostname_titulo.Width+2+ip_text.Width+2+anexo_titulo.Width+2+tipo_impresora_titulo.Width+2+conector_impresora_titulo.Width+2
+                    ZIndex: =23
+
+                conector_monitor_titulo As label:
+                    Align: =Align.Center
+                    Color: =RGBA(255, 255, 255, 1)
+                    Fill: =RGBA(39, 67, 125, 1)
+                    FontWeight: =FontWeight.Bold
+                    Height: =50
+                    Size: =14
+                    Text: ="CONECTOR MONITOR"
+                    Width: =conector_monitor_text.Width
+                    X: =ID_titulo.Width+2+local_titulo.Width+2+facultad_titulo.Width+2+piso_titulo.Width+2+area_titulo.Width+2+pabellon_titulo.Width+2+nombre_area_titulo.Width+2+bien_informatico_titulo.Width+2+patrimonio_titulo.Width+2+patrimonio_referencia_titulo.Width+2+marca_titulo.Width+2+modelo_titulo.Width+2+num_serie_titulo.Width+2+disco_duro_titulo.Width+2+memoria_ram_titulo.Width+2+procesador_titulo.Width+2+procesador_gen_titulo.Width+2+hostname_titulo.Width+2+ip_text.Width+2+anexo_titulo.Width+2+tipo_impresora_titulo.Width+2+conector_impresora_titulo.Width+2+conector_teclado_titulo.Width+2
+                    ZIndex: =24
+
             Gallery1 As gallery.galleryVertical:
                 DelayItemLoading: =true
                 Height: =Parent.Height-172
                 Items: =INVENTARIO_EQUIPOS_INFORMATICOS
                 Layout: =Layout.Vertical
                 LoadingSpinner: =LoadingSpinner.Data
-                TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))
-                Width: =2627
+                TemplateSize: =296
+                Width: =4625
                 X: =Parent.X
                 Y: =Titulos.Height
                 ZIndex: =2
@@ -347,11 +479,121 @@ Inventario As screen:
                     Height: =30
                     OnSelect: =Select(Parent)
                     Size: =12
-                    Text: =ThisItem.NUM_SERIE
-                    Width: =180
+                    Text: =ThisItem.DISCO_DURO
                     X: =ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2+pabellon_text.Width+2+nombre_area_text.Width+2+bien_informatico_text.Width+2+patrimonio_text.Width+2+patrimonio_referencia_text.Width+2+marca_text.Width+2+modelo_text.Width+2+num_serie_text.Width+2
                     Y: =ID_text.Y
                     ZIndex: =14
+
+                memoria_ram_text As label:
+                    Align: =Align.Center
+                    Fill: =RGBA(186, 202, 226, 1)
+                    Height: =30
+                    OnSelect: =Select(Parent)
+                    Size: =12
+                    Text: =ThisItem.MEMORIA_RAM
+                    X: =ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2+pabellon_text.Width+2+nombre_area_text.Width+2+bien_informatico_text.Width+2+patrimonio_text.Width+2+patrimonio_referencia_text.Width+2+marca_text.Width+2+modelo_text.Width+2+num_serie_text.Width+2+disco_duro_text.Width+2
+                    Y: =ID_text.Y
+                    ZIndex: =15
+
+                procesador_text As label:
+                    Align: =Align.Center
+                    Fill: =RGBA(186, 202, 226, 1)
+                    Height: =30
+                    OnSelect: =Select(Parent)
+                    Size: =12
+                    Text: =ThisItem.PROCESADOR
+                    X: =ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2+pabellon_text.Width+2+nombre_area_text.Width+2+bien_informatico_text.Width+2+patrimonio_text.Width+2+patrimonio_referencia_text.Width+2+marca_text.Width+2+modelo_text.Width+2+num_serie_text.Width+2+disco_duro_text.Width+2+memoria_ram_text.Width+2
+                    Y: =ID_text.Y
+                    ZIndex: =16
+
+                procesador_gen_text As label:
+                    Align: =Align.Center
+                    Fill: =RGBA(186, 202, 226, 1)
+                    Height: =30
+                    OnSelect: =Select(Parent)
+                    Size: =12
+                    Text: =ThisItem.GENERACION_PROCESADOR
+                    X: =ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2+pabellon_text.Width+2+nombre_area_text.Width+2+bien_informatico_text.Width+2+patrimonio_text.Width+2+patrimonio_referencia_text.Width+2+marca_text.Width+2+modelo_text.Width+2+num_serie_text.Width+2+disco_duro_text.Width+2+memoria_ram_text.Width+2+procesador_text.Width+2
+                    Y: =ID_text.Y
+                    ZIndex: =17
+
+                hostname_text As label:
+                    Align: =Align.Center
+                    Fill: =RGBA(186, 202, 226, 1)
+                    Height: =30
+                    OnSelect: =Select(Parent)
+                    Size: =12
+                    Text: =ThisItem.HOSTNAME_CPU
+                    X: =ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2+pabellon_text.Width+2+nombre_area_text.Width+2+bien_informatico_text.Width+2+patrimonio_text.Width+2+patrimonio_referencia_text.Width+2+marca_text.Width+2+modelo_text.Width+2+num_serie_text.Width+2+disco_duro_text.Width+2+memoria_ram_text.Width+2+procesador_text.Width+2+procesador_gen_text.Width+2
+                    Y: =ID_text.Y
+                    ZIndex: =18
+
+                ip_text As label:
+                    Align: =Align.Center
+                    Fill: =RGBA(186, 202, 226, 1)
+                    Height: =30
+                    OnSelect: =Select(Parent)
+                    Size: =12
+                    Text: =ThisItem.IP_BIEN_INFORMATICO
+                    X: =ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2+pabellon_text.Width+2+nombre_area_text.Width+2+bien_informatico_text.Width+2+patrimonio_text.Width+2+patrimonio_referencia_text.Width+2+marca_text.Width+2+modelo_text.Width+2+num_serie_text.Width+2+disco_duro_text.Width+2+memoria_ram_text.Width+2+procesador_text.Width+2+procesador_gen_text.Width+2+hostname_text.Width+2
+                    Y: =ID_text.Y
+                    ZIndex: =19
+
+                anexo_text As label:
+                    Align: =Align.Center
+                    Fill: =RGBA(186, 202, 226, 1)
+                    Height: =30
+                    OnSelect: =Select(Parent)
+                    Size: =12
+                    Text: =ThisItem.ANEXO_TELEFONO
+                    X: =ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2+pabellon_text.Width+2+nombre_area_text.Width+2+bien_informatico_text.Width+2+patrimonio_text.Width+2+patrimonio_referencia_text.Width+2+marca_text.Width+2+modelo_text.Width+2+num_serie_text.Width+2+disco_duro_text.Width+2+memoria_ram_text.Width+2+procesador_text.Width+2+procesador_gen_text.Width+2+hostname_text.Width+2+ip_text.Width+2
+                    Y: =ID_text.Y
+                    ZIndex: =20
+
+                tipo_impresora_text As label:
+                    Align: =Align.Center
+                    Fill: =RGBA(186, 202, 226, 1)
+                    Height: =30
+                    OnSelect: =Select(Parent)
+                    Size: =12
+                    Text: =ThisItem.TIPO_IMPRESORA
+                    Width: =200
+                    X: =ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2+pabellon_text.Width+2+nombre_area_text.Width+2+bien_informatico_text.Width+2+patrimonio_text.Width+2+patrimonio_referencia_text.Width+2+marca_text.Width+2+modelo_text.Width+2+num_serie_text.Width+2+disco_duro_text.Width+2+memoria_ram_text.Width+2+procesador_text.Width+2+procesador_gen_text.Width+2+hostname_text.Width+2+ip_text.Width+2+anexo_text.Width+2
+                    Y: =ID_text.Y
+                    ZIndex: =21
+
+                conector_impresora_text As label:
+                    Align: =Align.Center
+                    Fill: =RGBA(186, 202, 226, 1)
+                    Height: =30
+                    OnSelect: =Select(Parent)
+                    Size: =12
+                    Text: =ThisItem.TIPO_CONECTOR_IMPRESORA
+                    X: =ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2+pabellon_text.Width+2+nombre_area_text.Width+2+bien_informatico_text.Width+2+patrimonio_text.Width+2+patrimonio_referencia_text.Width+2+marca_text.Width+2+modelo_text.Width+2+num_serie_text.Width+2+disco_duro_text.Width+2+memoria_ram_text.Width+2+procesador_text.Width+2+procesador_gen_text.Width+2+hostname_text.Width+2+ip_text.Width+2+anexo_text.Width+2+tipo_impresora_text.Width+2
+                    Y: =ID_text.Y
+                    ZIndex: =22
+
+                conector_teclado_text As label:
+                    Align: =Align.Center
+                    Fill: =RGBA(186, 202, 226, 1)
+                    Height: =30
+                    OnSelect: =Select(Parent)
+                    Size: =12
+                    Text: =ThisItem.TIPO_CONECTOR_TECLADO
+                    X: =ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2+pabellon_text.Width+2+nombre_area_text.Width+2+bien_informatico_text.Width+2+patrimonio_text.Width+2+patrimonio_referencia_text.Width+2+marca_text.Width+2+modelo_text.Width+2+num_serie_text.Width+2+disco_duro_text.Width+2+memoria_ram_text.Width+2+procesador_text.Width+2+procesador_gen_text.Width+2+hostname_text.Width+2+ip_text.Width+2+anexo_text.Width+2+tipo_impresora_text.Width+2+conector_impresora_text.Width+2
+                    Y: =ID_text.Y
+                    ZIndex: =23
+
+                conector_monitor_text As label:
+                    Align: =Align.Center
+                    Fill: =RGBA(186, 202, 226, 1)
+                    Height: =30
+                    OnSelect: =Select(Parent)
+                    Size: =12
+                    Text: =ThisItem.TIPO_CONECTOR_MONITOR
+                    X: =ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2+pabellon_text.Width+2+nombre_area_text.Width+2+bien_informatico_text.Width+2+patrimonio_text.Width+2+patrimonio_referencia_text.Width+2+marca_text.Width+2+modelo_text.Width+2+num_serie_text.Width+2+disco_duro_text.Width+2+memoria_ram_text.Width+2+procesador_text.Width+2+procesador_gen_text.Width+2+hostname_text.Width+2+ip_text.Width+2+anexo_text.Width+2+tipo_impresora_text.Width+2+conector_impresora_text.Width+2+conector_teclado_text.Width+2
+                    Y: =ID_text.Y
+                    ZIndex: =24
 
     TITULO_INVENTARIO As label:
         Align: =Align.Center
