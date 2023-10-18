@@ -14,12 +14,12 @@ Inventario As screen:
             Height: =Parent.Height
             LayoutMinHeight: =100
             LayoutMinWidth: =250
-            Width: =3500
+            Width: =3320
             ZIndex: =1
 
             Titulos As groupContainer.manualLayoutContainer:
                 Height: =50
-                Width: =5586
+                Width: =5263
                 X: =Parent.X+5
                 Y: =Parent.Y
                 ZIndex: =1
@@ -404,7 +404,7 @@ Inventario As screen:
                 Layout: =Layout.Vertical
                 LoadingSpinner: =LoadingSpinner.Data
                 TemplateSize: =28
-                Width: =5591
+                Width: =5263
                 X: =Parent.X
                 Y: =Titulos.Height
                 ZIndex: =2
