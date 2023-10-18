@@ -420,7 +420,7 @@ Inventario As screen:
                             INVENTARIO_EQUIPOS_INFORMATICOS,
                             BIEN_INFORMATICO = elegir_bien_informatico.SelectedText.BIEN_INFORMATICO
                         ),ID,SortOrder.Descending),
-                        !IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO) && !IsBlank(buscar_inventario.Text),
+                        Not(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo") && !IsBlank(buscar_inventario.Text),
                         Sort(Filter(
                             INVENTARIO_EQUIPOS_INFORMATICOS,
                             BIEN_INFORMATICO = elegir_bien_informatico.SelectedText.BIEN_INFORMATICO,
