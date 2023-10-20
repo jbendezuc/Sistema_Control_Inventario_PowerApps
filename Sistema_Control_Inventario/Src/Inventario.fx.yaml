@@ -189,9 +189,14 @@ Inventario As screen:
                     Height: =50
                     Size: =14
                     Text: ="DISCO DURO"
-                    Visible: =ver_discoduro_titulo
+                    Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo",true,false)
                     Width: =disco_duro_text.Width
-                    X: =ID_titulo.Width+2+local_titulo.Width+2+facultad_titulo.Width+2+piso_titulo.Width+2+area_titulo.Width+2+pabellon_titulo.Width+2+nombre_area_titulo.Width+2+bien_informatico_titulo.Width+2+patrimonio_titulo.Width+2+patrimonio_referencia_titulo.Width+2+marca_titulo.Width+2+modelo_titulo.Width+2+num_serie_titulo.Width+2
+                    X: |-
+                        =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo",ID_titulo.Width+2+local_titulo.Width+2+facultad_titulo.Width+2+piso_titulo.Width+2+area_titulo.Width+2+pabellon_titulo.Width+2+nombre_area_titulo.Width+2+bien_informatico_titulo.Width+2+patrimonio_titulo.Width+2+patrimonio_referencia_titulo.Width+2+marca_titulo.Width+2+modelo_titulo.Width+2+num_serie_titulo.Width+2,0)
+                        
+                        /*
+                        ID_titulo.Width+2+local_titulo.Width+2+facultad_titulo.Width+2+piso_titulo.Width+2+area_titulo.Width+2+pabellon_titulo.Width+2+nombre_area_titulo.Width+2+bien_informatico_titulo.Width+2+patrimonio_titulo.Width+2+patrimonio_referencia_titulo.Width+2+marca_titulo.Width+2+modelo_titulo.Width+2+num_serie_titulo.Width+2
+                        */
                     ZIndex: =14
 
                 memoria_ram_titulo As label:
@@ -202,9 +207,14 @@ Inventario As screen:
                     Height: =50
                     Size: =14
                     Text: ="MEMORIA RAM"
-                    Visible: =ver_memoriaram_titulo
+                    Visible: |
+                        =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo",true,false)
                     Width: =memoria_ram_text.Width
-                    X: =ID_titulo.Width+2+local_titulo.Width+2+facultad_titulo.Width+2+piso_titulo.Width+2+area_titulo.Width+2+pabellon_titulo.Width+2+nombre_area_titulo.Width+2+bien_informatico_titulo.Width+2+patrimonio_titulo.Width+2+patrimonio_referencia_titulo.Width+2+marca_titulo.Width+2+modelo_titulo.Width+2+num_serie_titulo.Width+2+disco_duro_titulo.Width+2
+                    X: |-
+                        =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo",ID_titulo.Width+2+local_titulo.Width+2+facultad_titulo.Width+2+piso_titulo.Width+2+area_titulo.Width+2+pabellon_titulo.Width+2+nombre_area_titulo.Width+2+bien_informatico_titulo.Width+2+patrimonio_titulo.Width+2+patrimonio_referencia_titulo.Width+2+marca_titulo.Width+2+modelo_titulo.Width+2+num_serie_titulo.Width+2+disco_duro_titulo.Width+2,0)
+                        
+                        /*
+                        ID_titulo.Width+2+local_titulo.Width+2+facultad_titulo.Width+2+piso_titulo.Width+2+area_titulo.Width+2+pabellon_titulo.Width+2+nombre_area_titulo.Width+2+bien_informatico_titulo.Width+2+patrimonio_titulo.Width+2+patrimonio_referencia_titulo.Width+2+marca_titulo.Width+2+modelo_titulo.Width+2+num_serie_titulo.Width+2+disco_duro_titulo.Width+2*/
                     ZIndex: =15
 
                 procesador_titulo As label:
@@ -215,9 +225,10 @@ Inventario As screen:
                     Height: =50
                     Size: =14
                     Text: ="PROCESADOR"
-                    Visible: =ver_procesador_titulo
+                    Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo",true,false)
                     Width: =procesador_text.Width
-                    X: =ID_titulo.Width+2+local_titulo.Width+2+facultad_titulo.Width+2+piso_titulo.Width+2+area_titulo.Width+2+pabellon_titulo.Width+2+nombre_area_titulo.Width+2+bien_informatico_titulo.Width+2+patrimonio_titulo.Width+2+patrimonio_referencia_titulo.Width+2+marca_titulo.Width+2+modelo_titulo.Width+2+num_serie_titulo.Width+2+disco_duro_titulo.Width+2+memoria_ram_titulo.Width+2
+                    X: |
+                        =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo",ID_titulo.Width+2+local_titulo.Width+2+facultad_titulo.Width+2+piso_titulo.Width+2+area_titulo.Width+2+pabellon_titulo.Width+2+nombre_area_titulo.Width+2+bien_informatico_titulo.Width+2+patrimonio_titulo.Width+2+patrimonio_referencia_titulo.Width+2+marca_titulo.Width+2+modelo_titulo.Width+2+num_serie_titulo.Width+2+disco_duro_titulo.Width+2+memoria_ram_titulo.Width+2,0)
                     ZIndex: =16
 
                 procesador_gen_titulo As label:
@@ -228,9 +239,10 @@ Inventario As screen:
                     Height: =50
                     Size: =14
                     Text: ="GENERACIÓN PROCESADOR"
-                    Visible: =ver_genprocesador_titulo
+                    Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo",true,false)
                     Width: =procesador_gen_text.Width
-                    X: =ID_titulo.Width+2+local_titulo.Width+2+facultad_titulo.Width+2+piso_titulo.Width+2+area_titulo.Width+2+pabellon_titulo.Width+2+nombre_area_titulo.Width+2+bien_informatico_titulo.Width+2+patrimonio_titulo.Width+2+patrimonio_referencia_titulo.Width+2+marca_titulo.Width+2+modelo_titulo.Width+2+num_serie_titulo.Width+2+disco_duro_titulo.Width+2+memoria_ram_titulo.Width+2+procesador_titulo.Width+2
+                    X: |
+                        =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo",ID_titulo.Width+2+local_titulo.Width+2+facultad_titulo.Width+2+piso_titulo.Width+2+area_titulo.Width+2+pabellon_titulo.Width+2+nombre_area_titulo.Width+2+bien_informatico_titulo.Width+2+patrimonio_titulo.Width+2+patrimonio_referencia_titulo.Width+2+marca_titulo.Width+2+modelo_titulo.Width+2+num_serie_titulo.Width+2+disco_duro_titulo.Width+2+memoria_ram_titulo.Width+2+procesador_titulo.Width+2,0)
                     ZIndex: =17
 
                 hostname_titulo As label:
@@ -241,9 +253,9 @@ Inventario As screen:
                     Height: =50
                     Size: =14
                     Text: ="HOSTNAME"
-                    Visible: =ver_hostname_titulo
+                    Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo",true,false)
                     Width: =hostname_text.Width
-                    X: =ID_titulo.Width+2+local_titulo.Width+2+facultad_titulo.Width+2+piso_titulo.Width+2+area_titulo.Width+2+pabellon_titulo.Width+2+nombre_area_titulo.Width+2+bien_informatico_titulo.Width+2+patrimonio_titulo.Width+2+patrimonio_referencia_titulo.Width+2+marca_titulo.Width+2+modelo_titulo.Width+2+num_serie_titulo.Width+2+disco_duro_titulo.Width+2+memoria_ram_titulo.Width+2+procesador_titulo.Width+2+procesador_gen_titulo.Width+2
+                    X: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo",ID_titulo.Width+2+local_titulo.Width+2+facultad_titulo.Width+2+piso_titulo.Width+2+area_titulo.Width+2+pabellon_titulo.Width+2+nombre_area_titulo.Width+2+bien_informatico_titulo.Width+2+patrimonio_titulo.Width+2+patrimonio_referencia_titulo.Width+2+marca_titulo.Width+2+modelo_titulo.Width+2+num_serie_titulo.Width+2+disco_duro_titulo.Width+2+memoria_ram_titulo.Width+2+procesador_titulo.Width+2+procesador_gen_titulo.Width+2,0)
                     ZIndex: =18
 
                 ip_titulo As label:
@@ -254,9 +266,12 @@ Inventario As screen:
                     Height: =50
                     Size: =14
                     Text: ="IP - BIEN INFORMATICO"
-                    Visible: =ver_ip_titulo
+                    Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Impresora" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Telefono IP" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo",true,false)
                     Width: =ip_text.Width
-                    X: =ID_titulo.Width+2+local_titulo.Width+2+facultad_titulo.Width+2+piso_titulo.Width+2+area_titulo.Width+2+pabellon_titulo.Width+2+nombre_area_titulo.Width+2+bien_informatico_titulo.Width+2+patrimonio_titulo.Width+2+patrimonio_referencia_titulo.Width+2+marca_titulo.Width+2+modelo_titulo.Width+2+num_serie_titulo.Width+2+disco_duro_titulo.Width+2+memoria_ram_titulo.Width+2+procesador_titulo.Width+2+procesador_gen_titulo.Width+2+hostname_titulo.Width+2
+                    X: |-
+                        =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" ||  elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo",ID_titulo.Width+2+local_titulo.Width+2+facultad_titulo.Width+2+piso_titulo.Width+2+area_titulo.Width+2+pabellon_titulo.Width+2+nombre_area_titulo.Width+2+bien_informatico_titulo.Width+2+patrimonio_titulo.Width+2+patrimonio_referencia_titulo.Width+2+marca_titulo.Width+2+modelo_titulo.Width+2+num_serie_titulo.Width+2+disco_duro_titulo.Width+2+memoria_ram_titulo.Width+2+procesador_titulo.Width+2+procesador_gen_titulo.Width+2+hostname_titulo.Width+2,
+                        If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Impresora" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Telefono IP",ID_titulo.Width+2+local_titulo.Width+2+facultad_titulo.Width+2+piso_titulo.Width+2+area_titulo.Width+2+pabellon_titulo.Width+2+nombre_area_titulo.Width+2+bien_informatico_titulo.Width+2+patrimonio_titulo.Width+2+patrimonio_referencia_titulo.Width+2+marca_titulo.Width+2+modelo_titulo.Width+2+num_serie_titulo.Width+2,0)
+                        )
                     ZIndex: =19
 
                 anexo_titulo As label:
@@ -612,8 +627,12 @@ Inventario As screen:
                     OnSelect: =Select(Parent)
                     Size: =12
                     Text: =ThisItem.DISCO_DURO
-                    Visible: =ver_discoduro_text
-                    X: =ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2+pabellon_text.Width+2+nombre_area_text.Width+2+bien_informatico_text.Width+2+patrimonio_text.Width+2+patrimonio_referencia_text.Width+2+marca_text.Width+2+modelo_text.Width+2+num_serie_text.Width+2
+                    Visible: |-
+                        =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo",true,false)
+                        //ver_discoduro_text
+                    X: |+
+                        =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo",ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2+pabellon_text.Width+2+nombre_area_text.Width+2+bien_informatico_text.Width+2+patrimonio_text.Width+2+patrimonio_referencia_text.Width+2+marca_text.Width+2+modelo_text.Width+2+num_serie_text.Width+2,0)
+                        
                     Y: =ID_text.Y
                     ZIndex: =14
 
@@ -624,8 +643,11 @@ Inventario As screen:
                     OnSelect: =Select(Parent)
                     Size: =12
                     Text: =ThisItem.MEMORIA_RAM
-                    Visible: =ver_memoriaram_text
-                    X: =ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2+pabellon_text.Width+2+nombre_area_text.Width+2+bien_informatico_text.Width+2+patrimonio_text.Width+2+patrimonio_referencia_text.Width+2+marca_text.Width+2+modelo_text.Width+2+num_serie_text.Width+2+disco_duro_text.Width+2
+                    Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo",true,false)
+                    X: |-
+                        =
+                        
+                        If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo",ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2+pabellon_text.Width+2+nombre_area_text.Width+2+bien_informatico_text.Width+2+patrimonio_text.Width+2+patrimonio_referencia_text.Width+2+marca_text.Width+2+modelo_text.Width+2+num_serie_text.Width+2+disco_duro_text.Width+2,0)
                     Y: =ID_text.Y
                     ZIndex: =15
 
@@ -636,8 +658,10 @@ Inventario As screen:
                     OnSelect: =Select(Parent)
                     Size: =12
                     Text: =ThisItem.PROCESADOR
-                    Visible: =ver_procesador_text
-                    X: =ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2+pabellon_text.Width+2+nombre_area_text.Width+2+bien_informatico_text.Width+2+patrimonio_text.Width+2+patrimonio_referencia_text.Width+2+marca_text.Width+2+modelo_text.Width+2+num_serie_text.Width+2+disco_duro_text.Width+2+memoria_ram_text.Width+2
+                    Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo",true,false)
+                    X: |+
+                        =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo",ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2+pabellon_text.Width+2+nombre_area_text.Width+2+bien_informatico_text.Width+2+patrimonio_text.Width+2+patrimonio_referencia_text.Width+2+marca_text.Width+2+modelo_text.Width+2+num_serie_text.Width+2+disco_duro_text.Width+2+memoria_ram_text.Width+2,0)
+                        
                     Y: =ID_text.Y
                     ZIndex: =16
 
@@ -648,8 +672,10 @@ Inventario As screen:
                     OnSelect: =Select(Parent)
                     Size: =12
                     Text: =ThisItem.GENERACION_PROCESADOR
-                    Visible: =ver_genprocesador_text
-                    X: =ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2+pabellon_text.Width+2+nombre_area_text.Width+2+bien_informatico_text.Width+2+patrimonio_text.Width+2+patrimonio_referencia_text.Width+2+marca_text.Width+2+modelo_text.Width+2+num_serie_text.Width+2+disco_duro_text.Width+2+memoria_ram_text.Width+2+procesador_text.Width+2
+                    Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo",true,false)
+                    X: |+
+                        =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo",ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2+pabellon_text.Width+2+nombre_area_text.Width+2+bien_informatico_text.Width+2+patrimonio_text.Width+2+patrimonio_referencia_text.Width+2+marca_text.Width+2+modelo_text.Width+2+num_serie_text.Width+2+disco_duro_text.Width+2+memoria_ram_text.Width+2+procesador_text.Width+2,0)
+                        
                     Y: =ID_text.Y
                     ZIndex: =17
 
@@ -660,8 +686,9 @@ Inventario As screen:
                     OnSelect: =Select(Parent)
                     Size: =12
                     Text: =ThisItem.HOSTNAME_CPU
-                    Visible: =ver_hostname_text
-                    X: =ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2+pabellon_text.Width+2+nombre_area_text.Width+2+bien_informatico_text.Width+2+patrimonio_text.Width+2+patrimonio_referencia_text.Width+2+marca_text.Width+2+modelo_text.Width+2+num_serie_text.Width+2+disco_duro_text.Width+2+memoria_ram_text.Width+2+procesador_text.Width+2+procesador_gen_text.Width+2
+                    Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo",true,false)
+                    X: |
+                        =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo",ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2+pabellon_text.Width+2+nombre_area_text.Width+2+bien_informatico_text.Width+2+patrimonio_text.Width+2+patrimonio_referencia_text.Width+2+marca_text.Width+2+modelo_text.Width+2+num_serie_text.Width+2+disco_duro_text.Width+2+memoria_ram_text.Width+2+procesador_text.Width+2+procesador_gen_text.Width+2,0)
                     Y: =ID_text.Y
                     ZIndex: =18
 
@@ -672,8 +699,11 @@ Inventario As screen:
                     OnSelect: =Select(Parent)
                     Size: =12
                     Text: =ThisItem.IP_BIEN_INFORMATICO
-                    Visible: =ver_ip_text
-                    X: =ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2+pabellon_text.Width+2+nombre_area_text.Width+2+bien_informatico_text.Width+2+patrimonio_text.Width+2+patrimonio_referencia_text.Width+2+marca_text.Width+2+modelo_text.Width+2+num_serie_text.Width+2+disco_duro_text.Width+2+memoria_ram_text.Width+2+procesador_text.Width+2+procesador_gen_text.Width+2+hostname_text.Width+2
+                    Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Impresora" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Telefono IP" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo",true,false)
+                    X: |-
+                        =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo",ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2+pabellon_text.Width+2+nombre_area_text.Width+2+bien_informatico_text.Width+2+patrimonio_text.Width+2+patrimonio_referencia_text.Width+2+marca_text.Width+2+modelo_text.Width+2+num_serie_text.Width+2+disco_duro_text.Width+2+memoria_ram_text.Width+2+procesador_text.Width+2+procesador_gen_text.Width+2+hostname_text.Width+2,
+                        If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Impresora" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Telefono IP",ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2+pabellon_text.Width+2+nombre_area_text.Width+2+bien_informatico_text.Width+2+patrimonio_text.Width+2+patrimonio_referencia_text.Width+2+marca_text.Width+2+modelo_text.Width+2+num_serie_text.Width+2,0)
+                        )
                     Y: =ID_text.Y
                     ZIndex: =19
 
@@ -909,40 +939,43 @@ Inventario As screen:
     elegir_bien_informatico As dropdown:
         Default: ="Todo"
         Items: =BIENES_INFORMATICOS
-        OnChange: |-
-            =/*
-            
-            If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio";Set(estado_posicion_titulo;ID_titulo.Width+2+local_titulo.Width+2+facultad_titulo.Width+2+piso_titulo.Width+2+area_titulo.Width+2+pabellon_titulo.Width+2+nombre_area_titulo.Width+2+bien_informatico_titulo.Width+2+patrimonio_titulo.Width+2+patrimonio_referencia_titulo.Width+2+marca_titulo.Width+2+modelo_titulo.Width+2+num_serie_titulo.Width+2+disco_duro_titulo.Width+2+memoria_ram_titulo.Width+2+procesador_titulo.Width+2+procesador_gen_titulo.Width+2+hostname_titulo.Width+2+ip_text.Width+2))
-            */
+        OnChange: |+
+            =
             
             //------------------VISIBLE-----------------------
             //PC Escritorio - Laptop - Todo
                 //--Disco Duro
-            If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo",Set(ver_discoduro_titulo,true),Set(ver_discoduro_titulo,false));
-            If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo",Set(ver_discoduro_text,true),Set(ver_discoduro_text,false));
-            
+                /*
+            If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo";Set(ver_discoduro_titulo;true);Set(ver_discoduro_titulo;false));;
+            If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo";Set(ver_discoduro_text;true);Set(ver_discoduro_text;false));;
+            */
                 //--Memoria Ram
-            If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo",Set(ver_memoriaram_titulo,true),Set(ver_memoriaram_titulo,false));
-            If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo" ,Set(ver_memoriaram_text,true),Set(ver_memoriaram_text,false));
-            
+                /*
+            If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo";Set(ver_memoriaram_titulo;true);Set(ver_memoriaram_titulo;false));;
+            If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo" ;Set(ver_memoriaram_text;true);Set(ver_memoriaram_text;false));;
+            */
                 //--Procesador
-            If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo",Set(ver_procesador_titulo,true),Set(ver_procesador_titulo,false));
-            If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo" ,Set(ver_procesador_text,true),Set(ver_procesador_text,false));
-            
+                /*
+            If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo";Set(ver_procesador_titulo;true);Set(ver_procesador_titulo;false));;
+            If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo" ;Set(ver_procesador_text;true);Set(ver_procesador_text;false));;
+            */
                 //--Generacion Procesador
-            If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo",Set(ver_genprocesador_titulo,true),Set(ver_genprocesador_titulo,false));
-            If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo" ,Set(ver_genprocesador_text,true),Set(ver_genprocesador_text,false));
-            
+                /*
+            If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo";Set(ver_genprocesador_titulo;true);Set(ver_genprocesador_titulo;false));;
+            If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo" ;Set(ver_genprocesador_text;true);Set(ver_genprocesador_text;false));;
+            */
                 //--Hostname
-            If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo",Set(ver_hostname_titulo,true),Set(ver_hostname_titulo,false));
-            If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo" ,Set(ver_hostname_text,true),Set(ver_hostname_text,false));
-            
+                /*
+            If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo";Set(ver_hostname_titulo;true);Set(ver_hostname_titulo;false));;
+            If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo" ;Set(ver_hostname_text;true);Set(ver_hostname_text;false));;
+            */
             //PC Escritorio - Laptop - Impresora - Telefono IP
                 //--IP
-            If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Impresora" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Telefono IP" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo",Set(ver_ip_titulo,true),Set(ver_ip_titulo,false));
+                /*
+            If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Impresora" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Telefono IP" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo";Set(ver_ip_titulo;true);Set(ver_ip_titulo;false));;
             
-            If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Impresora" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Telefono IP" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo",Set(ver_ip_text,true),Set(ver_ip_text,false));
-            
+            If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Impresora" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Telefono IP" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo";Set(ver_ip_text;true);Set(ver_ip_text;false));;
+            */
             //Telefono IP
                 //--Anexo
             If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Telefono IP" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo",Set(ver_anexo_titulo,true),Set(ver_anexo_titulo,false));
@@ -972,10 +1005,9 @@ Inventario As screen:
             
             If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Monitor" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo",Set(ver_conector_monitor_text,true),Set(ver_conector_monitor_text,false));
             
-            //--------------POSICION------------------
-            //PC Escritorio
-            
+            //-----------------POSICION---------------------
             //Todo
+            
         Width: =188
         X: =145
         Y: =105
