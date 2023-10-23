@@ -10,6 +10,12 @@
         "dataSources": {
           "BIENES_INFORMATICOS": {
             "tableName": "5927b82c-ea14-4c03-96f2-25681d511349"
+          },
+          "LOCAL_SEDE": {
+            "tableName": "d5dabea2-d594-4450-871e-7b8082273cfd"
+          },
+          "PISOS": {
+            "tableName": "256775d1-3674-4c9d-abdf-d3750c327384"
           }
         }
       },
@@ -23,7 +29,9 @@
     },
     "dataSources": [
       "INVENTARIO_EQUIPOS_INFORMATICOS",
-      "BIENES_INFORMATICOS"
+      "BIENES_INFORMATICOS",
+      "LOCAL_SEDE",
+      "PISOS"
     ],
     "dependencies": {},
     "dependents": [],

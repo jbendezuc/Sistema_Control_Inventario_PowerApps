@@ -1,4 +1,6 @@
 Inventario As screen:
+    BackgroundImage: =Fondo
+    Fill: =RGBA(255, 255, 255, 1)
 
     Container1 As groupContainer.horizontalAutoLayoutContainer:
         Height: =576
@@ -1584,8 +1586,9 @@ Inventario As screen:
         ZIndex: =4
 
     Button2 As button:
-        Fill: =RGBA(54, 176, 75, 1)
-        OnSelect: =Navigate(Registrar_Bien_Informatico,ScreenTransition.Fade)
+        BorderColor: =ColorFade(Self.Fill, -94%)
+        Fill: =RGBA(14, 115, 47, 1)
+        OnSelect: =Navigate(Registrar_Bien_Informatico)
         Text: ="Agregar"
         X: =1138
         Y: =105
