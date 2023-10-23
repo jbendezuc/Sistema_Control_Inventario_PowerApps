@@ -94,7 +94,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "10/23/2023 17:13:17",
+  "HeaderLastSavedDateTimeUTC": "10/23/2023 17:28:05",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "a3a47bd4-af7f-4ed4-a803-86a9f94f8d5e": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/0beac5f5280d43489566c0f5c36c333b\""
@@ -263,7 +263,7 @@
     "jefe_inmediato_titulo": 37,
     "Label1": 2,
     "Label1_1": 4,
-    "Label2": 0,
+    "Label2": 83,
     "LblAppName1": 79,
     "local_text": 45,
     "local_titulo": 11,
