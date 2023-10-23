@@ -3,7 +3,13 @@ Screen2 As screen:
     Rectangle1 As rectangle:
         Height: =555
         Width: =563
-        X: =390
-        Y: =123
+        X: =669
+        Y: =93
         ZIndex: =1
+
+    Label2 As label:
+        Text: =Screen2.Orientation
+        X: =207
+        Y: =414
+        ZIndex: =2
 
