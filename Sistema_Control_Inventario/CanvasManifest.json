@@ -87,7 +87,6 @@
       "smartemaildatacard": false,
       "supportcolumnnamesasidentifiers": false,
       "tabledoesntwraprecords": true,
-      "untypedobject": true,
       "usedisplaynamemetadata": true,
       "useenforcesavedatalimits": true,
       "useexperimentalcdsconnector": true,
@@ -133,7 +132,6 @@
   },
   "ScreenOrder": [
     "Inventario",
-    "Registrar_Bien_Informartico",
-    "Screen2"
+    "Registrar_Bien_Informatico"
   ]
 }

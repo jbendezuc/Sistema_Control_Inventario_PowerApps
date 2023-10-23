@@ -1,0 +1,24 @@
+Registrar_Bien_Informatico As screen:
+    Height: |-
+        =750
+        //Max(App.Height; App.MinScreenHeight)
+    Width: |-
+        =380
+        //Max(App.Width; App.MinScreenWidth)
+
+    Label2 As label:
+        Height: =73
+        Size: =15
+        Text: =Registrar_Bien_Informatico.Orientation
+        Width: =88
+        X: =279
+        Y: =735
+        ZIndex: =2
+
+    Rectangle1 As rectangle:
+        BorderColor: =RGBA(0, 13, 75, 1)
+        Fill: =RGBA(0, 16, 96, 1)
+        Height: =73
+        Width: =75
+        ZIndex: =3
+
