@@ -1,15 +1,24 @@
 Screen2 As screen:
+    Height: |-
+        =1500
+        //Max(App.Height; App.MinScreenHeight)
+    Width: |-
+        =768
+        //Max(App.Width; App.MinScreenWidth)
 
     Rectangle1 As rectangle:
-        Height: =555
-        Width: =563
-        X: =669
-        Y: =93
+        Height: =451
+        Width: =341
+        X: =327
+        Y: =180
         ZIndex: =1
 
     Label2 As label:
+        Height: =113
+        Size: =30
         Text: =Screen2.Orientation
-        X: =207
-        Y: =414
+        Width: =220
+        X: =83
+        Y: =349
         ZIndex: =2
 
