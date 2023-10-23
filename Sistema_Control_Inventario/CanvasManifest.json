@@ -132,6 +132,8 @@
     "UserLocale": "es-ES"
   },
   "ScreenOrder": [
-    "Inventario"
+    "Inventario",
+    "Registrar_Bien_Informartico",
+    "Screen2"
   ]
 }
