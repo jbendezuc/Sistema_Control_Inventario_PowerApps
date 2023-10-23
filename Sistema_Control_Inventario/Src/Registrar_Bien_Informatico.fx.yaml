@@ -19,6 +19,13 @@ Registrar_Bien_Informatico As screen:
         BorderColor: =RGBA(0, 13, 75, 1)
         Fill: =RGBA(0, 16, 96, 1)
         Height: =73
-        Width: =75
+        Width: =380
         ZIndex: =3
+
+    Rectangle1_1 As rectangle:
+        BorderColor: =RGBA(0, 13, 75, 1)
+        Fill: =RGBA(54, 176, 75, 1)
+        Height: =697
+        Width: =67
+        ZIndex: =4
 
