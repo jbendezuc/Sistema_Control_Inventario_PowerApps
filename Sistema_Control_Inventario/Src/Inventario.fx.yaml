@@ -1585,6 +1585,7 @@ Inventario As screen:
 
     Button2 As button:
         Fill: =RGBA(54, 176, 75, 1)
+        OnSelect: =Navigate(Screen2,ScreenTransition.Fade)
         Text: ="Agregar"
         X: =1138
         Y: =105
