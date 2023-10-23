@@ -93,7 +93,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "10/23/2023 16:01:01",
+  "HeaderLastSavedDateTimeUTC": "10/23/2023 16:05:36",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "a3a47bd4-af7f-4ed4-a803-86a9f94f8d5e": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/0beac5f5280d43489566c0f5c36c333b\""
@@ -288,7 +288,7 @@
     "procesador_gen_titulo": 26,
     "procesador_text": 59,
     "procesador_titulo": 25,
-    "Rectangle1": 0,
+    "Rectangle1": 82,
     "RectQuickActionBar1": 78,
     "Registrar_Bien_Informartico": 0,
     "Screen2": 0,
