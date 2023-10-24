@@ -111,11 +111,63 @@ Registrar_Bien_Informatico As screen:
                 Y: =114
                 ZIndex: =5
 
-            local_combobox_2 As dropdown:
+            piso_combobox_2 As dropdown:
                 Height: =30
                 Items: =PISOS
                 Width: =217
                 X: =135
                 Y: =114
                 ZIndex: =6
+
+            Label3_3 As label:
+                Height: =30
+                Text: |-
+                    ="Area: "
+                Width: =83
+                X: =28
+                Y: =163
+                ZIndex: =7
+
+            area_combobox_3 As dropdown:
+                Height: =30
+                Items: |-
+                    =ForAll(Distinct(OFICINAS,AREA), {Result: ThisRecord.Value}).Result
+                Width: =217
+                X: =135
+                Y: =163
+                ZIndex: =8
+
+            Label3_4 As label:
+                Height: =43
+                Text: |-
+                    ="Tipo de Area: "
+                Width: =83
+                X: =28
+                Y: =208
+                ZIndex: =9
+
+            tipo_area_combobox_4 As dropdown:
+                Height: =30
+                Items: =Filter(OFICINAS,AREA=area_combobox_3.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult')
+                Width: =217
+                X: =135
+                Y: =214
+                ZIndex: =10
+
+            Label3_5 As label:
+                Height: =43
+                Text: |-
+                    ="Pabellon: "
+                Width: =107
+                X: =28
+                Y: =260
+                ZIndex: =11
+
+            tipo_area_combobox_5 As dropdown:
+                Height: =30
+                Items: =PABELLONES
+                Width: =217
+                X: =135
+                Y: =264
+                ZIndex: =12
 

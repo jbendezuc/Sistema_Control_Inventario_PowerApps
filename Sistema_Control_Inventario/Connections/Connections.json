@@ -14,6 +14,12 @@
           "LOCAL_SEDE": {
             "tableName": "d5dabea2-d594-4450-871e-7b8082273cfd"
           },
+          "OFICINAS": {
+            "tableName": "00322143-4c2a-4d58-aaa3-a9376d47c543"
+          },
+          "PABELLONES": {
+            "tableName": "b90bdd9c-0620-42a8-8070-ae929d1a48bd"
+          },
           "PISOS": {
             "tableName": "256775d1-3674-4c9d-abdf-d3750c327384"
           }
@@ -31,7 +37,9 @@
       "INVENTARIO_EQUIPOS_INFORMATICOS",
       "BIENES_INFORMATICOS",
       "LOCAL_SEDE",
-      "PISOS"
+      "PISOS",
+      "OFICINAS",
+      "PABELLONES"
     ],
     "dependencies": {},
     "dependents": [],
