@@ -52,6 +52,7 @@
     "Label2": 85,
     "Label3": 90,
     "Label3_1": 92,
+    "Label3_10": 111,
     "Label3_2": 94,
     "Label3_3": 98,
     "Label3_4": 100,
@@ -59,7 +60,6 @@
     "Label3_6": 104,
     "Label3_7": 106,
     "Label3_8": 108,
-    "Label3_9": 110,
     "local_combobox": 91,
     "local_text": 50,
     "local_titulo": 16,
@@ -80,6 +80,7 @@
     "pabellon_combobox_6": 107,
     "pabellon_text": 54,
     "pabellon_titulo": 20,
+    "patrimonio_referencia": 112,
     "patrimonio_referencia_text": 58,
     "patrimonio_referencia_titulo": 24,
     "patrimonio_text": 57,
@@ -110,11 +111,13 @@
     "TITULO_INVENTARIO": 5,
     "Titulos": 14,
     "usuario_responsable_text": 77,
-    "usuario_responsable_titulo": 43
+    "usuario_responsable_titulo": 43,
+    "validacion_patrimonio_label": 110,
+    "validacion_patrimonio_referencia_label": 113
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "10/24/2023 21:43:10",
+  "HeaderLastSavedDateTimeUTC": "10/24/2023 22:25:34",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "a3a47bd4-af7f-4ed4-a803-86a9f94f8d5e": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/0beac5f5280d43489566c0f5c36c333b\""
@@ -207,6 +210,7 @@
     "Label2": {},
     "Label3": {},
     "Label3_1": {},
+    "Label3_10": {},
     "Label3_2": {},
     "Label3_3": {},
     "Label3_4": {},
@@ -214,7 +218,6 @@
     "Label3_6": {},
     "Label3_7": {},
     "Label3_8": {},
-    "Label3_9": {},
     "local_combobox": {},
     "local_text": {},
     "local_titulo": {},
@@ -235,6 +238,7 @@
     "pabellon_combobox_6": {},
     "pabellon_text": {},
     "pabellon_titulo": {},
+    "patrimonio_referencia": {},
     "patrimonio_referencia_text": {},
     "patrimonio_referencia_titulo": {},
     "patrimonio_text": {},
@@ -265,7 +269,9 @@
     "TITULO_INVENTARIO": {},
     "Titulos": {},
     "usuario_responsable_text": {},
-    "usuario_responsable_titulo": {}
+    "usuario_responsable_titulo": {},
+    "validacion_patrimonio_label": {},
+    "validacion_patrimonio_referencia_label": {}
   },
   "PCFDynamicSchemaForIRRetrievalEntry": {},
   "PCFTemplateEntry": {},
@@ -320,6 +326,7 @@
     "Label2": 81,
     "Label3": 86,
     "Label3_1": 88,
+    "Label3_10": 105,
     "Label3_2": 90,
     "Label3_3": 92,
     "Label3_4": 94,
@@ -327,7 +334,6 @@
     "Label3_6": 98,
     "Label3_7": 100,
     "Label3_8": 102,
-    "Label3_9": 104,
     "local_combobox": 87,
     "local_text": 46,
     "local_titulo": 11,
@@ -348,6 +354,7 @@
     "pabellon_combobox_6": 101,
     "pabellon_text": 51,
     "pabellon_titulo": 16,
+    "patrimonio_referencia": 106,
     "patrimonio_referencia_text": 55,
     "patrimonio_referencia_titulo": 20,
     "patrimonio_text": 54,
@@ -378,7 +385,9 @@
     "TITULO_INVENTARIO": 0,
     "Titulos": 9,
     "usuario_responsable_text": 74,
-    "usuario_responsable_titulo": 39
+    "usuario_responsable_titulo": 39,
+    "validacion_patrimonio_label": 104,
+    "validacion_patrimonio_referencia_label": 107
   },
   "ResourcesJsonIndices": {
     "Image-Autumn": 2,
@@ -398,10 +407,10 @@
       "galleryTemplate": 1,
       "groupContainer": 3,
       "icon": 2,
-      "label": 81,
+      "label": 83,
       "rectangle": 1,
       "screen": 2,
-      "text": 2
+      "text": 3
     },
     "DeserializationLoadTime": 2.0414063
   },

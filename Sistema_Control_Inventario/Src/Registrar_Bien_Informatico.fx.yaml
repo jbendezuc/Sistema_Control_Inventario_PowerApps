@@ -250,6 +250,7 @@ Registrar_Bien_Informatico As screen:
                 BorderColor: =If(Len(patrimonio_texto.Text) = 6,If(IsBlank(LookUp(INVENTARIO_EQUIPOS_INFORMATICOS, PATRIMONIO = patrimonio_texto.Text)), Color.Green,Color.Red),Color.Black)
                 BorderThickness: =If(Len(patrimonio_texto.Text)=6,4,1)
                 Default: =""
+                DisplayMode: =If(Len(patrimonio_texto)<=6,DisplayMode.Edit,DisplayMode.Disabled)
                 Height: =30
                 Mode: =TextMode.MultiLine
                 OnChange: |
@@ -264,7 +265,7 @@ Registrar_Bien_Informatico As screen:
                 Y: =401
                 ZIndex: =18
 
-            Label3_9 As label:
+            validacion_patrimonio_label As label:
                 Align: =Align.Center
                 Color: =If(Len(patrimonio_texto.Text) = 6,If(IsBlank(LookUp(INVENTARIO_EQUIPOS_INFORMATICOS, PATRIMONIO = patrimonio_texto.Text)), Color.Green, Color.Red),Color.Black)
                 FontWeight: =FontWeight.Semibold
@@ -275,4 +276,47 @@ Registrar_Bien_Informatico As screen:
                 X: =126
                 Y: =431
                 ZIndex: =19
+
+            Label3_10 As label:
+                Align: =Align.Center
+                FontWeight: =FontWeight.Bold
+                Height: =80
+                Size: =12
+                Text: |-
+                    ="Patrimonio 
+                    de Referencia: "
+                Width: =107
+                X: =19
+                Y: =437
+                ZIndex: =20
+
+            patrimonio_referencia As text:
+                BorderColor: =If(Len(patrimonio_referencia.Text) = 6,If(IsBlank(LookUp(INVENTARIO_EQUIPOS_INFORMATICOS, PATRIMONIO = patrimonio_referencia.Text)), Color.Red,Color.Green),Color.Black)
+                BorderThickness: =If(Len(patrimonio_referencia.Text)=6,4,1)
+                Default: =""
+                Height: =30
+                Mode: =TextMode.MultiLine
+                OnChange: |
+                    =
+                RadiusBottomLeft: =3
+                RadiusBottomRight: =3
+                RadiusTopLeft: =3
+                RadiusTopRight: =3
+                Size: =12
+                Width: =228
+                X: =126
+                Y: =459
+                ZIndex: =21
+
+            validacion_patrimonio_referencia_label As label:
+                Align: =Align.Center
+                Color: =If(Len(patrimonio_referencia.Text) = 6,If(IsBlank(LookUp(INVENTARIO_EQUIPOS_INFORMATICOS, PATRIMONIO = patrimonio_referencia.Text)), Color.Red, Color.Green),Color.Black)
+                FontWeight: =FontWeight.Semibold
+                Height: =28
+                Size: =10
+                Text: =If(Len(patrimonio_referencia.Text) = 6,If(IsBlank(LookUp(INVENTARIO_EQUIPOS_INFORMATICOS, PATRIMONIO = patrimonio_referencia.Text)), "Patrimonio Falta Registrar","Patrimonio Valido"),"")
+                Width: =228
+                X: =126
+                Y: =489
+                ZIndex: =22
 
