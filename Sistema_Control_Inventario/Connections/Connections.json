@@ -14,6 +14,9 @@
           "LOCAL_SEDE": {
             "tableName": "d5dabea2-d594-4450-871e-7b8082273cfd"
           },
+          "MODELO_MARCA": {
+            "tableName": "413a8ecb-f9f7-4c00-98b7-7ab6b2ca5aa8"
+          },
           "OFICINAS": {
             "tableName": "00322143-4c2a-4d58-aaa3-a9376d47c543"
           },
@@ -39,7 +42,8 @@
       "LOCAL_SEDE",
       "PISOS",
       "OFICINAS",
-      "PABELLONES"
+      "PABELLONES",
+      "MODELO_MARCA"
     ],
     "dependencies": {},
     "dependents": [],

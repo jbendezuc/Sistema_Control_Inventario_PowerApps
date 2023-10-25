@@ -250,8 +250,8 @@ Registrar_Bien_Informatico As screen:
                 BorderColor: =If(Len(patrimonio_texto.Text) = 6,If(IsBlank(LookUp(INVENTARIO_EQUIPOS_INFORMATICOS, PATRIMONIO = patrimonio_texto.Text)), Color.Green,Color.Red),Color.Black)
                 BorderThickness: =If(Len(patrimonio_texto.Text)=6,4,1)
                 Default: =""
-                DisplayMode: =If(Len(patrimonio_texto)<=6,DisplayMode.Edit,DisplayMode.Disabled)
                 Height: =30
+                MaxLength: =6
                 Mode: =TextMode.MultiLine
                 OnChange: |
                     =
@@ -295,6 +295,7 @@ Registrar_Bien_Informatico As screen:
                 BorderThickness: =If(Len(patrimonio_referencia.Text)=6,4,1)
                 Default: =""
                 Height: =30
+                MaxLength: =6
                 Mode: =TextMode.MultiLine
                 OnChange: |
                     =
@@ -319,4 +320,25 @@ Registrar_Bien_Informatico As screen:
                 X: =126
                 Y: =489
                 ZIndex: =22
+
+            Label3_11 As label:
+                FontWeight: =FontWeight.Bold
+                Height: =35
+                Size: =12
+                Text: |-
+                    ="Marca: "
+                Width: =83
+                X: =19
+                Y: =517
+                ZIndex: =23
+
+            pabellon_combobox_7 As dropdown:
+                BorderThickness: =1
+                Height: =30
+                Items: =MODELO_MARCA
+                Size: =10
+                Width: =140
+                X: =88
+                Y: =522
+                ZIndex: =24
 
