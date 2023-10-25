@@ -119,7 +119,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "10/25/2023 14:47:59",
+  "HeaderLastSavedDateTimeUTC": "10/25/2023 15:00:24",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "a3a47bd4-af7f-4ed4-a803-86a9f94f8d5e": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/0beac5f5280d43489566c0f5c36c333b\""
@@ -332,7 +332,7 @@
     "Label3": 86,
     "Label3_1": 88,
     "Label3_10": 105,
-    "Label3_11": 108,
+    "Label3_11": 107,
     "Label3_2": 90,
     "Label3_3": 92,
     "Label3_4": 94,
@@ -394,7 +394,7 @@
     "usuario_responsable_text": 74,
     "usuario_responsable_titulo": 39,
     "validacion_patrimonio_label": 104,
-    "validacion_patrimonio_referencia_label": 107
+    "validacion_patrimonio_referencia_label": 108
   },
   "ResourcesJsonIndices": {
     "Image-Autumn": 2,
