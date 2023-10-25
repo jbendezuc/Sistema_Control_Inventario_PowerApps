@@ -308,7 +308,7 @@ Inventario As screen:
                     FontWeight: =FontWeight.Bold
                     Height: =50
                     Size: =14
-                    Text: ="ANEXO TELEFONO-FAX"
+                    Text: ="ANEXO TELEFONO"
                     Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Telefono IP" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo",true,false)
                     Width: =anexo_text.Width
                     X: |-

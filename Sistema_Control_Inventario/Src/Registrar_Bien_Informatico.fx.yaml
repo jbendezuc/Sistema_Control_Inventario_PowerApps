@@ -582,7 +582,7 @@ Registrar_Bien_Informatico As screen:
                 Height: =330
                 Width: =328
                 X: =31
-                Y: =If(bien_informatico_combobox_6.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || bien_informatico_combobox_6.SelectedText.BIEN_INFORMATICO = "Laptop",pc_escritorio_container.Y+pc_escritorio_container.Height + 5,If(bien_informatico_combobox_6.SelectedText.BIEN_INFORMATICO = "Impresora",impresora_container.Y+impresora_container.Height + 5,0))
+                Y: =If(bien_informatico_combobox_6.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || bien_informatico_combobox_6.SelectedText.BIEN_INFORMATICO = "Laptop",pc_escritorio_container.Y+pc_escritorio_container.Height + 5,If(bien_informatico_combobox_6.SelectedText.BIEN_INFORMATICO = "Impresora",impresora_container.Y+impresora_container.Height + 5,If(bien_informatico_combobox_6.SelectedText.BIEN_INFORMATICO = "Teclado",teclado_container.Y+teclado_container.Height + 5,If(bien_informatico_combobox_6.SelectedText.BIEN_INFORMATICO = "Monitor",monitor_container.Y+monitor_container.Height + 5,If(bien_informatico_combobox_6.SelectedText.BIEN_INFORMATICO = "Telefono IP",ip_telefono_container.Y+ip_telefono_container.Height + 5,571)))))
                 ZIndex: =32
 
                 Label4_6 As label:
@@ -829,4 +829,140 @@ Registrar_Bien_Informatico As screen:
                     X: =112
                     Y: =107
                     ZIndex: =13
+
+            teclado_container As groupContainer.manualLayoutContainer:
+                BorderStyle: =BorderStyle.Dotted
+                BorderThickness: =1
+                Height: =51
+                Visible: =If(bien_informatico_combobox_6.SelectedText.BIEN_INFORMATICO = "Teclado",true,false)
+                Width: =328
+                X: =31
+                Y: =571
+                ZIndex: =34
+
+                Label4_14 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =41
+                    Size: =10
+                    Text: |-
+                        ="Conector del Teclado: "
+                    Width: =93
+                    ZIndex: =1
+
+                conector_teclado_combobox As dropdown:
+                    BorderThickness: =1
+                    Height: =25
+                    Items: =CONECTORES_TECLADO
+                    Size: =10
+                    Width: =205
+                    X: =113
+                    Y: =10
+                    ZIndex: =2
+
+            monitor_container As groupContainer.manualLayoutContainer:
+                BorderStyle: =BorderStyle.Dotted
+                BorderThickness: =1
+                Height: =51
+                Visible: =If(bien_informatico_combobox_6.SelectedText.BIEN_INFORMATICO = "Monitor",true,false)
+                Width: =328
+                X: =31
+                Y: =571
+                ZIndex: =35
+
+                Label4_15 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =41
+                    Size: =10
+                    Text: |-
+                        ="Conector del Monitor: "
+                    Width: =93
+                    ZIndex: =1
+
+                conector_monitor_combobox As dropdown:
+                    BorderThickness: =1
+                    Height: =25
+                    Items: =CONECTORES_MONITOR
+                    Size: =10
+                    Width: =205
+                    X: =113
+                    Y: =10
+                    ZIndex: =2
+
+            ip_telefono_container As groupContainer.manualLayoutContainer:
+                BorderStyle: =BorderStyle.Dotted
+                BorderThickness: =1
+                Height: =92
+                Visible: =If(bien_informatico_combobox_6.SelectedText.BIEN_INFORMATICO = "Telefono IP",true,false)
+                Width: =328
+                X: =31
+                Y: =571
+                ZIndex: =36
+
+                Label4_19 As label:
+                    Align: =Align.Center
+                    FontWeight: =FontWeight.Bold
+                    Height: =29
+                    Size: =10
+                    Text: |-
+                        ="IP: "
+                    Width: =104
+                    ZIndex: =11
+
+                ip_telefono_input As text:
+                    BorderColor: =If(Len(ip_telefono_input.Text) = 15,If(IsBlank(LookUp(INVENTARIO_EQUIPOS_INFORMATICOS, IP_BIEN_INFORMATICO = ip_telefono_input.Text)), Color.Green,Color.Red),Color.Black)
+                    BorderThickness: =If(Len(ip_telefono_input.Text)=15,4,1)
+                    Default: =""
+                    Height: =25
+                    MaxLength: =15
+                    Mode: =TextMode.MultiLine
+                    OnChange: |
+                        =
+                    RadiusBottomLeft: =3
+                    RadiusBottomRight: =3
+                    RadiusTopLeft: =3
+                    RadiusTopRight: =3
+                    Size: =10
+                    Width: =205
+                    X: =105
+                    Y: =3
+                    ZIndex: =12
+
+                ip_telefono_validacion As label:
+                    Align: =Align.Center
+                    Color: =If(Len(ip_telefono_input.Text) = 15,If(IsBlank(LookUp(INVENTARIO_EQUIPOS_INFORMATICOS, IP_BIEN_INFORMATICO = ip_telefono_input.Text)), Color.Green, Color.Red),Color.Black)
+                    FontWeight: =FontWeight.Semibold
+                    Height: =18
+                    Size: =8
+                    Text: =If(Len(ip_telefono_input.Text) = 15,If(IsBlank(LookUp(INVENTARIO_EQUIPOS_INFORMATICOS, IP_BIEN_INFORMATICO = ip_telefono_input.Text)), "IP Disponible","IP Ya Existe"),"")
+                    Width: =190
+                    X: =112
+                    Y: =25
+                    ZIndex: =13
+
+                Label4_20 As label:
+                    Align: =Align.Center
+                    FontWeight: =FontWeight.Bold
+                    Height: =29
+                    Size: =10
+                    Text: |-
+                        ="Anexo: "
+                    Width: =96
+                    X: =8
+                    Y: =43
+                    ZIndex: =14
+
+                anexo_input As text:
+                    BorderThickness: =1
+                    Default: =""
+                    Height: =25
+                    Mode: =TextMode.MultiLine
+                    RadiusBottomLeft: =3
+                    RadiusBottomRight: =3
+                    RadiusTopLeft: =3
+                    RadiusTopRight: =3
+                    Size: =10
+                    Width: =205
+                    X: =105
+                    Y: =47
+                    ZIndex: =15
 

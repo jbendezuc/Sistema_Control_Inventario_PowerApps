@@ -11,6 +11,12 @@
           "BIENES_INFORMATICOS": {
             "tableName": "5927b82c-ea14-4c03-96f2-25681d511349"
           },
+          "CONECTORES_MONITOR": {
+            "tableName": "33b9d551-e65a-4e42-8328-7043c1edec52"
+          },
+          "CONECTORES_TECLADO": {
+            "tableName": "fbed3ac4-b867-4df5-a98a-2b1cf66f6e6a"
+          },
           "CONEXIONES_IMPRESORA": {
             "tableName": "fd5c51d2-e080-4b41-afc1-94e66380fd7a"
           },
@@ -71,7 +77,9 @@
       "GENERACIONES_PROCESADOR",
       "ESTADOS",
       "TIPOS_IMPRESORA",
-      "CONEXIONES_IMPRESORA"
+      "CONEXIONES_IMPRESORA",
+      "CONECTORES_TECLADO",
+      "CONECTORES_MONITOR"
     ],
     "dependencies": {},
     "dependents": [],
