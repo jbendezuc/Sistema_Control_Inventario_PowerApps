@@ -11,8 +11,20 @@
           "BIENES_INFORMATICOS": {
             "tableName": "5927b82c-ea14-4c03-96f2-25681d511349"
           },
+          "DISCOS_DUROS": {
+            "tableName": "fd37c8f3-df36-4aeb-8148-24181ad75626"
+          },
+          "ESTADOS": {
+            "tableName": "e436c50a-e911-4307-ad70-96434352ecae"
+          },
+          "GENERACIONES_PROCESADOR": {
+            "tableName": "9fa84dbf-5604-4ecf-8a77-53a6ccb86712"
+          },
           "LOCAL_SEDE": {
             "tableName": "d5dabea2-d594-4450-871e-7b8082273cfd"
+          },
+          "MEMORIAS_RAM": {
+            "tableName": "29555e65-6fa1-4c2c-b308-1d0326714269"
           },
           "MODELO_MARCA": {
             "tableName": "413a8ecb-f9f7-4c00-98b7-7ab6b2ca5aa8"
@@ -25,6 +37,9 @@
           },
           "PISOS": {
             "tableName": "256775d1-3674-4c9d-abdf-d3750c327384"
+          },
+          "PROCESADORES": {
+            "tableName": "e47d268b-4e43-4c15-b784-ef4f172b71e0"
           }
         }
       },
@@ -43,7 +58,12 @@
       "PISOS",
       "OFICINAS",
       "PABELLONES",
-      "MODELO_MARCA"
+      "MODELO_MARCA",
+      "DISCOS_DUROS",
+      "MEMORIAS_RAM",
+      "PROCESADORES",
+      "GENERACIONES_PROCESADOR",
+      "ESTADOS"
     ],
     "dependencies": {},
     "dependents": [],

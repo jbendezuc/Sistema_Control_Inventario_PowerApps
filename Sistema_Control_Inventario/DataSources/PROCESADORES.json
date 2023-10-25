@@ -1,0 +1,45 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+    "CdpRevision": {
+      "BaseUrl": "/",
+      "LastChangedTimeString": "2023-09-25T18:17:14.9880000Z",
+      "RevisionNumber": 1
+    },
+    "ConnectedDataSourceInfoNameMapping": {
+      "{Attachments}": "Datos adjuntos",
+      "{Attachments}@odata.type": "{Attachments} ({Attachments}@odata.type)",
+      "{FilenameWithExtension}": "Nombre de archivo con extensión",
+      "{FullPath}": "Ruta de acceso completa",
+      "{HasAttachments}": "Tiene datos adjuntos",
+      "{Identifier}": "Identificador",
+      "{IsFolder}": "EsCarpeta",
+      "{Link}": "Vinculo al elemento",
+      "{ModerationComment}": "Comentarios asociados con la aprobación de contenido de este elemento de lista",
+      "{ModerationStatus}": "Estado de aprobación de contenido",
+      "{Name}": "Nombre",
+      "{Path}": "Ruta de acceso a la carpeta",
+      "{Thumbnail}": "Miniatura",
+      "{TriggerWindowEndToken}": "Token de fin de ventana de desencadenador",
+      "{TriggerWindowStartToken}": "Token de inicio de ventana de desencadenador",
+      "{VersionNumber}": "Número de versión",
+      "Author": "Creado por",
+      "Author#Claims": "Creado por Claims",
+      "ComplianceAssetId": "Id. de activo de cumplimiento normativo",
+      "Created": "Creado",
+      "Editor": "Modificado por",
+      "Editor#Claims": "Modificado por Claims",
+      "ID": "ID",
+      "Modified": "Modificado",
+      "OData__ColorTag": "Etiqueta de color",
+      "PROCESADOR": "PROCESADOR",
+      "Title": "Título"
+    },
+    "DatasetName": "https://unfvpe.sharepoint.com/sites/OCGTI_FileServer",
+    "EncodeDataset": true,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "Name": "PROCESADORES",
+    "Type": "ConnectedDataSourceInfo"
+  }
+]

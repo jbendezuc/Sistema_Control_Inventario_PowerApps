@@ -61,7 +61,7 @@ Registrar_Bien_Informatico As screen:
             BorderThickness: =0
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =696
+            Height: =1246
             Width: =Parent.Width
             X: =0
             Y: =0
@@ -232,7 +232,7 @@ Registrar_Bien_Informatico As screen:
                 Y: =300
                 ZIndex: =15
 
-            pabellon_combobox_6 As dropdown:
+            bien_informatico_combobox_6 As dropdown:
                 BorderThickness: =1
                 Height: =25
                 Items: =Filter(BIENES_INFORMATICOS,BIEN_INFORMATICO <> "Todo")
@@ -281,7 +281,7 @@ Registrar_Bien_Informatico As screen:
                 Text: =If(Len(patrimonio_texto.Text) = 6,If(IsBlank(LookUp(INVENTARIO_EQUIPOS_INFORMATICOS, PATRIMONIO = patrimonio_texto.Text)), "Patrimonio Disponible","Patrimonio Ya Existe"),"")
                 Width: =215
                 X: =130
-                Y: =373
+                Y: =369
                 ZIndex: =19
 
             Label3_10 As label:
@@ -325,7 +325,7 @@ Registrar_Bien_Informatico As screen:
                 Text: =If(Len(patrimonio_referencia.Text) = 6,If(IsBlank(LookUp(INVENTARIO_EQUIPOS_INFORMATICOS, PATRIMONIO = patrimonio_referencia.Text)), "Patrimonio Falta Registrar","Patrimonio Valido"),"")
                 Width: =215
                 X: =130
-                Y: =422
+                Y: =419
                 ZIndex: =22
 
             Label3_11 As label:
@@ -377,7 +377,7 @@ Registrar_Bien_Informatico As screen:
                     ="N° Serie: "
                 Width: =93
                 X: =28
-                Y: =485
+                Y: =490
                 ZIndex: =27
 
             n_serie_texto As text:
@@ -395,7 +395,7 @@ Registrar_Bien_Informatico As screen:
                 Size: =10
                 Width: =215
                 X: =121
-                Y: =489
+                Y: =495
                 ZIndex: =28
 
             validacion_n_serie_label As label:
@@ -407,6 +407,326 @@ Registrar_Bien_Informatico As screen:
                 Text: =If(Len(patrimonio_referencia.Text) = 6,If(IsBlank(LookUp(INVENTARIO_EQUIPOS_INFORMATICOS, NUM_SERIE = n_serie_texto.Text)), "N° de Serie Valido","N° de Serie Ya existe"),"")
                 Width: =215
                 X: =121
-                Y: =514
+                Y: =518
                 ZIndex: =29
+
+            Label3_13 As label:
+                FontWeight: =FontWeight.Bold
+                Height: =33
+                Size: =10
+                Text: |-
+                    ="Equipo " &bien_informatico_combobox_6.SelectedText.BIEN_INFORMATICO&": "
+                Width: =308
+                X: =28
+                Y: =532
+                ZIndex: =30
+
+            pc_escritorio_container As groupContainer.manualLayoutContainer:
+                BorderStyle: =BorderStyle.Dotted
+                BorderThickness: =1
+                Height: =250
+                Visible: =If(bien_informatico_combobox_6.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || bien_informatico_combobox_6.SelectedText.BIEN_INFORMATICO = "Laptop",true,false)
+                Width: =328
+                X: =28
+                Y: =565
+                ZIndex: =31
+
+                Label4 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =29
+                    Size: =10
+                    Text: |-
+                        ="Disco Duro: "
+                    Width: =93
+                    ZIndex: =1
+
+                disco_duro_combobox_6 As dropdown:
+                    BorderThickness: =1
+                    Height: =25
+                    Items: =DISCOS_DUROS
+                    Size: =10
+                    Width: =205
+                    X: =104
+                    Y: =4
+                    ZIndex: =2
+
+                Label4_1 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =34
+                    Size: =10
+                    Text: |-
+                        ="Memoria Ram: "
+                    Width: =93
+                    Y: =41
+                    ZIndex: =3
+
+                memoria_ram_combobox_7 As dropdown:
+                    BorderThickness: =1
+                    Height: =25
+                    Items: =MEMORIAS_RAM
+                    Size: =10
+                    Width: =205
+                    X: =104
+                    Y: =45
+                    ZIndex: =4
+
+                Label4_2 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =34
+                    Size: =10
+                    Text: |-
+                        ="Procesador: "
+                    Width: =104
+                    Y: =83
+                    ZIndex: =5
+
+                procesador_combobox_8 As dropdown:
+                    BorderThickness: =1
+                    Height: =25
+                    Items: =PROCESADORES
+                    Size: =10
+                    Width: =205
+                    X: =104
+                    Y: =87
+                    ZIndex: =6
+
+                Label4_3 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =34
+                    Size: =10
+                    Text: |-
+                        ="Generacion Procesador: "
+                    Width: =104
+                    Y: =126
+                    ZIndex: =7
+
+                procesador_combobox_9 As dropdown:
+                    BorderThickness: =1
+                    Height: =25
+                    Items: =GENERACIONES_PROCESADOR
+                    Size: =10
+                    Width: =205
+                    X: =104
+                    Y: =130
+                    ZIndex: =8
+
+                Label4_4 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =34
+                    Size: =10
+                    Text: |-
+                        ="Hostname: "
+                    Width: =104
+                    Y: =164
+                    ZIndex: =9
+
+                hostname_texto As text:
+                    BorderThickness: =1
+                    Default: =""
+                    Height: =25
+                    Mode: =TextMode.MultiLine
+                    RadiusBottomLeft: =3
+                    RadiusBottomRight: =3
+                    RadiusTopLeft: =3
+                    RadiusTopRight: =3
+                    Size: =10
+                    Width: =205
+                    X: =104
+                    Y: =168
+                    ZIndex: =10
+
+                Label4_5 As label:
+                    Align: =Align.Center
+                    FontWeight: =FontWeight.Bold
+                    Height: =29
+                    Size: =10
+                    Text: |-
+                        ="IP: "
+                    Width: =104
+                    Y: =198
+                    ZIndex: =11
+
+                ip_texto As text:
+                    BorderColor: =If(Len(ip_texto.Text) = 15,If(IsBlank(LookUp(INVENTARIO_EQUIPOS_INFORMATICOS, IP_BIEN_INFORMATICO = ip_texto.Text)), Color.Green,Color.Red),Color.Black)
+                    BorderThickness: =If(Len(ip_texto.Text)=15,4,1)
+                    Default: =""
+                    Height: =25
+                    MaxLength: =15
+                    Mode: =TextMode.MultiLine
+                    OnChange: |
+                        =
+                    RadiusBottomLeft: =3
+                    RadiusBottomRight: =3
+                    RadiusTopLeft: =3
+                    RadiusTopRight: =3
+                    Size: =10
+                    Width: =205
+                    X: =104
+                    Y: =202
+                    ZIndex: =12
+
+                ip_validacion_label As label:
+                    Align: =Align.Center
+                    Color: =If(Len(ip_texto.Text) = 15,If(IsBlank(LookUp(INVENTARIO_EQUIPOS_INFORMATICOS, IP_BIEN_INFORMATICO = ip_texto.Text)), Color.Green, Color.Red),Color.Black)
+                    FontWeight: =FontWeight.Semibold
+                    Height: =28
+                    Size: =8
+                    Text: =If(Len(ip_texto.Text) = 15,If(IsBlank(LookUp(INVENTARIO_EQUIPOS_INFORMATICOS, IP_BIEN_INFORMATICO = ip_texto.Text)), "IP Disponible","IP Ya Existe"),"")
+                    Width: =190
+                    X: =111
+                    Y: =227
+                    ZIndex: =13
+
+            datos_estandar As groupContainer.manualLayoutContainer:
+                BorderStyle: =BorderStyle.Dotted
+                Height: =258
+                Visible: =If(bien_informatico_combobox_6.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || bien_informatico_combobox_6.SelectedText.BIEN_INFORMATICO = "Laptop",true,false)
+                Width: =328
+                X: =31
+                Y: =pc_escritorio_container.Y+pc_escritorio_container.Height + 5
+                ZIndex: =32
+
+                Label4_6 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =29
+                    Size: =10
+                    Text: |-
+                        ="Estado: "
+                    Width: =93
+                    ZIndex: =1
+
+                estado_combobox_7 As dropdown:
+                    BorderThickness: =1
+                    Height: =25
+                    Items: |-
+                        =ForAll(Distinct(ESTADOS,ESTADO), {Result: ThisRecord.Value}).Result
+                    Size: =10
+                    Width: =205
+                    X: =113
+                    Y: =4
+                    ZIndex: =2
+
+                Label4_7 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =34
+                    Size: =10
+                    Text: |-
+                        ="Estado Situcional: "
+                    Width: =93
+                    Y: =41
+                    ZIndex: =3
+
+                estado_situcional_combobox_8 As dropdown:
+                    BorderThickness: =1
+                    Height: =25
+                    Items: =Filter(ESTADOS,ESTADO=estado_combobox_7.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult')
+                    Size: =10
+                    Width: =205
+                    X: =113
+                    Y: =47
+                    ZIndex: =4
+
+                Label4_8 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =34
+                    Size: =10
+                    Text: |-
+                        ="N° Oficio Ficha de Baja: "
+                    Width: =104
+                    Y: =83
+                    ZIndex: =5
+
+                Label4_9 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =38
+                    Size: =10
+                    Text: |-
+                        ="Jefe Inmediato: "
+                    Width: =93
+                    Y: =126
+                    ZIndex: =7
+
+                Label4_10 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =31
+                    Size: =10
+                    Text: |-
+                        ="Usuario Responsable: "
+                    Width: =104
+                    Y: =164
+                    ZIndex: =9
+
+                usuario_responsable_input As text:
+                    BorderThickness: =1
+                    Default: =""
+                    Height: =25
+                    Mode: =TextMode.MultiLine
+                    RadiusBottomLeft: =3
+                    RadiusBottomRight: =3
+                    RadiusTopLeft: =3
+                    RadiusTopRight: =3
+                    Size: =10
+                    Width: =205
+                    X: =113
+                    Y: =170
+                    ZIndex: =10
+
+                Label4_11 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =29
+                    Size: =10
+                    Text: |-
+                        ="Tecnico Responsable: "
+                    Width: =104
+                    Y: =207
+                    ZIndex: =11
+
+                tecnico_responsable_input As text:
+                    BorderThickness: =1
+                    Default: =User().FullName
+                    DisplayMode: =DisplayMode.View
+                    Height: =25
+                    Mode: =TextMode.MultiLine
+                    RadiusBottomLeft: =3
+                    RadiusBottomRight: =3
+                    RadiusTopLeft: =3
+                    RadiusTopRight: =3
+                    Size: =10
+                    Width: =205
+                    X: =113
+                    Y: =211
+                    ZIndex: =12
+
+                jefe_inmediato_input As text:
+                    BorderThickness: =1
+                    Default: =""
+                    Height: =25
+                    Mode: =TextMode.MultiLine
+                    RadiusBottomLeft: =3
+                    RadiusBottomRight: =3
+                    RadiusTopLeft: =3
+                    RadiusTopRight: =3
+                    Size: =10
+                    Width: =205
+                    X: =113
+                    Y: =132
+                    ZIndex: =13
+
+                n_oficio_baja_input As text:
+                    BorderThickness: =1
+                    Default: =""
+                    DisplayMode: =If(estado_situcional_combobox_8.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BESTADO_SITUCIONAL'="Ficha de Baja",DisplayMode.Edit,DisplayMode.Disabled)
+                    Height: =25
+                    HintText: |-
+                        ="Se sugiere ""###-OCI-202#"""
+                    Mode: =TextMode.MultiLine
+                    RadiusBottomLeft: =3
+                    RadiusBottomRight: =3
+                    RadiusTopLeft: =3
+                    RadiusTopRight: =3
+                    Size: =10
+                    Width: =205
+                    X: =113
+                    Y: =89
+                    ZIndex: =14
 

@@ -110,11 +110,11 @@
     "DocumentType": "App",
     "EnableInstrumentation": false,
     "FileID": "bfd5960d-0278-4740-bdbd-cd4b6214c884",
-    "Id": "bfd5960d-0278-4740-bdbd-cd4b6214c884",
+    "Id": "4e8b0e4b-ca91-468f-8fc9-4d71e99a4c0a",
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "{}",
     "ManualOfflineProfileId": "",
-    "Name": "INVENTARIO_OCGTI",
+    "Name": "INVENTARIO_OCGTI.msapp",
     "OriginatingVersion": "1.334",
     "ParserErrorCount": 0,
     "ShowStatusBar": false
