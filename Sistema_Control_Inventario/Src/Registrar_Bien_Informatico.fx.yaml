@@ -69,13 +69,13 @@ Registrar_Bien_Informatico As screen:
 
             Label3 As label:
                 FontWeight: =FontWeight.Bold
-                Height: =30
+                Height: =25
                 Size: =10
                 Text: |-
                     ="Local: "
-                Width: =83
-                X: =19
-                Y: =24
+                Width: =80
+                X: =28
+                Y: =33
                 ZIndex: =1
 
             local_combobox As dropdown:
@@ -85,18 +85,18 @@ Registrar_Bien_Informatico As screen:
                     =ForAll(Distinct(LOCAL_SEDE,LOCAL), {Result: ThisRecord.Value}).Result
                 Size: =10
                 Width: =228
-                X: =99
+                X: =108
                 Y: =33
                 ZIndex: =2
 
             Label3_1 As label:
                 FontWeight: =FontWeight.Bold
-                Height: =30
+                Height: =25
                 Size: =10
                 Text: |-
                     ="Facultad: "
-                Width: =107
-                X: =19
+                Width: =80
+                X: =28
                 Y: =69
                 ZIndex: =3
 
@@ -106,18 +106,18 @@ Registrar_Bien_Informatico As screen:
                 Items: =Filter(LOCAL_SEDE,LOCAL=local_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult')
                 Size: =10
                 Width: =228
-                X: =99
+                X: =108
                 Y: =69
                 ZIndex: =4
 
             Label3_2 As label:
                 FontWeight: =FontWeight.Bold
-                Height: =30
+                Height: =25
                 Size: =10
                 Text: |-
                     ="Piso: "
-                Width: =107
-                X: =19
+                Width: =80
+                X: =28
                 Y: =109
                 ZIndex: =5
 
@@ -127,18 +127,18 @@ Registrar_Bien_Informatico As screen:
                 Items: =PISOS
                 Size: =10
                 Width: =228
-                X: =99
+                X: =108
                 Y: =109
                 ZIndex: =6
 
             Label3_3 As label:
                 FontWeight: =FontWeight.Bold
-                Height: =30
+                Height: =34
                 Size: =10
                 Text: |-
                     ="Area: "
-                Width: =107
-                X: =19
+                Width: =59
+                X: =28
                 Y: =139
                 ZIndex: =7
 
@@ -149,7 +149,7 @@ Registrar_Bien_Informatico As screen:
                     =ForAll(Distinct(OFICINAS,AREA), {Result: ThisRecord.Value}).Result
                 Size: =10
                 Width: =228
-                X: =99
+                X: =108
                 Y: =148
                 ZIndex: =8
 
@@ -160,7 +160,7 @@ Registrar_Bien_Informatico As screen:
                 Text: |-
                     ="Tipo de Area: "
                 Width: =80
-                X: =19
+                X: =28
                 Y: =181
                 ZIndex: =9
 
@@ -170,7 +170,7 @@ Registrar_Bien_Informatico As screen:
                 Items: =Filter(OFICINAS,AREA=area_combobox_3.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult')
                 Size: =10
                 Width: =228
-                X: =99
+                X: =108
                 Y: =184
                 ZIndex: =10
 
@@ -181,7 +181,7 @@ Registrar_Bien_Informatico As screen:
                 Text: |-
                     ="Pabellon: "
                 Width: =80
-                X: =19
+                X: =28
                 Y: =218
                 ZIndex: =11
 
@@ -191,7 +191,7 @@ Registrar_Bien_Informatico As screen:
                 Items: =PABELLONES
                 Size: =10
                 Width: =228
-                X: =99
+                X: =108
                 Y: =224
                 ZIndex: =12
 
@@ -202,7 +202,7 @@ Registrar_Bien_Informatico As screen:
                 Text: |-
                     ="Nombre de Área: "
                 Width: =80
-                X: =19
+                X: =28
                 Y: =254
                 ZIndex: =13
 
@@ -217,7 +217,7 @@ Registrar_Bien_Informatico As screen:
                 RadiusTopRight: =3
                 Size: =10
                 Width: =228
-                X: =99
+                X: =108
                 Y: =264
                 ZIndex: =14
 
@@ -228,7 +228,7 @@ Registrar_Bien_Informatico As screen:
                 Text: |-
                     ="Equipo T.I: "
                 Width: =80
-                X: =19
+                X: =28
                 Y: =300
                 ZIndex: =15
 
@@ -238,7 +238,7 @@ Registrar_Bien_Informatico As screen:
                 Items: =Filter(BIENES_INFORMATICOS,BIEN_INFORMATICO <> "Todo")
                 Size: =10
                 Width: =228
-                X: =99
+                X: =108
                 Y: =307
                 ZIndex: =16
 
@@ -249,7 +249,7 @@ Registrar_Bien_Informatico As screen:
                 Text: |-
                     ="Patrimonio: "
                 Width: =93
-                X: =19
+                X: =28
                 Y: =345
                 ZIndex: =17
 
@@ -268,7 +268,7 @@ Registrar_Bien_Informatico As screen:
                 RadiusTopRight: =3
                 Size: =10
                 Width: =215
-                X: =112
+                X: =121
                 Y: =348
                 ZIndex: =18
 
@@ -280,7 +280,7 @@ Registrar_Bien_Informatico As screen:
                 Size: =8
                 Text: =If(Len(patrimonio_texto.Text) = 6,If(IsBlank(LookUp(INVENTARIO_EQUIPOS_INFORMATICOS, PATRIMONIO = patrimonio_texto.Text)), "Patrimonio Disponible","Patrimonio Ya Existe"),"")
                 Width: =215
-                X: =112
+                X: =130
                 Y: =373
                 ZIndex: =19
 
@@ -293,7 +293,7 @@ Registrar_Bien_Informatico As screen:
                     ="Patrimonio 
                     de Referencia: "
                 Width: =93
-                X: =19
+                X: =28
                 Y: =389
                 ZIndex: =20
 
@@ -312,7 +312,7 @@ Registrar_Bien_Informatico As screen:
                 RadiusTopRight: =3
                 Size: =10
                 Width: =215
-                X: =112
+                X: =121
                 Y: =396
                 ZIndex: =21
 
@@ -324,28 +324,89 @@ Registrar_Bien_Informatico As screen:
                 Size: =8
                 Text: =If(Len(patrimonio_referencia.Text) = 6,If(IsBlank(LookUp(INVENTARIO_EQUIPOS_INFORMATICOS, PATRIMONIO = patrimonio_referencia.Text)), "Patrimonio Falta Registrar","Patrimonio Valido"),"")
                 Width: =215
-                X: =112
+                X: =130
                 Y: =422
                 ZIndex: =22
 
             Label3_11 As label:
                 FontWeight: =FontWeight.Bold
-                Height: =35
-                Size: =10
-                Text: |-
-                    ="Marca: "
+                Height: =29
+                Size: =9
+                Text: ="Marca"
                 Width: =83
-                X: =24
-                Y: =449
+                X: =13
+                Y: =450
                 ZIndex: =23
 
-            pabellon_combobox_7 As dropdown:
+            marca_combobox_7 As dropdown:
                 BorderThickness: =1
-                Height: =25
-                Items: =MODELO_MARCA
-                Size: =10
+                Height: =23
+                Items: |-
+                    =ForAll(Distinct(MODELO_MARCA,MARCA), {Result: ThisRecord.Value}).Result
+                Size: =7
                 Width: =114
-                X: =84
-                Y: =454
+                X: =59
+                Y: =453
                 ZIndex: =24
+
+            Label3_12 As label:
+                FontWeight: =FontWeight.Bold
+                Height: =29
+                Size: =9
+                Text: ="Modelo"
+                Width: =63
+                X: =173
+                Y: =450
+                ZIndex: =25
+
+            modelo_combobox_8 As dropdown:
+                BorderThickness: =1
+                Height: =23
+                Items: =Filter(MODELO_MARCA,MARCA=marca_combobox_7.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult')
+                Size: =7
+                Width: =141
+                X: =227
+                Y: =453
+                ZIndex: =26
+
+            Label3_9 As label:
+                FontWeight: =FontWeight.Bold
+                Height: =31
+                Size: =10
+                Text: |-
+                    ="N° Serie: "
+                Width: =93
+                X: =28
+                Y: =485
+                ZIndex: =27
+
+            n_serie_texto As text:
+                BorderColor: =If(Len(n_serie_texto.Text) >= 6,If(IsBlank(LookUp(INVENTARIO_EQUIPOS_INFORMATICOS, NUM_SERIE = n_serie_texto.Text)), Color.Green,Color.Red),Color.Black)
+                BorderThickness: =If(Len(n_serie_texto.Text)>=6,4,1)
+                Default: =""
+                Height: =25
+                Mode: =TextMode.MultiLine
+                OnChange: |
+                    =
+                RadiusBottomLeft: =3
+                RadiusBottomRight: =3
+                RadiusTopLeft: =3
+                RadiusTopRight: =3
+                Size: =10
+                Width: =215
+                X: =121
+                Y: =489
+                ZIndex: =28
+
+            validacion_n_serie_label As label:
+                Align: =Align.Center
+                Color: =If(Len(n_serie_texto.Text) >= 6,If(IsBlank(LookUp(INVENTARIO_EQUIPOS_INFORMATICOS, NUM_SERIE = n_serie_texto.Text)), Color.Green, Color.Red),Color.Black)
+                FontWeight: =FontWeight.Semibold
+                Height: =23
+                Size: =8
+                Text: =If(Len(patrimonio_referencia.Text) = 6,If(IsBlank(LookUp(INVENTARIO_EQUIPOS_INFORMATICOS, NUM_SERIE = n_serie_texto.Text)), "N° de Serie Valido","N° de Serie Ya existe"),"")
+                Width: =215
+                X: =121
+                Y: =514
+                ZIndex: =29
 
