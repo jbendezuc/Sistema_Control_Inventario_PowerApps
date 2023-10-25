@@ -324,7 +324,7 @@ Registrar_Bien_Informatico As screen:
                 Size: =8
                 Text: =If(Len(patrimonio_referencia.Text) = 6,If(IsBlank(LookUp(INVENTARIO_EQUIPOS_INFORMATICOS, PATRIMONIO = patrimonio_referencia.Text)), "Patrimonio Falta Registrar","Patrimonio Valido"),"")
                 Width: =215
-                X: =130
+                X: =121
                 Y: =419
                 ZIndex: =22
 
@@ -427,8 +427,8 @@ Registrar_Bien_Informatico As screen:
                 Height: =250
                 Visible: =If(bien_informatico_combobox_6.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || bien_informatico_combobox_6.SelectedText.BIEN_INFORMATICO = "Laptop",true,false)
                 Width: =328
-                X: =28
-                Y: =565
+                X: =31
+                Y: =571
                 ZIndex: =31
 
                 Label4 As label:
@@ -446,7 +446,7 @@ Registrar_Bien_Informatico As screen:
                     Items: =DISCOS_DUROS
                     Size: =10
                     Width: =205
-                    X: =104
+                    X: =105
                     Y: =4
                     ZIndex: =2
 
@@ -466,7 +466,7 @@ Registrar_Bien_Informatico As screen:
                     Items: =MEMORIAS_RAM
                     Size: =10
                     Width: =205
-                    X: =104
+                    X: =105
                     Y: =45
                     ZIndex: =4
 
@@ -486,7 +486,7 @@ Registrar_Bien_Informatico As screen:
                     Items: =PROCESADORES
                     Size: =10
                     Width: =205
-                    X: =104
+                    X: =105
                     Y: =87
                     ZIndex: =6
 
@@ -506,7 +506,7 @@ Registrar_Bien_Informatico As screen:
                     Items: =GENERACIONES_PROCESADOR
                     Size: =10
                     Width: =205
-                    X: =104
+                    X: =105
                     Y: =130
                     ZIndex: =8
 
@@ -531,7 +531,7 @@ Registrar_Bien_Informatico As screen:
                     RadiusTopRight: =3
                     Size: =10
                     Width: =205
-                    X: =104
+                    X: =105
                     Y: =168
                     ZIndex: =10
 
@@ -561,7 +561,7 @@ Registrar_Bien_Informatico As screen:
                     RadiusTopRight: =3
                     Size: =10
                     Width: =205
-                    X: =104
+                    X: =105
                     Y: =202
                     ZIndex: =12
 
@@ -569,21 +569,20 @@ Registrar_Bien_Informatico As screen:
                     Align: =Align.Center
                     Color: =If(Len(ip_texto.Text) = 15,If(IsBlank(LookUp(INVENTARIO_EQUIPOS_INFORMATICOS, IP_BIEN_INFORMATICO = ip_texto.Text)), Color.Green, Color.Red),Color.Black)
                     FontWeight: =FontWeight.Semibold
-                    Height: =28
+                    Height: =18
                     Size: =8
                     Text: =If(Len(ip_texto.Text) = 15,If(IsBlank(LookUp(INVENTARIO_EQUIPOS_INFORMATICOS, IP_BIEN_INFORMATICO = ip_texto.Text)), "IP Disponible","IP Ya Existe"),"")
                     Width: =190
-                    X: =111
+                    X: =102
                     Y: =227
                     ZIndex: =13
 
             datos_estandar As groupContainer.manualLayoutContainer:
                 BorderStyle: =BorderStyle.Dotted
-                Height: =258
-                Visible: =If(bien_informatico_combobox_6.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || bien_informatico_combobox_6.SelectedText.BIEN_INFORMATICO = "Laptop",true,false)
+                Height: =330
                 Width: =328
                 X: =31
-                Y: =pc_escritorio_container.Y+pc_escritorio_container.Height + 5
+                Y: =If(bien_informatico_combobox_6.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || bien_informatico_combobox_6.SelectedText.BIEN_INFORMATICO = "Laptop",pc_escritorio_container.Y+pc_escritorio_container.Height + 5,If(bien_informatico_combobox_6.SelectedText.BIEN_INFORMATICO = "Impresora",impresora_container.Y+impresora_container.Height + 5,0))
                 ZIndex: =32
 
                 Label4_6 As label:
@@ -729,4 +728,105 @@ Registrar_Bien_Informatico As screen:
                     X: =113
                     Y: =89
                     ZIndex: =14
+
+                Button1 As button:
+                    Height: =32
+                    Size: =12
+                    Text: ="Registrar"
+                    Width: =136
+                    X: =93
+                    Y: =272
+                    ZIndex: =15
+
+            impresora_container As groupContainer.manualLayoutContainer:
+                BorderStyle: =BorderStyle.Dotted
+                BorderThickness: =1
+                Height: =120
+                Visible: =If(bien_informatico_combobox_6.SelectedText.BIEN_INFORMATICO = "Impresora",true,false)
+                Width: =328
+                X: =31
+                Y: =571
+                ZIndex: =33
+
+                Label4_12 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =41
+                    Size: =10
+                    Text: |-
+                        ="Tipo de Impresora: "
+                    Width: =93
+                    ZIndex: =1
+
+                tipo_impresora_combobox As dropdown:
+                    BorderThickness: =1
+                    Height: =25
+                    Items: =TIPOS_IMPRESORA
+                    Size: =10
+                    Width: =205
+                    X: =105
+                    Y: =10
+                    ZIndex: =2
+
+                Label4_13 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =34
+                    Size: =10
+                    Text: |-
+                        ="Conexión: "
+                    Width: =93
+                    Y: =41
+                    ZIndex: =3
+
+                conexion_impresora_combobox As dropdown:
+                    BorderThickness: =1
+                    Height: =25
+                    Items: =CONEXIONES_IMPRESORA
+                    Size: =10
+                    Width: =205
+                    X: =105
+                    Y: =45
+                    ZIndex: =4
+
+                Label4_17 As label:
+                    Align: =Align.Center
+                    FontWeight: =FontWeight.Bold
+                    Height: =29
+                    Size: =10
+                    Text: |-
+                        ="IP: "
+                    Width: =104
+                    Y: =80
+                    ZIndex: =11
+
+                ip_impresora_texto As text:
+                    BorderColor: =If(Len(ip_impresora_texto.Text) = 15,If(IsBlank(LookUp(INVENTARIO_EQUIPOS_INFORMATICOS, IP_BIEN_INFORMATICO = ip_impresora_texto.Text)), Color.Green,Color.Red),Color.Black)
+                    BorderThickness: =If(Len(ip_impresora_texto.Text)=15,4,1)
+                    Default: =""
+                    DisplayMode: =If(conexion_impresora_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BCONEXION_IMPRESORA' = "Red",DisplayMode.Edit,DisplayMode.Disabled)
+                    Height: =25
+                    MaxLength: =15
+                    Mode: =TextMode.MultiLine
+                    OnChange: |
+                        =
+                    RadiusBottomLeft: =3
+                    RadiusBottomRight: =3
+                    RadiusTopLeft: =3
+                    RadiusTopRight: =3
+                    Size: =10
+                    Width: =205
+                    X: =105
+                    Y: =84
+                    ZIndex: =12
+
+                ip_impresora_validacion_label As label:
+                    Align: =Align.Center
+                    Color: =If(Len(ip_impresora_texto.Text) = 15,If(IsBlank(LookUp(INVENTARIO_EQUIPOS_INFORMATICOS, IP_BIEN_INFORMATICO = ip_impresora_texto.Text)), Color.Green, Color.Red),Color.Black)
+                    FontWeight: =FontWeight.Semibold
+                    Height: =18
+                    Size: =8
+                    Text: =If(Len(ip_impresora_texto.Text) = 15,If(IsBlank(LookUp(INVENTARIO_EQUIPOS_INFORMATICOS, IP_BIEN_INFORMATICO = ip_impresora_texto.Text)), "IP Disponible","IP Ya Existe"),"")
+                    Width: =190
+                    X: =112
+                    Y: =107
+                    ZIndex: =13
 

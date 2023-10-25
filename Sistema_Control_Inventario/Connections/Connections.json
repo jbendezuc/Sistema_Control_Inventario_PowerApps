@@ -11,6 +11,9 @@
           "BIENES_INFORMATICOS": {
             "tableName": "5927b82c-ea14-4c03-96f2-25681d511349"
           },
+          "CONEXIONES_IMPRESORA": {
+            "tableName": "fd5c51d2-e080-4b41-afc1-94e66380fd7a"
+          },
           "DISCOS_DUROS": {
             "tableName": "fd37c8f3-df36-4aeb-8148-24181ad75626"
           },
@@ -40,6 +43,9 @@
           },
           "PROCESADORES": {
             "tableName": "e47d268b-4e43-4c15-b784-ef4f172b71e0"
+          },
+          "TIPOS_IMPRESORA": {
+            "tableName": "d73fa83d-40c5-45a5-bb80-de6c04c5b5ab"
           }
         }
       },
@@ -63,7 +69,9 @@
       "MEMORIAS_RAM",
       "PROCESADORES",
       "GENERACIONES_PROCESADOR",
-      "ESTADOS"
+      "ESTADOS",
+      "TIPOS_IMPRESORA",
+      "CONEXIONES_IMPRESORA"
     ],
     "dependencies": {},
     "dependents": [],

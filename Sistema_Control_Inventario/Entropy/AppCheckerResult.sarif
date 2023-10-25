@@ -1084,6 +1084,96 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.impresora_container.tipo_impresora_combobox.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.impresora_container.tipo_impresora_combobox.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Registrar_Bien_Informatico",
+                "type": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.impresora_container.tipo_impresora_combobox"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.impresora_container.conexion_impresora_combobox.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.impresora_container.conexion_impresora_combobox.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Registrar_Bien_Informatico",
+                "type": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.impresora_container.conexion_impresora_combobox"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.impresora_container.ip_impresora_texto.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.impresora_container.ip_impresora_texto.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Registrar_Bien_Informatico",
+                "type": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.impresora_container.ip_impresora_texto"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "Inventario.buscar_inventario.DelayOutput"
                 }
               ],
