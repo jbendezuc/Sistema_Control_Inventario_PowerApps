@@ -61,7 +61,7 @@ Registrar_Bien_Informatico As screen:
             BorderThickness: =0
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =1246
+            Height: =1000
             Width: =Parent.Width
             X: =0
             Y: =0
