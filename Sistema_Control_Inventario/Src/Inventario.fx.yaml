@@ -1584,7 +1584,8 @@ Inventario As screen:
                 eliminar_button As button:
                     Fill: =RGBA(168, 0, 0, 1)
                     Height: =25
-                    OnSelect: =Select(Parent)
+                    OnSelect: |-
+                        =Select(Parent);Set(var_registro_inventario,ThisItem);UpdateContext({var_alerta_eliminar:true})
                     Size: =12
                     Text: ="Eliminar"
                     Width: =100
@@ -1704,4 +1705,83 @@ Inventario As screen:
         X: =40
         Y: =40
         ZIndex: =13
+
+    Group2 As group:
+        Height: =5
+        Width: =5
+        X: =80
+        Y: =80
+        ZIndex: =21
+
+        Rectangle2 As rectangle:
+            Fill: =RGBA(0, 0, 0, 0.35)
+            Height: =768
+            Visible: =var_alerta_eliminar
+            Width: =1366
+            ZIndex: =14
+
+        Rectangle3 As rectangle:
+            Fill: =RGBA(227, 234, 243, 1)
+            Height: =301
+            Visible: =var_alerta_eliminar
+            Width: =515
+            X: =425
+            Y: =245
+            ZIndex: =15
+
+        Label5 As label:
+            Align: =Align.Center
+            Fill: =RGBA(39, 113, 194, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =61
+            Size: =18
+            Text: ="¿Está seguro de eliminar?"
+            Visible: =var_alerta_eliminar
+            Width: =515
+            X: =425
+            Y: =245
+            ZIndex: =16
+
+        Icon1 As icon.Cars:
+            Height: =66
+            Icon: =Icon.QuestionMark
+            Visible: =var_alerta_eliminar
+            Width: =97
+            X: =634
+            Y: =318
+            ZIndex: =17
+
+        cancelar_alerta_button As button:
+            Fill: =RGBA(141, 198, 63, 1)
+            OnSelect: |-
+                =UpdateContext({var_alerta_eliminar:false})
+            Text: ="Cancelar"
+            Visible: =var_alerta_eliminar
+            X: =491
+            Y: =475
+            ZIndex: =18
+
+        eliminar_dato_button As button:
+            Fill: =RGBA(168, 2, 2, 1)
+            OnSelect: |-
+                =Remove(INVENTARIO_EQUIPOS_INFORMATICOS,var_registro_inventario);UpdateContext({var_alerta_eliminar:false})
+            Text: ="Eliminar"
+            Visible: =var_alerta_eliminar
+            X: =715
+            Y: =475
+            ZIndex: =19
+
+        Label7 As label:
+            Align: =Align.Center
+            AutoHeight: =true
+            FontWeight: =FontWeight.Semibold
+            Height: =41
+            Size: =14
+            Text: |-
+                ="Eliminar "&var_registro_inventario.BIEN_INFORMATICO&" de Patrimonio: "&var_registro_inventario.PATRIMONIO
+            Visible: =var_alerta_eliminar
+            Width: =449
+            X: =460
+            Y: =405
+            ZIndex: =20
 

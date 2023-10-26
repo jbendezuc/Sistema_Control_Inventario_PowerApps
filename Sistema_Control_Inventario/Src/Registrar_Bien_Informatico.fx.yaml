@@ -738,7 +738,6 @@ Registrar_Bien_Informatico As screen:
                 n_oficio_baja_input As text:
                     BorderThickness: =1
                     Default: =""
-                    DisplayMode: =If(estado_situcional_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BESTADO_SITUCIONAL'="Ficha de Baja",DisplayMode.Edit,DisplayMode.Disabled)
                     Height: =25
                     HintText: |-
                         ="Se sugiere ""###-OCI-202#"""
@@ -749,6 +748,7 @@ Registrar_Bien_Informatico As screen:
                     RadiusTopRight: =3
                     Reset: =resetearControles
                     Size: =10
+                    Visible: =If(estado_situcional_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BESTADO_SITUCIONAL'="Ficha de Baja",true,false)
                     Width: =205
                     X: =113
                     Y: =89
