@@ -30,7 +30,8 @@ Registrar_Bien_Informatico As screen:
         Color: =RGBA(255, 255, 255, 1)
         Height: =40
         Icon: =Icon.Leave
-        OnSelect: =Navigate(Inventario,ScreenTransition.CoverRight)
+        OnSelect: |-
+            =Navigate(Inventario,ScreenTransition.CoverRight);UpdateContext({resetearControles:true});UpdateContext({resetearControles:false});Navigate(Inventario,ScreenTransition.UnCoverRight);Reset(buscar_inventario)
         Rotation: =180
         Width: =50
         X: =9
@@ -83,6 +84,7 @@ Registrar_Bien_Informatico As screen:
                 Height: =25
                 Items: |-
                     =ForAll(Distinct(LOCAL_SEDE,LOCAL), {Result: ThisRecord.Value}).Result
+                Reset: =resetearControles
                 Size: =10
                 Width: =228
                 X: =108
@@ -104,6 +106,7 @@ Registrar_Bien_Informatico As screen:
                 BorderThickness: =1
                 Height: =25
                 Items: =Filter(LOCAL_SEDE,LOCAL=local_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult')
+                Reset: =resetearControles
                 Size: =10
                 Width: =228
                 X: =108
@@ -121,10 +124,11 @@ Registrar_Bien_Informatico As screen:
                 Y: =109
                 ZIndex: =5
 
-            piso_combobox_2 As dropdown:
+            piso_combobox As dropdown:
                 BorderThickness: =1
                 Height: =25
                 Items: =PISOS
+                Reset: =resetearControles
                 Size: =10
                 Width: =228
                 X: =108
@@ -142,11 +146,12 @@ Registrar_Bien_Informatico As screen:
                 Y: =139
                 ZIndex: =7
 
-            area_combobox_3 As dropdown:
+            area_combobox As dropdown:
                 BorderThickness: =1
                 Height: =25
                 Items: |-
                     =ForAll(Distinct(OFICINAS,AREA), {Result: ThisRecord.Value}).Result
+                Reset: =resetearControles
                 Size: =10
                 Width: =228
                 X: =108
@@ -164,10 +169,11 @@ Registrar_Bien_Informatico As screen:
                 Y: =181
                 ZIndex: =9
 
-            tipo_area_combobox_4 As dropdown:
+            tipo_area_combobox As dropdown:
                 BorderThickness: =1
                 Height: =25
-                Items: =Filter(OFICINAS,AREA=area_combobox_3.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult')
+                Items: =Filter(OFICINAS,AREA=area_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult')
+                Reset: =resetearControles
                 Size: =10
                 Width: =228
                 X: =108
@@ -189,6 +195,7 @@ Registrar_Bien_Informatico As screen:
                 BorderThickness: =1
                 Height: =25
                 Items: =PABELLONES
+                Reset: =resetearControles
                 Size: =10
                 Width: =228
                 X: =108
@@ -215,6 +222,7 @@ Registrar_Bien_Informatico As screen:
                 RadiusBottomRight: =3
                 RadiusTopLeft: =3
                 RadiusTopRight: =3
+                Reset: =resetearControles
                 Size: =10
                 Width: =228
                 X: =108
@@ -232,10 +240,11 @@ Registrar_Bien_Informatico As screen:
                 Y: =300
                 ZIndex: =15
 
-            bien_informatico_combobox_6 As dropdown:
+            bien_informatico_combobox As dropdown:
                 BorderThickness: =1
                 Height: =25
                 Items: =Filter(BIENES_INFORMATICOS,BIEN_INFORMATICO <> "Todo")
+                Reset: =resetearControles
                 Size: =10
                 Width: =228
                 X: =108
@@ -266,6 +275,7 @@ Registrar_Bien_Informatico As screen:
                 RadiusBottomRight: =3
                 RadiusTopLeft: =3
                 RadiusTopRight: =3
+                Reset: =resetearControles
                 Size: =10
                 Width: =215
                 X: =121
@@ -310,6 +320,7 @@ Registrar_Bien_Informatico As screen:
                 RadiusBottomRight: =3
                 RadiusTopLeft: =3
                 RadiusTopRight: =3
+                Reset: =resetearControles
                 Size: =10
                 Width: =215
                 X: =121
@@ -338,11 +349,12 @@ Registrar_Bien_Informatico As screen:
                 Y: =450
                 ZIndex: =23
 
-            marca_combobox_7 As dropdown:
+            marca_combobox As dropdown:
                 BorderThickness: =1
                 Height: =23
                 Items: |-
                     =ForAll(Distinct(MODELO_MARCA,MARCA), {Result: ThisRecord.Value}).Result
+                Reset: =resetearControles
                 Size: =7
                 Width: =114
                 X: =59
@@ -359,10 +371,11 @@ Registrar_Bien_Informatico As screen:
                 Y: =450
                 ZIndex: =25
 
-            modelo_combobox_8 As dropdown:
+            modelo_combobox As dropdown:
                 BorderThickness: =1
                 Height: =23
-                Items: =Filter(MODELO_MARCA,MARCA=marca_combobox_7.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult')
+                Items: =Filter(MODELO_MARCA,MARCA=marca_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult')
+                Reset: =resetearControles
                 Size: =7
                 Width: =141
                 X: =227
@@ -392,6 +405,7 @@ Registrar_Bien_Informatico As screen:
                 RadiusBottomRight: =3
                 RadiusTopLeft: =3
                 RadiusTopRight: =3
+                Reset: =resetearControles
                 Size: =10
                 Width: =215
                 X: =121
@@ -415,7 +429,7 @@ Registrar_Bien_Informatico As screen:
                 Height: =33
                 Size: =10
                 Text: |-
-                    ="Equipo " &bien_informatico_combobox_6.SelectedText.BIEN_INFORMATICO&": "
+                    ="Equipo " &bien_informatico_combobox.SelectedText.BIEN_INFORMATICO&": "
                 Width: =308
                 X: =28
                 Y: =532
@@ -425,7 +439,7 @@ Registrar_Bien_Informatico As screen:
                 BorderStyle: =BorderStyle.Dotted
                 BorderThickness: =1
                 Height: =250
-                Visible: =If(bien_informatico_combobox_6.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || bien_informatico_combobox_6.SelectedText.BIEN_INFORMATICO = "Laptop",true,false)
+                Visible: =If(bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "Laptop",true,false)
                 Width: =328
                 X: =31
                 Y: =571
@@ -440,10 +454,11 @@ Registrar_Bien_Informatico As screen:
                     Width: =93
                     ZIndex: =1
 
-                disco_duro_combobox_6 As dropdown:
+                disco_duro_combobox As dropdown:
                     BorderThickness: =1
                     Height: =25
                     Items: =DISCOS_DUROS
+                    Reset: =resetearControles
                     Size: =10
                     Width: =205
                     X: =105
@@ -460,10 +475,11 @@ Registrar_Bien_Informatico As screen:
                     Y: =41
                     ZIndex: =3
 
-                memoria_ram_combobox_7 As dropdown:
+                memoria_ram_combobox As dropdown:
                     BorderThickness: =1
                     Height: =25
                     Items: =MEMORIAS_RAM
+                    Reset: =resetearControles
                     Size: =10
                     Width: =205
                     X: =105
@@ -480,10 +496,11 @@ Registrar_Bien_Informatico As screen:
                     Y: =83
                     ZIndex: =5
 
-                procesador_combobox_8 As dropdown:
+                procesador_combobox As dropdown:
                     BorderThickness: =1
                     Height: =25
                     Items: =PROCESADORES
+                    Reset: =resetearControles
                     Size: =10
                     Width: =205
                     X: =105
@@ -500,10 +517,11 @@ Registrar_Bien_Informatico As screen:
                     Y: =126
                     ZIndex: =7
 
-                procesador_combobox_9 As dropdown:
+                generacion_procesador_combobox As dropdown:
                     BorderThickness: =1
                     Height: =25
                     Items: =GENERACIONES_PROCESADOR
+                    Reset: =resetearControles
                     Size: =10
                     Width: =205
                     X: =105
@@ -529,6 +547,7 @@ Registrar_Bien_Informatico As screen:
                     RadiusBottomRight: =3
                     RadiusTopLeft: =3
                     RadiusTopRight: =3
+                    Reset: =resetearControles
                     Size: =10
                     Width: =205
                     X: =105
@@ -559,6 +578,7 @@ Registrar_Bien_Informatico As screen:
                     RadiusBottomRight: =3
                     RadiusTopLeft: =3
                     RadiusTopRight: =3
+                    Reset: =resetearControles
                     Size: =10
                     Width: =205
                     X: =105
@@ -582,7 +602,7 @@ Registrar_Bien_Informatico As screen:
                 Height: =330
                 Width: =328
                 X: =31
-                Y: =If(bien_informatico_combobox_6.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || bien_informatico_combobox_6.SelectedText.BIEN_INFORMATICO = "Laptop",pc_escritorio_container.Y+pc_escritorio_container.Height + 5,If(bien_informatico_combobox_6.SelectedText.BIEN_INFORMATICO = "Impresora",impresora_container.Y+impresora_container.Height + 5,If(bien_informatico_combobox_6.SelectedText.BIEN_INFORMATICO = "Teclado",teclado_container.Y+teclado_container.Height + 5,If(bien_informatico_combobox_6.SelectedText.BIEN_INFORMATICO = "Monitor",monitor_container.Y+monitor_container.Height + 5,If(bien_informatico_combobox_6.SelectedText.BIEN_INFORMATICO = "Telefono IP",ip_telefono_container.Y+ip_telefono_container.Height + 5,571)))))
+                Y: =If(bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "Laptop",pc_escritorio_container.Y+pc_escritorio_container.Height + 5,If(bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "Impresora",impresora_container.Y+impresora_container.Height + 5,If(bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "Teclado",teclado_container.Y+teclado_container.Height + 5,If(bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "Monitor",monitor_container.Y+monitor_container.Height + 5,If(bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "Telefono IP",ip_telefono_container.Y+ip_telefono_container.Height + 5,571)))))
                 ZIndex: =32
 
                 Label4_6 As label:
@@ -594,11 +614,12 @@ Registrar_Bien_Informatico As screen:
                     Width: =93
                     ZIndex: =1
 
-                estado_combobox_7 As dropdown:
+                estado_combobox As dropdown:
                     BorderThickness: =1
                     Height: =25
                     Items: |-
                         =ForAll(Distinct(ESTADOS,ESTADO), {Result: ThisRecord.Value}).Result
+                    Reset: =resetearControles
                     Size: =10
                     Width: =205
                     X: =113
@@ -615,10 +636,11 @@ Registrar_Bien_Informatico As screen:
                     Y: =41
                     ZIndex: =3
 
-                estado_situcional_combobox_8 As dropdown:
+                estado_situcional_combobox As dropdown:
                     BorderThickness: =1
                     Height: =25
-                    Items: =Filter(ESTADOS,ESTADO=estado_combobox_7.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult')
+                    Items: =Filter(ESTADOS,ESTADO=estado_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult')
+                    Reset: =resetearControles
                     Size: =10
                     Width: =205
                     X: =113
@@ -664,6 +686,7 @@ Registrar_Bien_Informatico As screen:
                     RadiusBottomRight: =3
                     RadiusTopLeft: =3
                     RadiusTopRight: =3
+                    Reset: =resetearControles
                     Size: =10
                     Width: =205
                     X: =113
@@ -705,6 +728,7 @@ Registrar_Bien_Informatico As screen:
                     RadiusBottomRight: =3
                     RadiusTopLeft: =3
                     RadiusTopRight: =3
+                    Reset: =resetearControles
                     Size: =10
                     Width: =205
                     X: =113
@@ -714,7 +738,7 @@ Registrar_Bien_Informatico As screen:
                 n_oficio_baja_input As text:
                     BorderThickness: =1
                     Default: =""
-                    DisplayMode: =If(estado_situcional_combobox_8.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BESTADO_SITUCIONAL'="Ficha de Baja",DisplayMode.Edit,DisplayMode.Disabled)
+                    DisplayMode: =If(estado_situcional_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BESTADO_SITUCIONAL'="Ficha de Baja",DisplayMode.Edit,DisplayMode.Disabled)
                     Height: =25
                     HintText: |-
                         ="Se sugiere ""###-OCI-202#"""
@@ -723,6 +747,7 @@ Registrar_Bien_Informatico As screen:
                     RadiusBottomRight: =3
                     RadiusTopLeft: =3
                     RadiusTopRight: =3
+                    Reset: =resetearControles
                     Size: =10
                     Width: =205
                     X: =113
@@ -731,6 +756,187 @@ Registrar_Bien_Informatico As screen:
 
                 Button1 As button:
                     Height: =32
+                    OnSelect: |-
+                        =If(
+                            bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "Laptop",
+                            Patch(
+                                INVENTARIO_EQUIPOS_INFORMATICOS,
+                                Defaults(INVENTARIO_EQUIPOS_INFORMATICOS),
+                                {
+                                    LOCAL: local_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
+                                    FACULTAD: facultad_combobox.SelectedText.SEDE,
+                                    PISO: piso_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BPISO',
+                                    AREA: area_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
+                                    TIPO_AREA: tipo_area_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BAREA',
+                                    NOMBRE_AREA: nombre_area_text.Text,
+                                    BIEN_INFORMATICO: bien_informatico_combobox.SelectedText.BIEN_INFORMATICO,
+                                    PATRIMONIO: patrimonio_texto.Text,
+                                    MARCA: marca_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
+                                    MODELO: modelo_combobox.SelectedText.MODELO,
+                                    NUM_SERIE: n_serie_texto.Text,
+                                    DISCO_DURO: disco_duro_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BDISCO_DURO',
+                                    MEMORIA_RAM: memoria_ram_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BMEMORIA_RAM',
+                                    PROCESADOR: procesador_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BPROCESADOR',
+                                    GENERACION_PROCESADOR: generacion_procesador_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BGENERACION_PROCESADOR',
+                                    HOSTNAME_CPU: hostname_texto.Text,
+                                    IP_BIEN_INFORMATICO: ip_texto.Text,
+                                    ESTADO: estado_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
+                                    SITUACION_ACTUAL: estado_situcional_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BESTADO_SITUCIONAL',
+                                    FICHA_BAJA: n_oficio_baja_input.Text,
+                                    JEFE_INMEDIATO: jefe_inmediato_input.Text,
+                                    USUARIO_RESPONSABLE: usuario_responsable_input.Text,
+                                    TECNICO_REPONSABLE: tecnico_responsable_input.Text,
+                                    CORREO_TECNICO: User().Email
+                                }
+                            ),
+                            If(
+                                bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "Impresora",
+                                Patch(
+                                    INVENTARIO_EQUIPOS_INFORMATICOS,
+                                    Defaults(INVENTARIO_EQUIPOS_INFORMATICOS),
+                                    {
+                                        LOCAL: local_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
+                                        FACULTAD: facultad_combobox.SelectedText.SEDE,
+                                        PISO: piso_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BPISO',
+                                        AREA: area_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
+                                        TIPO_AREA: tipo_area_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BAREA',
+                                        NOMBRE_AREA: nombre_area_text.Text,
+                                        BIEN_INFORMATICO: bien_informatico_combobox.SelectedText.BIEN_INFORMATICO,
+                                        PATRIMONIO: patrimonio_texto.Text,
+                                        MARCA: marca_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
+                                        MODELO: modelo_combobox.SelectedText.MODELO,
+                                        NUM_SERIE: n_serie_texto.Text,
+                                        IP_BIEN_INFORMATICO: ip_impresora_texto.Text,
+                                        TIPO_IMPRESORA: tipo_impresora_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BTIPO_IMPRESORA',
+                                        TIPO_CONECTOR_IMPRESORA: conexion_impresora_combobox,
+                                        ESTADO: estado_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
+                                        SITUACION_ACTUAL: estado_situcional_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BESTADO_SITUCIONAL',
+                                        FICHA_BAJA: n_oficio_baja_input.Text,
+                                        JEFE_INMEDIATO: jefe_inmediato_input.Text,
+                                        USUARIO_RESPONSABLE: usuario_responsable_input.Text,
+                                        TECNICO_REPONSABLE: tecnico_responsable_input.Text,
+                                        CORREO_TECNICO: User().Email
+                                    }
+                                ),
+                                If(
+                                    bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "Teclado",
+                                    Patch(
+                                        INVENTARIO_EQUIPOS_INFORMATICOS,
+                                        Defaults(INVENTARIO_EQUIPOS_INFORMATICOS),
+                                        {
+                                            LOCAL: local_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
+                                            FACULTAD: facultad_combobox.SelectedText.SEDE,
+                                            PISO: piso_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BPISO',
+                                            AREA: area_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
+                                            TIPO_AREA: tipo_area_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BAREA',
+                                            NOMBRE_AREA: nombre_area_text.Text,
+                                            BIEN_INFORMATICO: bien_informatico_combobox.SelectedText.BIEN_INFORMATICO,
+                                            PATRIMONIO: patrimonio_texto.Text,
+                                            MARCA: marca_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
+                                            MODELO: modelo_combobox.SelectedText.MODELO,
+                                            NUM_SERIE: n_serie_texto.Text,
+                                            TIPO_CONECTOR_TECLADO: conector_teclado_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BCONECTOR_TECLADO',
+                                            ESTADO: estado_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
+                                            SITUACION_ACTUAL: estado_situcional_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BESTADO_SITUCIONAL',
+                                            FICHA_BAJA: n_oficio_baja_input.Text,
+                                            JEFE_INMEDIATO: jefe_inmediato_input.Text,
+                                            USUARIO_RESPONSABLE: usuario_responsable_input.Text,
+                                            TECNICO_REPONSABLE: tecnico_responsable_input.Text,
+                                            CORREO_TECNICO: User().Email
+                                        }
+                                    ),
+                                    If(
+                                        bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "Monitor",
+                                        Patch(
+                                            INVENTARIO_EQUIPOS_INFORMATICOS,
+                                            Defaults(INVENTARIO_EQUIPOS_INFORMATICOS),
+                                            {
+                                                LOCAL: local_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
+                                                FACULTAD: facultad_combobox.SelectedText.SEDE,
+                                                PISO: piso_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BPISO',
+                                                AREA: area_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
+                                                TIPO_AREA: tipo_area_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BAREA',
+                                                NOMBRE_AREA: nombre_area_text.Text,
+                                                BIEN_INFORMATICO: bien_informatico_combobox.SelectedText.BIEN_INFORMATICO,
+                                                PATRIMONIO: patrimonio_texto.Text,
+                                                MARCA: marca_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
+                                                MODELO: modelo_combobox.SelectedText.MODELO,
+                                                NUM_SERIE: n_serie_texto.Text,
+                                                TIPO_CONECTOR_MONITOR: conector_monitor_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BCONECTOR_MONITOR',
+                                                ESTADO: estado_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
+                                                SITUACION_ACTUAL: estado_situcional_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BESTADO_SITUCIONAL',
+                                                FICHA_BAJA: n_oficio_baja_input.Text,
+                                                JEFE_INMEDIATO: jefe_inmediato_input.Text,
+                                                USUARIO_RESPONSABLE: usuario_responsable_input.Text,
+                                                TECNICO_REPONSABLE: tecnico_responsable_input.Text,
+                                                CORREO_TECNICO: User().Email
+                                            }
+                                        ),
+                                        If(
+                                            bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "Telefono IP",
+                                            Patch(
+                                                INVENTARIO_EQUIPOS_INFORMATICOS,
+                                                Defaults(INVENTARIO_EQUIPOS_INFORMATICOS),
+                                                {
+                                                    LOCAL: local_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
+                                                    FACULTAD: facultad_combobox.SelectedText.SEDE,
+                                                    PISO: piso_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BPISO',
+                                                    AREA: area_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
+                                                    TIPO_AREA: tipo_area_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BAREA',
+                                                    NOMBRE_AREA: nombre_area_text.Text,
+                                                    BIEN_INFORMATICO: bien_informatico_combobox.SelectedText.BIEN_INFORMATICO,
+                                                    PATRIMONIO: patrimonio_texto.Text,
+                                                    MARCA: marca_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
+                                                    MODELO: modelo_combobox.SelectedText.MODELO,
+                                                    NUM_SERIE: n_serie_texto.Text,
+                                                    IP_BIEN_INFORMATICO: ip_telefono_input.Text,
+                                                    ANEXO_TELEFONO: anexo_input.Text,
+                                                    ESTADO: estado_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
+                                                    SITUACION_ACTUAL: estado_situcional_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BESTADO_SITUCIONAL',
+                                                    FICHA_BAJA: n_oficio_baja_input.Text,
+                                                    JEFE_INMEDIATO: jefe_inmediato_input.Text,
+                                                    USUARIO_RESPONSABLE: usuario_responsable_input.Text,
+                                                    TECNICO_REPONSABLE: tecnico_responsable_input.Text,
+                                                    CORREO_TECNICO: User().Email
+                                                }
+                                            ),
+                                            Patch(
+                                                INVENTARIO_EQUIPOS_INFORMATICOS,
+                                                Defaults(INVENTARIO_EQUIPOS_INFORMATICOS),
+                                                {
+                                                    LOCAL: local_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
+                                                    FACULTAD: facultad_combobox.SelectedText.SEDE,
+                                                    PISO: piso_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BPISO',
+                                                    AREA: area_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
+                                                    TIPO_AREA: tipo_area_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BAREA',
+                                                    NOMBRE_AREA: nombre_area_text.Text,
+                                                    BIEN_INFORMATICO: bien_informatico_combobox.SelectedText.BIEN_INFORMATICO,
+                                                    PATRIMONIO: patrimonio_texto.Text,
+                                                    MARCA: marca_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
+                                                    MODELO: modelo_combobox.SelectedText.MODELO,
+                                                    NUM_SERIE: n_serie_texto.Text,
+                                                    ESTADO: estado_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
+                                                    SITUACION_ACTUAL: estado_situcional_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BESTADO_SITUCIONAL',
+                                                    FICHA_BAJA: n_oficio_baja_input.Text,
+                                                    JEFE_INMEDIATO: jefe_inmediato_input.Text,
+                                                    USUARIO_RESPONSABLE: usuario_responsable_input.Text,
+                                                    TECNICO_REPONSABLE: tecnico_responsable_input.Text,
+                                                    CORREO_TECNICO: User().Email
+                                                }
+                                            )
+                                        )
+                                    )
+                                )
+                            )
+                        );
+                        UpdateContext({resetearControles:true});UpdateContext({resetearControles:false});Navigate(Validacion_Correcta_INVENTARIO,ScreenTransition.UnCoverRight);Reset(buscar_inventario)
+                        /*
+                        --ACTUALIZAR
+                        If(var_limpiar_img_RT=1;Set(var_firma_responsable_1;JSON(Firma_Responsable_1.Image;JSONFormat.IncludeBinaryData));Set(var_firma_responsable_1;varFichaTecnica.FIRMARESPONSABLE));;
+                        
+                        If(var_limpiar_img_FT=1;Set(var_firma_tecnico_1;JSON(Firma_Tecnico_1.Image;JSONFormat.IncludeBinaryData));Set(var_firma_tecnico_1;varFichaTecnica.FIRMATECNICO));;
+                        Patch(FICHAS_TECNICAS;LookUp(FICHAS_TECNICAS;ThisRecord.ID = varFichaTecnica.ID);{LOCAL:Local_1.Selected.Result;FACULTAD:Facultad_1.Selected.SEDE;NOMBRE_OFICINA:Nombre_Oficina_1.Text;BIEN_INFORMATICO:Bien_Informatico_1.Selected.BIEN_INFORMATICO;OFICINA:Oficina.Selected.OFICINA;PATRIMONIO:Patrimonio_1.Text;MARCA:Marca_1.Selected.Result;MODELO:Modelo_1.Selected.MODELO;SERIE:Serie_1.Text;TECNICO:Tecnico_1.Text;RESPONSABLE:Responsable_1.Text;ASUNTO:Asunto_1.Selected.SERVICIO;FECHA:Fecha_1.SelectedDate;MEDIO:Medio_Informativo_1.Selected.MEDIO_INFORMATIVO;NOFICIO:Noficio_1.Text;DIAGNOSTICO:Diagnostico_1.Text;FALLA:Falla_1.Text;OBSERVACION:Observacion_1.Text;IMAGEN:Text(var_foto);ESTADO:{Value:"Nuevo"};CORREO:Correo_1.Text;FIRMATECNICO:Text(var_firma_tecnico_1);FIRMARESPONSABLE:Text(var_firma_responsable_1)});;UpdateContext({resetearControles_Editar:true});;UpdateContext({resetearControles_Editar:false});;Navigate(Validacion_Correcta_FT;ScreenTransition.UnCoverRight);;Reset(BuscarFichaTecnica)
+                        */
                     Size: =12
                     Text: ="Registrar"
                     Width: =136
@@ -742,7 +948,7 @@ Registrar_Bien_Informatico As screen:
                 BorderStyle: =BorderStyle.Dotted
                 BorderThickness: =1
                 Height: =120
-                Visible: =If(bien_informatico_combobox_6.SelectedText.BIEN_INFORMATICO = "Impresora",true,false)
+                Visible: =If(bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "Impresora",true,false)
                 Width: =328
                 X: =31
                 Y: =571
@@ -761,6 +967,7 @@ Registrar_Bien_Informatico As screen:
                     BorderThickness: =1
                     Height: =25
                     Items: =TIPOS_IMPRESORA
+                    Reset: =resetearControles
                     Size: =10
                     Width: =205
                     X: =105
@@ -781,6 +988,7 @@ Registrar_Bien_Informatico As screen:
                     BorderThickness: =1
                     Height: =25
                     Items: =CONEXIONES_IMPRESORA
+                    Reset: =resetearControles
                     Size: =10
                     Width: =205
                     X: =105
@@ -812,6 +1020,7 @@ Registrar_Bien_Informatico As screen:
                     RadiusBottomRight: =3
                     RadiusTopLeft: =3
                     RadiusTopRight: =3
+                    Reset: =resetearControles
                     Size: =10
                     Width: =205
                     X: =105
@@ -834,7 +1043,7 @@ Registrar_Bien_Informatico As screen:
                 BorderStyle: =BorderStyle.Dotted
                 BorderThickness: =1
                 Height: =51
-                Visible: =If(bien_informatico_combobox_6.SelectedText.BIEN_INFORMATICO = "Teclado",true,false)
+                Visible: =If(bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "Teclado",true,false)
                 Width: =328
                 X: =31
                 Y: =571
@@ -853,6 +1062,7 @@ Registrar_Bien_Informatico As screen:
                     BorderThickness: =1
                     Height: =25
                     Items: =CONECTORES_TECLADO
+                    Reset: =resetearControles
                     Size: =10
                     Width: =205
                     X: =113
@@ -863,7 +1073,7 @@ Registrar_Bien_Informatico As screen:
                 BorderStyle: =BorderStyle.Dotted
                 BorderThickness: =1
                 Height: =51
-                Visible: =If(bien_informatico_combobox_6.SelectedText.BIEN_INFORMATICO = "Monitor",true,false)
+                Visible: =If(bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "Monitor",true,false)
                 Width: =328
                 X: =31
                 Y: =571
@@ -882,6 +1092,7 @@ Registrar_Bien_Informatico As screen:
                     BorderThickness: =1
                     Height: =25
                     Items: =CONECTORES_MONITOR
+                    Reset: =resetearControles
                     Size: =10
                     Width: =205
                     X: =113
@@ -892,7 +1103,7 @@ Registrar_Bien_Informatico As screen:
                 BorderStyle: =BorderStyle.Dotted
                 BorderThickness: =1
                 Height: =92
-                Visible: =If(bien_informatico_combobox_6.SelectedText.BIEN_INFORMATICO = "Telefono IP",true,false)
+                Visible: =If(bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "Telefono IP",true,false)
                 Width: =328
                 X: =31
                 Y: =571
@@ -921,6 +1132,7 @@ Registrar_Bien_Informatico As screen:
                     RadiusBottomRight: =3
                     RadiusTopLeft: =3
                     RadiusTopRight: =3
+                    Reset: =resetearControles
                     Size: =10
                     Width: =205
                     X: =105
@@ -960,6 +1172,7 @@ Registrar_Bien_Informatico As screen:
                     RadiusBottomRight: =3
                     RadiusTopLeft: =3
                     RadiusTopRight: =3
+                    Reset: =resetearControles
                     Size: =10
                     Width: =205
                     X: =105

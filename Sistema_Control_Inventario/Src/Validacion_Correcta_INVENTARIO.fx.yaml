@@ -1,0 +1,93 @@
+Validacion_Correcta_INVENTARIO As screen:
+    BackgroundImage: =
+    Fill: =RGBA(8, 16, 26, 1)
+    Height: |-
+        =750
+        //Max(App.Height; App.MinScreenHeight)
+    ImagePosition: =ImagePosition.Stretch
+    Width: |-
+        =380
+        //Max(App.Width; App.MinScreenWidth)
+
+    Rectangle1_3 As rectangle:
+        Fill: =RGBA(106, 107, 125, 1)
+        Height: =94
+        Width: =380
+        ZIndex: =1
+
+    Image1 As image:
+        Height: =66
+        Image: =OCGTI
+        ImagePosition: =ImagePosition.Stretch
+        Width: =380
+        Y: =682
+        ZIndex: =2
+
+    Label3_14 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =83
+        Text: |-
+            ="UNIVERSIDAD NACIONAL
+            FEDERICO VILLARREAL"
+        Width: =227
+        Y: =9
+        ZIndex: =3
+
+    Image1_1 As image:
+        Height: =56
+        Image: ='universidad-federico-villarreal-768x403'
+        ImagePosition: =ImagePosition.Fill
+        Width: =144
+        X: =227
+        Y: =20
+        ZIndex: =4
+
+    iconCircle1 As circle.Circle:
+        Fill: =RGBA(152, 208, 70, Timer1.Value/Timer1.Duration)
+        Height: =149
+        Width: =159
+        X: =105
+        Y: =247
+        ZIndex: =5
+
+    iconCheck1 As icon.Check:
+        Color: =RGBA(255, 255, 255, Timer1.Value/Timer1.Duration)
+        Height: =130
+        Icon: =Icon.Check
+        PaddingBottom: =Self.PaddingTop
+        PaddingLeft: =Self.PaddingTop
+        PaddingRight: =Self.PaddingTop
+        PaddingTop: =18
+        Width: =171
+        X: =104
+        Y: =254
+        ZIndex: =6
+
+    LblSuccessMsg1 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(187, 221, 140, 1)
+        Color: =RGBA(255, 255, 255, Timer1.Value/Timer1.Duration)
+        FontWeight: =FontWeight.Bold
+        Height: =78
+        Size: =15
+        Text: ="Se registro con éxito"
+        Width: =311
+        X: =34
+        Y: =396
+        ZIndex: =7
+
+    Timer1 As timer:
+        AutoPause: =false
+        AutoStart: =true
+        Duration: =3000
+        Height: =68
+        OnTimerEnd: =Navigate(Inventario,ScreenTransition.Fade)
+        OnTimerStart: =true
+        Visible: =false
+        Width: =175
+        X: =21
+        Y: =585
+        ZIndex: =8
+

@@ -14,12 +14,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.bien_informatico_combobox_6.Items"
+                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.bien_informatico_combobox.Items"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.bien_informatico_combobox_6.Items",
+                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.bien_informatico_combobox.Items",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -33,7 +33,7 @@
               "properties": {
                 "member": "Items",
                 "module": "Registrar_Bien_Informatico",
-                "type": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.bien_informatico_combobox_6"
+                "type": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.bien_informatico_combobox"
               }
             }
           ],
@@ -54,12 +54,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.bien_informatico_combobox_6.Items"
+                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.bien_informatico_combobox.Items"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.bien_informatico_combobox_6.Items",
+                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.bien_informatico_combobox.Items",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -73,7 +73,7 @@
               "properties": {
                 "member": "Items",
                 "module": "Registrar_Bien_Informatico",
-                "type": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.bien_informatico_combobox_6"
+                "type": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.bien_informatico_combobox"
               }
             }
           ],
@@ -394,19 +394,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.piso_combobox_2.AccessibleLabel"
+                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.piso_combobox.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.piso_combobox_2.AccessibleLabel",
+                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.piso_combobox.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Registrar_Bien_Informatico",
-                "type": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.piso_combobox_2"
+                "type": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.piso_combobox"
               }
             }
           ],
@@ -424,19 +424,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.area_combobox_3.AccessibleLabel"
+                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.area_combobox.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.area_combobox_3.AccessibleLabel",
+                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.area_combobox.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Registrar_Bien_Informatico",
-                "type": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.area_combobox_3"
+                "type": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.area_combobox"
               }
             }
           ],
@@ -454,19 +454,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.tipo_area_combobox_4.AccessibleLabel"
+                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.tipo_area_combobox.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.tipo_area_combobox_4.AccessibleLabel",
+                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.tipo_area_combobox.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Registrar_Bien_Informatico",
-                "type": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.tipo_area_combobox_4"
+                "type": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.tipo_area_combobox"
               }
             }
           ],
@@ -544,19 +544,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.bien_informatico_combobox_6.AccessibleLabel"
+                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.bien_informatico_combobox.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.bien_informatico_combobox_6.AccessibleLabel",
+                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.bien_informatico_combobox.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Registrar_Bien_Informatico",
-                "type": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.bien_informatico_combobox_6"
+                "type": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.bien_informatico_combobox"
               }
             }
           ],
@@ -634,19 +634,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.marca_combobox_7.AccessibleLabel"
+                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.marca_combobox.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.marca_combobox_7.AccessibleLabel",
+                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.marca_combobox.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Registrar_Bien_Informatico",
-                "type": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.marca_combobox_7"
+                "type": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.marca_combobox"
               }
             }
           ],
@@ -664,19 +664,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.modelo_combobox_8.AccessibleLabel"
+                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.modelo_combobox.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.modelo_combobox_8.AccessibleLabel",
+                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.modelo_combobox.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Registrar_Bien_Informatico",
-                "type": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.modelo_combobox_8"
+                "type": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.modelo_combobox"
               }
             }
           ],
@@ -724,19 +724,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.pc_escritorio_container.disco_duro_combobox_6.AccessibleLabel"
+                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.pc_escritorio_container.disco_duro_combobox.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.pc_escritorio_container.disco_duro_combobox_6.AccessibleLabel",
+                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.pc_escritorio_container.disco_duro_combobox.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Registrar_Bien_Informatico",
-                "type": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.pc_escritorio_container.disco_duro_combobox_6"
+                "type": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.pc_escritorio_container.disco_duro_combobox"
               }
             }
           ],
@@ -754,19 +754,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.pc_escritorio_container.memoria_ram_combobox_7.AccessibleLabel"
+                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.pc_escritorio_container.memoria_ram_combobox.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.pc_escritorio_container.memoria_ram_combobox_7.AccessibleLabel",
+                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.pc_escritorio_container.memoria_ram_combobox.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Registrar_Bien_Informatico",
-                "type": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.pc_escritorio_container.memoria_ram_combobox_7"
+                "type": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.pc_escritorio_container.memoria_ram_combobox"
               }
             }
           ],
@@ -784,19 +784,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.pc_escritorio_container.procesador_combobox_8.AccessibleLabel"
+                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.pc_escritorio_container.procesador_combobox.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.pc_escritorio_container.procesador_combobox_8.AccessibleLabel",
+                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.pc_escritorio_container.procesador_combobox.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Registrar_Bien_Informatico",
-                "type": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.pc_escritorio_container.procesador_combobox_8"
+                "type": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.pc_escritorio_container.procesador_combobox"
               }
             }
           ],
@@ -814,19 +814,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.pc_escritorio_container.procesador_combobox_9.AccessibleLabel"
+                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.pc_escritorio_container.generacion_procesador_combobox.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.pc_escritorio_container.procesador_combobox_9.AccessibleLabel",
+                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.pc_escritorio_container.generacion_procesador_combobox.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Registrar_Bien_Informatico",
-                "type": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.pc_escritorio_container.procesador_combobox_9"
+                "type": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.pc_escritorio_container.generacion_procesador_combobox"
               }
             }
           ],
@@ -904,19 +904,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.datos_estandar.estado_combobox_7.AccessibleLabel"
+                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.datos_estandar.estado_combobox.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.datos_estandar.estado_combobox_7.AccessibleLabel",
+                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.datos_estandar.estado_combobox.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Registrar_Bien_Informatico",
-                "type": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.datos_estandar.estado_combobox_7"
+                "type": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.datos_estandar.estado_combobox"
               }
             }
           ],
@@ -934,19 +934,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.datos_estandar.estado_situcional_combobox_8.AccessibleLabel"
+                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.datos_estandar.estado_situcional_combobox.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.datos_estandar.estado_situcional_combobox_8.AccessibleLabel",
+                  "fullyQualifiedName": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.datos_estandar.estado_situcional_combobox.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Registrar_Bien_Informatico",
-                "type": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.datos_estandar.estado_situcional_combobox_8"
+                "type": "Registrar_Bien_Informatico.Canvas1_1.DataCard1_1.datos_estandar.estado_situcional_combobox"
               }
             }
           ],
@@ -1294,6 +1294,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.Mirage"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.Mirage",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Mirage",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.Hersheys"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.Hersheys",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Hersheys",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "Inventario.buscar_inventario.DelayOutput"
                 }
               ],
@@ -1317,7 +1377,7 @@
             "level": "Medium"
           },
           "ruleId": "app-TextInputIsNotDelayOutput",
-          "ruleIndex": 4
+          "ruleIndex": 5
         }
       ],
       "tool": {
@@ -1395,6 +1455,23 @@
                 "level": "Medium",
                 "primaryCategory": "accessibility",
                 "whyFix": "People who use the keyboard with your app will not be able to access this element without a tab stop."
+              }
+            },
+            {
+              "id": "app-UnusedMediaResources",
+              "messageStrings": {
+                "issue": {
+                  "text": "Archivos multimedia sin usar"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Quite el archivo multimedia que no se use en el panel Medios."
+                ],
+                "level": "Medium",
+                "primaryCategory": "performance",
+                "whyFix": "No hay ninguna fórmula de control que haga referencia a este archivo multimedia, por lo que no es necesario. Si se quita, mejorará el rendimiento."
               }
             },
             {

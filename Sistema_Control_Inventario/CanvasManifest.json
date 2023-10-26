@@ -132,6 +132,7 @@
   },
   "ScreenOrder": [
     "Inventario",
-    "Registrar_Bien_Informatico"
+    "Registrar_Bien_Informatico",
+    "Validacion_Correcta_INVENTARIO"
   ]
 }
