@@ -1548,7 +1548,7 @@ Inventario As screen:
                 editar_button As button:
                     Fill: =RGBA(54, 176, 75, 1)
                     Height: =25
-                    OnSelect: =Select(Parent)
+                    OnSelect: =Select(Parent);Set(var_registro_inventario,ThisItem);Navigate(Actualizar_Bien_Informatico)
                     Size: =12
                     Text: ="Editar"
                     Width: =100
@@ -1714,6 +1714,7 @@ Inventario As screen:
         ZIndex: =21
 
         Rectangle2 As rectangle:
+            DisplayMode: =DisplayMode.View
             Fill: =RGBA(0, 0, 0, 0.35)
             Height: =768
             Visible: =var_alerta_eliminar
@@ -1721,6 +1722,7 @@ Inventario As screen:
             ZIndex: =14
 
         Rectangle3 As rectangle:
+            DisplayMode: =DisplayMode.View
             Fill: =RGBA(227, 234, 243, 1)
             Height: =301
             Visible: =var_alerta_eliminar
@@ -1731,6 +1733,7 @@ Inventario As screen:
 
         Label5 As label:
             Align: =Align.Center
+            DisplayMode: =DisplayMode.View
             Fill: =RGBA(39, 113, 194, 1)
             FontWeight: =FontWeight.Bold
             Height: =61
@@ -1743,6 +1746,7 @@ Inventario As screen:
             ZIndex: =16
 
         Icon1 As icon.Cars:
+            DisplayMode: =DisplayMode.View
             Height: =66
             Icon: =Icon.QuestionMark
             Visible: =var_alerta_eliminar
@@ -1774,6 +1778,7 @@ Inventario As screen:
         Label7 As label:
             Align: =Align.Center
             AutoHeight: =true
+            DisplayMode: =DisplayMode.View
             FontWeight: =FontWeight.Semibold
             Height: =41
             Size: =14
