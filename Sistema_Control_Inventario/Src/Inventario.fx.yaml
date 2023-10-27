@@ -1706,7 +1706,7 @@ Inventario As screen:
         Y: =40
         ZIndex: =13
 
-    Group2 As group:
+    alerta_eliminar As group:
         Height: =5
         Width: =5
         X: =80
