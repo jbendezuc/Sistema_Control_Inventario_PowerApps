@@ -1668,6 +1668,7 @@ Inventario As screen:
         OnChange: |+
             =false
             
+        Reset: =resetearControles
         Width: =188
         X: =145
         Y: =105
@@ -1858,7 +1859,22 @@ Inventario As screen:
         Height: =28
         Text: =User().FullName
         Width: =307
-        X: =26
-        Y: =45
+        X: =1036
+        Y: =17
         ZIndex: =23
+
+    Salir_4 As icon.Alarm:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderStyle: =BorderStyle.Dotted
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Height: =45
+        Icon: =Icon.Leave
+        OnSelect: |-
+            =Navigate(Pantalla_Inicio,ScreenTransition.CoverRight);UpdateContext({resetearControles:true});UpdateContext({resetearControles:false});Reset(buscar_inventario)
+        Rotation: =180
+        Width: =60
+        X: =41
+        Y: =17
+        ZIndex: =24
 

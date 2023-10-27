@@ -94,14 +94,13 @@ Pantalla_Inicio As screen:
 
     Label8 As label:
         AutoHeight: =true
-        Color: =RGBA(255, 255, 255, 1)
+        Color: =RGBA(195, 245, 108, 1)
         FontWeight: =FontWeight.Bold
         Height: =29
-        Size: =12
         Text: =User().FullName
         Width: =201
         X: =160
-        Y: =132
+        Y: =130
         ZIndex: =10
 
     Image2 As image:
