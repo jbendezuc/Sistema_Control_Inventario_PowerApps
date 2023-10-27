@@ -405,7 +405,7 @@ Actualizar_Bien_Informatico As screen:
             n_serie_texto_1 As text:
                 BorderColor: =If(Len(n_serie_texto_1.Text) >= 6,If(IsBlank(LookUp(INVENTARIO_EQUIPOS_INFORMATICOS, NUM_SERIE = n_serie_texto_1.Text)), Color.Green,Color.Red),Color.Black)
                 BorderThickness: =If(Len(n_serie_texto_1.Text)>=6,4,1)
-                Default: =""
+                Default: =var_registro_inventario.NUM_SERIE
                 Height: =25
                 Mode: =TextMode.MultiLine
                 OnChange: |
@@ -465,6 +465,7 @@ Actualizar_Bien_Informatico As screen:
 
                 disco_duro_combobox_1 As dropdown:
                     BorderThickness: =1
+                    Default: =var_registro_inventario.DISCO_DURO
                     Height: =25
                     Items: =DISCOS_DUROS
                     Reset: =resetearControles
@@ -486,6 +487,7 @@ Actualizar_Bien_Informatico As screen:
 
                 memoria_ram_combobox_1 As dropdown:
                     BorderThickness: =1
+                    Default: =var_registro_inventario.MEMORIA_RAM
                     Height: =25
                     Items: =MEMORIAS_RAM
                     Reset: =resetearControles
@@ -507,6 +509,7 @@ Actualizar_Bien_Informatico As screen:
 
                 procesador_combobox_1 As dropdown:
                     BorderThickness: =1
+                    Default: =var_registro_inventario.PROCESADOR
                     Height: =25
                     Items: =PROCESADORES
                     Reset: =resetearControles
@@ -528,6 +531,7 @@ Actualizar_Bien_Informatico As screen:
 
                 generacion_procesador_combobox_1 As dropdown:
                     BorderThickness: =1
+                    Default: =var_registro_inventario.GENERACION_PROCESADOR
                     Height: =25
                     Items: =GENERACIONES_PROCESADOR
                     Reset: =resetearControles
@@ -549,7 +553,7 @@ Actualizar_Bien_Informatico As screen:
 
                 hostname_texto_1 As text:
                     BorderThickness: =1
-                    Default: =""
+                    Default: =var_registro_inventario.HOSTNAME_CPU
                     Height: =25
                     Mode: =TextMode.MultiLine
                     RadiusBottomLeft: =3
@@ -577,7 +581,7 @@ Actualizar_Bien_Informatico As screen:
                 ip_texto_1 As text:
                     BorderColor: =If(Len(ip_texto_1.Text) = 15,If(IsBlank(LookUp(INVENTARIO_EQUIPOS_INFORMATICOS, IP_BIEN_INFORMATICO = ip_texto_1.Text)), Color.Green,Color.Red),Color.Black)
                     BorderThickness: =If(Len(ip_texto_1.Text)=15,4,1)
-                    Default: =""
+                    Default: =var_registro_inventario.IP_BIEN_INFORMATICO
                     Height: =25
                     MaxLength: =15
                     Mode: =TextMode.MultiLine
@@ -714,7 +718,7 @@ Actualizar_Bien_Informatico As screen:
 
                 tecnico_responsable_input_1 As text:
                     BorderThickness: =1
-                    Default: =User().FullName
+                    Default: =var_registro_inventario.TECNICO_REPONSABLE
                     DisplayMode: =DisplayMode.View
                     Height: =25
                     Mode: =TextMode.MultiLine
@@ -730,7 +734,7 @@ Actualizar_Bien_Informatico As screen:
 
                 jefe_inmediato_input_1 As text:
                     BorderThickness: =1
-                    Default: =""
+                    Default: =var_registro_inventario.JEFE_INMEDIATO
                     Height: =25
                     Mode: =TextMode.MultiLine
                     RadiusBottomLeft: =3
@@ -746,7 +750,7 @@ Actualizar_Bien_Informatico As screen:
 
                 n_oficio_baja_input_1 As text:
                     BorderThickness: =1
-                    Default: =""
+                    Default: =var_registro_inventario.FICHA_BAJA
                     Height: =25
                     HintText: |-
                         ="Se sugiere ""###-OCI-202#"""
@@ -770,178 +774,178 @@ Actualizar_Bien_Informatico As screen:
                             bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "Laptop",
                             Patch(
                                 INVENTARIO_EQUIPOS_INFORMATICOS,
-                                Defaults(INVENTARIO_EQUIPOS_INFORMATICOS),
+                                LookUp(INVENTARIO_EQUIPOS_INFORMATICOS,ThisRecord.ID = var_registro_inventario.ID),
                                 {
                                     LOCAL: local_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
-                                    FACULTAD: facultad_combobox.SelectedText.SEDE,
-                                    PISO: piso_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BPISO',
-                                    AREA: area_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
-                                    TIPO_AREA: tipo_area_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BAREA',
-                                    PABELLON:pabellon_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BPABELLON',
-                                    NOMBRE_AREA: nombre_area_text.Text,
-                                    BIEN_INFORMATICO: bien_informatico_combobox.SelectedText.BIEN_INFORMATICO,
-                                    PATRIMONIO: patrimonio_texto.Text,
-                                    PATRIMONIO_REFERENCIA:patrimonio_referencia.Text,
-                                    MARCA: marca_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
-                                    MODELO: modelo_combobox.SelectedText.MODELO,
-                                    NUM_SERIE: n_serie_texto.Text,
-                                    DISCO_DURO: disco_duro_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BDISCO_DURO',
-                                    MEMORIA_RAM: memoria_ram_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BMEMORIA_RAM',
-                                    PROCESADOR: procesador_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BPROCESADOR',
-                                    GENERACION_PROCESADOR: generacion_procesador_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BGENERACION_PROCESADOR',
-                                    HOSTNAME_CPU: hostname_texto.Text,
-                                    IP_BIEN_INFORMATICO: ip_texto.Text,
-                                    ESTADO: estado_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
-                                    SITUACION_ACTUAL: estado_situcional_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BESTADO_SITUCIONAL',
-                                    FICHA_BAJA: n_oficio_baja_input.Text,
-                                    JEFE_INMEDIATO: jefe_inmediato_input.Text,
-                                    USUARIO_RESPONSABLE: usuario_responsable_input.Text,
-                                    TECNICO_REPONSABLE: tecnico_responsable_input.Text,
+                                    FACULTAD: facultad_combobox_1.SelectedText.SEDE,
+                                    PISO: piso_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BPISO',
+                                    AREA: area_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
+                                    TIPO_AREA: tipo_area_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BAREA',
+                                    PABELLON:pabellon_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BPABELLON',
+                                    NOMBRE_AREA: nombre_area_texto_1.Text,
+                                    BIEN_INFORMATICO: bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO,
+                                    PATRIMONIO: patrimonio_texto_1.Text,
+                                    PATRIMONIO_REFERENCIA:patrimonio_referencia_1.Text,
+                                    MARCA: marca_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
+                                    MODELO: modelo_combobox_1.SelectedText.MODELO,
+                                    NUM_SERIE: n_serie_texto_1.Text,
+                                    DISCO_DURO: disco_duro_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BDISCO_DURO',
+                                    MEMORIA_RAM: memoria_ram_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BMEMORIA_RAM',
+                                    PROCESADOR: procesador_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BPROCESADOR',
+                                    GENERACION_PROCESADOR: generacion_procesador_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BGENERACION_PROCESADOR',
+                                    HOSTNAME_CPU: hostname_texto_1.Text,
+                                    IP_BIEN_INFORMATICO: ip_texto_1.Text,
+                                    ESTADO: estado_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
+                                    SITUACION_ACTUAL: estado_situcional_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BESTADO_SITUCIONAL',
+                                    FICHA_BAJA: n_oficio_baja_input_1.Text,
+                                    JEFE_INMEDIATO: jefe_inmediato_input_1.Text,
+                                    USUARIO_RESPONSABLE: usuario_responsable_input_1.Text,
+                                    TECNICO_REPONSABLE: tecnico_responsable_input_1.Text,
                                     CORREO_TECNICO: User().Email
                                 }
                             ),
                             If(
-                                bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "Impresora",
+                                bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "Impresora",
                                 Patch(
                                     INVENTARIO_EQUIPOS_INFORMATICOS,
-                                    Defaults(INVENTARIO_EQUIPOS_INFORMATICOS),
+                                    LookUp(INVENTARIO_EQUIPOS_INFORMATICOS,ThisRecord.ID = var_registro_inventario.ID),
                                     {
-                                        LOCAL: local_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
-                                        FACULTAD: facultad_combobox.SelectedText.SEDE,
-                                        PISO: piso_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BPISO',
-                                        AREA: area_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
-                                        TIPO_AREA: tipo_area_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BAREA',
-                                        PABELLON:pabellon_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BPABELLON',
-                                        NOMBRE_AREA: nombre_area_text.Text,
-                                        BIEN_INFORMATICO: bien_informatico_combobox.SelectedText.BIEN_INFORMATICO,
-                                        PATRIMONIO: patrimonio_texto.Text,
-                                        PATRIMONIO_REFERENCIA:patrimonio_referencia.Text,
-                                        MARCA: marca_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
-                                        MODELO: modelo_combobox.SelectedText.MODELO,
+                                        LOCAL: local_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
+                                        FACULTAD: facultad_combobox_1.SelectedText.SEDE,
+                                        PISO: piso_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BPISO',
+                                        AREA: area_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
+                                        TIPO_AREA: tipo_area_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BAREA',
+                                        PABELLON:pabellon_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BPABELLON',
+                                        NOMBRE_AREA: nombre_area_texto_1.Text,
+                                        BIEN_INFORMATICO: bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO,
+                                        PATRIMONIO: patrimonio_texto_1.Text,
+                                        PATRIMONIO_REFERENCIA:patrimonio_referencia_1.Text,
+                                        MARCA: marca_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
+                                        MODELO: modelo_combobox_1.SelectedText.MODELO,
                                         NUM_SERIE: n_serie_texto.Text,
-                                        IP_BIEN_INFORMATICO: ip_impresora_texto.Text,
-                                        TIPO_IMPRESORA: tipo_impresora_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BTIPO_IMPRESORA',
-                                        TIPO_CONECTOR_IMPRESORA: conexion_impresora_combobox,
-                                        ESTADO: estado_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
-                                        SITUACION_ACTUAL: estado_situcional_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BESTADO_SITUCIONAL',
-                                        FICHA_BAJA: n_oficio_baja_input.Text,
-                                        JEFE_INMEDIATO: jefe_inmediato_input.Text,
-                                        USUARIO_RESPONSABLE: usuario_responsable_input.Text,
-                                        TECNICO_REPONSABLE: tecnico_responsable_input.Text,
+                                        IP_BIEN_INFORMATICO: ip_impresora_texto_1.Text,
+                                        TIPO_IMPRESORA: tipo_impresora_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BTIPO_IMPRESORA',
+                                        TIPO_CONECTOR_IMPRESORA: conexion_impresora_combobox_1,
+                                        ESTADO: estado_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
+                                        SITUACION_ACTUAL: estado_situcional_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BESTADO_SITUCIONAL',
+                                        FICHA_BAJA: n_oficio_baja_input_1.Text,
+                                        JEFE_INMEDIATO: jefe_inmediato_input_1.Text,
+                                        USUARIO_RESPONSABLE: usuario_responsable_input_1.Text,
+                                        TECNICO_REPONSABLE: tecnico_responsable_input_1.Text,
                                         CORREO_TECNICO: User().Email
                                     }
                                 ),
                                 If(
-                                    bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "Teclado",
+                                    bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "Teclado",
                                     Patch(
                                         INVENTARIO_EQUIPOS_INFORMATICOS,
-                                        Defaults(INVENTARIO_EQUIPOS_INFORMATICOS),
+                                        LookUp(INVENTARIO_EQUIPOS_INFORMATICOS,ThisRecord.ID = var_registro_inventario.ID),
                                         {
-                                            LOCAL: local_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
-                                            FACULTAD: facultad_combobox.SelectedText.SEDE,
-                                            PISO: piso_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BPISO',
-                                            AREA: area_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
-                                            TIPO_AREA: tipo_area_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BAREA',
-                                            PABELLON:pabellon_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BPABELLON',
-                                            NOMBRE_AREA: nombre_area_text.Text,
-                                            BIEN_INFORMATICO: bien_informatico_combobox.SelectedText.BIEN_INFORMATICO,
-                                            PATRIMONIO: patrimonio_texto.Text,
-                                            PATRIMONIO_REFERENCIA:patrimonio_referencia.Text,
-                                            MARCA: marca_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
-                                            MODELO: modelo_combobox.SelectedText.MODELO,
-                                            NUM_SERIE: n_serie_texto.Text,
-                                            TIPO_CONECTOR_TECLADO: conector_teclado_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BCONECTOR_TECLADO',
-                                            ESTADO: estado_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
-                                            SITUACION_ACTUAL: estado_situcional_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BESTADO_SITUCIONAL',
-                                            FICHA_BAJA: n_oficio_baja_input.Text,
+                                            LOCAL: local_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
+                                            FACULTAD: facultad_combobox_1.SelectedText.SEDE,
+                                            PISO: piso_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BPISO',
+                                            AREA: area_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
+                                            TIPO_AREA: tipo_area_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BAREA',
+                                            PABELLON:pabellon_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BPABELLON',
+                                            NOMBRE_AREA: nombre_area_texto_1.Text,
+                                            BIEN_INFORMATICO: bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO,
+                                            PATRIMONIO: patrimonio_texto_1.Text,
+                                            PATRIMONIO_REFERENCIA:patrimonio_referencia_1.Text,
+                                            MARCA: marca_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
+                                            MODELO: modelo_combobox_1.SelectedText.MODELO,
+                                            NUM_SERIE: n_serie_texto_1.Text,
+                                            TIPO_CONECTOR_TECLADO: conector_teclado_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BCONECTOR_TECLADO',
+                                            ESTADO: estado_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
+                                            SITUACION_ACTUAL: estado_situcional_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BESTADO_SITUCIONAL',
+                                            FICHA_BAJA: n_oficio_baja_input_1.Text,
                                             JEFE_INMEDIATO: jefe_inmediato_input.Text,
-                                            USUARIO_RESPONSABLE: usuario_responsable_input.Text,
-                                            TECNICO_REPONSABLE: tecnico_responsable_input.Text,
+                                            USUARIO_RESPONSABLE: usuario_responsable_input_1.Text,
+                                            TECNICO_REPONSABLE: tecnico_responsable_input_1.Text,
                                             CORREO_TECNICO: User().Email
                                         }
                                     ),
                                     If(
-                                        bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "Monitor",
+                                        bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "Monitor",
                                         Patch(
                                             INVENTARIO_EQUIPOS_INFORMATICOS,
-                                            Defaults(INVENTARIO_EQUIPOS_INFORMATICOS),
+                                            LookUp(INVENTARIO_EQUIPOS_INFORMATICOS,ThisRecord.ID = var_registro_inventario.ID),
                                             {
-                                                LOCAL: local_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
-                                                FACULTAD: facultad_combobox.SelectedText.SEDE,
-                                                PISO: piso_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BPISO',
-                                                AREA: area_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
-                                                TIPO_AREA: tipo_area_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BAREA',
-                                                PABELLON:pabellon_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BPABELLON',
-                                                NOMBRE_AREA: nombre_area_text.Text,
-                                                BIEN_INFORMATICO: bien_informatico_combobox.SelectedText.BIEN_INFORMATICO,
-                                                PATRIMONIO: patrimonio_texto.Text,
-                                                PATRIMONIO_REFERENCIA:patrimonio_referencia.Text,
-                                                MARCA: marca_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
-                                                MODELO: modelo_combobox.SelectedText.MODELO,
-                                                NUM_SERIE: n_serie_texto.Text,
-                                                TIPO_CONECTOR_MONITOR: conector_monitor_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BCONECTOR_MONITOR',
-                                                ESTADO: estado_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
-                                                SITUACION_ACTUAL: estado_situcional_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BESTADO_SITUCIONAL',
-                                                FICHA_BAJA: n_oficio_baja_input.Text,
-                                                JEFE_INMEDIATO: jefe_inmediato_input.Text,
-                                                USUARIO_RESPONSABLE: usuario_responsable_input.Text,
-                                                TECNICO_REPONSABLE: tecnico_responsable_input.Text,
+                                                LOCAL: local_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
+                                                FACULTAD: facultad_combobox_1.SelectedText.SEDE,
+                                                PISO: piso_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BPISO',
+                                                AREA: area_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
+                                                TIPO_AREA: tipo_area_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BAREA',
+                                                PABELLON:pabellon_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BPABELLON',
+                                                NOMBRE_AREA: nombre_area_texto_1.Text,
+                                                BIEN_INFORMATICO: bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO,
+                                                PATRIMONIO: patrimonio_texto_1.Text,
+                                                PATRIMONIO_REFERENCIA:patrimonio_referencia_1.Text,
+                                                MARCA: marca_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
+                                                MODELO: modelo_combobox_1.SelectedText.MODELO,
+                                                NUM_SERIE: n_serie_texto_1.Text,
+                                                TIPO_CONECTOR_MONITOR: conector_monitor_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BCONECTOR_MONITOR',
+                                                ESTADO: estado_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
+                                                SITUACION_ACTUAL: estado_situcional_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BESTADO_SITUCIONAL',
+                                                FICHA_BAJA: n_oficio_baja_input_1.Text,
+                                                JEFE_INMEDIATO: jefe_inmediato_input_1.Text,
+                                                USUARIO_RESPONSABLE: usuario_responsable_input_1.Text,
+                                                TECNICO_REPONSABLE: tecnico_responsable_input_1.Text,
                                                 CORREO_TECNICO: User().Email
                                             }
                                         ),
                                         If(
-                                            bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "Telefono IP",
+                                            bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "Telefono IP",
                                             Patch(
                                                 INVENTARIO_EQUIPOS_INFORMATICOS,
-                                                Defaults(INVENTARIO_EQUIPOS_INFORMATICOS),
+                                                LookUp(INVENTARIO_EQUIPOS_INFORMATICOS,ThisRecord.ID = var_registro_inventario.ID),
                                                 {
-                                                    LOCAL: local_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
-                                                    FACULTAD: facultad_combobox.SelectedText.SEDE,
-                                                    PISO: piso_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BPISO',
-                                                    AREA: area_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
-                                                    TIPO_AREA: tipo_area_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BAREA',
-                                                    PABELLON:pabellon_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BPABELLON',
-                                                    NOMBRE_AREA: nombre_area_text.Text,
-                                                    BIEN_INFORMATICO: bien_informatico_combobox.SelectedText.BIEN_INFORMATICO,
-                                                    PATRIMONIO: patrimonio_texto.Text,
-                                                    PATRIMONIO_REFERENCIA:patrimonio_referencia.Text,
-                                                    MARCA: marca_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
-                                                    MODELO: modelo_combobox.SelectedText.MODELO,
-                                                    NUM_SERIE: n_serie_texto.Text,
-                                                    IP_BIEN_INFORMATICO: ip_telefono_input.Text,
-                                                    ANEXO_TELEFONO: anexo_input.Text,
-                                                    ESTADO: estado_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
-                                                    SITUACION_ACTUAL: estado_situcional_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BESTADO_SITUCIONAL',
-                                                    FICHA_BAJA: n_oficio_baja_input.Text,
-                                                    JEFE_INMEDIATO: jefe_inmediato_input.Text,
-                                                    USUARIO_RESPONSABLE: usuario_responsable_input.Text,
-                                                    TECNICO_REPONSABLE: tecnico_responsable_input.Text,
+                                                    LOCAL: local_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
+                                                    FACULTAD: facultad_combobox_1.SelectedText.SEDE,
+                                                    PISO: piso_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BPISO',
+                                                    AREA: area_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
+                                                    TIPO_AREA: tipo_area_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BAREA',
+                                                    PABELLON:pabellon_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BPABELLON',
+                                                    NOMBRE_AREA: nombre_area_texto_1.Text,
+                                                    BIEN_INFORMATICO: bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO,
+                                                    PATRIMONIO: patrimonio_texto_1.Text,
+                                                    PATRIMONIO_REFERENCIA:patrimonio_referencia_1.Text,
+                                                    MARCA: marca_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
+                                                    MODELO: modelo_combobox_1.SelectedText.MODELO,
+                                                    NUM_SERIE: n_serie_texto_1.Text,
+                                                    IP_BIEN_INFORMATICO: ip_telefono_input_1.Text,
+                                                    ANEXO_TELEFONO: anexo_input_1.Text,
+                                                    ESTADO: estado_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
+                                                    SITUACION_ACTUAL: estado_situcional_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BESTADO_SITUCIONAL',
+                                                    FICHA_BAJA: n_oficio_baja_input_1.Text,
+                                                    JEFE_INMEDIATO: jefe_inmediato_input_1.Text,
+                                                    USUARIO_RESPONSABLE: usuario_responsable_input_1.Text,
+                                                    TECNICO_REPONSABLE: tecnico_responsable_input_1.Text,
                                                     CORREO_TECNICO: User().Email
                                                 }
                                             ),
                                             Patch(
                                                 INVENTARIO_EQUIPOS_INFORMATICOS,
-                                                Defaults(INVENTARIO_EQUIPOS_INFORMATICOS),
+                                                LookUp(INVENTARIO_EQUIPOS_INFORMATICOS,ThisRecord.ID = var_registro_inventario.ID),
                                                 {
-                                                    LOCAL: local_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
-                                                    FACULTAD: facultad_combobox.SelectedText.SEDE,
-                                                    PISO: piso_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BPISO',
-                                                    AREA: area_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
-                                                    TIPO_AREA: tipo_area_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BAREA',
-                                                    PABELLON:pabellon_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BPABELLON',
-                                                    NOMBRE_AREA: nombre_area_text.Text,
-                                                    BIEN_INFORMATICO: bien_informatico_combobox.SelectedText.BIEN_INFORMATICO,
-                                                    PATRIMONIO: patrimonio_texto.Text,
-                                                    PATRIMONIO_REFERENCIA:patrimonio_referencia.Text,
-                                                    MARCA: marca_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
-                                                    MODELO: modelo_combobox.SelectedText.MODELO,
-                                                    NUM_SERIE: n_serie_texto.Text,
-                                                    ESTADO: estado_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
-                                                    SITUACION_ACTUAL: estado_situcional_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BESTADO_SITUCIONAL',
-                                                    FICHA_BAJA: n_oficio_baja_input.Text,
-                                                    JEFE_INMEDIATO: jefe_inmediato_input.Text,
-                                                    USUARIO_RESPONSABLE: usuario_responsable_input.Text,
-                                                    TECNICO_REPONSABLE: tecnico_responsable_input.Text,
+                                                    LOCAL: local_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
+                                                    FACULTAD: facultad_combobox_1.SelectedText.SEDE,
+                                                    PISO: piso_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BPISO',
+                                                    AREA: area_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
+                                                    TIPO_AREA: tipo_area_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BAREA',
+                                                    PABELLON:pabellon_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BPABELLON',
+                                                    NOMBRE_AREA: nombre_area_texto_1.Text,
+                                                    BIEN_INFORMATICO: bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO,
+                                                    PATRIMONIO: patrimonio_texto_1.Text,
+                                                    PATRIMONIO_REFERENCIA:patrimonio_referencia_1.Text,
+                                                    MARCA: marca_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
+                                                    MODELO: modelo_combobox_1.SelectedText.MODELO,
+                                                    NUM_SERIE: n_serie_texto_1.Text,
+                                                    ESTADO: estado_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
+                                                    SITUACION_ACTUAL: estado_situcional_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BESTADO_SITUCIONAL',
+                                                    FICHA_BAJA: n_oficio_baja_input_1.Text,
+                                                    JEFE_INMEDIATO: jefe_inmediato_input_1.Text,
+                                                    USUARIO_RESPONSABLE: usuario_responsable_input_1.Text,
+                                                    TECNICO_REPONSABLE: tecnico_responsable_input_1.Text,
                                                     CORREO_TECNICO: User().Email
                                                 }
                                             )
@@ -953,16 +957,13 @@ Actualizar_Bien_Informatico As screen:
                         UpdateContext({resetearControles:true});UpdateContext({resetearControles:false});Navigate(Validacion_Correcta_INVENTARIO,ScreenTransition.UnCoverRight);Reset(buscar_inventario)
                         /*
                         --ACTUALIZAR
-                        If(var_limpiar_img_RT=1;Set(var_firma_responsable_1;JSON(Firma_Responsable_1.Image;JSONFormat.IncludeBinaryData));Set(var_firma_responsable_1;varFichaTecnica.FIRMARESPONSABLE));;
-                        
-                        If(var_limpiar_img_FT=1;Set(var_firma_tecnico_1;JSON(Firma_Tecnico_1.Image;JSONFormat.IncludeBinaryData));Set(var_firma_tecnico_1;varFichaTecnica.FIRMATECNICO));;
                         Patch(FICHAS_TECNICAS;LookUp(FICHAS_TECNICAS;ThisRecord.ID = varFichaTecnica.ID);{LOCAL:Local_1.Selected.Result;FACULTAD:Facultad_1.Selected.SEDE;NOMBRE_OFICINA:Nombre_Oficina_1.Text;BIEN_INFORMATICO:Bien_Informatico_1.Selected.BIEN_INFORMATICO;OFICINA:Oficina.Selected.OFICINA;PATRIMONIO:Patrimonio_1.Text;MARCA:Marca_1.Selected.Result;MODELO:Modelo_1.Selected.MODELO;SERIE:Serie_1.Text;TECNICO:Tecnico_1.Text;RESPONSABLE:Responsable_1.Text;ASUNTO:Asunto_1.Selected.SERVICIO;FECHA:Fecha_1.SelectedDate;MEDIO:Medio_Informativo_1.Selected.MEDIO_INFORMATIVO;NOFICIO:Noficio_1.Text;DIAGNOSTICO:Diagnostico_1.Text;FALLA:Falla_1.Text;OBSERVACION:Observacion_1.Text;IMAGEN:Text(var_foto);ESTADO:{Value:"Nuevo"};CORREO:Correo_1.Text;FIRMATECNICO:Text(var_firma_tecnico_1);FIRMARESPONSABLE:Text(var_firma_responsable_1)});;UpdateContext({resetearControles_Editar:true});;UpdateContext({resetearControles_Editar:false});;Navigate(Validacion_Correcta_FT;ScreenTransition.UnCoverRight);;Reset(BuscarFichaTecnica)
                         */
                     Size: =12
-                    Text: ="Registrar"
+                    Text: ="Actualizar"
                     Width: =136
                     X: =93
-                    Y: =272
+                    Y: =276
                     ZIndex: =15
 
             impresora_container_1 As groupContainer.manualLayoutContainer:
@@ -986,6 +987,7 @@ Actualizar_Bien_Informatico As screen:
 
                 tipo_impresora_combobox_1 As dropdown:
                     BorderThickness: =1
+                    Default: =var_registro_inventario.TIPO_IMPRESORA
                     Height: =25
                     Items: =TIPOS_IMPRESORA
                     Reset: =resetearControles
@@ -1007,6 +1009,7 @@ Actualizar_Bien_Informatico As screen:
 
                 conexion_impresora_combobox_1 As dropdown:
                     BorderThickness: =1
+                    Default: =var_registro_inventario.TIPO_CONECTOR_IMPRESORA
                     Height: =25
                     Items: =CONEXIONES_IMPRESORA
                     Reset: =resetearControles
@@ -1030,7 +1033,7 @@ Actualizar_Bien_Informatico As screen:
                 ip_impresora_texto_1 As text:
                     BorderColor: =If(Len(ip_impresora_texto_1.Text) = 15,If(IsBlank(LookUp(INVENTARIO_EQUIPOS_INFORMATICOS, IP_BIEN_INFORMATICO = ip_impresora_texto_1.Text)), Color.Green,Color.Red),Color.Black)
                     BorderThickness: =If(Len(ip_impresora_texto_1.Text)=15,4,1)
-                    Default: =""
+                    Default: =var_registro_inventario.IP_BIEN_INFORMATICO
                     DisplayMode: =If(conexion_impresora_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BCONEXION_IMPRESORA' = "Red",DisplayMode.Edit,DisplayMode.Disabled)
                     Height: =25
                     MaxLength: =15
@@ -1081,6 +1084,7 @@ Actualizar_Bien_Informatico As screen:
 
                 conector_teclado_combobox_1 As dropdown:
                     BorderThickness: =1
+                    Default: =var_registro_inventario.TIPO_CONECTOR_TECLADO
                     Height: =25
                     Items: =CONECTORES_TECLADO
                     Reset: =resetearControles
@@ -1111,6 +1115,7 @@ Actualizar_Bien_Informatico As screen:
 
                 conector_monitor_combobox_1 As dropdown:
                     BorderThickness: =1
+                    Default: =var_registro_inventario.TIPO_CONECTOR_MONITOR
                     Height: =25
                     Items: =CONECTORES_MONITOR
                     Reset: =resetearControles
@@ -1143,7 +1148,7 @@ Actualizar_Bien_Informatico As screen:
                 ip_telefono_input_1 As text:
                     BorderColor: =If(Len(ip_telefono_input_1.Text) = 15,If(IsBlank(LookUp(INVENTARIO_EQUIPOS_INFORMATICOS, IP_BIEN_INFORMATICO = ip_telefono_input_1.Text)), Color.Green,Color.Red),Color.Black)
                     BorderThickness: =If(Len(ip_telefono_input_1.Text)=15,4,1)
-                    Default: =""
+                    Default: =var_registro_inventario.IP_BIEN_INFORMATICO
                     Height: =25
                     MaxLength: =15
                     Mode: =TextMode.MultiLine
@@ -1186,7 +1191,7 @@ Actualizar_Bien_Informatico As screen:
 
                 anexo_input_1 As text:
                     BorderThickness: =1
-                    Default: =""
+                    Default: =var_registro_inventario.ANEXO_TELEFONO
                     Height: =25
                     Mode: =TextMode.MultiLine
                     RadiusBottomLeft: =3
@@ -1199,11 +1204,4 @@ Actualizar_Bien_Informatico As screen:
                     X: =105
                     Y: =47
                     ZIndex: =15
-
-    Dropdown1 As dropdown:
-        Default: =var_registro_inventario.BIEN_INFORMATICO
-        Items: =BIENES_INFORMATICOS
-        X: =26
-        Y: =99
-        ZIndex: =6
 
