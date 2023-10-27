@@ -723,33 +723,7 @@ Inventario As screen:
                 DelayItemLoading: =true
                 Height: =522
                 Items: |-
-                    =//INVENTARIO_EQUIPOS_INFORMATICOS
-                    /*
-                    If(
-                        Not(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo")  && IsBlank(buscar_inventario.Text);
-                        Sort(Filter(
-                            INVENTARIO_EQUIPOS_INFORMATICOS;
-                            BIEN_INFORMATICO = elegir_bien_informatico.SelectedText.BIEN_INFORMATICO
-                        );ID;SortOrder.Descending);
-                        Not(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo") && !IsBlank(buscar_inventario.Text);
-                        Sort(Filter(
-                            INVENTARIO_EQUIPOS_INFORMATICOS;
-                            BIEN_INFORMATICO = elegir_bien_informatico.SelectedText.BIEN_INFORMATICO;
-                            StartsWith(LOCAL;buscar_inventario.Text) || StartsWith(FACULTAD;buscar_inventario.Text) || StartsWith(PATRIMONIO;buscar_inventario.Text) || StartsWith(AREA;buscar_inventario.Text)
-                        );ID;SortOrder.Descending);
-                        elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo"  && !IsBlank(buscar_inventario.Text);
-                        Sort(Filter(
-                            INVENTARIO_EQUIPOS_INFORMATICOS;
-                            StartsWith(LOCAL;buscar_inventario.Text) || StartsWith(FACULTAD;buscar_inventario.Text) || StartsWith(PATRIMONIO;buscar_inventario.Text) || StartsWith(AREA;buscar_inventario.Text)
-                        );ID;SortOrder.Descending);
-                        elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo"  && IsBlank(buscar_inventario.Text);
-                        Sort(
-                            INVENTARIO_EQUIPOS_INFORMATICOS   
-                        ;ID;SortOrder.Descending);
-                        INVENTARIO_EQUIPOS_INFORMATICOS
-                    )
-                    */
-                    If(
+                    =If(
                         correo_tecnico.Text = "proyectos.ocgti@unfv.edu.pe" || correo_tecnico.Text = "cfranco@unfv.edu.pe",
                         If(
                             Not(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo") && IsBlank(buscar_inventario.Text),
@@ -778,6 +752,9 @@ Inventario As screen:
                                     ) || StartsWith(
                                         AREA,
                                         buscar_inventario.Text
+                                    ) || StartsWith(
+                                        CORREO_TECNICO,
+                                        buscar_inventario.Text
                                     )
                                 ),
                                 ID,
@@ -799,6 +776,9 @@ Inventario As screen:
                                     ) || StartsWith(
                                         AREA,
                                         buscar_inventario.Text
+                                    ) || StartsWith(
+                                        CORREO_TECNICO,
+                                        buscar_inventario.Text
                                     )
                                 ),
                                 ID,
@@ -811,7 +791,7 @@ Inventario As screen:
                                 SortOrder.Descending
                             ),
                             INVENTARIO_EQUIPOS_INFORMATICOS
-                        ),
+                        ),//SI NO ERES ADMINITRADOR
                         If(
                             Not(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo") && IsBlank(buscar_inventario.Text),
                             Sort(
@@ -1694,17 +1674,84 @@ Inventario As screen:
         ZIndex: =12
 
     correo_tecnico As label:
-        Height: =25
-        Text: |-
-            =User().Email
-            
-            /*
-            PC Escritorio = 
-            */
-        Width: =276
-        X: =40
-        Y: =40
+        AutoHeight: =true
+        FontWeight: =FontWeight.Bold
+        Height: =28
+        Text: =User().Email
+        Visible: =false
+        Width: =307
+        X: =26
+        Y: =62
         ZIndex: =13
+
+    n_registros_cantidad As label:
+        BorderThickness: =1
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =35
+        Size: =12
+        Text: |-
+            =If(
+                correo_tecnico.Text = "proyectos.ocgti@unfv.edu.pe" || correo_tecnico.Text = "cfranco@unfv.edu.pe",
+                If(
+                    Not(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo") && IsBlank(buscar_inventario.Text),
+                    CountIf(
+                        INVENTARIO_EQUIPOS_INFORMATICOS,
+                        BIEN_INFORMATICO = elegir_bien_informatico.SelectedText.BIEN_INFORMATICO
+                    ),
+                    If(
+                        Not(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo") && !IsBlank(buscar_inventario.Text),
+                        CountIf(
+                            INVENTARIO_EQUIPOS_INFORMATICOS,
+                            BIEN_INFORMATICO = elegir_bien_informatico.SelectedText.BIEN_INFORMATICO && (LOCAL = buscar_inventario.Text || FACULTAD = buscar_inventario.Text || AREA = buscar_inventario.Text || CORREO_TECNICO = buscar_inventario.Text)
+                        ),
+                        If(
+                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo" && IsBlank(buscar_inventario.Text),
+                            CountIf(
+                                INVENTARIO_EQUIPOS_INFORMATICOS,
+                                (BIEN_INFORMATICO = "PC Escritorio" || BIEN_INFORMATICO = "Impresora" || BIEN_INFORMATICO = "Laptop" || BIEN_INFORMATICO = "Monitor" || BIEN_INFORMATICO = "Teclado")
+                            ),
+                            If(
+                                elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo" && !IsBlank(buscar_inventario.Text),
+                                CountIf(
+                                    INVENTARIO_EQUIPOS_INFORMATICOS,
+                                    ((BIEN_INFORMATICO = "PC Escritorio" || BIEN_INFORMATICO = "Impresora" || BIEN_INFORMATICO = "Laptop" || BIEN_INFORMATICO = "Monitor" || BIEN_INFORMATICO = "Teclado") && (LOCAL = buscar_inventario.Text || FACULTAD = buscar_inventario.Text || AREA = buscar_inventario.Text || CORREO_TECNICO = buscar_inventario.Text))
+                                )
+                            )
+                        )
+                    )
+                ),
+                If(
+                    Not(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo") && IsBlank(buscar_inventario.Text),
+                    CountIf(
+                        INVENTARIO_EQUIPOS_INFORMATICOS,
+                        BIEN_INFORMATICO = elegir_bien_informatico.SelectedText.BIEN_INFORMATICO && CORREO_TECNICO=User().Email
+                    ),
+                    If(
+                        Not(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo") && !IsBlank(buscar_inventario.Text),
+                        CountIf(
+                            INVENTARIO_EQUIPOS_INFORMATICOS,
+                            (BIEN_INFORMATICO = elegir_bien_informatico.SelectedText.BIEN_INFORMATICO) && (LOCAL = buscar_inventario.Text || FACULTAD = buscar_inventario.Text || AREA = buscar_inventario.Text) && (CORREO_TECNICO=User().Email)
+                        ),
+                        If(
+                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo" && IsBlank(buscar_inventario.Text),
+                            CountIf(
+                                INVENTARIO_EQUIPOS_INFORMATICOS,
+                                ((BIEN_INFORMATICO = "PC Escritorio" || BIEN_INFORMATICO = "Impresora" || BIEN_INFORMATICO = "Laptop" || BIEN_INFORMATICO = "Monitor" || BIEN_INFORMATICO = "Teclado") && (CORREO_TECNICO=User().Email))
+                            ),
+                            If(
+                                elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo" && !IsBlank(buscar_inventario.Text),
+                                CountIf(
+                                    INVENTARIO_EQUIPOS_INFORMATICOS,
+                                    ((BIEN_INFORMATICO = "PC Escritorio" || BIEN_INFORMATICO = "Impresora" || BIEN_INFORMATICO = "Laptop" || BIEN_INFORMATICO = "Monitor" || BIEN_INFORMATICO = "Teclado") && (LOCAL = buscar_inventario.Text || FACULTAD = buscar_inventario.Text || AREA = buscar_inventario.Text) && (CORREO_TECNICO = User().Email))
+                                )
+                            )
+                        )
+                    )
+                )
+            )
+        X: =145
+        Y: =150
+        ZIndex: =21
 
     alerta_eliminar As group:
         Height: =5
@@ -1789,4 +1836,29 @@ Inventario As screen:
             X: =460
             Y: =405
             ZIndex: =20
+
+    n_registros_label As label:
+        FontWeight: =FontWeight.Bold
+        Height: =36
+        Size: =12
+        Text: |-
+            ="N° Registros: "
+            
+            /*
+            PC Escritorio = 
+            */
+        Width: =119
+        X: =26
+        Y: =150
+        ZIndex: =22
+
+    correo_tecnico_1 As label:
+        AutoHeight: =true
+        FontWeight: =FontWeight.Bold
+        Height: =28
+        Text: =User().FullName
+        Width: =307
+        X: =26
+        Y: =45
+        ZIndex: =23
 

@@ -131,10 +131,10 @@
     "UserLocale": "es-ES"
   },
   "ScreenOrder": [
+    "Pantalla_Inicio",
     "Inventario",
     "Registrar_Bien_Informatico",
     "Actualizar_Bien_Informatico",
-    "Validacion_Correcta_INVENTARIO",
-    "Inventario_1"
+    "Validacion_Correcta_INVENTARIO"
   ]
 }

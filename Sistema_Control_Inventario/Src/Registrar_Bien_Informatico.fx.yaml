@@ -5,14 +5,14 @@ Registrar_Bien_Informatico As screen:
         //Max(App.Height; App.MinScreenHeight)
     ImagePosition: =ImagePosition.Fill
     Width: |-
-        =380
+        =425
         //Max(App.Width; App.MinScreenWidth)
 
     Rectangle1 As rectangle:
         BorderColor: =RGBA(0, 13, 75, 1)
         Fill: =RGBA(0, 16, 96, 1)
         Height: =60
-        Width: =380
+        Width: =425
         ZIndex: =1
 
     Label2 As label:
@@ -23,7 +23,7 @@ Registrar_Bien_Informatico As screen:
         Size: =18
         Text: ="REGISTRAR"
         Width: =192
-        X: =81
+        X: =126
         ZIndex: =2
 
     Salir As icon.Alarm:
@@ -45,7 +45,7 @@ Registrar_Bien_Informatico As screen:
         Icon: =Icon.ComputerDesktop
         OnSelect: =Navigate(Inventario,ScreenTransition.CoverRight)
         Width: =50
-        X: =251
+        X: =314
         Y: =2
         ZIndex: =4
 
@@ -75,7 +75,7 @@ Registrar_Bien_Informatico As screen:
                 Text: |-
                     ="Local: "
                 Width: =80
-                X: =28
+                X: =46
                 Y: =33
                 ZIndex: =1
 
@@ -87,7 +87,7 @@ Registrar_Bien_Informatico As screen:
                 Reset: =resetearControles
                 Size: =10
                 Width: =228
-                X: =108
+                X: =126
                 Y: =33
                 ZIndex: =2
 
@@ -98,7 +98,7 @@ Registrar_Bien_Informatico As screen:
                 Text: |-
                     ="Facultad: "
                 Width: =80
-                X: =28
+                X: =46
                 Y: =69
                 ZIndex: =3
 
@@ -109,7 +109,7 @@ Registrar_Bien_Informatico As screen:
                 Reset: =resetearControles
                 Size: =10
                 Width: =228
-                X: =108
+                X: =126
                 Y: =69
                 ZIndex: =4
 
@@ -120,7 +120,7 @@ Registrar_Bien_Informatico As screen:
                 Text: |-
                     ="Piso: "
                 Width: =80
-                X: =28
+                X: =46
                 Y: =109
                 ZIndex: =5
 
@@ -131,7 +131,7 @@ Registrar_Bien_Informatico As screen:
                 Reset: =resetearControles
                 Size: =10
                 Width: =228
-                X: =108
+                X: =126
                 Y: =109
                 ZIndex: =6
 
@@ -142,7 +142,7 @@ Registrar_Bien_Informatico As screen:
                 Text: |-
                     ="Area: "
                 Width: =59
-                X: =28
+                X: =46
                 Y: =139
                 ZIndex: =7
 
@@ -154,7 +154,7 @@ Registrar_Bien_Informatico As screen:
                 Reset: =resetearControles
                 Size: =10
                 Width: =228
-                X: =108
+                X: =126
                 Y: =148
                 ZIndex: =8
 
@@ -165,7 +165,7 @@ Registrar_Bien_Informatico As screen:
                 Text: |-
                     ="Tipo de Area: "
                 Width: =80
-                X: =28
+                X: =46
                 Y: =181
                 ZIndex: =9
 
@@ -176,7 +176,7 @@ Registrar_Bien_Informatico As screen:
                 Reset: =resetearControles
                 Size: =10
                 Width: =228
-                X: =108
+                X: =126
                 Y: =184
                 ZIndex: =10
 
@@ -187,7 +187,7 @@ Registrar_Bien_Informatico As screen:
                 Text: |-
                     ="Pabellon: "
                 Width: =80
-                X: =28
+                X: =46
                 Y: =218
                 ZIndex: =11
 
@@ -198,7 +198,7 @@ Registrar_Bien_Informatico As screen:
                 Reset: =resetearControles
                 Size: =10
                 Width: =228
-                X: =108
+                X: =126
                 Y: =224
                 ZIndex: =12
 
@@ -209,7 +209,7 @@ Registrar_Bien_Informatico As screen:
                 Text: |-
                     ="Nombre de Área: "
                 Width: =80
-                X: =28
+                X: =46
                 Y: =254
                 ZIndex: =13
 
@@ -225,7 +225,7 @@ Registrar_Bien_Informatico As screen:
                 Reset: =resetearControles
                 Size: =10
                 Width: =228
-                X: =108
+                X: =126
                 Y: =264
                 ZIndex: =14
 
@@ -236,7 +236,7 @@ Registrar_Bien_Informatico As screen:
                 Text: |-
                     ="Equipo T.I: "
                 Width: =80
-                X: =28
+                X: =46
                 Y: =300
                 ZIndex: =15
 
@@ -247,7 +247,7 @@ Registrar_Bien_Informatico As screen:
                 Reset: =resetearControles
                 Size: =10
                 Width: =228
-                X: =108
+                X: =126
                 Y: =307
                 ZIndex: =16
 
@@ -258,7 +258,7 @@ Registrar_Bien_Informatico As screen:
                 Text: |-
                     ="Patrimonio: "
                 Width: =93
-                X: =28
+                X: =46
                 Y: =345
                 ZIndex: =17
 
@@ -278,7 +278,7 @@ Registrar_Bien_Informatico As screen:
                 Reset: =resetearControles
                 Size: =10
                 Width: =215
-                X: =121
+                X: =139
                 Y: =348
                 ZIndex: =18
 
@@ -290,7 +290,7 @@ Registrar_Bien_Informatico As screen:
                 Size: =8
                 Text: =If(Len(patrimonio_texto.Text) = 6,If(IsBlank(LookUp(INVENTARIO_EQUIPOS_INFORMATICOS, PATRIMONIO = patrimonio_texto.Text)), "Patrimonio Disponible","Patrimonio Ya Existe"),"")
                 Width: =215
-                X: =130
+                X: =148
                 Y: =369
                 ZIndex: =19
 
@@ -303,7 +303,7 @@ Registrar_Bien_Informatico As screen:
                     ="Patrimonio 
                     de Referencia: "
                 Width: =93
-                X: =28
+                X: =46
                 Y: =389
                 ZIndex: =20
 
@@ -323,7 +323,7 @@ Registrar_Bien_Informatico As screen:
                 Reset: =resetearControles
                 Size: =10
                 Width: =215
-                X: =121
+                X: =139
                 Y: =396
                 ZIndex: =21
 
@@ -335,7 +335,7 @@ Registrar_Bien_Informatico As screen:
                 Size: =8
                 Text: =If(Len(patrimonio_referencia.Text) = 6,If(IsBlank(LookUp(INVENTARIO_EQUIPOS_INFORMATICOS, PATRIMONIO = patrimonio_referencia.Text)), "Patrimonio Falta Registrar","Patrimonio Valido"),"")
                 Width: =215
-                X: =121
+                X: =139
                 Y: =419
                 ZIndex: =22
 
@@ -345,7 +345,7 @@ Registrar_Bien_Informatico As screen:
                 Size: =9
                 Text: ="Marca"
                 Width: =83
-                X: =13
+                X: =31
                 Y: =450
                 ZIndex: =23
 
@@ -357,7 +357,7 @@ Registrar_Bien_Informatico As screen:
                 Reset: =resetearControles
                 Size: =7
                 Width: =114
-                X: =59
+                X: =77
                 Y: =453
                 ZIndex: =24
 
@@ -367,7 +367,7 @@ Registrar_Bien_Informatico As screen:
                 Size: =9
                 Text: ="Modelo"
                 Width: =63
-                X: =173
+                X: =191
                 Y: =450
                 ZIndex: =25
 
@@ -378,7 +378,7 @@ Registrar_Bien_Informatico As screen:
                 Reset: =resetearControles
                 Size: =7
                 Width: =141
-                X: =227
+                X: =245
                 Y: =453
                 ZIndex: =26
 
@@ -389,7 +389,7 @@ Registrar_Bien_Informatico As screen:
                 Text: |-
                     ="N° Serie: "
                 Width: =93
-                X: =28
+                X: =46
                 Y: =490
                 ZIndex: =27
 
@@ -408,7 +408,7 @@ Registrar_Bien_Informatico As screen:
                 Reset: =resetearControles
                 Size: =10
                 Width: =215
-                X: =121
+                X: =139
                 Y: =495
                 ZIndex: =28
 
@@ -420,7 +420,7 @@ Registrar_Bien_Informatico As screen:
                 Size: =8
                 Text: =If(Len(patrimonio_referencia.Text) = 6,If(IsBlank(LookUp(INVENTARIO_EQUIPOS_INFORMATICOS, NUM_SERIE = n_serie_texto.Text)), "N° de Serie Valido","N° de Serie Ya existe"),"")
                 Width: =215
-                X: =121
+                X: =139
                 Y: =518
                 ZIndex: =29
 
@@ -431,7 +431,7 @@ Registrar_Bien_Informatico As screen:
                 Text: |-
                     ="Equipo " &bien_informatico_combobox.SelectedText.BIEN_INFORMATICO&": "
                 Width: =308
-                X: =28
+                X: =46
                 Y: =532
                 ZIndex: =30
 
@@ -441,7 +441,7 @@ Registrar_Bien_Informatico As screen:
                 Height: =250
                 Visible: =If(bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "Laptop",true,false)
                 Width: =328
-                X: =31
+                X: =49
                 Y: =571
                 ZIndex: =31
 
@@ -601,7 +601,7 @@ Registrar_Bien_Informatico As screen:
                 BorderStyle: =BorderStyle.Dotted
                 Height: =330
                 Width: =328
-                X: =31
+                X: =49
                 Y: =If(bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "Laptop",pc_escritorio_container.Y+pc_escritorio_container.Height + 5,If(bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "Impresora",impresora_container.Y+impresora_container.Height + 5,If(bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "Teclado",teclado_container.Y+teclado_container.Height + 5,If(bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "Monitor",monitor_container.Y+monitor_container.Height + 5,If(bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "Telefono IP",ip_telefono_container.Y+ip_telefono_container.Height + 5,571)))))
                 ZIndex: =32
 
@@ -962,7 +962,7 @@ Registrar_Bien_Informatico As screen:
                 Height: =120
                 Visible: =If(bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "Impresora",true,false)
                 Width: =328
-                X: =31
+                X: =49
                 Y: =571
                 ZIndex: =33
 
@@ -1057,7 +1057,7 @@ Registrar_Bien_Informatico As screen:
                 Height: =51
                 Visible: =If(bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "Teclado",true,false)
                 Width: =328
-                X: =31
+                X: =49
                 Y: =571
                 ZIndex: =34
 
@@ -1087,7 +1087,7 @@ Registrar_Bien_Informatico As screen:
                 Height: =51
                 Visible: =If(bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "Monitor",true,false)
                 Width: =328
-                X: =31
+                X: =49
                 Y: =571
                 ZIndex: =35
 
@@ -1117,7 +1117,7 @@ Registrar_Bien_Informatico As screen:
                 Height: =92
                 Visible: =If(bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "Telefono IP",true,false)
                 Width: =328
-                X: =31
+                X: =49
                 Y: =571
                 ZIndex: =36
 
