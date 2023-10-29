@@ -21,7 +21,7 @@ Pantalla_Inicio As screen:
         Image: =OCGTI
         ImagePosition: =ImagePosition.Stretch
         Width: =425
-        Y: =673
+        Y: =676
         ZIndex: =2
 
     Rectangle1_4 As rectangle:

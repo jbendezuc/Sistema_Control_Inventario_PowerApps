@@ -1528,7 +1528,7 @@ Inventario As screen:
                 editar_button As button:
                     Fill: =RGBA(54, 176, 75, 1)
                     Height: =25
-                    OnSelect: =Select(Parent);Set(var_registro_inventario,ThisItem);Navigate(Actualizar_Bien_Informatico)
+                    OnSelect: =Select(Parent);Set(var_registro_inventario,ThisItem);Navigate(Actualizar_Bien_Informatico,ScreenTransition.Fade)
                     Size: =12
                     Text: ="Editar"
                     Width: =100
@@ -1636,7 +1636,7 @@ Inventario As screen:
     Button2 As button:
         BorderColor: =ColorFade(Self.Fill, -94%)
         Fill: =RGBA(14, 115, 47, 1)
-        OnSelect: =Navigate(Registrar_Bien_Informatico)
+        OnSelect: =Navigate(Registrar_Bien_Informatico,ScreenTransition.Fade)
         Text: ="Agregar"
         X: =1138
         Y: =105

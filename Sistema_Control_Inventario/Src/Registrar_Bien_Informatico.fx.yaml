@@ -31,7 +31,7 @@ Registrar_Bien_Informatico As screen:
         Height: =40
         Icon: =Icon.Leave
         OnSelect: |-
-            =UpdateContext({resetearControles:true});UpdateContext({resetearControles:false});Reset(buscar_inventario);If(var_pantalla_registro=1,Navigate(Pantalla_Inicio),Navigate(Inventario));Set(var_pantalla_registro,0)
+            =UpdateContext({resetearControles:true});UpdateContext({resetearControles:false});Reset(buscar_inventario);If(var_pantalla_registro=1,Navigate(Pantalla_Inicio,ScreenTransition.Fade),Navigate(Inventario,ScreenTransition.Fade));Set(var_pantalla_registro,0)
         Rotation: =180
         Width: =50
         X: =9
@@ -941,7 +941,7 @@ Registrar_Bien_Informatico As screen:
                                 )
                             )
                         );
-                        UpdateContext({resetearControles:true});UpdateContext({resetearControles:false});Navigate(Validacion_Correcta_INVENTARIO,ScreenTransition.UnCoverRight);Reset(buscar_inventario)
+                        UpdateContext({resetearControles:true});UpdateContext({resetearControles:false});Navigate(Validacion_Correcta_INVENTARIO,ScreenTransition.Fade);Reset(buscar_inventario)
                         /*
                         --ACTUALIZAR
                         If(var_limpiar_img_RT=1;Set(var_firma_responsable_1;JSON(Firma_Responsable_1.Image;JSONFormat.IncludeBinaryData));Set(var_firma_responsable_1;varFichaTecnica.FIRMARESPONSABLE));;
