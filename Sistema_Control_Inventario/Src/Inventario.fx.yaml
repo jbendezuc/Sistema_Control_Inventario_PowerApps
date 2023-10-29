@@ -1871,7 +1871,7 @@ Inventario As screen:
         Height: =45
         Icon: =Icon.Leave
         OnSelect: |-
-            =Navigate(Pantalla_Inicio);UpdateContext({resetearControles:true});UpdateContext({resetearControles:false});Reset(buscar_inventario)
+            =Navigate(Pantalla_Inicio,ScreenTransition.Fade);UpdateContext({resetearControles:true});UpdateContext({resetearControles:false});Reset(buscar_inventario)
         Rotation: =180
         Width: =60
         X: =41

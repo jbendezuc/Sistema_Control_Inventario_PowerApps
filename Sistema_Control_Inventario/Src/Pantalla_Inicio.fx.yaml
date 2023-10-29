@@ -65,7 +65,7 @@ Pantalla_Inicio As screen:
     Button3_1 As button:
         Fill: =RGBA(9, 33, 98, 1)
         Height: =41
-        OnSelect: =Navigate(Registrar_Bien_Informatico,ScreenTransition.CoverRight);Set(var_pantalla_registro,1)
+        OnSelect: =Navigate(Registrar_Bien_Informatico,ScreenTransition.Fade);Set(var_pantalla_registro,1)
         Text: ="Registrar"
         Width: =185
         X: =132
