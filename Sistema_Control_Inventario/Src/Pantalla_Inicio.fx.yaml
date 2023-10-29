@@ -55,7 +55,7 @@ Pantalla_Inicio As screen:
     Button3 As button:
         Fill: =RGBA(9, 33, 98, 1)
         Height: =41
-        OnSelect: =Navigate(Inventario,ScreenTransition.CoverRight)
+        OnSelect: =Navigate(Inventario,ScreenTransition.Fade)
         Text: ="Inventario"
         Width: =185
         X: =132

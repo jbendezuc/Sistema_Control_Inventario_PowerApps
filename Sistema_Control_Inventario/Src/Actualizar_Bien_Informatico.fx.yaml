@@ -31,7 +31,7 @@ Actualizar_Bien_Informatico As screen:
         Height: =40
         Icon: =Icon.Leave
         OnSelect: |-
-            =Navigate(Inventario,ScreenTransition.CoverRight);UpdateContext({resetearControles:true});UpdateContext({resetearControles:false});Navigate(Inventario,ScreenTransition.UnCoverRight);Reset(buscar_inventario)
+            =Navigate(Inventario);UpdateContext({resetearControles:true});UpdateContext({resetearControles:false});Navigate(Inventario);Reset(buscar_inventario)
         Rotation: =180
         Width: =50
         X: =9

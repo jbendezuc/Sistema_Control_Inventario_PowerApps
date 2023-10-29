@@ -84,7 +84,7 @@ Validacion_Correcta_INVENTARIO As screen:
         AutoStart: =true
         Duration: =3000
         Height: =68
-        OnTimerEnd: =Navigate(Inventario,ScreenTransition.Fade)
+        OnTimerEnd: =Navigate(Inventario)
         OnTimerStart: =true
         Visible: =false
         Width: =175
