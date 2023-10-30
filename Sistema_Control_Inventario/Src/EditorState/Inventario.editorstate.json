@@ -6694,7 +6694,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "editar_button",
-      "ParentIndex": 35,
+      "ParentIndex": 34,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9119,7 +9119,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "eliminar_button",
-      "ParentIndex": 34,
+      "ParentIndex": 35,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

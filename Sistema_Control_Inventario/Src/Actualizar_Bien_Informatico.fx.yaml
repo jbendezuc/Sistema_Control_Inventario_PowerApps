@@ -250,7 +250,7 @@ Actualizar_Bien_Informatico As screen:
                 BorderThickness: =1
                 Default: =var_registro_inventario.BIEN_INFORMATICO
                 Height: =25
-                Items: =Filter(BIENES_INFORMATICOS,BIEN_INFORMATICO <> "Todo")
+                Items: =BIENES_INFORMATICOS
                 Reset: =resetearControles
                 Size: =10
                 Width: =228

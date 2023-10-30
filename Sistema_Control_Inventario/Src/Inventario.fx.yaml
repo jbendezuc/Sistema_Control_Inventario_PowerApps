@@ -1716,58 +1716,64 @@ Inventario As screen:
         Height: =35
         Size: =12
         Text: |-
-            =If(
-                correo_tecnico.Text = "proyectos.ocgti@unfv.edu.pe" || correo_tecnico.Text = "cfranco@unfv.edu.pe",
+            =CountIf(
+                INVENTARIO_EQUIPOS_INFORMATICOS,
+                IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO) || BIEN_INFORMATICO = elegir_bien_informatico.SelectedText.BIEN_INFORMATICO
+            )
+            
+            /*
+            If(
+                correo_tecnico.Text = "proyectos.ocgti@unfv.edu.pe" || correo_tecnico.Text = "cfranco@unfv.edu.pe";
                 If(
-                    Not(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo") && IsBlank(buscar_inventario.Text),
+                    Not(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO="Todo") && IsBlank(buscar_inventario.Text);
                     CountIf(
-                        INVENTARIO_EQUIPOS_INFORMATICOS,
+                        INVENTARIO_EQUIPOS_INFORMATICOS;
                         BIEN_INFORMATICO = elegir_bien_informatico.SelectedText.BIEN_INFORMATICO
-                    ),
+                    );
                     If(
-                        Not(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo") && !IsBlank(buscar_inventario.Text),
+                        Not(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo") && !IsBlank(buscar_inventario.Text);
                         CountIf(
-                            INVENTARIO_EQUIPOS_INFORMATICOS,
+                            INVENTARIO_EQUIPOS_INFORMATICOS;
                             BIEN_INFORMATICO = elegir_bien_informatico.SelectedText.BIEN_INFORMATICO && (LOCAL = buscar_inventario.Text || FACULTAD = buscar_inventario.Text || AREA = buscar_inventario.Text || CORREO_TECNICO = buscar_inventario.Text)
-                        ),
+                        );
                         If(
-                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo" && IsBlank(buscar_inventario.Text),
+                            IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO) && IsBlank(buscar_inventario.Text);
                             CountIf(
-                                INVENTARIO_EQUIPOS_INFORMATICOS,
+                                INVENTARIO_EQUIPOS_INFORMATICOS;
                                 (BIEN_INFORMATICO = "PC Escritorio" || BIEN_INFORMATICO = "Impresora" || BIEN_INFORMATICO = "Laptop" || BIEN_INFORMATICO = "Monitor" || BIEN_INFORMATICO = "Teclado")
-                            ),
+                            );
                             If(
-                                elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo" && !IsBlank(buscar_inventario.Text),
+                                IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO) && !IsBlank(buscar_inventario.Text);
                                 CountIf(
-                                    INVENTARIO_EQUIPOS_INFORMATICOS,
+                                    INVENTARIO_EQUIPOS_INFORMATICOS;
                                     ((BIEN_INFORMATICO = "PC Escritorio" || BIEN_INFORMATICO = "Impresora" || BIEN_INFORMATICO = "Laptop" || BIEN_INFORMATICO = "Monitor" || BIEN_INFORMATICO = "Teclado") && (LOCAL = buscar_inventario.Text || FACULTAD = buscar_inventario.Text || AREA = buscar_inventario.Text || CORREO_TECNICO = buscar_inventario.Text))
                                 )
                             )
                         )
                     )
-                ),
+                );
                 If(
-                    Not(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo") && IsBlank(buscar_inventario.Text),
+                    IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO) && IsBlank(buscar_inventario.Text);
                     CountIf(
-                        INVENTARIO_EQUIPOS_INFORMATICOS,
+                        INVENTARIO_EQUIPOS_INFORMATICOS;
                         BIEN_INFORMATICO = elegir_bien_informatico.SelectedText.BIEN_INFORMATICO && CORREO_TECNICO=User().Email
-                    ),
+                    );
                     If(
-                        Not(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo") && !IsBlank(buscar_inventario.Text),
+                        Not(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo") && !IsBlank(buscar_inventario.Text);
                         CountIf(
-                            INVENTARIO_EQUIPOS_INFORMATICOS,
+                            INVENTARIO_EQUIPOS_INFORMATICOS;
                             (BIEN_INFORMATICO = elegir_bien_informatico.SelectedText.BIEN_INFORMATICO) && (LOCAL = buscar_inventario.Text || FACULTAD = buscar_inventario.Text || AREA = buscar_inventario.Text) && (CORREO_TECNICO=User().Email)
-                        ),
+                        );
                         If(
-                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo" && IsBlank(buscar_inventario.Text),
+                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo" && IsBlank(buscar_inventario.Text);
                             CountIf(
-                                INVENTARIO_EQUIPOS_INFORMATICOS,
+                                INVENTARIO_EQUIPOS_INFORMATICOS;
                                 ((BIEN_INFORMATICO = "PC Escritorio" || BIEN_INFORMATICO = "Impresora" || BIEN_INFORMATICO = "Laptop" || BIEN_INFORMATICO = "Monitor" || BIEN_INFORMATICO = "Teclado") && (CORREO_TECNICO=User().Email))
-                            ),
+                            );
                             If(
-                                elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo" && !IsBlank(buscar_inventario.Text),
+                                elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo" && !IsBlank(buscar_inventario.Text);
                                 CountIf(
-                                    INVENTARIO_EQUIPOS_INFORMATICOS,
+                                    INVENTARIO_EQUIPOS_INFORMATICOS;
                                     ((BIEN_INFORMATICO = "PC Escritorio" || BIEN_INFORMATICO = "Impresora" || BIEN_INFORMATICO = "Laptop" || BIEN_INFORMATICO = "Monitor" || BIEN_INFORMATICO = "Teclado") && (LOCAL = buscar_inventario.Text || FACULTAD = buscar_inventario.Text || AREA = buscar_inventario.Text) && (CORREO_TECNICO = User().Email))
                                 )
                             )
@@ -1775,6 +1781,7 @@ Inventario As screen:
                     )
                 )
             )
+            */
         X: =145
         Y: =150
         ZIndex: =21

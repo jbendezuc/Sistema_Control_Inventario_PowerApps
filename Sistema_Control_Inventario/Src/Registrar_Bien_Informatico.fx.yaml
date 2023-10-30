@@ -243,7 +243,7 @@ Registrar_Bien_Informatico As screen:
             bien_informatico_combobox As dropdown:
                 BorderThickness: =1
                 Height: =25
-                Items: =Filter(BIENES_INFORMATICOS,BIEN_INFORMATICO <> "Todo")
+                Items: =BIENES_INFORMATICOS
                 Reset: =resetearControles
                 Size: =10
                 Width: =228
