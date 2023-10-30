@@ -23,10 +23,50 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 190,
-                  "charOffset": 0,
+                  "charLength": 734,
+                  "charOffset": 94,
                   "snippet": {
-                    "text": "CountIf(\n    INVENTARIO_EQUIPOS_INFORMATICOS;\n    IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO) || BIEN_INFORMATICO = elegir_bien_informatico.SelectedText.BIEN_INFORMATICO\n)"
+                    "text": "CountIf(\n    INVENTARIO_EQUIPOS_INFORMATICOS;\n    (IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO) || BIEN_INFORMATICO = elegir_bien_informatico.SelectedText.BIEN_INFORMATICO) && (IsBlank(elegir_local.SelectedText.Value) || LOCAL = elegir_local.SelectedText.Value) && (IsBlank(elegir_facultad.SelectedText.Value) || FACULTAD = elegir_facultad.SelectedText.Value) && (IsBlank(elegir_area.SelectedText.Value) || AREA = elegir_area.SelectedText.Value) && (IsBlank(elegir_tipo_area.SelectedText.Value) || TIPO_AREA = elegir_tipo_area.SelectedText.Value) && (IsBlank(elegir_estado.SelectedText.Value) || ESTADO = elegir_estado.SelectedText.Value) && (IsBlank(buscar_inventario.Text) || PATRIMONIO = buscar_inventario.Text)\n)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Inventario",
+                "type": "Inventario.n_registros_cantidad"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "CountIf"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Inventario.n_registros_cantidad.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Inventario.n_registros_cantidad.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 767,
+                  "charOffset": 829,
+                  "snippet": {
+                    "text": "CountIf(\n    INVENTARIO_EQUIPOS_INFORMATICOS;\n    CORREO_TECNICO=User().Email;\n    (IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO) || BIEN_INFORMATICO = elegir_bien_informatico.SelectedText.BIEN_INFORMATICO) && (IsBlank(elegir_local.SelectedText.Value) || LOCAL = elegir_local.SelectedText.Value) && (IsBlank(elegir_facultad.SelectedText.Value) || FACULTAD = elegir_facultad.SelectedText.Value) && (IsBlank(elegir_area.SelectedText.Value) || AREA = elegir_area.SelectedText.Value) && (IsBlank(elegir_tipo_area.SelectedText.Value) || TIPO_AREA = elegir_tipo_area.SelectedText.Value) && (IsBlank(elegir_estado.SelectedText.Value) || ESTADO = elegir_estado.SelectedText.Value) && (IsBlank(buscar_inventario.Text) || PATRIMONIO = buscar_inventario.Text)\n)"
                   }
                 }
               },
@@ -64,7 +104,47 @@
                 },
                 "region": {
                   "charLength": 12,
-                  "charOffset": 855,
+                  "charOffset": 1061,
+                  "snippet": {
+                    "text": "\"PATRIMONIO\""
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "Inventario",
+                "type": "Inventario.Container1.main.Gallery1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Search"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Inventario.Container1.main.Gallery1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Inventario.Container1.main.Gallery1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 12,
+                  "charOffset": 2149,
                   "snippet": {
                     "text": "\"PATRIMONIO\""
                   }
