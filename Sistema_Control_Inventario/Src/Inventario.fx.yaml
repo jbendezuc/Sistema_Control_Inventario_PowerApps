@@ -723,143 +723,166 @@ Inventario As screen:
                 DelayItemLoading: =true
                 Height: =522
                 Items: |-
-                    =If(
-                        correo_tecnico.Text = "proyectos.ocgti@unfv.edu.pe" || correo_tecnico.Text = "cfranco@unfv.edu.pe",
+                    =SortByColumns(
+                    Search(
+                        Filter(
+                            INVENTARIO_EQUIPOS_INFORMATICOS,
+                        //Bien Informatico
+                            IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO) || (BIEN_INFORMATICO = elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
+                        //Local
+                            IsBlank(elegir_local.SelectedText.Value) || (LOCAL = elegir_local.SelectedText.Value),
+                        //Facultad
+                            IsBlank(elegir_facultad.SelectedText.Value) || (FACULTAD = elegir_facultad.SelectedText.Value),
+                        //Area
+                            IsBlank(elegir_area.SelectedText.Value) || (AREA = elegir_area.SelectedText.Value),
+                        //Tipo Area
+                            IsBlank(elegir_tipo_area.SelectedText.Value) || (TIPO_AREA = elegir_tipo_area.SelectedText.Value),
+                        //ESTADO
+                            IsBlank(elegir_estado.SelectedText.Value) || (ESTADO = elegir_estado.SelectedText.Value)
+                        ),
+                        
+                        buscar_inventario.Text,
+                        "PATRIMONIO"
+                    ),"ID",SortOrder.Descending)
+                    /*
+                    If(
+                        correo_tecnico.Text = "proyectos.ocgti@unfv.edu.pe" || correo_tecnico.Text = "cfranco@unfv.edu.pe";
                         If(
-                            Not(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo") && IsBlank(buscar_inventario.Text),
+                            Not(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo") && IsBlank(buscar_inventario.Text);
                             Sort(
                                 Filter(
-                                    INVENTARIO_EQUIPOS_INFORMATICOS,
+                                    INVENTARIO_EQUIPOS_INFORMATICOS;
                                     BIEN_INFORMATICO = elegir_bien_informatico.SelectedText.BIEN_INFORMATICO
-                                ),
-                                ID,
+                                );
+                                ID;
                                 SortOrder.Descending
-                            ),
-                            Not(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo") && !IsBlank(buscar_inventario.Text),
+                            );
+                            Not(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo") && !IsBlank(buscar_inventario.Text);
                             Sort(
                                 Filter(
-                                    INVENTARIO_EQUIPOS_INFORMATICOS,
-                                    BIEN_INFORMATICO = elegir_bien_informatico.SelectedText.BIEN_INFORMATICO,
+                                    INVENTARIO_EQUIPOS_INFORMATICOS;
+                                    BIEN_INFORMATICO = elegir_bien_informatico.SelectedText.BIEN_INFORMATICO;
                                     StartsWith(
-                                        LOCAL,
+                                        LOCAL;
                                         buscar_inventario.Text
                                     ) || StartsWith(
-                                        FACULTAD,
+                                        FACULTAD;
                                         buscar_inventario.Text
                                     ) || StartsWith(
-                                        PATRIMONIO,
+                                        PATRIMONIO;
                                         buscar_inventario.Text
                                     ) || StartsWith(
-                                        AREA,
+                                        AREA;
                                         buscar_inventario.Text
                                     ) || StartsWith(
-                                        CORREO_TECNICO,
+                                        CORREO_TECNICO;
                                         buscar_inventario.Text
                                     )
-                                ),
-                                ID,
+                                );
+                                ID;
                                 SortOrder.Descending
-                            ),
-                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo" && !IsBlank(buscar_inventario.Text),
+                            );
+                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo" && !IsBlank(buscar_inventario.Text);
                             Sort(
                                 Filter(
-                                    INVENTARIO_EQUIPOS_INFORMATICOS,
+                                    INVENTARIO_EQUIPOS_INFORMATICOS;
                                     StartsWith(
-                                        LOCAL,
+                                        LOCAL;
                                         buscar_inventario.Text
                                     ) || StartsWith(
-                                        FACULTAD,
+                                        FACULTAD;
                                         buscar_inventario.Text
                                     ) || StartsWith(
-                                        PATRIMONIO,
+                                        PATRIMONIO;
                                         buscar_inventario.Text
                                     ) || StartsWith(
-                                        AREA,
+                                        AREA;
                                         buscar_inventario.Text
                                     ) || StartsWith(
-                                        CORREO_TECNICO,
+                                        CORREO_TECNICO;
                                         buscar_inventario.Text
                                     )
-                                ),
-                                ID,
+                                );
+                                ID;
                                 SortOrder.Descending
-                            ),
-                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo" && IsBlank(buscar_inventario.Text),
+                            );
+                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo" && IsBlank(buscar_inventario.Text);
                             Sort(
-                                INVENTARIO_EQUIPOS_INFORMATICOS,
-                                ID,
+                                INVENTARIO_EQUIPOS_INFORMATICOS;
+                                ID;
                                 SortOrder.Descending
-                            ),
+                            );
                             INVENTARIO_EQUIPOS_INFORMATICOS
-                        ),//SI NO ERES ADMINITRADOR
+                        );//SI NO ERES ADMINITRADOR
                         If(
-                            Not(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo") && IsBlank(buscar_inventario.Text),
+                            Not(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo") && IsBlank(buscar_inventario.Text);
                             Sort(
                                 Filter(
-                                    INVENTARIO_EQUIPOS_INFORMATICOS,
-                                    BIEN_INFORMATICO = elegir_bien_informatico.SelectedText.BIEN_INFORMATICO,
+                                    INVENTARIO_EQUIPOS_INFORMATICOS;
+                                    BIEN_INFORMATICO = elegir_bien_informatico.SelectedText.BIEN_INFORMATICO;
                                     CORREO_TECNICO = correo_tecnico.Text
-                                ),
-                                ID,
+                                );
+                                ID;
                                 SortOrder.Descending
-                            ),
-                            Not(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo") && !IsBlank(buscar_inventario.Text),
+                            );
+                            Not(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo") && !IsBlank(buscar_inventario.Text);
                             Sort(
                                 Filter(
-                                    INVENTARIO_EQUIPOS_INFORMATICOS,
-                                    BIEN_INFORMATICO = elegir_bien_informatico.SelectedText.BIEN_INFORMATICO,
-                                    CORREO_TECNICO = correo_tecnico.Text,
+                                    INVENTARIO_EQUIPOS_INFORMATICOS;
+                                    BIEN_INFORMATICO = elegir_bien_informatico.SelectedText.BIEN_INFORMATICO;
+                                    CORREO_TECNICO = correo_tecnico.Text;
                                     StartsWith(
-                                        LOCAL,
+                                        LOCAL;
                                         buscar_inventario.Text
                                     ) || StartsWith(
-                                        FACULTAD,
+                                        FACULTAD;
                                         buscar_inventario.Text
                                     ) || StartsWith(
-                                        PATRIMONIO,
+                                        PATRIMONIO;
                                         buscar_inventario.Text
                                     ) || StartsWith(
-                                        AREA,
+                                        AREA;
                                         buscar_inventario.Text
                                     )
-                                ),
-                                ID,
+                                );
+                                ID;
                                 SortOrder.Descending
-                            ),
-                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo" && !IsBlank(buscar_inventario.Text),
+                            );
+                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo" && !IsBlank(buscar_inventario.Text);
                             Sort(
                                 Filter(
-                                    INVENTARIO_EQUIPOS_INFORMATICOS,
-                                    CORREO_TECNICO = correo_tecnico.Text,
+                                    INVENTARIO_EQUIPOS_INFORMATICOS;
+                                    CORREO_TECNICO = correo_tecnico.Text;
                                     StartsWith(
-                                        LOCAL,
+                                        LOCAL;
                                         buscar_inventario.Text
                                     ) || StartsWith(
-                                        FACULTAD,
+                                        FACULTAD;
                                         buscar_inventario.Text
                                     ) || StartsWith(
-                                        PATRIMONIO,
+                                        PATRIMONIO;
                                         buscar_inventario.Text
                                     ) || StartsWith(
-                                        AREA,
+                                        AREA;
                                         buscar_inventario.Text
                                     )
-                                ),
-                                ID,
+                                );
+                                ID;
                                 SortOrder.Descending
-                            ),
-                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo" && IsBlank(buscar_inventario.Text),
+                            );
+                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Todo" && IsBlank(buscar_inventario.Text);
                             Sort(
                                 Filter(
-                                    INVENTARIO_EQUIPOS_INFORMATICOS,
+                                    INVENTARIO_EQUIPOS_INFORMATICOS;
                                     CORREO_TECNICO = correo_tecnico.Text
-                                ),
-                                ID,
+                                );
+                                ID;
                                 SortOrder.Descending
-                            ),
+                            );
                             INVENTARIO_EQUIPOS_INFORMATICOS
                         )
                     )
+                    */
                 Layout: =Layout.Vertical
                 LoadingSpinner: =LoadingSpinner.Data
                 TemplateSize: =28
@@ -1638,32 +1661,34 @@ Inventario As screen:
         Fill: =RGBA(14, 115, 47, 1)
         OnSelect: =Navigate(Registrar_Bien_Informatico,ScreenTransition.Fade)
         Text: ="Agregar"
-        X: =1138
-        Y: =105
+        X: =1183
+        Y: =37
         ZIndex: =6
 
     buscar_inventario As text:
         Default: =""
-        Height: =41
-        HintText: ="Busca por Local-Facultad-Area-Patrimonio"
-        Size: =14
-        Width: =395
-        X: =505
-        Y: =105
+        Height: =35
+        HintText: ="Busca por Patrimonio"
+        Size: =12
+        Width: =188
+        X: =1017
+        Y: =145
         ZIndex: =7
 
     Label1_1 As label:
         FontWeight: =FontWeight.Bold
         Size: =12
         Text: |-
-            ="Buscar: "
-        Width: =90
-        X: =415
-        Y: =105
+            ="Patrimonio: "
+        Width: =110
+        X: =907
+        Y: =145
         ZIndex: =8
 
     elegir_bien_informatico As dropdown:
-        Default: ="Todo"
+        AllowEmptySelection: =true
+        Default: =""
+        Height: =35
         Items: =BIENES_INFORMATICOS
         OnChange: |+
             =false
@@ -1856,10 +1881,11 @@ Inventario As screen:
     correo_tecnico_1 As label:
         AutoHeight: =true
         FontWeight: =FontWeight.Bold
-        Height: =28
+        Height: =31
+        Size: =12
         Text: =User().FullName
-        Width: =307
-        X: =1036
+        Width: =277
+        X: =138
         Y: =17
         ZIndex: =23
 
@@ -1877,4 +1903,147 @@ Inventario As screen:
         X: =41
         Y: =17
         ZIndex: =24
+
+    elegir_local As dropdown:
+        AllowEmptySelection: =true
+        Default: =""
+        Height: =35
+        Items: |-
+            =ForAll(Distinct(LOCAL_SEDE,LOCAL), {Result: ThisRecord.Value}).Result
+        OnChange: |+
+            =false
+            
+        Reset: =resetearControles
+        Width: =188
+        X: =425
+        Y: =107
+        ZIndex: =25
+
+    local_label As label:
+        FontWeight: =FontWeight.Bold
+        Size: =12
+        Text: |-
+            ="Local: "
+            
+            /*
+            PC Escritorio = 
+            */
+        Width: =97
+        X: =348
+        Y: =105
+        ZIndex: =26
+
+    facultad_label As label:
+        FontWeight: =FontWeight.Bold
+        Size: =12
+        Text: |-
+            ="Facultad: "
+            
+            /*
+            PC Escritorio = 
+            */
+        Width: =97
+        X: =344
+        Y: =146
+        ZIndex: =27
+
+    elegir_facultad As dropdown:
+        AllowEmptySelection: =true
+        Default: =""
+        Height: =35
+        Items: =Filter(LOCAL_SEDE,LOCAL=elegir_local.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult')
+        OnChange: |+
+            =false
+            
+        Reset: =resetearControles
+        Width: =188
+        X: =425
+        Y: =150
+        ZIndex: =28
+
+    area_label As label:
+        FontWeight: =FontWeight.Bold
+        Size: =12
+        Text: |-
+            ="Área: "
+            
+            /*
+            PC Escritorio = 
+            */
+        Width: =97
+        X: =634
+        Y: =104
+        ZIndex: =29
+
+    elegir_area As dropdown:
+        AllowEmptySelection: =true
+        Default: =""
+        Height: =35
+        Items: |-
+            =ForAll(Distinct(OFICINAS,AREA), {Result: ThisRecord.Value}).Result
+        OnChange: |+
+            =false
+            
+        Reset: =resetearControles
+        Width: =188
+        X: =701
+        Y: =105
+        ZIndex: =30
+
+    tipo_area_label As label:
+        FontWeight: =FontWeight.Bold
+        Size: =12
+        Text: |-
+            ="Tipo de Área: "
+            
+            /*
+            PC Escritorio = 
+            */
+        Width: =97
+        X: =634
+        Y: =148
+        ZIndex: =31
+
+    elegir_tipo_area As dropdown:
+        AllowEmptySelection: =true
+        Default: =""
+        Height: =35
+        Items: =Filter(OFICINAS,AREA=elegir_area.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult')
+        OnChange: |+
+            =false
+            
+        Reset: =resetearControles
+        Width: =188
+        X: =701
+        Y: =148
+        ZIndex: =32
+
+    tipo_area_label_1 As label:
+        FontWeight: =FontWeight.Bold
+        Size: =12
+        Text: |-
+            ="Estado: "
+            
+            /*
+            PC Escritorio = 
+            */
+        Width: =97
+        X: =909
+        Y: =100
+        ZIndex: =33
+
+    elegir_estado As dropdown:
+        AllowEmptySelection: =true
+        Default: =""
+        Height: =35
+        Items: |-
+            =ForAll(Distinct(ESTADOS,ESTADO), {Result: ThisRecord.Value}).Result
+        OnChange: |+
+            =false
+            
+        Reset: =resetearControles
+        Width: =188
+        X: =1017
+        Y: =100
+        ZIndex: =34
 
