@@ -1,5 +1,5 @@
 Pantalla_Inicio As screen:
-    BackgroundImage: ='Royal Blue + Petrol'
+    BackgroundImage: ='abstract-computer'
     Fill: =RGBA(0, 0, 0, 1)
     Height: |-
         =750
@@ -54,7 +54,7 @@ Pantalla_Inicio As screen:
 
     Button3 As button:
         Fill: =RGBA(9, 33, 98, 1)
-        Height: =41
+        Height: =45
         OnSelect: =Navigate(Inventario,ScreenTransition.Fade)
         Text: ="Inventario"
         Width: =185
@@ -64,7 +64,7 @@ Pantalla_Inicio As screen:
 
     Button3_1 As button:
         Fill: =RGBA(9, 33, 98, 1)
-        Height: =41
+        Height: =45
         OnSelect: =Navigate(Registrar_Bien_Informatico,ScreenTransition.Fade);Set(var_pantalla_registro,1)
         Text: ="Registrar"
         Width: =185
@@ -73,7 +73,7 @@ Pantalla_Inicio As screen:
         ZIndex: =7
 
     Icon2 As icon.ChevronDown:
-        Color: =RGBA(255, 255, 255, 1)
+        Color: =RGBA(0, 13, 75, 1)
         DisplayMode: =DisplayMode.View
         Height: =52
         Icon: =Icon.Database
@@ -83,13 +83,13 @@ Pantalla_Inicio As screen:
         ZIndex: =8
 
     Icon2_1 As icon.ChevronDown:
-        Color: =RGBA(255, 255, 255, 1)
+        Color: =RGBA(0, 13, 75, 1)
         DisplayMode: =DisplayMode.View
         Height: =52
         Icon: =Icon.AddDocument
         Width: =53
         X: =76
-        Y: =324
+        Y: =328
         ZIndex: =9
 
     Label8 As label:
