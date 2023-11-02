@@ -89,7 +89,7 @@ Pantalla_Inicio As screen:
         Icon: =Icon.AddDocument
         Width: =53
         X: =76
-        Y: =328
+        Y: =330
         ZIndex: =9
 
     Label8 As label:

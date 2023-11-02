@@ -1534,7 +1534,7 @@ Inventario As screen:
         Size: =30
         Text: ="INVENTARIO OCGTI"
         Width: =582
-        X: =415
+        X: =352
         Y: =17
         ZIndex: =2
 
@@ -1553,7 +1553,7 @@ Inventario As screen:
         Fill: =RGBA(14, 115, 47, 1)
         OnSelect: =Navigate(Registrar_Bien_Informatico,ScreenTransition.Fade)
         Text: ="Agregar"
-        X: =1183
+        X: =976
         Y: =37
         ZIndex: =6
 
@@ -1889,4 +1889,15 @@ Inventario As screen:
         X: =1017
         Y: =100
         ZIndex: =34
+
+    Button2_1 As button:
+        BorderColor: =ColorFade(Self.Fill, -94%)
+        Fill: =RGBA(172, 62, 11, 1)
+        OnSelect: |-
+            =Set(exportar_excel,JSON(Gallery1.AllItems,JSONFormat.IgnoreBinaryData & JSONFormat.IgnoreUnsupportedTypes));
+            exportarExcel.Run(exportar_excel)
+        Text: ="Descargar"
+        X: =1183
+        Y: =37
+        ZIndex: =35
 
