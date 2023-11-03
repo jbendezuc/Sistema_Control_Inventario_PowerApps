@@ -1,5 +1,5 @@
 {
-  "771ca789-0de6-4ef0-8a6a-a0fd0c1dc2ef": {
+  "1168ad06-e0d5-40e4-89ad-d69e1efcdf3f": {
     "connectionRef": {
       "displayName": "Logic flows",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
@@ -21,9 +21,11 @@
     "dataSources": [
       "exportarExcel"
     ],
-    "dependencies": {},
+    "dependencies": {
+      "shared_sharepointonline": "a3a47bd4-af7f-4ed4-a803-86a9f94f8d5e"
+    },
     "dependents": [],
-    "id": "771ca789-0de6-4ef0-8a6a-a0fd0c1dc2ef"
+    "id": "1168ad06-e0d5-40e4-89ad-d69e1efcdf3f"
   },
   "a3a47bd4-af7f-4ed4-a803-86a9f94f8d5e": {
     "connectionRef": {
@@ -108,7 +110,9 @@
       "CONECTORES_MONITOR"
     ],
     "dependencies": {},
-    "dependents": [],
+    "dependents": [
+      "1168ad06-e0d5-40e4-89ad-d69e1efcdf3f"
+    ],
     "id": "a3a47bd4-af7f-4ed4-a803-86a9f94f8d5e"
   }
 }
