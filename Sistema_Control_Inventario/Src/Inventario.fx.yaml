@@ -1604,7 +1604,8 @@ Inventario As screen:
 
     n_registros_cantidad As label:
         BorderThickness: =1
-        Fill: =RGBA(255, 255, 255, 1)
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(227, 234, 243, 1)
         Height: =35
         Size: =12
         Text: |-
@@ -1897,7 +1898,17 @@ Inventario As screen:
             =Set(exportar_excel,JSON(Gallery1.AllItems,JSONFormat.IgnoreBinaryData & JSONFormat.IgnoreUnsupportedTypes));
             Launch(exportarExcel.Run(exportar_excel).link)
         Text: ="Descargar"
-        X: =1183
+        X: =1190
         Y: =37
         ZIndex: =35
+
+    Icon3 As icon.ChevronDown:
+        Height: =46
+        Icon: =Icon.Reload
+        OnSelect: |-
+            =UpdateContext({resetearControles:true});UpdateContext({resetearControles:false});Reset(buscar_inventario)
+        Width: =54
+        X: =1261
+        Y: =118
+        ZIndex: =36
 
