@@ -1896,7 +1896,8 @@ Inventario As screen:
         Fill: =RGBA(172, 62, 11, 1)
         OnSelect: |-
             =Set(exportar_excel,JSON(Gallery1.AllItems,JSONFormat.IgnoreBinaryData & JSONFormat.IgnoreUnsupportedTypes));
-            Launch(exportarExcel.Run(exportar_excel).link)
+            exportarCSVEXCEL_2.Run(exportar_excel)
+            //Launch(exportarExcel.Run(exportar_excel).link)
         Text: ="Descargar"
         X: =1190
         Y: =37

@@ -1,4 +1,33 @@
 {
+  "0f980e3c-7b51-4b5c-a292-09e96bb88947": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "c79d830b-9e06-463e-badb-1af69c6ba962"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "c79d830b-9e06-463e-badb-1af69c6ba962"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "exportarCSVEXCEL_2"
+    ],
+    "dependencies": {
+      "shared_excelonlinebusiness": "ba03cb63-2240-428a-8028-1199487ee35f",
+      "shared_sharepointonline": "a3a47bd4-af7f-4ed4-a803-86a9f94f8d5e"
+    },
+    "dependents": [],
+    "id": "0f980e3c-7b51-4b5c-a292-09e96bb88947"
+  },
   "24b4b1c9-3a8a-481b-ad9a-924587a3571c": {
     "connectionRef": {
       "displayName": "Logic flows",
@@ -117,8 +146,23 @@
     ],
     "dependencies": {},
     "dependents": [
-      "24b4b1c9-3a8a-481b-ad9a-924587a3571c"
+      "24b4b1c9-3a8a-481b-ad9a-924587a3571c",
+      "0f980e3c-7b51-4b5c-a292-09e96bb88947"
     ],
     "id": "a3a47bd4-af7f-4ed4-a803-86a9f94f8d5e"
+  },
+  "ba03cb63-2240-428a-8028-1199487ee35f": {
+    "connectionRef": {
+      "displayName": "Excel Online (Empresas)",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1658/1.0.1658.3452/excelonlinebusiness/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_excelonlinebusiness"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "0f980e3c-7b51-4b5c-a292-09e96bb88947"
+    ],
+    "id": "ba03cb63-2240-428a-8028-1199487ee35f"
   }
 }

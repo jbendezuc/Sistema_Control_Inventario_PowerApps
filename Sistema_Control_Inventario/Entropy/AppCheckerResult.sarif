@@ -174,1086 +174,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Salir_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Salir_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Actualizar_Bien_Informatico",
-                "type": "Actualizar_Bien_Informatico.Salir_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Salir_2.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Salir_2.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Actualizar_Bien_Informatico",
-                "type": "Actualizar_Bien_Informatico.Salir_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Salir_3.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Salir_3.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Actualizar_Bien_Informatico",
-                "type": "Actualizar_Bien_Informatico.Salir_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Salir_3.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Salir_3.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Actualizar_Bien_Informatico",
-                "type": "Actualizar_Bien_Informatico.Salir_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.local_combobox_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.local_combobox_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Actualizar_Bien_Informatico",
-                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.local_combobox_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.facultad_combobox_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.facultad_combobox_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Actualizar_Bien_Informatico",
-                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.facultad_combobox_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.piso_combobox_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.piso_combobox_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Actualizar_Bien_Informatico",
-                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.piso_combobox_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.area_combobox_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.area_combobox_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Actualizar_Bien_Informatico",
-                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.area_combobox_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.tipo_area_combobox_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.tipo_area_combobox_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Actualizar_Bien_Informatico",
-                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.tipo_area_combobox_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.pabellon_combobox_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.pabellon_combobox_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Actualizar_Bien_Informatico",
-                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.pabellon_combobox_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.nombre_area_texto_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.nombre_area_texto_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Actualizar_Bien_Informatico",
-                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.nombre_area_texto_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.bien_informatico_combobox_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.bien_informatico_combobox_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Actualizar_Bien_Informatico",
-                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.bien_informatico_combobox_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.patrimonio_texto_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.patrimonio_texto_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Actualizar_Bien_Informatico",
-                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.patrimonio_texto_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.patrimonio_referencia_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.patrimonio_referencia_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Actualizar_Bien_Informatico",
-                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.patrimonio_referencia_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.marca_combobox_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.marca_combobox_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Actualizar_Bien_Informatico",
-                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.marca_combobox_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.modelo_combobox_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.modelo_combobox_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Actualizar_Bien_Informatico",
-                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.modelo_combobox_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.n_serie_texto_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.n_serie_texto_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Actualizar_Bien_Informatico",
-                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.n_serie_texto_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.pc_escritorio_container_1.disco_duro_combobox_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.pc_escritorio_container_1.disco_duro_combobox_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Actualizar_Bien_Informatico",
-                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.pc_escritorio_container_1.disco_duro_combobox_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.pc_escritorio_container_1.memoria_ram_combobox_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.pc_escritorio_container_1.memoria_ram_combobox_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Actualizar_Bien_Informatico",
-                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.pc_escritorio_container_1.memoria_ram_combobox_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.pc_escritorio_container_1.procesador_combobox_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.pc_escritorio_container_1.procesador_combobox_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Actualizar_Bien_Informatico",
-                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.pc_escritorio_container_1.procesador_combobox_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.pc_escritorio_container_1.generacion_procesador_combobox_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.pc_escritorio_container_1.generacion_procesador_combobox_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Actualizar_Bien_Informatico",
-                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.pc_escritorio_container_1.generacion_procesador_combobox_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.pc_escritorio_container_1.hostname_texto_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.pc_escritorio_container_1.hostname_texto_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Actualizar_Bien_Informatico",
-                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.pc_escritorio_container_1.hostname_texto_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.pc_escritorio_container_1.ip_texto_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.pc_escritorio_container_1.ip_texto_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Actualizar_Bien_Informatico",
-                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.pc_escritorio_container_1.ip_texto_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.impresora_container_1.tipo_impresora_combobox_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.impresora_container_1.tipo_impresora_combobox_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Actualizar_Bien_Informatico",
-                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.impresora_container_1.tipo_impresora_combobox_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.impresora_container_1.conexion_impresora_combobox_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.impresora_container_1.conexion_impresora_combobox_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Actualizar_Bien_Informatico",
-                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.impresora_container_1.conexion_impresora_combobox_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.impresora_container_1.ip_impresora_texto_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.impresora_container_1.ip_impresora_texto_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Actualizar_Bien_Informatico",
-                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.impresora_container_1.ip_impresora_texto_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.teclado_container_1.conector_teclado_combobox_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.teclado_container_1.conector_teclado_combobox_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Actualizar_Bien_Informatico",
-                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.teclado_container_1.conector_teclado_combobox_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.monitor_container_1.conector_monitor_combobox_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.monitor_container_1.conector_monitor_combobox_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Actualizar_Bien_Informatico",
-                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.monitor_container_1.conector_monitor_combobox_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.ip_telefono_container_1.ip_telefono_input_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.ip_telefono_container_1.ip_telefono_input_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Actualizar_Bien_Informatico",
-                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.ip_telefono_container_1.ip_telefono_input_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.ip_telefono_container_1.anexo_input_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.ip_telefono_container_1.anexo_input_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Actualizar_Bien_Informatico",
-                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.ip_telefono_container_1.anexo_input_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.datos_estandar_1.estado_combobox_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.datos_estandar_1.estado_combobox_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Actualizar_Bien_Informatico",
-                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.datos_estandar_1.estado_combobox_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.datos_estandar_1.estado_situcional_combobox_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.datos_estandar_1.estado_situcional_combobox_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Actualizar_Bien_Informatico",
-                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.datos_estandar_1.estado_situcional_combobox_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.datos_estandar_1.n_oficio_baja_input_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.datos_estandar_1.n_oficio_baja_input_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Actualizar_Bien_Informatico",
-                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.datos_estandar_1.n_oficio_baja_input_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.datos_estandar_1.jefe_inmediato_input_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.datos_estandar_1.jefe_inmediato_input_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Actualizar_Bien_Informatico",
-                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.datos_estandar_1.jefe_inmediato_input_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.datos_estandar_1.usuario_responsable_input_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.datos_estandar_1.usuario_responsable_input_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Actualizar_Bien_Informatico",
-                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.datos_estandar_1.usuario_responsable_input_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.datos_estandar_1.tecnico_responsable_input_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.datos_estandar_1.tecnico_responsable_input_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Actualizar_Bien_Informatico",
-                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.datos_estandar_1.tecnico_responsable_input_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Registrar_Bien_Informatico.Salir_1.AccessibleLabel"
                 }
               ],
@@ -2514,6 +1434,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Inventario.Icon3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Inventario.Icon3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Inventario",
+                "type": "Inventario.Icon3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Inventario.Icon3.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Inventario.Icon3.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Inventario",
+                "type": "Inventario.Icon3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "Inventario.buscar_inventario.AccessibleLabel"
                 }
               ],
@@ -2664,19 +1644,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Inventario.Icon3.AccessibleLabel"
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Salir_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Inventario.Icon3.AccessibleLabel",
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Salir_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Inventario",
-                "type": "Inventario.Icon3"
+                "module": "Actualizar_Bien_Informatico",
+                "type": "Actualizar_Bien_Informatico.Salir_2"
               }
             }
           ],
@@ -2694,19 +1674,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Inventario.Icon3.TabIndex"
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Salir_2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Inventario.Icon3.TabIndex",
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Salir_2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Inventario",
-                "type": "Inventario.Icon3"
+                "module": "Actualizar_Bien_Informatico",
+                "type": "Actualizar_Bien_Informatico.Salir_2"
               }
             }
           ],
@@ -2718,6 +1698,1026 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Salir_3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Salir_3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Actualizar_Bien_Informatico",
+                "type": "Actualizar_Bien_Informatico.Salir_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Salir_3.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Salir_3.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Actualizar_Bien_Informatico",
+                "type": "Actualizar_Bien_Informatico.Salir_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.local_combobox_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.local_combobox_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Actualizar_Bien_Informatico",
+                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.local_combobox_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.facultad_combobox_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.facultad_combobox_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Actualizar_Bien_Informatico",
+                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.facultad_combobox_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.piso_combobox_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.piso_combobox_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Actualizar_Bien_Informatico",
+                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.piso_combobox_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.area_combobox_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.area_combobox_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Actualizar_Bien_Informatico",
+                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.area_combobox_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.tipo_area_combobox_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.tipo_area_combobox_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Actualizar_Bien_Informatico",
+                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.tipo_area_combobox_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.pabellon_combobox_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.pabellon_combobox_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Actualizar_Bien_Informatico",
+                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.pabellon_combobox_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.nombre_area_texto_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.nombre_area_texto_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Actualizar_Bien_Informatico",
+                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.nombre_area_texto_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.bien_informatico_combobox_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.bien_informatico_combobox_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Actualizar_Bien_Informatico",
+                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.bien_informatico_combobox_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.patrimonio_texto_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.patrimonio_texto_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Actualizar_Bien_Informatico",
+                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.patrimonio_texto_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.patrimonio_referencia_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.patrimonio_referencia_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Actualizar_Bien_Informatico",
+                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.patrimonio_referencia_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.marca_combobox_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.marca_combobox_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Actualizar_Bien_Informatico",
+                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.marca_combobox_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.modelo_combobox_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.modelo_combobox_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Actualizar_Bien_Informatico",
+                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.modelo_combobox_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.n_serie_texto_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.n_serie_texto_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Actualizar_Bien_Informatico",
+                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.n_serie_texto_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.pc_escritorio_container_1.disco_duro_combobox_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.pc_escritorio_container_1.disco_duro_combobox_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Actualizar_Bien_Informatico",
+                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.pc_escritorio_container_1.disco_duro_combobox_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.pc_escritorio_container_1.memoria_ram_combobox_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.pc_escritorio_container_1.memoria_ram_combobox_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Actualizar_Bien_Informatico",
+                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.pc_escritorio_container_1.memoria_ram_combobox_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.pc_escritorio_container_1.procesador_combobox_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.pc_escritorio_container_1.procesador_combobox_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Actualizar_Bien_Informatico",
+                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.pc_escritorio_container_1.procesador_combobox_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.pc_escritorio_container_1.generacion_procesador_combobox_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.pc_escritorio_container_1.generacion_procesador_combobox_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Actualizar_Bien_Informatico",
+                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.pc_escritorio_container_1.generacion_procesador_combobox_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.pc_escritorio_container_1.hostname_texto_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.pc_escritorio_container_1.hostname_texto_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Actualizar_Bien_Informatico",
+                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.pc_escritorio_container_1.hostname_texto_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.pc_escritorio_container_1.ip_texto_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.pc_escritorio_container_1.ip_texto_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Actualizar_Bien_Informatico",
+                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.pc_escritorio_container_1.ip_texto_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.impresora_container_1.tipo_impresora_combobox_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.impresora_container_1.tipo_impresora_combobox_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Actualizar_Bien_Informatico",
+                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.impresora_container_1.tipo_impresora_combobox_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.impresora_container_1.conexion_impresora_combobox_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.impresora_container_1.conexion_impresora_combobox_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Actualizar_Bien_Informatico",
+                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.impresora_container_1.conexion_impresora_combobox_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.impresora_container_1.ip_impresora_texto_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.impresora_container_1.ip_impresora_texto_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Actualizar_Bien_Informatico",
+                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.impresora_container_1.ip_impresora_texto_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.teclado_container_1.conector_teclado_combobox_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.teclado_container_1.conector_teclado_combobox_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Actualizar_Bien_Informatico",
+                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.teclado_container_1.conector_teclado_combobox_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.monitor_container_1.conector_monitor_combobox_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.monitor_container_1.conector_monitor_combobox_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Actualizar_Bien_Informatico",
+                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.monitor_container_1.conector_monitor_combobox_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.ip_telefono_container_1.ip_telefono_input_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.ip_telefono_container_1.ip_telefono_input_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Actualizar_Bien_Informatico",
+                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.ip_telefono_container_1.ip_telefono_input_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.ip_telefono_container_1.anexo_input_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.ip_telefono_container_1.anexo_input_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Actualizar_Bien_Informatico",
+                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.ip_telefono_container_1.anexo_input_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.datos_estandar_1.estado_combobox_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.datos_estandar_1.estado_combobox_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Actualizar_Bien_Informatico",
+                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.datos_estandar_1.estado_combobox_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.datos_estandar_1.estado_situcional_combobox_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.datos_estandar_1.estado_situcional_combobox_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Actualizar_Bien_Informatico",
+                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.datos_estandar_1.estado_situcional_combobox_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.datos_estandar_1.n_oficio_baja_input_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.datos_estandar_1.n_oficio_baja_input_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Actualizar_Bien_Informatico",
+                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.datos_estandar_1.n_oficio_baja_input_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.datos_estandar_1.jefe_inmediato_input_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.datos_estandar_1.jefe_inmediato_input_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Actualizar_Bien_Informatico",
+                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.datos_estandar_1.jefe_inmediato_input_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.datos_estandar_1.usuario_responsable_input_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.datos_estandar_1.usuario_responsable_input_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Actualizar_Bien_Informatico",
+                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.datos_estandar_1.usuario_responsable_input_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.datos_estandar_1.tecnico_responsable_input_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.datos_estandar_1.tecnico_responsable_input_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Actualizar_Bien_Informatico",
+                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.datos_estandar_1.tecnico_responsable_input_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
         },
         {
           "locations": [
