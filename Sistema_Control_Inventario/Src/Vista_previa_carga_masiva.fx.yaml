@@ -1724,7 +1724,7 @@ Vista_previa_carga_masiva As screen:
         Color: =RGBA(0, 0, 0, 1)
         Height: =45
         Icon: =Icon.Leave
-        OnSelect: =
+        OnSelect: =Reset(DataCardValue33)
         Rotation: =180
         Width: =60
         X: =41
@@ -1904,7 +1904,7 @@ Vista_previa_carga_masiva As screen:
         Y: =17
         ZIndex: =40
 
-    Button5 As button:
+    carga_datos_button As button:
         Fill: =RGBA(0, 121, 187, 1)
         OnSelect: |-
             =ClearCollect(carga_datos_nuevo,crearArchivo_cargaMasiva.Run(
@@ -1922,4 +1922,56 @@ Vista_previa_carga_masiva As screen:
         X: =538
         Y: =27
         ZIndex: =41
+
+    registrar_datos_button As button:
+        OnSelect: |-
+            =ForAll(
+                carga_datos_nuevo,
+                Patch(
+                    INVENTARIO_EQUIPOS_INFORMATICOS,
+                    Defaults(INVENTARIO_EQUIPOS_INFORMATICOS),
+                    {
+                        LOCAL: LOCAL,
+                        FACULTAD: Value(facultad_text_1.Text),
+                        PISO: Value(piso_text_1.Text),
+                        AREA: Value(area_text_1.Text),
+                        TIPO_AREA: Value(tipo_area_text_1.Text),
+                        PABELLON: Value(pabellon_text_1.Text),
+                        NOMBRE_AREA: Value(nombre_area_text_1.Text),
+                        BIEN_INFORMATICO: Value(bien_informatico_text_1.Text),
+                        PATRIMONIO: Value(patrimonio_text_1.Text),
+                        PATRIMONIO_REFERENCIA: Value(patrimonio_referencia_text_1.Text),
+                        MARCA: Value(marca_text_1.Text),
+                        MODELO: Value(modelo_text_1.Text),
+                        NUM_SERIE: Value(num_serie_text_1.Text),
+                        DISCO_DURO: Value(disco_duro_text_1.Text),
+                        MEMORIA_RAM: Value(memoria_ram_text_1.Text),
+                        PROCESADOR: Value(procesador_text_1.Text),
+                        GENERACION_PROCESADOR: Value(procesador_gen_text_1.Text),
+                        HOSTNAME_CPU: Value(hostname_text_1.Text),
+                        IP_BIEN_INFORMATICO: Value(ip_text_1.Text),
+                        ANEXO_TELEFONO: Value(anexo_text_1.Text),
+                        TIPO_IMPRESORA: Value(tipo_impresora_text_1.Text),
+                        TIPO_CONECTOR_IMPRESORA: Value(conector_impresora_text_1.Text),
+                        TIPO_CONECTOR_TECLADO: Value(conector_teclado_text_1.Text),
+                        TIPO_CONECTOR_MONITOR: Value(conector_monitor_text_1.Text),
+                        ESTADO: Value(estado_text_1.Text),
+                        SITUACION_ACTUAL: Value(situacion_actual_text_1.Text),
+                        FICHA_BAJA: Value(ficha_baja_text_1.Text),
+                        JEFE_INMEDIATO: Value(jefe_inmediato_text_1.Text),
+                        USUARIO_RESPONSABLE: Value(usuario_responsable_text_1.Text),
+                        TECNICO_RESPONSABLE: Value(tecnico_responsable_text_1.Text),
+                        CORREO_TECNICO: Value(tecnico_correo_text_1.Text)
+                    }
+                )
+            );
+            Navigate(
+                Validacion_Correcta_INVENTARIO,
+                ScreenTransition.Fade
+            );
+            Reset(buscar_inventario)
+        Text: ="Botón"
+        X: =715
+        Y: =50
+        ZIndex: =42
 
