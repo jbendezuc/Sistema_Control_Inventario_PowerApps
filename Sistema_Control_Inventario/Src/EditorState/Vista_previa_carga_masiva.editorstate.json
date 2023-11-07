@@ -169,7 +169,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "anexo_text_1",
-      "ParentIndex": 27,
+      "ParentIndex": 21,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3236,7 +3236,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "conector_impresora_text_1",
-      "ParentIndex": 28,
+      "ParentIndex": 23,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3904,7 +3904,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "conector_monitor_text_1",
-      "ParentIndex": 30,
+      "ParentIndex": 25,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4572,7 +4572,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "conector_teclado_text_1",
-      "ParentIndex": 29,
+      "ParentIndex": 24,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6175,7 +6175,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "disco_duro_text_1",
-      "ParentIndex": 21,
+      "ParentIndex": 15,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9845,7 +9845,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "estado_text_1",
-      "ParentIndex": 31,
+      "ParentIndex": 26,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -11412,7 +11412,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ficha_baja_text_1",
-      "ParentIndex": 33,
+      "ParentIndex": 28,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12054,7 +12054,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "fondo_editar_1",
-      "ParentIndex": 14,
+      "ParentIndex": 33,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12606,7 +12606,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "hostname_text_1",
-      "ParentIndex": 25,
+      "ParentIndex": 19,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -14267,7 +14267,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ip_text_1",
-      "ParentIndex": 26,
+      "ParentIndex": 20,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -14927,7 +14927,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "jefe_inmediato_text_1",
-      "ParentIndex": 10,
+      "ParentIndex": 29,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -17904,7 +17904,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "marca_text_1",
-      "ParentIndex": 19,
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -18554,7 +18554,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "memoria_ram_text_1",
-      "ParentIndex": 22,
+      "ParentIndex": 16,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -19214,7 +19214,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "modelo_text_1",
-      "ParentIndex": 20,
+      "ParentIndex": 13,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -21092,7 +21092,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "num_serie_text_1",
-      "ParentIndex": 16,
+      "ParentIndex": 14,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -22701,7 +22701,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "patrimonio_referencia_text_1",
-      "ParentIndex": 18,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -23343,7 +23343,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "patrimonio_text_1",
-      "ParentIndex": 17,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -24635,7 +24635,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "procesador_gen_text_1",
-      "ParentIndex": 24,
+      "ParentIndex": 18,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -25303,7 +25303,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "procesador_text_1",
-      "ParentIndex": 23,
+      "ParentIndex": 17,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -26473,7 +26473,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "situacion_actual_text_1",
-      "ParentIndex": 32,
+      "ParentIndex": 27,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -27115,7 +27115,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "tecnico_correo_text_1",
-      "ParentIndex": 13,
+      "ParentIndex": 32,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -27757,7 +27757,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "tecnico_responsable_text_1",
-      "ParentIndex": 12,
+      "ParentIndex": 31,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -29615,7 +29615,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "tipo_impresora_text_1",
-      "ParentIndex": 15,
+      "ParentIndex": 22,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -30760,7 +30760,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "usuario_responsable_text_1",
-      "ParentIndex": 11,
+      "ParentIndex": 30,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

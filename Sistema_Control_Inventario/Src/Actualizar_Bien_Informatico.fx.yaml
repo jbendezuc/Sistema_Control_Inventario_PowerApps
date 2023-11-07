@@ -718,7 +718,7 @@ Actualizar_Bien_Informatico As screen:
 
                 tecnico_responsable_input_1 As text:
                     BorderThickness: =1
-                    Default: =var_registro_inventario.TECNICO_REPONSABLE
+                    Default: =var_registro_inventario.TECNICO_RESPONSABLE
                     DisplayMode: =DisplayMode.View
                     Height: =25
                     Mode: =TextMode.MultiLine
@@ -800,7 +800,7 @@ Actualizar_Bien_Informatico As screen:
                                     FICHA_BAJA: n_oficio_baja_input_1.Text,
                                     JEFE_INMEDIATO: jefe_inmediato_input_1.Text,
                                     USUARIO_RESPONSABLE: usuario_responsable_input_1.Text,
-                                    TECNICO_REPONSABLE: tecnico_responsable_input_1.Text,
+                                    TECNICO_RESPONSABLE: tecnico_responsable_input_1.Text,
                                     CORREO_TECNICO: User().Email
                                 }
                             ),
@@ -831,7 +831,7 @@ Actualizar_Bien_Informatico As screen:
                                         FICHA_BAJA: n_oficio_baja_input_1.Text,
                                         JEFE_INMEDIATO: jefe_inmediato_input_1.Text,
                                         USUARIO_RESPONSABLE: usuario_responsable_input_1.Text,
-                                        TECNICO_REPONSABLE: tecnico_responsable_input_1.Text,
+                                        TECNICO_RESPONSABLE: tecnico_responsable_input_1.Text,
                                         CORREO_TECNICO: User().Email
                                     }
                                 ),
@@ -860,7 +860,7 @@ Actualizar_Bien_Informatico As screen:
                                             FICHA_BAJA: n_oficio_baja_input_1.Text,
                                             JEFE_INMEDIATO: jefe_inmediato_input.Text,
                                             USUARIO_RESPONSABLE: usuario_responsable_input_1.Text,
-                                            TECNICO_REPONSABLE: tecnico_responsable_input_1.Text,
+                                            TECNICO_RESPONSABLE: tecnico_responsable_input_1.Text,
                                             CORREO_TECNICO: User().Email
                                         }
                                     ),
@@ -889,7 +889,7 @@ Actualizar_Bien_Informatico As screen:
                                                 FICHA_BAJA: n_oficio_baja_input_1.Text,
                                                 JEFE_INMEDIATO: jefe_inmediato_input_1.Text,
                                                 USUARIO_RESPONSABLE: usuario_responsable_input_1.Text,
-                                                TECNICO_REPONSABLE: tecnico_responsable_input_1.Text,
+                                                TECNICO_RESPONSABLE: tecnico_responsable_input_1.Text,
                                                 CORREO_TECNICO: User().Email
                                             }
                                         ),
@@ -919,7 +919,7 @@ Actualizar_Bien_Informatico As screen:
                                                     FICHA_BAJA: n_oficio_baja_input_1.Text,
                                                     JEFE_INMEDIATO: jefe_inmediato_input_1.Text,
                                                     USUARIO_RESPONSABLE: usuario_responsable_input_1.Text,
-                                                    TECNICO_REPONSABLE: tecnico_responsable_input_1.Text,
+                                                    TECNICO_RESPONSABLE: tecnico_responsable_input_1.Text,
                                                     CORREO_TECNICO: User().Email
                                                 }
                                             ),
@@ -945,7 +945,7 @@ Actualizar_Bien_Informatico As screen:
                                                     FICHA_BAJA: n_oficio_baja_input_1.Text,
                                                     JEFE_INMEDIATO: jefe_inmediato_input_1.Text,
                                                     USUARIO_RESPONSABLE: usuario_responsable_input_1.Text,
-                                                    TECNICO_REPONSABLE: tecnico_responsable_input_1.Text,
+                                                    TECNICO_RESPONSABLE: tecnico_responsable_input_1.Text,
                                                     CORREO_TECNICO: User().Email
                                                 }
                                             )

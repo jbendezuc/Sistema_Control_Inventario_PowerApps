@@ -1335,7 +1335,7 @@ Inventario As screen:
                     Height: =30
                     OnSelect: =Select(Parent)
                     Size: =12
-                    Text: =ThisItem.TECNICO_REPONSABLE
+                    Text: =ThisItem.TECNICO_RESPONSABLE
                     Width: =250
                     X: |-
                         =If(

@@ -787,7 +787,7 @@ Registrar_Bien_Informatico As screen:
                                     FICHA_BAJA: n_oficio_baja_input.Text,
                                     JEFE_INMEDIATO: jefe_inmediato_input.Text,
                                     USUARIO_RESPONSABLE: usuario_responsable_input.Text,
-                                    TECNICO_REPONSABLE: tecnico_responsable_input.Text,
+                                    TECNICO_RESPONSABLE: tecnico_responsable_input.Text,
                                     CORREO_TECNICO: User().Email
                                 }
                             ),
@@ -818,7 +818,7 @@ Registrar_Bien_Informatico As screen:
                                         FICHA_BAJA: n_oficio_baja_input.Text,
                                         JEFE_INMEDIATO: jefe_inmediato_input.Text,
                                         USUARIO_RESPONSABLE: usuario_responsable_input.Text,
-                                        TECNICO_REPONSABLE: tecnico_responsable_input.Text,
+                                        TECNICO_RESPONSABLE: tecnico_responsable_input.Text,
                                         CORREO_TECNICO: User().Email
                                     }
                                 ),
@@ -847,7 +847,7 @@ Registrar_Bien_Informatico As screen:
                                             FICHA_BAJA: n_oficio_baja_input.Text,
                                             JEFE_INMEDIATO: jefe_inmediato_input.Text,
                                             USUARIO_RESPONSABLE: usuario_responsable_input.Text,
-                                            TECNICO_REPONSABLE: tecnico_responsable_input.Text,
+                                            TECNICO_RESPONSABLE: tecnico_responsable_input.Text,
                                             CORREO_TECNICO: User().Email
                                         }
                                     ),
@@ -876,7 +876,7 @@ Registrar_Bien_Informatico As screen:
                                                 FICHA_BAJA: n_oficio_baja_input.Text,
                                                 JEFE_INMEDIATO: jefe_inmediato_input.Text,
                                                 USUARIO_RESPONSABLE: usuario_responsable_input.Text,
-                                                TECNICO_REPONSABLE: tecnico_responsable_input.Text,
+                                                TECNICO_RESPONSABLE: tecnico_responsable_input.Text,
                                                 CORREO_TECNICO: User().Email
                                             }
                                         ),
@@ -906,7 +906,7 @@ Registrar_Bien_Informatico As screen:
                                                     FICHA_BAJA: n_oficio_baja_input.Text,
                                                     JEFE_INMEDIATO: jefe_inmediato_input.Text,
                                                     USUARIO_RESPONSABLE: usuario_responsable_input.Text,
-                                                    TECNICO_REPONSABLE: tecnico_responsable_input.Text,
+                                                    TECNICO_RESPONSABLE: tecnico_responsable_input.Text,
                                                     CORREO_TECNICO: User().Email
                                                 }
                                             ),
@@ -932,7 +932,7 @@ Registrar_Bien_Informatico As screen:
                                                     FICHA_BAJA: n_oficio_baja_input.Text,
                                                     JEFE_INMEDIATO: jefe_inmediato_input.Text,
                                                     USUARIO_RESPONSABLE: usuario_responsable_input.Text,
-                                                    TECNICO_REPONSABLE: tecnico_responsable_input.Text,
+                                                    TECNICO_RESPONSABLE: tecnico_responsable_input.Text,
                                                     CORREO_TECNICO: User().Email
                                                 }
                                             )
