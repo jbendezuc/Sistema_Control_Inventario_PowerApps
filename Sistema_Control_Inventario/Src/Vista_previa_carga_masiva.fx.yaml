@@ -1339,7 +1339,7 @@ Vista_previa_carga_masiva As screen:
                     Height: =28
                     OnSelect: =Select(Parent)
                     Size: =12
-                    Text: =ThisItem.TECNICO_REPONSABLE
+                    Text: =ThisItem.TECNICO_RESPONSABLE
                     Width: =250
                     X: |-
                         =If(

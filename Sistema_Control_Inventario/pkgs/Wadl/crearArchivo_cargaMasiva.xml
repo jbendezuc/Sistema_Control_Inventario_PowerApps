@@ -43,7 +43,7 @@
       <string name="ResponseActionOutput_items_def_FICHA_BAJA_def" />
       <string name="ResponseActionOutput_items_def_JEFE_INMEDIATO_def" />
       <string name="ResponseActionOutput_items_def_USUARIO_RESPONSABLE_def" />
-      <string name="ResponseActionOutput_items_def_TECNICO_REPONSABLE_def" />
+      <string name="ResponseActionOutput_items_def_TECNICO_RESPONSABLE_def" />
       <string name="ResponseActionOutput_items_def_CORREO_TECNICO_def" />
       <object name="ResponseActionOutput_items_def">
         <property name="ID" type="string" />
@@ -76,7 +76,7 @@
         <property name="FICHA_BAJA" type="string" />
         <property name="JEFE_INMEDIATO" type="string" />
         <property name="USUARIO_RESPONSABLE" type="string" />
-        <property name="TECNICO_REPONSABLE" type="string" />
+        <property name="TECNICO_RESPONSABLE" type="string" />
         <property name="CORREO_TECNICO" type="string" />
       </object>
       <array typeRef="ResponseActionOutput_items_def" name="ResponseActionOutput" />
