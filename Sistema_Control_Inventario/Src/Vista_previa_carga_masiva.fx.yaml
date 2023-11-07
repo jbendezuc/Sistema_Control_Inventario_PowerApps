@@ -732,7 +732,7 @@ Vista_previa_carga_masiva As screen:
                         SortByColumns(
                             Search(
                                 Filter(
-                                    carga_datos,
+                                    carga_datos_nuevo,
                         //Bien Informatico
                                     IsBlank(elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO) || (BIEN_INFORMATICO = elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO),
                         //Local
@@ -756,7 +756,7 @@ Vista_previa_carga_masiva As screen:
                         SortByColumns(
                             Search(
                                 Filter(
-                                    carga_datos,
+                                    carga_datos_nuevo,
                                     CORREO_TECNICO = User().Email,
                         //Bien Informatico
                                     IsBlank(elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO) || (BIEN_INFORMATICO = elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO),
@@ -1607,10 +1607,10 @@ Vista_previa_carga_masiva As screen:
             =If(
                 "proyectos.ocgti@unfv.edu.pe" = User().Email || "cfranco@unfv.edu.pe" = User().Email,
             CountIf(
-                carga_datos,
+                carga_datos_nuevo,
                 (IsBlank(elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO) || BIEN_INFORMATICO = elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO) && (IsBlank(elegir_local_1.SelectedText.Value) || LOCAL = elegir_local_1.SelectedText.Value) && (IsBlank(elegir_facultad_1.SelectedText.Value) || FACULTAD = elegir_facultad_1.SelectedText.Value) && (IsBlank(elegir_area_1.SelectedText.Value) || AREA = elegir_area_1.SelectedText.Value) && (IsBlank(elegir_tipo_area_1.SelectedText.Value) || TIPO_AREA = elegir_tipo_area_1.SelectedText.Value) && (IsBlank(elegir_estado_1.SelectedText.Value) || ESTADO = elegir_estado_1.SelectedText.Value) && (IsBlank(buscar_inventario_1.Text) || PATRIMONIO = buscar_inventario_1.Text)
             ),CountIf(
-                carga_datos,
+                carga_datos_nuevo,
                 CORREO_TECNICO=User().Email,
                 (IsBlank(elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO) || BIEN_INFORMATICO = elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO) && (IsBlank(elegir_local_1.SelectedText.Value) || LOCAL = elegir_local_1.SelectedText.Value) && (IsBlank(elegir_facultad_1.SelectedText.Value) || FACULTAD = elegir_facultad_1.SelectedText.Value) && (IsBlank(elegir_area_1.SelectedText.Value) || AREA = elegir_area_1.SelectedText.Value) && (IsBlank(elegir_tipo_area_1.SelectedText.Value) || TIPO_AREA = elegir_tipo_area_1.SelectedText.Value) && (IsBlank(elegir_estado_1.SelectedText.Value) || ESTADO = elegir_estado_1.SelectedText.Value) && (IsBlank(buscar_inventario_1.Text) || PATRIMONIO = buscar_inventario_1.Text)
             ))
@@ -1724,8 +1724,7 @@ Vista_previa_carga_masiva As screen:
         Color: =RGBA(0, 0, 0, 1)
         Height: =45
         Icon: =Icon.Leave
-        OnSelect: |-
-            =Navigate(Pantalla_Inicio,ScreenTransition.Fade);UpdateContext({resetearControles:true});UpdateContext({resetearControles:false});Reset(buscar_inventario_1)
+        OnSelect: =
         Rotation: =180
         Width: =60
         X: =41
@@ -1908,7 +1907,7 @@ Vista_previa_carga_masiva As screen:
     Button5 As button:
         Fill: =RGBA(0, 121, 187, 1)
         OnSelect: |-
-            =ClearCollect(carga_datos,crearArchivo_cargaMasiva.Run(
+            =ClearCollect(carga_datos_nuevo,crearArchivo_cargaMasiva.Run(
                 First(DataCardValue33.Attachments).Name,
                 {
                     file:{
