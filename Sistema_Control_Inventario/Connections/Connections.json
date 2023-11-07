@@ -5,12 +5,24 @@
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
+        "a3a47bd4-af7f-4ed4-a803-86a9f94f8d5e": {
+          "value": "shared_sharepointonline"
+        },
+        "ba03cb63-2240-428a-8028-1199487ee35f": {
+          "value": "shared_excelonlinebusiness"
+        },
         "workflowEntityId": {},
         "workflowName": {
           "value": "c79d830b-9e06-463e-badb-1af69c6ba962"
         }
       },
       "parameterHintsV2": {
+        "shared_excelonlinebusiness": {
+          "value": "ba03cb63-2240-428a-8028-1199487ee35f"
+        },
+        "shared_sharepointonline": {
+          "value": "a3a47bd4-af7f-4ed4-a803-86a9f94f8d5e"
+        },
         "workflowEntityId": {},
         "workflowName": {
           "value": "c79d830b-9e06-463e-badb-1af69c6ba962"
@@ -27,6 +39,20 @@
     },
     "dependents": [],
     "id": "0f980e3c-7b51-4b5c-a292-09e96bb88947"
+  },
+  "245719fd-71a1-47c7-800d-aa4129159312": {
+    "connectionRef": {
+      "displayName": "Office\u00A0365 Outlook",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/office365/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365"
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Outlook"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "245719fd-71a1-47c7-800d-aa4129159312"
   },
   "24b4b1c9-3a8a-481b-ad9a-924587a3571c": {
     "connectionRef": {
@@ -61,6 +87,47 @@
     },
     "dependents": [],
     "id": "24b4b1c9-3a8a-481b-ad9a-924587a3571c"
+  },
+  "7515b960-509d-4d9f-805c-8ed0704fbea8": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "a3a47bd4-af7f-4ed4-a803-86a9f94f8d5e": {
+          "value": "shared_sharepointonline"
+        },
+        "ba03cb63-2240-428a-8028-1199487ee35f": {
+          "value": "shared_excelonlinebusiness"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "cf4f722c-53cd-4582-a10a-1a71f4c4fe61"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_excelonlinebusiness": {
+          "value": "ba03cb63-2240-428a-8028-1199487ee35f"
+        },
+        "shared_sharepointonline": {
+          "value": "a3a47bd4-af7f-4ed4-a803-86a9f94f8d5e"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "cf4f722c-53cd-4582-a10a-1a71f4c4fe61"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "crearArchivo_cargaMasiva"
+    ],
+    "dependencies": {
+      "shared_excelonlinebusiness": "ba03cb63-2240-428a-8028-1199487ee35f",
+      "shared_sharepointonline": "a3a47bd4-af7f-4ed4-a803-86a9f94f8d5e"
+    },
+    "dependents": [],
+    "id": "7515b960-509d-4d9f-805c-8ed0704fbea8"
   },
   "a3a47bd4-af7f-4ed4-a803-86a9f94f8d5e": {
     "connectionRef": {
@@ -147,7 +214,8 @@
     "dependencies": {},
     "dependents": [
       "24b4b1c9-3a8a-481b-ad9a-924587a3571c",
-      "0f980e3c-7b51-4b5c-a292-09e96bb88947"
+      "0f980e3c-7b51-4b5c-a292-09e96bb88947",
+      "7515b960-509d-4d9f-805c-8ed0704fbea8"
     ],
     "id": "a3a47bd4-af7f-4ed4-a803-86a9f94f8d5e"
   },
@@ -161,8 +229,23 @@
     "dataSources": [],
     "dependencies": {},
     "dependents": [
-      "0f980e3c-7b51-4b5c-a292-09e96bb88947"
+      "0f980e3c-7b51-4b5c-a292-09e96bb88947",
+      "7515b960-509d-4d9f-805c-8ed0704fbea8"
     ],
     "id": "ba03cb63-2240-428a-8028-1199487ee35f"
+  },
+  "c4906daf-b1a9-4365-b580-36b8f1ecb288": {
+    "connectionRef": {
+      "displayName": "Usuarios de Office 365",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/office365users/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365users"
+    },
+    "datasets": {},
+    "dataSources": [
+      "UsuariosdeOffice365"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "c4906daf-b1a9-4365-b580-36b8f1ecb288"
   }
 }

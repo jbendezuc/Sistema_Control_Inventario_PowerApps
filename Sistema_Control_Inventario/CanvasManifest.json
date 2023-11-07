@@ -133,6 +133,7 @@
   "ScreenOrder": [
     "Pantalla_Inicio",
     "Inventario",
+    "Vista_previa_carga_masiva",
     "Registrar_Bien_Informatico",
     "Actualizar_Bien_Informatico",
     "Validacion_Correcta_INVENTARIO"
