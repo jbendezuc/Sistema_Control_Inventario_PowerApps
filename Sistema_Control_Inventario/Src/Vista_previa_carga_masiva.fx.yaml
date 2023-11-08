@@ -1,5 +1,5 @@
 Vista_previa_carga_masiva As screen:
-    BackgroundImage: =Fondo
+    BackgroundImage: ='Royal Blue + Petrol'
     Fill: =RGBA(255, 255, 255, 1)
 
     Container1_1 As groupContainer.horizontalAutoLayoutContainer:
@@ -1453,22 +1453,22 @@ Vista_previa_carga_masiva As screen:
                     Width: =100
                     X: |-
                         =If(
-                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop",
+                            elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO = "Laptop",
                             ID_text_1.Width + 2 + local_text_1.Width + 2 + facultad_text_1.Width + 2 + piso_text_1.Width + 2 + area_text_1.Width + 2 + tipo_area_text_1.Width + 2 + pabellon_text_1.Width + 2 + nombre_area_text_1.Width + 2 + bien_informatico_text_1.Width + 2 + patrimonio_text_1.Width + 2 + patrimonio_referencia_text_1.Width + 2 + marca_text_1.Width + 2 + modelo_text_1.Width + 2 + num_serie_text_1.Width + 2 + disco_duro_text_1.Width + 2 + memoria_ram_text_1.Width + 2 + procesador_text_1.Width + 2 + procesador_gen_text_1.Width + 2 + hostname_text_1.Width + 2 + ip_text_1.Width + 2 + estado_text_1.Width + 2 + situacion_actual_text_1.Width + 2 + ficha_baja_text_1.Width + 2 + jefe_inmediato_text_1.Width + 2 + usuario_responsable_text_1.Width + 2 + tecnico_responsable_text_1.Width + 2 + tecnico_correo_text_1.Width + 15,
                             If(
-                                elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Impresora",
+                                elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO = "Impresora",
                                 ID_text_1.Width + 2 + local_text_1.Width + 2 + facultad_text_1.Width + 2 + piso_text_1.Width + 2 + area_text_1.Width + 2 + tipo_area_text_1.Width + 2 + pabellon_text_1.Width + 2 + nombre_area_text_1.Width + 2 + bien_informatico_text_1.Width + 2 + patrimonio_text_1.Width + 2 + patrimonio_referencia_text_1.Width + 2 + marca_text_1.Width + 2 + modelo_text_1.Width + 2 + num_serie_text_1.Width + 2 + ip_text_1.Width + 2 + tipo_impresora_text_1.Width + 2 + conector_impresora_text_1.Width + 2 + estado_text_1.Width + 2 + situacion_actual_text_1.Width + 2 + ficha_baja_text_1.Width + 2 + jefe_inmediato_text_1.Width + 2 + usuario_responsable_text_1.Width + 2 + tecnico_responsable_text_1.Width + 2 + tecnico_correo_text_1.Width + 15,
                                 If(
-                                    elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Monitor",
+                                    elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO = "Monitor",
                                     ID_text_1.Width + 2 + local_text_1.Width + 2 + facultad_text_1.Width + 2 + piso_text_1.Width + 2 + area_text_1.Width + 2 + tipo_area_text_1.Width + 2 + pabellon_text_1.Width + 2 + nombre_area_text_1.Width + 2 + bien_informatico_text_1.Width + 2 + patrimonio_text_1.Width + 2 + patrimonio_referencia_text_1.Width + 2 + marca_text_1.Width + 2 + modelo_text_1.Width + 2 + num_serie_text_1.Width + 2 + conector_monitor_text_1.Width + 2 + estado_text_1.Width + 2 + situacion_actual_text_1.Width + 2 + ficha_baja_text_1.Width + 2 + jefe_inmediato_text_1.Width + 2 + usuario_responsable_text_1.Width + 2 + tecnico_responsable_text_1.Width + 2 + tecnico_correo_text_1.Width + 15,
                                     If(
-                                        elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Teclado",
+                                        elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO = "Teclado",
                                         ID_text_1.Width + 2 + local_text_1.Width + 2 + facultad_text_1.Width + 2 + piso_text_1.Width + 2 + area_text_1.Width + 2 + tipo_area_text_1.Width + 2 + pabellon_text_1.Width + 2 + nombre_area_text_1.Width + 2 + bien_informatico_text_1.Width + 2 + patrimonio_text_1.Width + 2 + patrimonio_referencia_text_1.Width + 2 + marca_text_1.Width + 2 + modelo_text_1.Width + 2 + num_serie_text_1.Width + 2 + conector_teclado_text_1.Width + 2 + estado_text_1.Width + 2 + situacion_actual_text_1.Width + 2 + ficha_baja_text_1.Width + 2 + jefe_inmediato_text_1.Width + 2 + usuario_responsable_text_1.Width + 2 + tecnico_responsable_text_1.Width + 2 + tecnico_correo_text_1.Width + 15,
                                         If(
-                                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Telefono IP",
+                                            elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO = "Telefono IP",
                                             ID_text_1.Width + 2 + local_text_1.Width + 2 + facultad_text_1.Width + 2 + piso_text_1.Width + 2 + area_text_1.Width + 2 + tipo_area_text_1.Width + 2 + pabellon_text_1.Width + 2 + nombre_area_text_1.Width + 2 + bien_informatico_text_1.Width + 2 + patrimonio_text_1.Width + 2 + patrimonio_referencia_text_1.Width + 2 + marca_text_1.Width + 2 + modelo_text_1.Width + 2 + num_serie_text_1.Width + 2 + ip_text_1.Width + 2 + anexo_text_1.Width + 2 + estado_text_1.Width + 2 + situacion_actual_text_1.Width + 2 + ficha_baja_text_1.Width + 2 + jefe_inmediato_text_1.Width + 2 + usuario_responsable_text_1.Width + 2 + tecnico_responsable_text_1.Width + 2 + tecnico_correo_text_1.Width + 15,
                                             If(
-                                                IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
+                                                IsBlank(elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO),
                                                 ID_text_1.Width + 2 + local_text_1.Width + 2 + facultad_text_1.Width + 2 + piso_text_1.Width + 2 + area_text_1.Width + 2 + tipo_area_text_1.Width + 2 + pabellon_text_1.Width + 2 + nombre_area_text_1.Width + 2 + bien_informatico_text_1.Width + 2 + patrimonio_text_1.Width + 2 + patrimonio_referencia_text_1.Width + 2 + marca_text_1.Width + 2 + modelo_text_1.Width + 2 + num_serie_text_1.Width + 2 + disco_duro_text_1.Width + 2 + memoria_ram_text_1.Width + 2 + procesador_text_1.Width + 2 + procesador_gen_text_1.Width + 2 + hostname_text_1.Width + 2 + ip_text_1.Width + 2 + anexo_text_1.Width + 2 + tipo_impresora_text_1.Width + 2 + conector_impresora_text_1.Width + 2 + conector_teclado_text_1.Width + 2 + conector_monitor_text_1.Width + 2 + estado_text_1.Width + 2 + situacion_actual_text_1.Width + 2 + ficha_baja_text_1.Width + 2 + jefe_inmediato_text_1.Width + 2 + usuario_responsable_text_1.Width + 2 + tecnico_responsable_text_1.Width + 2 + tecnico_correo_text_1.Width + 15,
                                                 ID_text_1.Width + 2 + local_text_1.Width + 2 + facultad_text_1.Width + 2 + piso_text_1.Width + 2 + area_text_1.Width + 2 + tipo_area_text_1.Width + 2 + pabellon_text_1.Width + 2 + nombre_area_text_1.Width + 2 + bien_informatico_text_1.Width + 2 + patrimonio_text_1.Width + 2 + patrimonio_referencia_text_1.Width + 2 + marca_text_1.Width + 2 + modelo_text_1.Width + 2 + num_serie_text_1.Width + 2 + estado_text_1.Width + 2 + situacion_actual_text_1.Width + 2 + ficha_baja_text_1.Width + 2 + jefe_inmediato_text_1.Width + 2 + usuario_responsable_text_1.Width + 2 + tecnico_responsable_text_1.Width + 2 + tecnico_correo_text_1.Width + 15
                                             )
@@ -1484,28 +1484,28 @@ Vista_previa_carga_masiva As screen:
                     Fill: =RGBA(168, 0, 0, 1)
                     Height: =25
                     OnSelect: |-
-                        =Select(Parent);Set(var_registro_inventario_1,ThisItem);UpdateContext({var_alerta_eliminar_1:true})
+                        =Select(Parent);Set(var_galeria_inventario,ThisItem);UpdateContext({var_alerta_eliminar_1:true})
                     Size: =12
                     Text: ="Eliminar"
                     Width: =100
                     X: |-
                         =If(
-                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop",
+                            elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO = "Laptop",
                             ID_text_1.Width + 2 + local_text_1.Width + 2 + facultad_text_1.Width + 2 + piso_text_1.Width + 2 + area_text_1.Width + 2 + tipo_area_text_1.Width + 2 + pabellon_text_1.Width + 2 + nombre_area_text_1.Width + 2 + bien_informatico_text_1.Width + 2 + patrimonio_text_1.Width + 2 + patrimonio_referencia_text_1.Width + 2 + marca_text_1.Width + 2 + modelo_text_1.Width + 2 + num_serie_text_1.Width + 2 + disco_duro_text_1.Width + 2 + memoria_ram_text_1.Width + 2 + procesador_text_1.Width + 2 + procesador_gen_text_1.Width + 2 + hostname_text_1.Width + 2 + ip_text_1.Width + 2 + estado_text_1.Width + 2 + situacion_actual_text_1.Width + 2 + ficha_baja_text_1.Width + 2 + jefe_inmediato_text_1.Width + 2 + usuario_responsable_text_1.Width + 2 + tecnico_responsable_text_1.Width + 2 + tecnico_correo_text_1.Width + 15 + editar_button.Width + 15,
                             If(
-                                elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Impresora",
+                                elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO = "Impresora",
                                 ID_text_1.Width + 2 + local_text_1.Width + 2 + facultad_text_1.Width + 2 + piso_text_1.Width + 2 + area_text_1.Width + 2 + tipo_area_text_1.Width + 2 + pabellon_text_1.Width + 2 + nombre_area_text_1.Width + 2 + bien_informatico_text_1.Width + 2 + patrimonio_text_1.Width + 2 + patrimonio_referencia_text_1.Width + 2 + marca_text_1.Width + 2 + modelo_text_1.Width + 2 + num_serie_text_1.Width + 2 + ip_text_1.Width + 2 + tipo_impresora_text_1.Width + 2 + conector_impresora_text_1.Width + 2 + estado_text_1.Width + 2 + situacion_actual_text_1.Width + 2 + ficha_baja_text_1.Width + 2 + jefe_inmediato_text_1.Width + 2 + usuario_responsable_text_1.Width + 2 + tecnico_responsable_text_1.Width + 2 + tecnico_correo_text_1.Width + 15 + editar_button.Width + 15,
                                 If(
-                                    elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Monitor",
+                                    elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO = "Monitor",
                                     ID_text_1.Width + 2 + local_text_1.Width + 2 + facultad_text_1.Width + 2 + piso_text_1.Width + 2 + area_text_1.Width + 2 + tipo_area_text_1.Width + 2 + pabellon_text_1.Width + 2 + nombre_area_text_1.Width + 2 + bien_informatico_text_1.Width + 2 + patrimonio_text_1.Width + 2 + patrimonio_referencia_text_1.Width + 2 + marca_text_1.Width + 2 + modelo_text_1.Width + 2 + num_serie_text_1.Width + 2 + conector_monitor_text_1.Width + 2 + estado_text_1.Width + 2 + situacion_actual_text_1.Width + 2 + ficha_baja_text_1.Width + 2 + jefe_inmediato_text_1.Width + 2 + usuario_responsable_text_1.Width + 2 + tecnico_responsable_text_1.Width + 2 + tecnico_correo_text_1.Width + 15 + editar_button.Width + 15,
                                     If(
-                                        elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Teclado",
+                                        elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO = "Teclado",
                                         ID_text_1.Width + 2 + local_text_1.Width + 2 + facultad_text_1.Width + 2 + piso_text_1.Width + 2 + area_text_1.Width + 2 + tipo_area_text_1.Width + 2 + pabellon_text_1.Width + 2 + nombre_area_text_1.Width + 2 + bien_informatico_text_1.Width + 2 + patrimonio_text_1.Width + 2 + patrimonio_referencia_text_1.Width + 2 + marca_text_1.Width + 2 + modelo_text_1.Width + 2 + num_serie_text_1.Width + 2 + conector_teclado_text_1.Width + 2 + estado_text_1.Width + 2 + situacion_actual_text_1.Width + 2 + ficha_baja_text_1.Width + 2 + jefe_inmediato_text_1.Width + 2 + usuario_responsable_text_1.Width + 2 + tecnico_responsable_text_1.Width + 2 + tecnico_correo_text_1.Width + 15 + editar_button.Width + 15,
                                         If(
-                                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Telefono IP",
+                                            elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO = "Telefono IP",
                                             ID_text_1.Width + 2 + local_text_1.Width + 2 + facultad_text_1.Width + 2 + piso_text_1.Width + 2 + area_text_1.Width + 2 + tipo_area_text_1.Width + 2 + pabellon_text_1.Width + 2 + nombre_area_text_1.Width + 2 + bien_informatico_text_1.Width + 2 + patrimonio_text_1.Width + 2 + patrimonio_referencia_text_1.Width + 2 + marca_text_1.Width + 2 + modelo_text_1.Width + 2 + num_serie_text_1.Width + 2 + ip_text_1.Width + 2 + anexo_text_1.Width + 2 + estado_text_1.Width + 2 + situacion_actual_text_1.Width + 2 + ficha_baja_text_1.Width + 2 + jefe_inmediato_text_1.Width + 2 + usuario_responsable_text_1.Width + 2 + tecnico_responsable_text_1.Width + 2 + tecnico_correo_text_1.Width + 15 + editar_button.Width + 15,
                                             If(
-                                                IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
+                                                IsBlank(elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO),
                                                 ID_text_1.Width + 2 + local_text_1.Width + 2 + facultad_text_1.Width + 2 + piso_text_1.Width + 2 + area_text_1.Width + 2 + tipo_area_text_1.Width + 2 + pabellon_text_1.Width + 2 + nombre_area_text_1.Width + 2 + bien_informatico_text_1.Width + 2 + patrimonio_text_1.Width + 2 + patrimonio_referencia_text_1.Width + 2 + marca_text_1.Width + 2 + modelo_text_1.Width + 2 + num_serie_text_1.Width + 2 + disco_duro_text_1.Width + 2 + memoria_ram_text_1.Width + 2 + procesador_text_1.Width + 2 + procesador_gen_text_1.Width + 2 + hostname_text_1.Width + 2 + ip_text_1.Width + 2 + anexo_text_1.Width + 2 + tipo_impresora_text_1.Width + 2 + conector_impresora_text_1.Width + 2 + conector_teclado_text_1.Width + 2 + conector_monitor_text_1.Width + 2 + estado_text_1.Width + 2 + situacion_actual_text_1.Width + 2 + ficha_baja_text_1.Width + 2 + jefe_inmediato_text_1.Width + 2 + usuario_responsable_text_1.Width + 2 + tecnico_responsable_text_1.Width + 2 + tecnico_correo_text_1.Width + 15 + editar_button.Width + 15,
                                                 ID_text_1.Width + 2 + local_text_1.Width + 2 + facultad_text_1.Width + 2 + piso_text_1.Width + 2 + area_text_1.Width + 2 + tipo_area_text_1.Width + 2 + pabellon_text_1.Width + 2 + nombre_area_text_1.Width + 2 + bien_informatico_text_1.Width + 2 + patrimonio_text_1.Width + 2 + patrimonio_referencia_text_1.Width + 2 + marca_text_1.Width + 2 + modelo_text_1.Width + 2 + num_serie_text_1.Width + 2 + estado_text_1.Width + 2 + situacion_actual_text_1.Width + 2 + ficha_baja_text_1.Width + 2 + jefe_inmediato_text_1.Width + 2 + usuario_responsable_text_1.Width + 2 + tecnico_responsable_text_1.Width + 2 + tecnico_correo_text_1.Width + 15 + editar_button.Width + 15
                                             )
@@ -1536,9 +1536,9 @@ Vista_previa_carga_masiva As screen:
         FontWeight: =FontWeight.Bold
         Height: =60
         Size: =25
-        Text: ="CARGA MASIVA - INVENTARIO"
-        Width: =582
-        X: =764
+        Text: ="CARGA MASIVA"
+        Width: =385
+        X: =960
         Y: =17
         ZIndex: =2
 
@@ -1670,7 +1670,7 @@ Vista_previa_carga_masiva As screen:
         cancelar_alerta_button_1 As button:
             Fill: =RGBA(141, 198, 63, 1)
             OnSelect: |-
-                =UpdateContext({var_alerta_eliminar:false})
+                =UpdateContext({var_alerta_eliminar_1:false})
             Text: ="Cancelar"
             Visible: =var_alerta_eliminar_1
             X: =491
@@ -1680,7 +1680,7 @@ Vista_previa_carga_masiva As screen:
         eliminar_dato_button_1 As button:
             Fill: =RGBA(168, 2, 2, 1)
             OnSelect: |-
-                =//Remove(INVENTARIO_EQUIPOS_INFORMATICOS;var_registro_inventario);;UpdateContext({var_alerta_eliminar:false})
+                =Remove(carga_datos_nuevo,var_galeria_inventario);UpdateContext({var_alerta_eliminar_1:false})
             Text: ="Eliminar"
             Visible: =var_alerta_eliminar_1
             X: =715
@@ -1695,7 +1695,7 @@ Vista_previa_carga_masiva As screen:
             Height: =41
             Size: =14
             Text: |-
-                =//"Eliminar "&carga_datos.BIEN_INFORMATICO&" de Patrimonio: "&carga_datos.PATRIMONIO
+                ="Eliminar "&var_galeria_inventario.BIEN_INFORMATICO&" de Patrimonio: "&var_galeria_inventario.PATRIMONIO
             Visible: =var_alerta_eliminar_1
             Width: =449
             X: =460
@@ -1724,7 +1724,8 @@ Vista_previa_carga_masiva As screen:
         Color: =RGBA(0, 0, 0, 1)
         Height: =45
         Icon: =Icon.Leave
-        OnSelect: =Reset(DataCardValue33)
+        OnSelect: |-
+            =If(var_vista_inventario=1,Navigate(Pantalla_Inicio,ScreenTransition.Fade),Navigate(Inventario,ScreenTransition.Fade));Set(var_vista_inventario,0);Reset(DataCardValue33);UpdateContext({resetearControles:true});UpdateContext({resetearControles:false});Reset(buscar_inventario_1)
         Rotation: =180
         Width: =60
         X: =41
@@ -1887,7 +1888,9 @@ Vista_previa_carga_masiva As screen:
     DataCardValue33 As attachments:
         BorderColor: =Color.Blue
         BorderThickness: =1
+        DropTargetBackgroundColor: =RGBA(0, 0, 0, 1)
         FocusedBorderThickness: =3
+        FontWeight: =FontWeight.Semibold
         Height: =83
         IsInDataCard: =true
         Items: =
@@ -1900,7 +1903,7 @@ Vista_previa_carga_masiva As screen:
         Size: =10
         Tooltip: =
         Width: =343
-        X: =178
+        X: =187
         Y: =17
         ZIndex: =40
 
@@ -1924,6 +1927,8 @@ Vista_previa_carga_masiva As screen:
         ZIndex: =41
 
     registrar_datos_button As button:
+        DisplayMode: =If(CountRows(carga_datos_nuevo) > 0, DisplayMode.Edit, DisplayMode.Disabled)
+        Fill: =RGBA(54, 176, 75, 1)
         OnSelect: |-
             =ForAll(
                 carga_datos_nuevo,
@@ -1970,8 +1975,8 @@ Vista_previa_carga_masiva As screen:
                 ScreenTransition.Fade
             );
             Reset(buscar_inventario)
-        Text: ="Botón"
-        X: =715
-        Y: =50
+        Text: ="Registrar"
+        X: =747
+        Y: =27
         ZIndex: =42
 

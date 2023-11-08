@@ -79,7 +79,7 @@ Pantalla_Inicio As screen:
         Icon: =Icon.Database
         Width: =53
         X: =79
-        Y: =418
+        Y: =420
         ZIndex: =8
 
     Icon2_1 As icon.ChevronDown:
@@ -111,4 +111,24 @@ Pantalla_Inicio As screen:
         X: =52
         Y: =117
         ZIndex: =11
+
+    Icon2_2 As icon.ChevronDown:
+        Color: =RGBA(0, 13, 75, 1)
+        DisplayMode: =DisplayMode.View
+        Height: =52
+        Icon: =Icon.AddLibrary
+        Width: =53
+        X: =79
+        Y: =503
+        ZIndex: =12
+
+    Button3_2 As button:
+        Fill: =RGBA(9, 33, 98, 1)
+        Height: =45
+        OnSelect: =Navigate(Vista_previa_carga_masiva,ScreenTransition.Fade);Set(var_vista_inventario,1);ClearCollect(carga_datos_nuevo, [])
+        Text: ="Cargar Excel"
+        Width: =185
+        X: =132
+        Y: =510
+        ZIndex: =13
 

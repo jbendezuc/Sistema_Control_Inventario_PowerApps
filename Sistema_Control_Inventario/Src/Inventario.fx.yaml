@@ -1553,7 +1553,7 @@ Inventario As screen:
         Fill: =RGBA(14, 115, 47, 1)
         OnSelect: =Navigate(Registrar_Bien_Informatico,ScreenTransition.Fade)
         Text: ="Agregar"
-        X: =976
+        X: =173
         Y: =37
         ZIndex: =6
 
@@ -1722,17 +1722,6 @@ Inventario As screen:
         Y: =150
         ZIndex: =22
 
-    correo_tecnico_1 As label:
-        AutoHeight: =true
-        FontWeight: =FontWeight.Bold
-        Height: =31
-        Size: =12
-        Text: =User().FullName
-        Width: =277
-        X: =138
-        Y: =17
-        ZIndex: =23
-
     Salir_4 As icon.Alarm:
         BorderColor: =RGBA(0, 0, 0, 1)
         BorderStyle: =BorderStyle.Dotted
@@ -1899,7 +1888,7 @@ Inventario As screen:
             //exportarCSVEXCEL_2.Run(exportar_excel)
             Launch(exportarExcel.Run(exportar_excel).link)
         Text: ="Descargar"
-        X: =1190
+        X: =1155
         Y: =37
         ZIndex: =35
 
@@ -1912,4 +1901,13 @@ Inventario As screen:
         X: =1261
         Y: =118
         ZIndex: =36
+
+    Button2_2 As button:
+        BorderColor: =ColorFade(Self.Fill, -94%)
+        Fill: =RGBA(196, 170, 90, 1)
+        OnSelect: =Navigate(Vista_previa_carga_masiva,ScreenTransition.Fade);ClearCollect(carga_datos_nuevo, [])
+        Text: ="Cargar Excel"
+        X: =952
+        Y: =37
+        ZIndex: =37
 
