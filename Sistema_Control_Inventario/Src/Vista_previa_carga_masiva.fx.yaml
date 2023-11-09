@@ -1908,6 +1908,7 @@ Vista_previa_carga_masiva As screen:
         ZIndex: =40
 
     carga_datos_button As button:
+        DisplayMode: =If(!IsBlank(First(DataCardValue33.Attachments).Value), DisplayMode.Edit, DisplayMode.Disabled)
         Fill: =RGBA(0, 121, 187, 1)
         OnSelect: |-
             =ClearCollect(carga_datos_nuevo,crearArchivo_cargaMasiva.Run(

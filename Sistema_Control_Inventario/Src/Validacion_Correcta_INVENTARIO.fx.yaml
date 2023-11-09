@@ -49,7 +49,7 @@ Validacion_Correcta_INVENTARIO As screen:
         Fill: =RGBA(152, 208, 70, Timer1.Value/Timer1.Duration)
         Height: =149
         Width: =159
-        X: =105
+        X: =133
         Y: =247
         ZIndex: =5
 
@@ -62,7 +62,7 @@ Validacion_Correcta_INVENTARIO As screen:
         PaddingRight: =Self.PaddingTop
         PaddingTop: =18
         Width: =171
-        X: =104
+        X: =132
         Y: =254
         ZIndex: =6
 
@@ -75,7 +75,7 @@ Validacion_Correcta_INVENTARIO As screen:
         Size: =15
         Text: ="Se realizó con éxito"
         Width: =311
-        X: =34
+        X: =62
         Y: =396
         ZIndex: =7
 
