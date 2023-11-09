@@ -835,7 +835,7 @@ Actualizar_Bien_Informatico As screen:
                                         JEFE_INMEDIATO: jefe_inmediato_input_1.Text,
                                         USUARIO_RESPONSABLE: usuario_responsable_input_1.Text,
                                         TECNICO_RESPONSABLE: tecnico_responsable_input_1.Text,
-                                        CORREO_TECNICO: User().Email
+                                        CORREO_TECNICO: var_registro_inventario.CORREO_TECNICO
                                     }
                                 ),
                                 If(
