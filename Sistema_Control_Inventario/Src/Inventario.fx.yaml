@@ -191,11 +191,11 @@ Inventario As screen:
                     Height: =50
                     Size: =14
                     Text: ="DISCO DURO"
-                    Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
+                    Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "LAPTOP" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
                     Width: =disco_duro_text.Width
                     X: |-
                         =If(
-                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
+                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "LAPTOP" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
                             ID_titulo.Width + 2 + local_titulo.Width + 2 + facultad_titulo.Width + 2 + piso_titulo.Width + 2 + area_titulo.Width + 2 + tipo_area_titulo.Width + 2 + pabellon_titulo.Width + 2 + nombre_area_titulo.Width + 2 + bien_informatico_titulo.Width + 2 + patrimonio_titulo.Width + 2 + patrimonio_referencia_titulo.Width + 2 + marca_titulo.Width + 2 + modelo_titulo.Width + 2 + num_serie_titulo.Width + 2,
                             0
                         )
@@ -213,11 +213,11 @@ Inventario As screen:
                     Size: =14
                     Text: ="MEMORIA RAM"
                     Visible: |
-                        =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
+                        =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "LAPTOP" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
                     Width: =memoria_ram_text.Width
                     X: |-
                         =If(
-                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
+                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "LAPTOP" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
                             ID_titulo.Width + 2 + local_titulo.Width + 2 + facultad_titulo.Width + 2 + piso_titulo.Width + 2 + area_titulo.Width + 2 + tipo_area_titulo.Width + 2 + pabellon_titulo.Width + 2 + nombre_area_titulo.Width + 2 + bien_informatico_titulo.Width + 2 + patrimonio_titulo.Width + 2 + patrimonio_referencia_titulo.Width + 2 + marca_titulo.Width + 2 + modelo_titulo.Width + 2 + num_serie_titulo.Width + 2 + disco_duro_titulo.Width + 2,
                             0
                         )
@@ -233,11 +233,11 @@ Inventario As screen:
                     Height: =50
                     Size: =14
                     Text: ="PROCESADOR"
-                    Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
+                    Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "LAPTOP" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
                     Width: =procesador_text.Width
                     X: |-
                         =If(
-                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
+                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "LAPTOP" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
                             ID_titulo.Width + 2 + local_titulo.Width + 2 + facultad_titulo.Width + 2 + piso_titulo.Width + 2 + area_titulo.Width + 2 + tipo_area_titulo.Width + 2 + pabellon_titulo.Width + 2 + nombre_area_titulo.Width + 2 + bien_informatico_titulo.Width + 2 + patrimonio_titulo.Width + 2 + patrimonio_referencia_titulo.Width + 2 + marca_titulo.Width + 2 + modelo_titulo.Width + 2 + num_serie_titulo.Width + 2 + disco_duro_titulo.Width + 2 + memoria_ram_titulo.Width + 2,
                             0
                         )
@@ -251,11 +251,11 @@ Inventario As screen:
                     Height: =50
                     Size: =14
                     Text: ="GENERACIÓN PROCESADOR"
-                    Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
+                    Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "LAPTOP" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
                     Width: =procesador_gen_text.Width
                     X: |-
                         =If(
-                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
+                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "LAPTOP" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
                             ID_titulo.Width + 2 + local_titulo.Width + 2 + facultad_titulo.Width + 2 + piso_titulo.Width + 2 + area_titulo.Width + 2 + tipo_area_titulo.Width + 2 + pabellon_titulo.Width + 2 + nombre_area_titulo.Width + 2 + bien_informatico_titulo.Width + 2 + patrimonio_titulo.Width + 2 + patrimonio_referencia_titulo.Width + 2 + marca_titulo.Width + 2 + modelo_titulo.Width + 2 + num_serie_titulo.Width + 2 + disco_duro_titulo.Width + 2 + memoria_ram_titulo.Width + 2 + procesador_titulo.Width + 2,
                             0
                         )
@@ -269,11 +269,11 @@ Inventario As screen:
                     Height: =50
                     Size: =14
                     Text: ="HOSTNAME"
-                    Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
+                    Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "LAPTOP" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
                     Width: =hostname_text.Width
                     X: |-
                         =If(
-                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
+                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "LAPTOP" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
                             ID_titulo.Width + 2 + local_titulo.Width + 2 + facultad_titulo.Width + 2 + piso_titulo.Width + 2 + area_titulo.Width + 2 + tipo_area_titulo.Width + 2 + pabellon_titulo.Width + 2 + nombre_area_titulo.Width + 2 + bien_informatico_titulo.Width + 2 + patrimonio_titulo.Width + 2 + patrimonio_referencia_titulo.Width + 2 + marca_titulo.Width + 2 + modelo_titulo.Width + 2 + num_serie_titulo.Width + 2 + disco_duro_titulo.Width + 2 + memoria_ram_titulo.Width + 2 + procesador_titulo.Width + 2 + procesador_gen_titulo.Width + 2,
                             0
                         )
@@ -287,14 +287,14 @@ Inventario As screen:
                     Height: =50
                     Size: =14
                     Text: ="IP - BIEN INFORMATICO"
-                    Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Impresora" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Telefono IP" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
+                    Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "LAPTOP" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "IMPRESORA" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "TELEFONO IP" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
                     Width: =ip_text.Width
                     X: |-
                         =If(
-                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
+                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "LAPTOP" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
                             ID_titulo.Width + 2 + local_titulo.Width + 2 + facultad_titulo.Width + 2 + piso_titulo.Width + 2 + area_titulo.Width + 2 + tipo_area_titulo.Width + 2 + pabellon_titulo.Width + 2 + nombre_area_titulo.Width + 2 + bien_informatico_titulo.Width + 2 + patrimonio_titulo.Width + 2 + patrimonio_referencia_titulo.Width + 2 + marca_titulo.Width + 2 + modelo_titulo.Width + 2 + num_serie_titulo.Width + 2 + disco_duro_titulo.Width + 2 + memoria_ram_titulo.Width + 2 + procesador_titulo.Width + 2 + procesador_gen_titulo.Width + 2 + hostname_titulo.Width + 2,
                             If(
-                                elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Impresora" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Telefono IP",
+                                elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "IMPRESORA" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "TELEFONO IP",
                                 ID_titulo.Width + 2 + local_titulo.Width + 2 + facultad_titulo.Width + 2 + piso_titulo.Width + 2 + area_titulo.Width + 2 + tipo_area_titulo.Width + 2 + pabellon_titulo.Width + 2 + nombre_area_titulo.Width + 2 + bien_informatico_titulo.Width + 2 + patrimonio_titulo.Width + 2 + patrimonio_referencia_titulo.Width + 2 + marca_titulo.Width + 2 + modelo_titulo.Width + 2 + num_serie_titulo.Width + 2,
                                 0
                             )
@@ -309,11 +309,11 @@ Inventario As screen:
                     Height: =50
                     Size: =14
                     Text: ="ANEXO TELEFONO"
-                    Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Telefono IP" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
+                    Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "TELEFONO IP" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
                     Width: =anexo_text.Width
                     X: |-
                         =If(
-                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Telefono IP",
+                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "TELEFONO IP",
                             ID_titulo.Width + 2 + local_titulo.Width + 2 + facultad_titulo.Width + 2 + piso_titulo.Width + 2 + area_titulo.Width + 2 + tipo_area_titulo.Width + 2 + pabellon_titulo.Width + 2 + nombre_area_titulo.Width + 2 + bien_informatico_titulo.Width + 2 + patrimonio_titulo.Width + 2 + patrimonio_referencia_titulo.Width + 2 + marca_titulo.Width + 2 + modelo_titulo.Width + 2 + num_serie_titulo.Width + 2 + ip_titulo.Width + 2,
                             If(
                                 IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
@@ -331,11 +331,11 @@ Inventario As screen:
                     Height: =50
                     Size: =14
                     Text: ="TIPO DE IMPRESORA"
-                    Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Impresora" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
+                    Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "IMPRESORA" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
                     Width: =tipo_impresora_text.Width
                     X: |-
                         =If(
-                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Impresora",
+                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "IMPRESORA",
                             ID_titulo.Width + 2 + local_titulo.Width + 2 + facultad_titulo.Width + 2 + piso_titulo.Width + 2 + area_titulo.Width + 2 + tipo_area_titulo.Width + 2 + pabellon_titulo.Width + 2 + nombre_area_titulo.Width + 2 + bien_informatico_titulo.Width + 2 + patrimonio_titulo.Width + 2 + patrimonio_referencia_titulo.Width + 2 + marca_titulo.Width + 2 + modelo_titulo.Width + 2 + num_serie_titulo.Width + 2 + ip_titulo.Width + 2,
                             If(
                                 IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
@@ -353,11 +353,11 @@ Inventario As screen:
                     Height: =50
                     Size: =14
                     Text: ="CONEXIÓN DE IMPRESORA"
-                    Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Impresora" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
+                    Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "IMPRESORA" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
                     Width: =conector_impresora_text.Width
                     X: |-
                         =If(
-                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Impresora",
+                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "IMPRESORA",
                             ID_titulo.Width + 2 + local_titulo.Width + 2 + facultad_titulo.Width + 2 + piso_titulo.Width + 2 + area_titulo.Width + 2 + tipo_area_titulo.Width + 2 + pabellon_titulo.Width + 2 + nombre_area_titulo.Width + 2 + bien_informatico_titulo.Width + 2 + patrimonio_titulo.Width + 2 + patrimonio_referencia_titulo.Width + 2 + marca_titulo.Width + 2 + modelo_titulo.Width + 2 + num_serie_titulo.Width + 2 + ip_titulo.Width + 2 + tipo_impresora_titulo.Width + 2,
                             If(
                                 IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
@@ -375,11 +375,11 @@ Inventario As screen:
                     Height: =50
                     Size: =14
                     Text: ="CONECTOR TECLADO"
-                    Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Teclado" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
+                    Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "TECLADO" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
                     Width: =conector_teclado_text.Width
                     X: |-
                         =If(
-                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Teclado",
+                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "TECLADO",
                             ID_titulo.Width + 2 + local_titulo.Width + 2 + facultad_titulo.Width + 2 + piso_titulo.Width + 2 + area_titulo.Width + 2 + tipo_area_titulo.Width + 2 + pabellon_titulo.Width + 2 + nombre_area_titulo.Width + 2 + bien_informatico_titulo.Width + 2 + patrimonio_titulo.Width + 2 + patrimonio_referencia_titulo.Width + 2 + marca_titulo.Width + 2 + modelo_titulo.Width + 2 + num_serie_titulo.Width + 2,
                             If(
                                 IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
@@ -397,11 +397,11 @@ Inventario As screen:
                     Height: =50
                     Size: =14
                     Text: ="CONECTOR MONITOR"
-                    Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Monitor" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
+                    Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "MONITOR" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
                     Width: =conector_monitor_text.Width
                     X: |-
                         =If(
-                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Monitor",
+                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "MONITOR",
                             ID_titulo.Width + 2 + local_titulo.Width + 2 + facultad_titulo.Width + 2 + piso_titulo.Width + 2 + area_titulo.Width + 2 + tipo_area_titulo.Width + 2 + pabellon_titulo.Width + 2 + nombre_area_titulo.Width + 2 + bien_informatico_titulo.Width + 2 + patrimonio_titulo.Width + 2 + patrimonio_referencia_titulo.Width + 2 + marca_titulo.Width + 2 + modelo_titulo.Width + 2 + num_serie_titulo.Width + 2,
                             If(
                                 IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
@@ -422,19 +422,19 @@ Inventario As screen:
                     Width: =estado_text.Width
                     X: |-
                         =If(
-                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop",
+                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "LAPTOP",
                             ID_titulo.Width + 2 + local_titulo.Width + 2 + facultad_titulo.Width + 2 + piso_titulo.Width + 2 + area_titulo.Width + 2 + tipo_area_titulo.Width + 2 + pabellon_titulo.Width + 2 + nombre_area_titulo.Width + 2 + bien_informatico_titulo.Width + 2 + patrimonio_titulo.Width + 2 + patrimonio_referencia_titulo.Width + 2 + marca_titulo.Width + 2 + modelo_titulo.Width + 2 + num_serie_titulo.Width + 2 + disco_duro_titulo.Width + 2 + memoria_ram_titulo.Width + 2 + procesador_titulo.Width + 2 + procesador_gen_titulo.Width + 2 + hostname_titulo.Width + 2 + ip_titulo.Width + 2,
                             If(
-                                elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Impresora",
+                                elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "IMPRESORA",
                                 ID_titulo.Width + 2 + local_titulo.Width + 2 + facultad_titulo.Width + 2 + piso_titulo.Width + 2 + area_titulo.Width + 2 + tipo_area_titulo.Width + 2 + pabellon_titulo.Width + 2 + nombre_area_titulo.Width + 2 + bien_informatico_titulo.Width + 2 + patrimonio_titulo.Width + 2 + patrimonio_referencia_titulo.Width + 2 + marca_titulo.Width + 2 + modelo_titulo.Width + 2 + num_serie_titulo.Width + 2 + ip_titulo.Width + 2 + tipo_impresora_titulo.Width + 2 + conector_impresora_titulo.Width + 2,
                                 If(
-                                    elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Monitor",
+                                    elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "MONITOR",
                                     ID_titulo.Width + 2 + local_titulo.Width + 2 + facultad_titulo.Width + 2 + piso_titulo.Width + 2 + area_titulo.Width + 2 + tipo_area_titulo.Width + 2 + pabellon_titulo.Width + 2 + nombre_area_titulo.Width + 2 + bien_informatico_titulo.Width + 2 + patrimonio_titulo.Width + 2 + patrimonio_referencia_titulo.Width + 2 + marca_titulo.Width + 2 + modelo_titulo.Width + 2 + num_serie_titulo.Width + 2 + conector_monitor_titulo.Width + 2,
                                     If(
-                                        elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Teclado",
+                                        elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "TECLADO",
                                         ID_titulo.Width + 2 + local_titulo.Width + 2 + facultad_titulo.Width + 2 + piso_titulo.Width + 2 + area_titulo.Width + 2 + tipo_area_titulo.Width + 2 + pabellon_titulo.Width + 2 + nombre_area_titulo.Width + 2 + bien_informatico_titulo.Width + 2 + patrimonio_titulo.Width + 2 + patrimonio_referencia_titulo.Width + 2 + marca_titulo.Width + 2 + modelo_titulo.Width + 2 + num_serie_titulo.Width + 2 + conector_teclado_titulo.Width + 2,
                                         If(
-                                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Telefono IP",
+                                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "TELEFONO IP",
                                             ID_titulo.Width + 2 + local_titulo.Width + 2 + facultad_titulo.Width + 2 + piso_titulo.Width + 2 + area_titulo.Width + 2 + tipo_area_titulo.Width + 2 + pabellon_titulo.Width + 2 + nombre_area_titulo.Width + 2 + bien_informatico_titulo.Width + 2 + patrimonio_titulo.Width + 2 + patrimonio_referencia_titulo.Width + 2 + marca_titulo.Width + 2 + modelo_titulo.Width + 2 + num_serie_titulo.Width + 2 + ip_titulo.Width + 2 + anexo_titulo.Width + 2,
                                             If(
                                                 IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
@@ -459,19 +459,19 @@ Inventario As screen:
                     Width: =situacion_actual_text.Width
                     X: |-
                         =If(
-                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop",
+                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "LAPTOP",
                             ID_titulo.Width + 2 + local_titulo.Width + 2 + facultad_titulo.Width + 2 + piso_titulo.Width + 2 + area_titulo.Width + 2 + tipo_area_titulo.Width + 2 + pabellon_titulo.Width + 2 + nombre_area_titulo.Width + 2 + bien_informatico_titulo.Width + 2 + patrimonio_titulo.Width + 2 + patrimonio_referencia_titulo.Width + 2 + marca_titulo.Width + 2 + modelo_titulo.Width + 2 + num_serie_titulo.Width + 2 + disco_duro_titulo.Width + 2 + memoria_ram_titulo.Width + 2 + procesador_titulo.Width + 2 + procesador_gen_titulo.Width + 2 + hostname_titulo.Width + 2 + ip_titulo.Width + 2 + estado_titulo.Width + 2,
                             If(
-                                elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Impresora",
+                                elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "IMPRESORA",
                                 ID_titulo.Width + 2 + local_titulo.Width + 2 + facultad_titulo.Width + 2 + piso_titulo.Width + 2 + area_titulo.Width + 2 + tipo_area_titulo.Width + 2 + pabellon_titulo.Width + 2 + nombre_area_titulo.Width + 2 + bien_informatico_titulo.Width + 2 + patrimonio_titulo.Width + 2 + patrimonio_referencia_titulo.Width + 2 + marca_titulo.Width + 2 + modelo_titulo.Width + 2 + num_serie_titulo.Width + 2 + ip_titulo.Width + 2 + tipo_impresora_titulo.Width + 2 + conector_impresora_titulo.Width + 2 + estado_titulo.Width + 2,
                                 If(
-                                    elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Monitor",
+                                    elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "MONITOR",
                                     ID_titulo.Width + 2 + local_titulo.Width + 2 + facultad_titulo.Width + 2 + piso_titulo.Width + 2 + area_titulo.Width + 2 + tipo_area_titulo.Width + 2 + pabellon_titulo.Width + 2 + nombre_area_titulo.Width + 2 + bien_informatico_titulo.Width + 2 + patrimonio_titulo.Width + 2 + patrimonio_referencia_titulo.Width + 2 + marca_titulo.Width + 2 + modelo_titulo.Width + 2 + num_serie_titulo.Width + 2 + conector_monitor_titulo.Width + 2 + estado_titulo.Width + 2,
                                     If(
-                                        elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Teclado",
+                                        elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "TECLADO",
                                         ID_titulo.Width + 2 + local_titulo.Width + 2 + facultad_titulo.Width + 2 + piso_titulo.Width + 2 + area_titulo.Width + 2 + tipo_area_titulo.Width + 2 + pabellon_titulo.Width + 2 + nombre_area_titulo.Width + 2 + bien_informatico_titulo.Width + 2 + patrimonio_titulo.Width + 2 + patrimonio_referencia_titulo.Width + 2 + marca_titulo.Width + 2 + modelo_titulo.Width + 2 + num_serie_titulo.Width + 2 + conector_teclado_titulo.Width + 2 + estado_titulo.Width + 2,
                                         If(
-                                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Telefono IP",
+                                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "TELEFONO IP",
                                             ID_titulo.Width + 2 + local_titulo.Width + 2 + facultad_titulo.Width + 2 + piso_titulo.Width + 2 + area_titulo.Width + 2 + tipo_area_titulo.Width + 2 + pabellon_titulo.Width + 2 + nombre_area_titulo.Width + 2 + bien_informatico_titulo.Width + 2 + patrimonio_titulo.Width + 2 + patrimonio_referencia_titulo.Width + 2 + marca_titulo.Width + 2 + modelo_titulo.Width + 2 + num_serie_titulo.Width + 2 + ip_titulo.Width + 2 + anexo_titulo.Width + 2 + estado_titulo.Width + 2,
                                             If(
                                                 IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
@@ -496,19 +496,19 @@ Inventario As screen:
                     Width: =ficha_baja_text.Width
                     X: |-
                         =If(
-                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop",
+                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "LAPTOP",
                             ID_titulo.Width + 2 + local_titulo.Width + 2 + facultad_titulo.Width + 2 + piso_titulo.Width + 2 + area_titulo.Width + 2 + tipo_area_titulo.Width + 2 + pabellon_titulo.Width + 2 + nombre_area_titulo.Width + 2 + bien_informatico_titulo.Width + 2 + patrimonio_titulo.Width + 2 + patrimonio_referencia_titulo.Width + 2 + marca_titulo.Width + 2 + modelo_titulo.Width + 2 + num_serie_titulo.Width + 2 + disco_duro_titulo.Width + 2 + memoria_ram_titulo.Width + 2 + procesador_titulo.Width + 2 + procesador_gen_titulo.Width + 2 + hostname_titulo.Width + 2 + ip_titulo.Width + 2 + estado_titulo.Width + 2 + situacion_actual_titulo.Width + 2,
                             If(
-                                elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Impresora",
+                                elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "IMPRESORA",
                                 ID_titulo.Width + 2 + local_titulo.Width + 2 + facultad_titulo.Width + 2 + piso_titulo.Width + 2 + area_titulo.Width + 2 + tipo_area_titulo.Width + 2 + pabellon_titulo.Width + 2 + nombre_area_titulo.Width + 2 + bien_informatico_titulo.Width + 2 + patrimonio_titulo.Width + 2 + patrimonio_referencia_titulo.Width + 2 + marca_titulo.Width + 2 + modelo_titulo.Width + 2 + num_serie_titulo.Width + 2 + ip_titulo.Width + 2 + tipo_impresora_titulo.Width + 2 + conector_impresora_titulo.Width + 2 + estado_titulo.Width + 2 + situacion_actual_titulo.Width + 2,
                                 If(
-                                    elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Monitor",
+                                    elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "MONITOR",
                                     ID_titulo.Width + 2 + local_titulo.Width + 2 + facultad_titulo.Width + 2 + piso_titulo.Width + 2 + area_titulo.Width + 2 + tipo_area_titulo.Width + 2 + pabellon_titulo.Width + 2 + nombre_area_titulo.Width + 2 + bien_informatico_titulo.Width + 2 + patrimonio_titulo.Width + 2 + patrimonio_referencia_titulo.Width + 2 + marca_titulo.Width + 2 + modelo_titulo.Width + 2 + num_serie_titulo.Width + 2 + conector_monitor_titulo.Width + 2 + estado_titulo.Width + 2 + situacion_actual_titulo.Width + 2,
                                     If(
-                                        elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Teclado",
+                                        elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "TECLADO",
                                         ID_titulo.Width + 2 + local_titulo.Width + 2 + facultad_titulo.Width + 2 + piso_titulo.Width + 2 + area_titulo.Width + 2 + tipo_area_titulo.Width + 2 + pabellon_titulo.Width + 2 + nombre_area_titulo.Width + 2 + bien_informatico_titulo.Width + 2 + patrimonio_titulo.Width + 2 + patrimonio_referencia_titulo.Width + 2 + marca_titulo.Width + 2 + modelo_titulo.Width + 2 + num_serie_titulo.Width + 2 + conector_teclado_titulo.Width + 2 + estado_titulo.Width + 2 + situacion_actual_titulo.Width + 2,
                                         If(
-                                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Telefono IP",
+                                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "TELEFONO IP",
                                             ID_titulo.Width + 2 + local_titulo.Width + 2 + facultad_titulo.Width + 2 + piso_titulo.Width + 2 + area_titulo.Width + 2 + tipo_area_titulo.Width + 2 + pabellon_titulo.Width + 2 + nombre_area_titulo.Width + 2 + bien_informatico_titulo.Width + 2 + patrimonio_titulo.Width + 2 + patrimonio_referencia_titulo.Width + 2 + marca_titulo.Width + 2 + modelo_titulo.Width + 2 + num_serie_titulo.Width + 2 + ip_titulo.Width + 2 + anexo_titulo.Width + 2 + estado_titulo.Width + 2 + situacion_actual_titulo.Width + 2,
                                             If(
                                                 IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
@@ -533,19 +533,19 @@ Inventario As screen:
                     Width: =jefe_inmediato_text.Width
                     X: |-
                         =If(
-                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop",
+                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "LAPTOP",
                             ID_titulo.Width + 2 + local_titulo.Width + 2 + facultad_titulo.Width + 2 + piso_titulo.Width + 2 + area_titulo.Width + 2 + tipo_area_titulo.Width + 2 + pabellon_titulo.Width + 2 + nombre_area_titulo.Width + 2 + bien_informatico_titulo.Width + 2 + patrimonio_titulo.Width + 2 + patrimonio_referencia_titulo.Width + 2 + marca_titulo.Width + 2 + modelo_titulo.Width + 2 + num_serie_titulo.Width + 2 + disco_duro_titulo.Width + 2 + memoria_ram_titulo.Width + 2 + procesador_titulo.Width + 2 + procesador_gen_titulo.Width + 2 + hostname_titulo.Width + 2 + ip_titulo.Width + 2 + estado_titulo.Width + 2 + situacion_actual_titulo.Width + 2 + ficha_baja_titulo.Width + 2,
                             If(
-                                elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Impresora",
+                                elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "IMPRESORA",
                                 ID_titulo.Width + 2 + local_titulo.Width + 2 + facultad_titulo.Width + 2 + piso_titulo.Width + 2 + area_titulo.Width + 2 + tipo_area_titulo.Width + 2 + pabellon_titulo.Width + 2 + nombre_area_titulo.Width + 2 + bien_informatico_titulo.Width + 2 + patrimonio_titulo.Width + 2 + patrimonio_referencia_titulo.Width + 2 + marca_titulo.Width + 2 + modelo_titulo.Width + 2 + num_serie_titulo.Width + 2 + ip_titulo.Width + 2 + tipo_impresora_titulo.Width + 2 + conector_impresora_titulo.Width + 2 + estado_titulo.Width + 2 + situacion_actual_titulo.Width + 2 + ficha_baja_titulo.Width + 2,
                                 If(
-                                    elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Monitor",
+                                    elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "MONITOR",
                                     ID_titulo.Width + 2 + local_titulo.Width + 2 + facultad_titulo.Width + 2 + piso_titulo.Width + 2 + area_titulo.Width + 2 + tipo_area_titulo.Width + 2 + pabellon_titulo.Width + 2 + nombre_area_titulo.Width + 2 + bien_informatico_titulo.Width + 2 + patrimonio_titulo.Width + 2 + patrimonio_referencia_titulo.Width + 2 + marca_titulo.Width + 2 + modelo_titulo.Width + 2 + num_serie_titulo.Width + 2 + conector_monitor_titulo.Width + 2 + estado_titulo.Width + 2 + situacion_actual_titulo.Width + 2 + ficha_baja_titulo.Width + 2,
                                     If(
-                                        elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Teclado",
+                                        elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "TECLADO",
                                         ID_titulo.Width + 2 + local_titulo.Width + 2 + facultad_titulo.Width + 2 + piso_titulo.Width + 2 + area_titulo.Width + 2 + tipo_area_titulo.Width + 2 + pabellon_titulo.Width + 2 + nombre_area_titulo.Width + 2 + bien_informatico_titulo.Width + 2 + patrimonio_titulo.Width + 2 + patrimonio_referencia_titulo.Width + 2 + marca_titulo.Width + 2 + modelo_titulo.Width + 2 + num_serie_titulo.Width + 2 + conector_teclado_titulo.Width + 2 + estado_titulo.Width + 2 + situacion_actual_titulo.Width + 2 + ficha_baja_titulo.Width + 2,
                                         If(
-                                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Telefono IP",
+                                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "TELEFONO IP",
                                             ID_titulo.Width + 2 + local_titulo.Width + 2 + facultad_titulo.Width + 2 + piso_titulo.Width + 2 + area_titulo.Width + 2 + tipo_area_titulo.Width + 2 + pabellon_titulo.Width + 2 + nombre_area_titulo.Width + 2 + bien_informatico_titulo.Width + 2 + patrimonio_titulo.Width + 2 + patrimonio_referencia_titulo.Width + 2 + marca_titulo.Width + 2 + modelo_titulo.Width + 2 + num_serie_titulo.Width + 2 + ip_titulo.Width + 2 + anexo_titulo.Width + 2 + estado_titulo.Width + 2 + situacion_actual_titulo.Width + 2 + ficha_baja_titulo.Width + 2,
                                             If(
                                                 IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
@@ -570,19 +570,19 @@ Inventario As screen:
                     Width: =usuario_responsable_text.Width
                     X: |-
                         =If(
-                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop",
+                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "LAPTOP",
                             ID_titulo.Width + 2 + local_titulo.Width + 2 + facultad_titulo.Width + 2 + piso_titulo.Width + 2 + area_titulo.Width + 2 + tipo_area_titulo.Width + 2 + pabellon_titulo.Width + 2 + nombre_area_titulo.Width + 2 + bien_informatico_titulo.Width + 2 + patrimonio_titulo.Width + 2 + patrimonio_referencia_titulo.Width + 2 + marca_titulo.Width + 2 + modelo_titulo.Width + 2 + num_serie_titulo.Width + 2 + disco_duro_titulo.Width + 2 + memoria_ram_titulo.Width + 2 + procesador_titulo.Width + 2 + procesador_gen_titulo.Width + 2 + hostname_titulo.Width + 2 + ip_titulo.Width + 2 + estado_titulo.Width + 2 + situacion_actual_titulo.Width + 2 + ficha_baja_titulo.Width + 2 + jefe_inmediato_titulo.Width + 2,
                             If(
-                                elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Impresora",
+                                elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "IMPRESORA",
                                 ID_titulo.Width + 2 + local_titulo.Width + 2 + facultad_titulo.Width + 2 + piso_titulo.Width + 2 + area_titulo.Width + 2 + tipo_area_titulo.Width + 2 + pabellon_titulo.Width + 2 + nombre_area_titulo.Width + 2 + bien_informatico_titulo.Width + 2 + patrimonio_titulo.Width + 2 + patrimonio_referencia_titulo.Width + 2 + marca_titulo.Width + 2 + modelo_titulo.Width + 2 + num_serie_titulo.Width + 2 + ip_titulo.Width + 2 + tipo_impresora_titulo.Width + 2 + conector_impresora_titulo.Width + 2 + estado_titulo.Width + 2 + situacion_actual_titulo.Width + 2 + ficha_baja_titulo.Width + 2 + jefe_inmediato_titulo.Width + 2,
                                 If(
-                                    elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Monitor",
+                                    elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "MONITOR",
                                     ID_titulo.Width + 2 + local_titulo.Width + 2 + facultad_titulo.Width + 2 + piso_titulo.Width + 2 + area_titulo.Width + 2 + tipo_area_titulo.Width + 2 + pabellon_titulo.Width + 2 + nombre_area_titulo.Width + 2 + bien_informatico_titulo.Width + 2 + patrimonio_titulo.Width + 2 + patrimonio_referencia_titulo.Width + 2 + marca_titulo.Width + 2 + modelo_titulo.Width + 2 + num_serie_titulo.Width + 2 + conector_monitor_titulo.Width + 2 + estado_titulo.Width + 2 + situacion_actual_titulo.Width + 2 + ficha_baja_titulo.Width + 2 + jefe_inmediato_titulo.Width + 2,
                                     If(
-                                        elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Teclado",
+                                        elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "TECLADO",
                                         ID_titulo.Width + 2 + local_titulo.Width + 2 + facultad_titulo.Width + 2 + piso_titulo.Width + 2 + area_titulo.Width + 2 + tipo_area_titulo.Width + 2 + pabellon_titulo.Width + 2 + nombre_area_titulo.Width + 2 + bien_informatico_titulo.Width + 2 + patrimonio_titulo.Width + 2 + patrimonio_referencia_titulo.Width + 2 + marca_titulo.Width + 2 + modelo_titulo.Width + 2 + num_serie_titulo.Width + 2 + conector_teclado_titulo.Width + 2 + estado_titulo.Width + 2 + situacion_actual_titulo.Width + 2 + ficha_baja_titulo.Width + 2 + jefe_inmediato_titulo.Width + 2,
                                         If(
-                                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Telefono IP",
+                                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "TELEFONO IP",
                                             ID_titulo.Width + 2 + local_titulo.Width + 2 + facultad_titulo.Width + 2 + piso_titulo.Width + 2 + area_titulo.Width + 2 + tipo_area_titulo.Width + 2 + pabellon_titulo.Width + 2 + nombre_area_titulo.Width + 2 + bien_informatico_titulo.Width + 2 + patrimonio_titulo.Width + 2 + patrimonio_referencia_titulo.Width + 2 + marca_titulo.Width + 2 + modelo_titulo.Width + 2 + num_serie_titulo.Width + 2 + ip_titulo.Width + 2 + anexo_titulo.Width + 2 + estado_titulo.Width + 2 + situacion_actual_titulo.Width + 2 + ficha_baja_titulo.Width + 2 + jefe_inmediato_titulo.Width + 2,
                                             If(
                                                 IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
@@ -607,19 +607,19 @@ Inventario As screen:
                     Width: =tecnico_responsable_text.Width
                     X: |-
                         =If(
-                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop",
+                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "LAPTOP",
                             ID_titulo.Width + 2 + local_titulo.Width + 2 + facultad_titulo.Width + 2 + piso_titulo.Width + 2 + area_titulo.Width + 2 + tipo_area_titulo.Width + 2 + pabellon_titulo.Width + 2 + nombre_area_titulo.Width + 2 + bien_informatico_titulo.Width + 2 + patrimonio_titulo.Width + 2 + patrimonio_referencia_titulo.Width + 2 + marca_titulo.Width + 2 + modelo_titulo.Width + 2 + num_serie_titulo.Width + 2 + disco_duro_titulo.Width + 2 + memoria_ram_titulo.Width + 2 + procesador_titulo.Width + 2 + procesador_gen_titulo.Width + 2 + hostname_titulo.Width + 2 + ip_titulo.Width + 2 + estado_titulo.Width + 2 + situacion_actual_titulo.Width + 2 + ficha_baja_titulo.Width + 2 + jefe_inmediato_titulo.Width + 2 + usuario_responsable_titulo.Width + 2,
                             If(
-                                elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Impresora",
+                                elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "IMPRESORA",
                                 ID_titulo.Width + 2 + local_titulo.Width + 2 + facultad_titulo.Width + 2 + piso_titulo.Width + 2 + area_titulo.Width + 2 + tipo_area_titulo.Width + 2 + pabellon_titulo.Width + 2 + nombre_area_titulo.Width + 2 + bien_informatico_titulo.Width + 2 + patrimonio_titulo.Width + 2 + patrimonio_referencia_titulo.Width + 2 + marca_titulo.Width + 2 + modelo_titulo.Width + 2 + num_serie_titulo.Width + 2 + ip_titulo.Width + 2 + tipo_impresora_titulo.Width + 2 + conector_impresora_titulo.Width + 2 + estado_titulo.Width + 2 + situacion_actual_titulo.Width + 2 + ficha_baja_titulo.Width + 2 + jefe_inmediato_titulo.Width + 2 + usuario_responsable_titulo.Width + 2,
                                 If(
-                                    elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Monitor",
+                                    elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "MONITOR",
                                     ID_titulo.Width + 2 + local_titulo.Width + 2 + facultad_titulo.Width + 2 + piso_titulo.Width + 2 + area_titulo.Width + 2 + tipo_area_titulo.Width + 2 + pabellon_titulo.Width + 2 + nombre_area_titulo.Width + 2 + bien_informatico_titulo.Width + 2 + patrimonio_titulo.Width + 2 + patrimonio_referencia_titulo.Width + 2 + marca_titulo.Width + 2 + modelo_titulo.Width + 2 + num_serie_titulo.Width + 2 + conector_monitor_titulo.Width + 2 + estado_titulo.Width + 2 + situacion_actual_titulo.Width + 2 + ficha_baja_titulo.Width + 2 + jefe_inmediato_titulo.Width + 2 + usuario_responsable_titulo.Width + 2,
                                     If(
-                                        elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Teclado",
+                                        elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "TECLADO",
                                         ID_titulo.Width + 2 + local_titulo.Width + 2 + facultad_titulo.Width + 2 + piso_titulo.Width + 2 + area_titulo.Width + 2 + tipo_area_titulo.Width + 2 + pabellon_titulo.Width + 2 + nombre_area_titulo.Width + 2 + bien_informatico_titulo.Width + 2 + patrimonio_titulo.Width + 2 + patrimonio_referencia_titulo.Width + 2 + marca_titulo.Width + 2 + modelo_titulo.Width + 2 + num_serie_titulo.Width + 2 + conector_teclado_titulo.Width + 2 + estado_titulo.Width + 2 + situacion_actual_titulo.Width + 2 + ficha_baja_titulo.Width + 2 + jefe_inmediato_titulo.Width + 2 + usuario_responsable_titulo.Width + 2,
                                         If(
-                                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Telefono IP",
+                                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "TELEFONO IP",
                                             ID_titulo.Width + 2 + local_titulo.Width + 2 + facultad_titulo.Width + 2 + piso_titulo.Width + 2 + area_titulo.Width + 2 + tipo_area_titulo.Width + 2 + pabellon_titulo.Width + 2 + nombre_area_titulo.Width + 2 + bien_informatico_titulo.Width + 2 + patrimonio_titulo.Width + 2 + patrimonio_referencia_titulo.Width + 2 + marca_titulo.Width + 2 + modelo_titulo.Width + 2 + num_serie_titulo.Width + 2 + ip_titulo.Width + 2 + anexo_titulo.Width + 2 + estado_titulo.Width + 2 + situacion_actual_titulo.Width + 2 + ficha_baja_titulo.Width + 2 + jefe_inmediato_titulo.Width + 2 + usuario_responsable_titulo.Width + 2,
                                             If(
                                                 IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
@@ -644,19 +644,19 @@ Inventario As screen:
                     Width: =tecnico_correo_text.Width
                     X: |-
                         =If(
-                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop",
+                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "LAPTOP",
                             ID_titulo.Width + 2 + local_titulo.Width + 2 + facultad_titulo.Width + 2 + piso_titulo.Width + 2 + area_titulo.Width + 2 + tipo_area_titulo.Width + 2 + pabellon_titulo.Width + 2 + nombre_area_titulo.Width + 2 + bien_informatico_titulo.Width + 2 + patrimonio_titulo.Width + 2 + patrimonio_referencia_titulo.Width + 2 + marca_titulo.Width + 2 + modelo_titulo.Width + 2 + num_serie_titulo.Width + 2 + disco_duro_titulo.Width + 2 + memoria_ram_titulo.Width + 2 + procesador_titulo.Width + 2 + procesador_gen_titulo.Width + 2 + hostname_titulo.Width + 2 + ip_titulo.Width + 2 + estado_titulo.Width + 2 + situacion_actual_titulo.Width + 2 + ficha_baja_titulo.Width + 2 + jefe_inmediato_titulo.Width + 2 + usuario_responsable_titulo.Width + 2 + tecnico_responsable_titulo.Width + 2,
                             If(
-                                elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Impresora",
+                                elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "IMPRESORA",
                                 ID_titulo.Width + 2 + local_titulo.Width + 2 + facultad_titulo.Width + 2 + piso_titulo.Width + 2 + area_titulo.Width + 2 + tipo_area_titulo.Width + 2 + pabellon_titulo.Width + 2 + nombre_area_titulo.Width + 2 + bien_informatico_titulo.Width + 2 + patrimonio_titulo.Width + 2 + patrimonio_referencia_titulo.Width + 2 + marca_titulo.Width + 2 + modelo_titulo.Width + 2 + num_serie_titulo.Width + 2 + ip_titulo.Width + 2 + tipo_impresora_titulo.Width + 2 + conector_impresora_titulo.Width + 2 + estado_titulo.Width + 2 + situacion_actual_titulo.Width + 2 + ficha_baja_titulo.Width + 2 + jefe_inmediato_titulo.Width + 2 + usuario_responsable_titulo.Width + 2 + tecnico_responsable_titulo.Width + 2,
                                 If(
-                                    elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Monitor",
+                                    elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "MONITOR",
                                     ID_titulo.Width + 2 + local_titulo.Width + 2 + facultad_titulo.Width + 2 + piso_titulo.Width + 2 + area_titulo.Width + 2 + tipo_area_titulo.Width + 2 + pabellon_titulo.Width + 2 + nombre_area_titulo.Width + 2 + bien_informatico_titulo.Width + 2 + patrimonio_titulo.Width + 2 + patrimonio_referencia_titulo.Width + 2 + marca_titulo.Width + 2 + modelo_titulo.Width + 2 + num_serie_titulo.Width + 2 + conector_monitor_titulo.Width + 2 + estado_titulo.Width + 2 + situacion_actual_titulo.Width + 2 + ficha_baja_titulo.Width + 2 + jefe_inmediato_titulo.Width + 2 + usuario_responsable_titulo.Width + 2 + tecnico_responsable_titulo.Width + 2,
                                     If(
-                                        elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Teclado",
+                                        elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "TECLADO",
                                         ID_titulo.Width + 2 + local_titulo.Width + 2 + facultad_titulo.Width + 2 + piso_titulo.Width + 2 + area_titulo.Width + 2 + tipo_area_titulo.Width + 2 + pabellon_titulo.Width + 2 + nombre_area_titulo.Width + 2 + bien_informatico_titulo.Width + 2 + patrimonio_titulo.Width + 2 + patrimonio_referencia_titulo.Width + 2 + marca_titulo.Width + 2 + modelo_titulo.Width + 2 + num_serie_titulo.Width + 2 + conector_teclado_titulo.Width + 2 + estado_titulo.Width + 2 + situacion_actual_titulo.Width + 2 + ficha_baja_titulo.Width + 2 + jefe_inmediato_titulo.Width + 2 + usuario_responsable_titulo.Width + 2 + tecnico_responsable_titulo.Width + 2,
                                         If(
-                                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Telefono IP",
+                                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "TELEFONO IP",
                                             ID_titulo.Width + 2 + local_titulo.Width + 2 + facultad_titulo.Width + 2 + piso_titulo.Width + 2 + area_titulo.Width + 2 + tipo_area_titulo.Width + 2 + pabellon_titulo.Width + 2 + nombre_area_titulo.Width + 2 + bien_informatico_titulo.Width + 2 + patrimonio_titulo.Width + 2 + patrimonio_referencia_titulo.Width + 2 + marca_titulo.Width + 2 + modelo_titulo.Width + 2 + num_serie_titulo.Width + 2 + ip_titulo.Width + 2 + anexo_titulo.Width + 2 + estado_titulo.Width + 2 + situacion_actual_titulo.Width + 2 + ficha_baja_titulo.Width + 2 + jefe_inmediato_titulo.Width + 2 + usuario_responsable_titulo.Width + 2 + tecnico_responsable_titulo.Width + 2,
                                             If(
                                                 IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
@@ -681,19 +681,19 @@ Inventario As screen:
                     Width: =fondo_editar.Width
                     X: |-
                         =If(
-                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop",
+                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "LAPTOP",
                             ID_titulo.Width + 2 + local_titulo.Width + 2 + facultad_titulo.Width + 2 + piso_titulo.Width + 2 + area_titulo.Width + 2 + tipo_area_titulo.Width + 2 + pabellon_titulo.Width + 2 + nombre_area_titulo.Width + 2 + bien_informatico_titulo.Width + 2 + patrimonio_titulo.Width + 2 + patrimonio_referencia_titulo.Width + 2 + marca_titulo.Width + 2 + modelo_titulo.Width + 2 + num_serie_titulo.Width + 2 + disco_duro_titulo.Width + 2 + memoria_ram_titulo.Width + 2 + procesador_titulo.Width + 2 + procesador_gen_titulo.Width + 2 + hostname_titulo.Width + 2 + ip_titulo.Width + 2 + estado_titulo.Width + 2 + situacion_actual_titulo.Width + 2 + ficha_baja_titulo.Width + 2 + jefe_inmediato_titulo.Width + 2 + usuario_responsable_titulo.Width + 2 + tecnico_responsable_titulo.Width + 2 + tecnico_correo_titulo.Width + 2,
                             If(
-                                elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Impresora",
+                                elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "IMPRESORA",
                                 ID_titulo.Width + 2 + local_titulo.Width + 2 + facultad_titulo.Width + 2 + piso_titulo.Width + 2 + area_titulo.Width + 2 + tipo_area_titulo.Width + 2 + pabellon_titulo.Width + 2 + nombre_area_titulo.Width + 2 + bien_informatico_titulo.Width + 2 + patrimonio_titulo.Width + 2 + patrimonio_referencia_titulo.Width + 2 + marca_titulo.Width + 2 + modelo_titulo.Width + 2 + num_serie_titulo.Width + 2 + ip_titulo.Width + 2 + tipo_impresora_titulo.Width + 2 + conector_impresora_titulo.Width + 2 + estado_titulo.Width + 2 + situacion_actual_titulo.Width + 2 + ficha_baja_titulo.Width + 2 + jefe_inmediato_titulo.Width + 2 + usuario_responsable_titulo.Width + 2 + tecnico_responsable_titulo.Width + 2 + tecnico_correo_titulo.Width + 2,
                                 If(
-                                    elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Monitor",
+                                    elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "MONITOR",
                                     ID_titulo.Width + 2 + local_titulo.Width + 2 + facultad_titulo.Width + 2 + piso_titulo.Width + 2 + area_titulo.Width + 2 + tipo_area_titulo.Width + 2 + pabellon_titulo.Width + 2 + nombre_area_titulo.Width + 2 + bien_informatico_titulo.Width + 2 + patrimonio_titulo.Width + 2 + patrimonio_referencia_titulo.Width + 2 + marca_titulo.Width + 2 + modelo_titulo.Width + 2 + num_serie_titulo.Width + 2 + conector_monitor_titulo.Width + 2 + estado_titulo.Width + 2 + situacion_actual_titulo.Width + 2 + ficha_baja_titulo.Width + 2 + jefe_inmediato_titulo.Width + 2 + usuario_responsable_titulo.Width + 2 + tecnico_responsable_titulo.Width + 2 + tecnico_correo_titulo.Width + 2,
                                     If(
-                                        elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Teclado",
+                                        elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "TECLADO",
                                         ID_titulo.Width + 2 + local_titulo.Width + 2 + facultad_titulo.Width + 2 + piso_titulo.Width + 2 + area_titulo.Width + 2 + tipo_area_titulo.Width + 2 + pabellon_titulo.Width + 2 + nombre_area_titulo.Width + 2 + bien_informatico_titulo.Width + 2 + patrimonio_titulo.Width + 2 + patrimonio_referencia_titulo.Width + 2 + marca_titulo.Width + 2 + modelo_titulo.Width + 2 + num_serie_titulo.Width + 2 + conector_teclado_titulo.Width + 2 + estado_titulo.Width + 2 + situacion_actual_titulo.Width + 2 + ficha_baja_titulo.Width + 2 + jefe_inmediato_titulo.Width + 2 + usuario_responsable_titulo.Width + 2 + tecnico_responsable_titulo.Width + 2 + tecnico_correo_titulo.Width + 2,
                                         If(
-                                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Telefono IP",
+                                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "TELEFONO IP",
                                             ID_titulo.Width + 2 + local_titulo.Width + 2 + facultad_titulo.Width + 2 + piso_titulo.Width + 2 + area_titulo.Width + 2 + tipo_area_titulo.Width + 2 + pabellon_titulo.Width + 2 + nombre_area_titulo.Width + 2 + bien_informatico_titulo.Width + 2 + patrimonio_titulo.Width + 2 + patrimonio_referencia_titulo.Width + 2 + marca_titulo.Width + 2 + modelo_titulo.Width + 2 + num_serie_titulo.Width + 2 + ip_titulo.Width + 2 + anexo_titulo.Width + 2 + estado_titulo.Width + 2 + situacion_actual_titulo.Width + 2 + ficha_baja_titulo.Width + 2 + jefe_inmediato_titulo.Width + 2 + usuario_responsable_titulo.Width + 2 + tecnico_responsable_titulo.Width + 2 + tecnico_correo_titulo.Width + 2,
                                             If(
                                                 IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
@@ -939,11 +939,11 @@ Inventario As screen:
                     Size: =12
                     Text: =ThisItem.DISCO_DURO
                     Visible: |-
-                        =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
+                        =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "LAPTOP" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
                         //ver_discoduro_text
                     X: |-
                         =If(
-                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
+                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "LAPTOP" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
                             ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2 + pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2,
                             0
                         )
@@ -957,10 +957,10 @@ Inventario As screen:
                     OnSelect: =Select(Parent)
                     Size: =12
                     Text: =ThisItem.MEMORIA_RAM
-                    Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
+                    Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "LAPTOP" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
                     X: |-
                         =If(
-                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
+                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "LAPTOP" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
                             ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2 + pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + disco_duro_text.Width + 2,
                             0
                         )
@@ -974,10 +974,10 @@ Inventario As screen:
                     OnSelect: =Select(Parent)
                     Size: =12
                     Text: =ThisItem.PROCESADOR
-                    Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
+                    Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "LAPTOP" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
                     X: |-
                         =If(
-                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
+                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "LAPTOP" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
                             ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2 + pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + disco_duro_text.Width + 2 + memoria_ram_text.Width + 2,
                             0
                         )
@@ -991,10 +991,10 @@ Inventario As screen:
                     OnSelect: =Select(Parent)
                     Size: =12
                     Text: =ThisItem.GENERACION_PROCESADOR
-                    Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
+                    Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "LAPTOP" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
                     X: |-
                         =If(
-                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
+                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "LAPTOP" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
                             ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2 + pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + disco_duro_text.Width + 2 + memoria_ram_text.Width + 2 + procesador_text.Width + 2,
                             0
                         )
@@ -1008,10 +1008,10 @@ Inventario As screen:
                     OnSelect: =Select(Parent)
                     Size: =12
                     Text: =ThisItem.HOSTNAME_CPU
-                    Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
+                    Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "LAPTOP" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
                     X: |-
                         =If(
-                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
+                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "LAPTOP" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
                             ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2  + pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + disco_duro_text.Width + 2 + memoria_ram_text.Width + 2 + procesador_text.Width + 2 + procesador_gen_text.Width + 2,
                             0
                         )
@@ -1025,13 +1025,13 @@ Inventario As screen:
                     OnSelect: =Select(Parent)
                     Size: =12
                     Text: =ThisItem.IP_BIEN_INFORMATICO
-                    Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Impresora" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Telefono IP" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
+                    Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "LAPTOP" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "IMPRESORA" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "TELEFONO IP" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
                     X: |-
                         =If(
-                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
+                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "LAPTOP" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
                             ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2 + pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + disco_duro_text.Width + 2 + memoria_ram_text.Width + 2 + procesador_text.Width + 2 + procesador_gen_text.Width + 2 + hostname_text.Width + 2,
                             If(
-                                elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Impresora" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Telefono IP",
+                                elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "IMPRESORA" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "TELEFONO IP",
                                 ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2 + pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2,
                                 0
                             )
@@ -1046,10 +1046,10 @@ Inventario As screen:
                     OnSelect: =Select(Parent)
                     Size: =12
                     Text: =ThisItem.ANEXO_TELEFONO
-                    Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Telefono IP" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
+                    Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "TELEFONO IP" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
                     X: |-
                         =If(
-                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Telefono IP",
+                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "TELEFONO IP",
                             ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2 + pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + ip_text.Width + 2,
                             If(
                                 IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
@@ -1067,11 +1067,11 @@ Inventario As screen:
                     OnSelect: =Select(Parent)
                     Size: =12
                     Text: =ThisItem.TIPO_IMPRESORA
-                    Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Impresora" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
+                    Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "IMPRESORA" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
                     Width: =200
                     X: |-
                         =If(
-                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Impresora",
+                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "IMPRESORA",
                             ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2+ pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + ip_text.Width+2,
                             If(
                                 IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
@@ -1089,10 +1089,10 @@ Inventario As screen:
                     OnSelect: =Select(Parent)
                     Size: =12
                     Text: =ThisItem.TIPO_CONECTOR_IMPRESORA
-                    Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Impresora" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
+                    Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "IMPRESORA" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
                     X: |-
                         =If(
-                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Impresora",
+                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "IMPRESORA",
                             ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2+ pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + ip_text.Width + 2 + tipo_impresora_text.Width + 2,
                             If(
                                 IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
@@ -1110,10 +1110,10 @@ Inventario As screen:
                     OnSelect: =Select(Parent)
                     Size: =12
                     Text: =ThisItem.TIPO_CONECTOR_TECLADO
-                    Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Teclado" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
+                    Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "TECLADO" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
                     X: |-
                         =If(
-                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Teclado",
+                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "TECLADO",
                             ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2+ pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2,
                             If(
                                 IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
@@ -1131,10 +1131,10 @@ Inventario As screen:
                     OnSelect: =Select(Parent)
                     Size: =12
                     Text: =ThisItem.TIPO_CONECTOR_MONITOR
-                    Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Monitor" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
+                    Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "MONITOR" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
                     X: |-
                         =If(
-                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Monitor",
+                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "MONITOR",
                             ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2+ pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2,
                             If(
                                 IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
@@ -1154,19 +1154,19 @@ Inventario As screen:
                     Text: =ThisItem.ESTADO
                     X: |-
                         =If(
-                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop",
+                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "LAPTOP",
                             ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2 + pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + disco_duro_text.Width + 2 + memoria_ram_text.Width + 2 + procesador_text.Width + 2 + procesador_gen_text.Width + 2 + hostname_text.Width + 2 + ip_text.Width + 2,
                             If(
-                                elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Impresora",
+                                elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "IMPRESORA",
                                 ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2 + pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + ip_text.Width + 2 + tipo_impresora_text.Width + 2 + conector_impresora_text.Width + 2,
                                 If(
-                                    elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Monitor",
+                                    elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "MONITOR",
                                     ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2 + pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + conector_monitor_text.Width + 2,
                                     If(
-                                        elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Teclado",
+                                        elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "TECLADO",
                                         ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2 + pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + conector_teclado_text.Width + 2,
                                         If(
-                                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Telefono IP",
+                                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "TELEFONO IP",
                                             ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2 + pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + ip_text.Width + 2 + anexo_text.Width + 2,
                                             If(
                                                 IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
@@ -1191,19 +1191,19 @@ Inventario As screen:
                     Width: =120
                     X: |-
                         =If(
-                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop",
+                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "LAPTOP",
                             ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2 + pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + disco_duro_text.Width + 2 + memoria_ram_text.Width + 2 + procesador_text.Width + 2 + procesador_gen_text.Width + 2 + hostname_text.Width + 2 + ip_text.Width + 2 + estado_text.Width + 2,
                             If(
-                                elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Impresora",
+                                elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "IMPRESORA",
                                 ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2 + pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + ip_text.Width + 2 + tipo_impresora_text.Width + 2 + conector_impresora_text.Width + 2 + estado_text.Width + 2,
                                 If(
-                                    elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Monitor",
+                                    elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "MONITOR",
                                     ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2 + pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + conector_monitor_text.Width + 2 + estado_text.Width + 2,
                                     If(
-                                        elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Teclado",
+                                        elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "TECLADO",
                                         ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2 + pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + conector_teclado_text.Width + 2 + estado_text.Width + 2,
                                         If(
-                                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Telefono IP",
+                                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "TELEFONO IP",
                                             ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2 + pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + ip_text.Width + 2 + anexo_text.Width + 2 + estado_text.Width + 2,
                                             If(
                                                 IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
@@ -1228,19 +1228,19 @@ Inventario As screen:
                     Width: =120
                     X: |-
                         =If(
-                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop",
+                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "LAPTOP",
                             ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2 + pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + disco_duro_text.Width + 2 + memoria_ram_text.Width + 2 + procesador_text.Width + 2 + procesador_gen_text.Width + 2 + hostname_text.Width + 2 + ip_text.Width + 2 + estado_text.Width + 2 + situacion_actual_text.Width + 2,
                             If(
-                                elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Impresora",
+                                elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "IMPRESORA",
                                 ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2 + pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + ip_text.Width + 2 + tipo_impresora_text.Width + 2 + conector_impresora_text.Width + 2 + estado_text.Width + 2 + situacion_actual_text.Width + 2,
                                 If(
-                                    elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Monitor",
+                                    elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "MONITOR",
                                     ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2 + pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + conector_monitor_text.Width + 2 + estado_text.Width + 2 + situacion_actual_text.Width + 2,
                                     If(
-                                        elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Teclado",
+                                        elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "TECLADO",
                                         ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2 + pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + conector_teclado_text.Width + 2 + estado_text.Width + 2 + situacion_actual_text.Width + 2,
                                         If(
-                                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Telefono IP",
+                                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "TELEFONO IP",
                                             ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2 + pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + ip_text.Width + 2 + anexo_text.Width + 2 + estado_text.Width + 2 + situacion_actual_text.Width + 2,
                                             If(
                                                 IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
@@ -1265,19 +1265,19 @@ Inventario As screen:
                     Width: =250
                     X: |-
                         =If(
-                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop",
+                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "LAPTOP",
                             ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2+ pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + disco_duro_text.Width + 2 + memoria_ram_text.Width + 2 + procesador_text.Width + 2 + procesador_gen_text.Width + 2 + hostname_text.Width + 2 + ip_text.Width + 2 + estado_text.Width + 2 + situacion_actual_text.Width + 2 + ficha_baja_text.Width + 2,
                             If(
-                                elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Impresora",
+                                elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "IMPRESORA",
                                 ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2+ pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + ip_text.Width + 2 + tipo_impresora_text.Width + 2 + conector_impresora_text.Width + 2 + estado_text.Width + 2 + situacion_actual_text.Width + 2 + ficha_baja_text.Width + 2,
                                 If(
-                                    elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Monitor",
+                                    elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "MONITOR",
                                     ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2+ pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + conector_monitor_text.Width + 2 + estado_text.Width + 2 + situacion_actual_text.Width + 2 + ficha_baja_text.Width + 2,
                                     If(
-                                        elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Teclado",
+                                        elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "TECLADO",
                                         ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2+ pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + conector_teclado_text.Width + 2 + estado_text.Width + 2 + situacion_actual_text.Width + 2 + ficha_baja_text.Width + 2,
                                         If(
-                                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Telefono IP",
+                                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "TELEFONO IP",
                                             ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2+ pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + ip_text.Width + 2 + anexo_text.Width + 2 + estado_text.Width + 2 + situacion_actual_text.Width + 2 + ficha_baja_text.Width + 2,
                                             If(
                                                 IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
@@ -1302,19 +1302,19 @@ Inventario As screen:
                     Width: =250
                     X: |-
                         =If(
-                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop",
+                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "LAPTOP",
                             ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2+ pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + disco_duro_text.Width + 2 + memoria_ram_text.Width + 2 + procesador_text.Width + 2 + procesador_gen_text.Width + 2 + hostname_text.Width + 2 + ip_text.Width + 2 + estado_text.Width + 2 + situacion_actual_text.Width + 2 + ficha_baja_text.Width + 2 + jefe_inmediato_text.Width + 2,
                             If(
-                                elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Impresora",
+                                elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "IMPRESORA",
                                 ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2+ pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + ip_text.Width + 2 + tipo_impresora_text.Width + 2 + conector_impresora_text.Width + 2 + estado_text.Width + 2 + situacion_actual_text.Width + 2 + ficha_baja_text.Width + 2 + jefe_inmediato_text.Width + 2,
                                 If(
-                                    elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Monitor",
+                                    elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "MONITOR",
                                     ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2+ pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + conector_monitor_text.Width + 2 + estado_text.Width + 2 + situacion_actual_text.Width + 2 + ficha_baja_text.Width + 2 + jefe_inmediato_text.Width + 2,
                                     If(
-                                        elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Teclado",
+                                        elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "TECLADO",
                                         ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2+ pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + conector_teclado_text.Width + 2 + estado_text.Width + 2 + situacion_actual_text.Width + 2 + ficha_baja_text.Width + 2 + jefe_inmediato_text.Width + 2,
                                         If(
-                                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Telefono IP",
+                                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "TELEFONO IP",
                                             ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2+ pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + ip_text.Width + 2 + anexo_text.Width + 2 + estado_text.Width + 2 + situacion_actual_text.Width + 2 + ficha_baja_text.Width + 2 + jefe_inmediato_text.Width + 2,
                                             If(
                                                 IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
@@ -1339,19 +1339,19 @@ Inventario As screen:
                     Width: =250
                     X: |-
                         =If(
-                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop",
+                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "LAPTOP",
                             ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2+ pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + disco_duro_text.Width + 2 + memoria_ram_text.Width + 2 + procesador_text.Width + 2 + procesador_gen_text.Width + 2 + hostname_text.Width + 2 + ip_text.Width + 2 + estado_text.Width + 2 + situacion_actual_text.Width + 2 + ficha_baja_text.Width + 2 + jefe_inmediato_text.Width + 2 + usuario_responsable_text.Width + 2,
                             If(
-                                elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Impresora",
+                                elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "IMPRESORA",
                                 ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2+ pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + ip_text.Width + 2 + tipo_impresora_text.Width + 2 + conector_impresora_text.Width + 2 + estado_text.Width + 2 + situacion_actual_text.Width + 2 + ficha_baja_text.Width + 2 + jefe_inmediato_text.Width + 2 + usuario_responsable_text.Width + 2,
                                 If(
-                                    elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Monitor",
+                                    elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "MONITOR",
                                     ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2+ pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + conector_monitor_text.Width + 2 + estado_text.Width + 2 + situacion_actual_text.Width + 2 + ficha_baja_text.Width + 2 + jefe_inmediato_text.Width + 2 + usuario_responsable_text.Width + 2,
                                     If(
-                                        elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Teclado",
+                                        elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "TECLADO",
                                         ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2+ pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + conector_teclado_text.Width + 2 + estado_text.Width + 2 + situacion_actual_text.Width + 2 + ficha_baja_text.Width + 2 + jefe_inmediato_text.Width + 2 + usuario_responsable_text.Width + 2,
                                         If(
-                                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Telefono IP",
+                                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "TELEFONO IP",
                                             ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2+ pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + ip_text.Width + 2 + anexo_text.Width + 2 + estado_text.Width + 2 + situacion_actual_text.Width + 2 + ficha_baja_text.Width + 2 + jefe_inmediato_text.Width + 2 + usuario_responsable_text.Width + 2,
                                             If(
                                                 IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
@@ -1376,19 +1376,19 @@ Inventario As screen:
                     Width: =250
                     X: |-
                         =If(
-                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop",
+                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "LAPTOP",
                             ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2+ pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + disco_duro_text.Width + 2 + memoria_ram_text.Width + 2 + procesador_text.Width + 2 + procesador_gen_text.Width + 2 + hostname_text.Width + 2 + ip_text.Width + 2 + estado_text.Width + 2 + situacion_actual_text.Width + 2 + ficha_baja_text.Width + 2 + jefe_inmediato_text.Width + 2 + usuario_responsable_text.Width + 2 + tecnico_responsable_text.Width + 2,
                             If(
-                                elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Impresora",
+                                elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "IMPRESORA",
                                 ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2+ pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + ip_text.Width + 2 + tipo_impresora_text.Width + 2 + conector_impresora_text.Width + 2 + estado_text.Width + 2 + situacion_actual_text.Width + 2 + ficha_baja_text.Width + 2 + jefe_inmediato_text.Width + 2 + usuario_responsable_text.Width + 2 + tecnico_responsable_text.Width + 2,
                                 If(
-                                    elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Monitor",
+                                    elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "MONITOR",
                                     ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2+ pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + conector_monitor_text.Width + 2 + estado_text.Width + 2 + situacion_actual_text.Width + 2 + ficha_baja_text.Width + 2 + jefe_inmediato_text.Width + 2 + usuario_responsable_text.Width + 2 + tecnico_responsable_text.Width + 2,
                                     If(
-                                        elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Teclado",
+                                        elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "TECLADO",
                                         ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2+ pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + conector_teclado_text.Width + 2 + estado_text.Width + 2 + situacion_actual_text.Width + 2 + ficha_baja_text.Width + 2 + jefe_inmediato_text.Width + 2 + usuario_responsable_text.Width + 2 + tecnico_responsable_text.Width + 2,
                                         If(
-                                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Telefono IP",
+                                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "TELEFONO IP",
                                             ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2+ pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + ip_text.Width + 2 + anexo_text.Width + 2 + estado_text.Width + 2 + situacion_actual_text.Width + 2 + ficha_baja_text.Width + 2 + jefe_inmediato_text.Width + 2 + usuario_responsable_text.Width + 2 + tecnico_responsable_text.Width + 2,
                                             If(
                                                 IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
@@ -1413,19 +1413,19 @@ Inventario As screen:
                     Width: =250
                     X: |-
                         =If(
-                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop",
+                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "LAPTOP",
                             ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2 + pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + disco_duro_text.Width + 2 + memoria_ram_text.Width + 2 + procesador_text.Width + 2 + procesador_gen_text.Width + 2 + hostname_text.Width + 2 + ip_text.Width + 2 + estado_text.Width + 2 + situacion_actual_text.Width + 2 + ficha_baja_text.Width + 2 + jefe_inmediato_text.Width + 2 + usuario_responsable_text.Width + 2 + tecnico_responsable_text.Width + 2 + tecnico_correo_text.Width + 2,
                             If(
-                                elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Impresora",
+                                elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "IMPRESORA",
                                 ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2 + pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + ip_text.Width + 2 + tipo_impresora_text.Width + 2 + conector_impresora_text.Width + 2 + estado_text.Width + 2 + situacion_actual_text.Width + 2 + ficha_baja_text.Width + 2 + jefe_inmediato_text.Width + 2 + usuario_responsable_text.Width + 2 + tecnico_responsable_text.Width + 2 + tecnico_correo_text.Width + 2,
                                 If(
-                                    elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Monitor",
+                                    elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "MONITOR",
                                     ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2 + pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + conector_monitor_text.Width + 2 + estado_text.Width + 2 + situacion_actual_text.Width + 2 + ficha_baja_text.Width + 2 + jefe_inmediato_text.Width + 2 + usuario_responsable_text.Width + 2 + tecnico_responsable_text.Width + 2 + tecnico_correo_text.Width + 2,
                                     If(
-                                        elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Teclado",
+                                        elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "TECLADO",
                                         ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2 + pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + conector_teclado_text.Width + 2 + estado_text.Width + 2 + situacion_actual_text.Width + 2 + ficha_baja_text.Width + 2 + jefe_inmediato_text.Width + 2 + usuario_responsable_text.Width + 2 + tecnico_responsable_text.Width + 2 + tecnico_correo_text.Width + 2,
                                         If(
-                                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Telefono IP",
+                                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "TELEFONO IP",
                                             ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2 + pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + ip_text.Width + 2 + anexo_text.Width + 2 + estado_text.Width + 2 + situacion_actual_text.Width + 2 + ficha_baja_text.Width + 2 + jefe_inmediato_text.Width + 2 + usuario_responsable_text.Width + 2 + tecnico_responsable_text.Width + 2 + tecnico_correo_text.Width + 2,
                                             If(
                                                 IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
@@ -1449,19 +1449,19 @@ Inventario As screen:
                     Width: =100
                     X: |-
                         =If(
-                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop",
+                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "LAPTOP",
                             ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2 + pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + disco_duro_text.Width + 2 + memoria_ram_text.Width + 2 + procesador_text.Width + 2 + procesador_gen_text.Width + 2 + hostname_text.Width + 2 + ip_text.Width + 2 + estado_text.Width + 2 + situacion_actual_text.Width + 2 + ficha_baja_text.Width + 2 + jefe_inmediato_text.Width + 2 + usuario_responsable_text.Width + 2 + tecnico_responsable_text.Width + 2 + tecnico_correo_text.Width + 15,
                             If(
-                                elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Impresora",
+                                elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "IMPRESORA",
                                 ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2 + pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + ip_text.Width + 2 + tipo_impresora_text.Width + 2 + conector_impresora_text.Width + 2 + estado_text.Width + 2 + situacion_actual_text.Width + 2 + ficha_baja_text.Width + 2 + jefe_inmediato_text.Width + 2 + usuario_responsable_text.Width + 2 + tecnico_responsable_text.Width + 2 + tecnico_correo_text.Width + 15,
                                 If(
-                                    elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Monitor",
+                                    elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "MONITOR",
                                     ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2 + pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + conector_monitor_text.Width + 2 + estado_text.Width + 2 + situacion_actual_text.Width + 2 + ficha_baja_text.Width + 2 + jefe_inmediato_text.Width + 2 + usuario_responsable_text.Width + 2 + tecnico_responsable_text.Width + 2 + tecnico_correo_text.Width + 15,
                                     If(
-                                        elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Teclado",
+                                        elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "TECLADO",
                                         ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2 + pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + conector_teclado_text.Width + 2 + estado_text.Width + 2 + situacion_actual_text.Width + 2 + ficha_baja_text.Width + 2 + jefe_inmediato_text.Width + 2 + usuario_responsable_text.Width + 2 + tecnico_responsable_text.Width + 2 + tecnico_correo_text.Width + 15,
                                         If(
-                                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Telefono IP",
+                                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "TELEFONO IP",
                                             ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2 + pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + ip_text.Width + 2 + anexo_text.Width + 2 + estado_text.Width + 2 + situacion_actual_text.Width + 2 + ficha_baja_text.Width + 2 + jefe_inmediato_text.Width + 2 + usuario_responsable_text.Width + 2 + tecnico_responsable_text.Width + 2 + tecnico_correo_text.Width + 15,
                                             If(
                                                 IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),
@@ -1486,19 +1486,19 @@ Inventario As screen:
                     Width: =100
                     X: |-
                         =If(
-                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Laptop",
+                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "LAPTOP",
                             ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2 + pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + disco_duro_text.Width + 2 + memoria_ram_text.Width + 2 + procesador_text.Width + 2 + procesador_gen_text.Width + 2 + hostname_text.Width + 2 + ip_text.Width + 2 + estado_text.Width + 2 + situacion_actual_text.Width + 2 + ficha_baja_text.Width + 2 + jefe_inmediato_text.Width + 2 + usuario_responsable_text.Width + 2 + tecnico_responsable_text.Width + 2 + tecnico_correo_text.Width + 15 + editar_button.Width + 15,
                             If(
-                                elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Impresora",
+                                elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "IMPRESORA",
                                 ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2 + pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + ip_text.Width + 2 + tipo_impresora_text.Width + 2 + conector_impresora_text.Width + 2 + estado_text.Width + 2 + situacion_actual_text.Width + 2 + ficha_baja_text.Width + 2 + jefe_inmediato_text.Width + 2 + usuario_responsable_text.Width + 2 + tecnico_responsable_text.Width + 2 + tecnico_correo_text.Width + 15 + editar_button.Width + 15,
                                 If(
-                                    elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Monitor",
+                                    elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "MONITOR",
                                     ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2 + pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + conector_monitor_text.Width + 2 + estado_text.Width + 2 + situacion_actual_text.Width + 2 + ficha_baja_text.Width + 2 + jefe_inmediato_text.Width + 2 + usuario_responsable_text.Width + 2 + tecnico_responsable_text.Width + 2 + tecnico_correo_text.Width + 15 + editar_button.Width + 15,
                                     If(
-                                        elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Teclado",
+                                        elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "TECLADO",
                                         ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2 + pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + conector_teclado_text.Width + 2 + estado_text.Width + 2 + situacion_actual_text.Width + 2 + ficha_baja_text.Width + 2 + jefe_inmediato_text.Width + 2 + usuario_responsable_text.Width + 2 + tecnico_responsable_text.Width + 2 + tecnico_correo_text.Width + 15 + editar_button.Width + 15,
                                         If(
-                                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "Telefono IP",
+                                            elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "TELEFONO IP",
                                             ID_text.Width + 2 + local_text.Width + 2 + facultad_text.Width + 2 + piso_text.Width + 2 + area_text.Width + 2 + tipo_area_text.Width + 2 + pabellon_text.Width + 2 + nombre_area_text.Width + 2 + bien_informatico_text.Width + 2 + patrimonio_text.Width + 2 + patrimonio_referencia_text.Width + 2 + marca_text.Width + 2 + modelo_text.Width + 2 + num_serie_text.Width + 2 + ip_text.Width + 2 + anexo_text.Width + 2 + estado_text.Width + 2 + situacion_actual_text.Width + 2 + ficha_baja_text.Width + 2 + jefe_inmediato_text.Width + 2 + usuario_responsable_text.Width + 2 + tecnico_responsable_text.Width + 2 + tecnico_correo_text.Width + 15 + editar_button.Width + 15,
                                             If(
                                                 IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),

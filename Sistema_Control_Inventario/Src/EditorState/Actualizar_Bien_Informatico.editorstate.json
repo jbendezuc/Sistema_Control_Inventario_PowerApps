@@ -830,7 +830,14 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "DisplayMode",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "DisplayMode",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "ZIndex",
         {
           "AFDDataSourceName": "",
@@ -2627,7 +2634,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "datos_estandar_1",
-      "ParentIndex": 35,
+      "ParentIndex": 31,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4813,7 +4820,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "impresora_container_1",
-      "ParentIndex": 31,
+      "ParentIndex": 32,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5716,7 +5723,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ip_telefono_container_1",
-      "ParentIndex": 34,
+      "ParentIndex": 35,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -18669,7 +18676,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "monitor_container_1",
-      "ParentIndex": 33,
+      "ParentIndex": 34,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -22448,7 +22455,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "teclado_container_1",
-      "ParentIndex": 32,
+      "ParentIndex": 33,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

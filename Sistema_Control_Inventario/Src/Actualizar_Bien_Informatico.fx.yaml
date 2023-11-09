@@ -249,6 +249,7 @@ Actualizar_Bien_Informatico As screen:
             bien_informatico_combobox_1 As dropdown:
                 BorderThickness: =1
                 Default: =var_registro_inventario.BIEN_INFORMATICO
+                DisplayMode: =DisplayMode.View
                 Height: =25
                 Items: =BIENES_INFORMATICOS
                 Reset: =resetearControles

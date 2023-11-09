@@ -2460,7 +2460,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "datos_estandar",
-      "ParentIndex": 35,
+      "ParentIndex": 31,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4607,7 +4607,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "impresora_container",
-      "ParentIndex": 31,
+      "ParentIndex": 32,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5510,7 +5510,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ip_telefono_container",
-      "ParentIndex": 34,
+      "ParentIndex": 35,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -18411,7 +18411,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "monitor_container",
-      "ParentIndex": 33,
+      "ParentIndex": 34,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -22253,7 +22253,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "teclado_container",
-      "ParentIndex": 32,
+      "ParentIndex": 33,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

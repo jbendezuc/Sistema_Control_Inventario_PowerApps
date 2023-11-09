@@ -132,9 +132,9 @@
   "ScreenOrder": [
     "Pantalla_Inicio",
     "Inventario",
-    "Vista_previa_carga_masiva",
     "Registrar_Bien_Informatico",
     "Actualizar_Bien_Informatico",
+    "Vista_previa_carga_masiva",
     "Validacion_Correcta_INVENTARIO"
   ]
 }
