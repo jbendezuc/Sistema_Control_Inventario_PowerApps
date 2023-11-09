@@ -439,7 +439,7 @@ Registrar_Bien_Informatico As screen:
                 BorderStyle: =BorderStyle.Dotted
                 BorderThickness: =1
                 Height: =250
-                Visible: =If(bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "Laptop",true,false)
+                Visible: =If(bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "LAPTOP",true,false)
                 Width: =328
                 X: =49
                 Y: =571
@@ -602,7 +602,7 @@ Registrar_Bien_Informatico As screen:
                 Height: =330
                 Width: =328
                 X: =49
-                Y: =If(bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "Laptop",pc_escritorio_container.Y+pc_escritorio_container.Height + 5,If(bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "Impresora",impresora_container.Y+impresora_container.Height + 5,If(bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "Teclado",teclado_container.Y+teclado_container.Height + 5,If(bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "Monitor",monitor_container.Y+monitor_container.Height + 5,If(bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "Telefono IP",ip_telefono_container.Y+ip_telefono_container.Height + 5,571)))))
+                Y: =If(bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "LAPTOP",pc_escritorio_container.Y+pc_escritorio_container.Height + 5,If(bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "IMPRESORA",impresora_container.Y+impresora_container.Height + 5,If(bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "TECLADO",teclado_container.Y+teclado_container.Height + 5,If(bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "MONITOR",monitor_container.Y+monitor_container.Height + 5,If(bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "TELEFONO IP",ip_telefono_container.Y+ip_telefono_container.Height + 5,571)))))
                 ZIndex: =32
 
                 Label4_6 As label:
@@ -960,7 +960,7 @@ Registrar_Bien_Informatico As screen:
                 BorderStyle: =BorderStyle.Dotted
                 BorderThickness: =1
                 Height: =120
-                Visible: =If(bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "Impresora",true,false)
+                Visible: =If(bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "IMPRESORA",true,false)
                 Width: =328
                 X: =49
                 Y: =571
@@ -1055,7 +1055,7 @@ Registrar_Bien_Informatico As screen:
                 BorderStyle: =BorderStyle.Dotted
                 BorderThickness: =1
                 Height: =51
-                Visible: =If(bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "Teclado",true,false)
+                Visible: =If(bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "TECLADO",true,false)
                 Width: =328
                 X: =49
                 Y: =571
@@ -1085,7 +1085,7 @@ Registrar_Bien_Informatico As screen:
                 BorderStyle: =BorderStyle.Dotted
                 BorderThickness: =1
                 Height: =51
-                Visible: =If(bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "Monitor",true,false)
+                Visible: =If(bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "MONITOR",true,false)
                 Width: =328
                 X: =49
                 Y: =571
@@ -1115,7 +1115,7 @@ Registrar_Bien_Informatico As screen:
                 BorderStyle: =BorderStyle.Dotted
                 BorderThickness: =1
                 Height: =92
-                Visible: =If(bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "Telefono IP",true,false)
+                Visible: =If(bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "TELEFONO IP",true,false)
                 Width: =328
                 X: =49
                 Y: =571

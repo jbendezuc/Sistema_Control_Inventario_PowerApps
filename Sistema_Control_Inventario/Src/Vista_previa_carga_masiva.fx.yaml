@@ -1523,7 +1523,7 @@ Vista_previa_carga_masiva As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =28
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =10
                     Text: =ThisItem.TIPO_AREA
                     X: =ID_text_1.Width+2+local_text_1.Width+2+facultad_text_1.Width+2+piso_text_1.Width+2+area_text_1.Width+2
                     Y: =ID_text_1.Y
