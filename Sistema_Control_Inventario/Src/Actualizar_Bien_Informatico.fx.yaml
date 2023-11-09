@@ -449,7 +449,7 @@ Actualizar_Bien_Informatico As screen:
                 BorderStyle: =BorderStyle.Dotted
                 BorderThickness: =1
                 Height: =250
-                Visible: =If(bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "Laptop",true,false)
+                Visible: =If(bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "LAPTOP",true,false)
                 Width: =328
                 X: =49
                 Y: =571
@@ -616,7 +616,7 @@ Actualizar_Bien_Informatico As screen:
                 Height: =330
                 Width: =328
                 X: =49
-                Y: =If(bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "Laptop",pc_escritorio_container_1.Y+pc_escritorio_container_1.Height + 5,If(bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "Impresora",impresora_container_1.Y+impresora_container_1.Height + 5,If(bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "Teclado",teclado_container_1.Y+teclado_container_1.Height + 5,If(bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "Monitor",monitor_container_1.Y+monitor_container_1.Height + 5,If(bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "Telefono IP",ip_telefono_container_1.Y+ip_telefono_container_1.Height + 5,571)))))
+                Y: =If(bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "LAPTOP",pc_escritorio_container_1.Y+pc_escritorio_container_1.Height + 5,If(bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "IMPRESORA",impresora_container_1.Y+impresora_container_1.Height + 5,If(bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "TECLADO",teclado_container_1.Y+teclado_container_1.Height + 5,If(bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "MONITOR",monitor_container_1.Y+monitor_container_1.Height + 5,If(bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "TELEFONO IP",ip_telefono_container_1.Y+ip_telefono_container_1.Height + 5,571)))))
                 ZIndex: =32
 
                 Label4_32 As label:
@@ -630,6 +630,7 @@ Actualizar_Bien_Informatico As screen:
 
                 estado_combobox_1 As dropdown:
                     BorderThickness: =1
+                    Default: =var_registro_inventario.ESTADO
                     Height: =25
                     Items: |-
                         =ForAll(Distinct(ESTADOS,ESTADO), {Result: ThisRecord.Value}).Result
@@ -652,6 +653,7 @@ Actualizar_Bien_Informatico As screen:
 
                 estado_situcional_combobox_1 As dropdown:
                     BorderThickness: =1
+                    Default: =var_registro_inventario.SITUACION_ACTUAL    
                     Height: =25
                     Items: =Filter(ESTADOS,ESTADO=estado_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult')
                     Reset: =resetearControles
@@ -772,7 +774,7 @@ Actualizar_Bien_Informatico As screen:
                     Height: =32
                     OnSelect: |-
                         =If(
-                            bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "Laptop",
+                            bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "LAPTOP",
                             Patch(
                                 INVENTARIO_EQUIPOS_INFORMATICOS,
                                 LookUp(INVENTARIO_EQUIPOS_INFORMATICOS,ThisRecord.ID = var_registro_inventario.ID),
@@ -802,11 +804,11 @@ Actualizar_Bien_Informatico As screen:
                                     JEFE_INMEDIATO: jefe_inmediato_input_1.Text,
                                     USUARIO_RESPONSABLE: usuario_responsable_input_1.Text,
                                     TECNICO_RESPONSABLE: tecnico_responsable_input_1.Text,
-                                    CORREO_TECNICO: User().Email
+                                    CORREO_TECNICO: var_registro_inventario.CORREO_TECNICO
                                 }
                             ),
                             If(
-                                bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "Impresora",
+                                bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "IMPRESORA",
                                 Patch(
                                     INVENTARIO_EQUIPOS_INFORMATICOS,
                                     LookUp(INVENTARIO_EQUIPOS_INFORMATICOS,ThisRecord.ID = var_registro_inventario.ID),
@@ -833,11 +835,11 @@ Actualizar_Bien_Informatico As screen:
                                         JEFE_INMEDIATO: jefe_inmediato_input_1.Text,
                                         USUARIO_RESPONSABLE: usuario_responsable_input_1.Text,
                                         TECNICO_RESPONSABLE: tecnico_responsable_input_1.Text,
-                                        CORREO_TECNICO: User().Email
+                                        CORREO_TECNICO: var_registro_inventario.CORREO_TECNICO
                                     }
                                 ),
                                 If(
-                                    bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "Teclado",
+                                    bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "TECLADO",
                                     Patch(
                                         INVENTARIO_EQUIPOS_INFORMATICOS,
                                         LookUp(INVENTARIO_EQUIPOS_INFORMATICOS,ThisRecord.ID = var_registro_inventario.ID),
@@ -862,11 +864,11 @@ Actualizar_Bien_Informatico As screen:
                                             JEFE_INMEDIATO: jefe_inmediato_input.Text,
                                             USUARIO_RESPONSABLE: usuario_responsable_input_1.Text,
                                             TECNICO_RESPONSABLE: tecnico_responsable_input_1.Text,
-                                            CORREO_TECNICO: User().Email
+                                            CORREO_TECNICO: var_registro_inventario.CORREO_TECNICO
                                         }
                                     ),
                                     If(
-                                        bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "Monitor",
+                                        bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "MONITOR",
                                         Patch(
                                             INVENTARIO_EQUIPOS_INFORMATICOS,
                                             LookUp(INVENTARIO_EQUIPOS_INFORMATICOS,ThisRecord.ID = var_registro_inventario.ID),
@@ -891,11 +893,11 @@ Actualizar_Bien_Informatico As screen:
                                                 JEFE_INMEDIATO: jefe_inmediato_input_1.Text,
                                                 USUARIO_RESPONSABLE: usuario_responsable_input_1.Text,
                                                 TECNICO_RESPONSABLE: tecnico_responsable_input_1.Text,
-                                                CORREO_TECNICO: User().Email
+                                                CORREO_TECNICO: var_registro_inventario.CORREO_TECNICO
                                             }
                                         ),
                                         If(
-                                            bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "Telefono IP",
+                                            bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "TELEFONO IP",
                                             Patch(
                                                 INVENTARIO_EQUIPOS_INFORMATICOS,
                                                 LookUp(INVENTARIO_EQUIPOS_INFORMATICOS,ThisRecord.ID = var_registro_inventario.ID),
@@ -921,7 +923,7 @@ Actualizar_Bien_Informatico As screen:
                                                     JEFE_INMEDIATO: jefe_inmediato_input_1.Text,
                                                     USUARIO_RESPONSABLE: usuario_responsable_input_1.Text,
                                                     TECNICO_RESPONSABLE: tecnico_responsable_input_1.Text,
-                                                    CORREO_TECNICO: User().Email
+                                                    CORREO_TECNICO: var_registro_inventario.CORREO_TECNICO
                                                 }
                                             ),
                                             Patch(
@@ -947,7 +949,7 @@ Actualizar_Bien_Informatico As screen:
                                                     JEFE_INMEDIATO: jefe_inmediato_input_1.Text,
                                                     USUARIO_RESPONSABLE: usuario_responsable_input_1.Text,
                                                     TECNICO_RESPONSABLE: tecnico_responsable_input_1.Text,
-                                                    CORREO_TECNICO: User().Email
+                                                    CORREO_TECNICO: var_registro_inventario.CORREO_TECNICO
                                                 }
                                             )
                                         )
@@ -971,7 +973,7 @@ Actualizar_Bien_Informatico As screen:
                 BorderStyle: =BorderStyle.Dotted
                 BorderThickness: =1
                 Height: =120
-                Visible: =If(bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "Impresora",true,false)
+                Visible: =If(bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "IMPRESORA",true,false)
                 Width: =328
                 X: =49
                 Y: =571
@@ -1068,7 +1070,7 @@ Actualizar_Bien_Informatico As screen:
                 BorderStyle: =BorderStyle.Dotted
                 BorderThickness: =1
                 Height: =51
-                Visible: =If(bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "Teclado",true,false)
+                Visible: =If(bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "TECLADO",true,false)
                 Width: =328
                 X: =49
                 Y: =571
@@ -1099,7 +1101,7 @@ Actualizar_Bien_Informatico As screen:
                 BorderStyle: =BorderStyle.Dotted
                 BorderThickness: =1
                 Height: =51
-                Visible: =If(bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "Monitor",true,false)
+                Visible: =If(bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "MONITOR",true,false)
                 Width: =328
                 X: =49
                 Y: =571
@@ -1130,7 +1132,7 @@ Actualizar_Bien_Informatico As screen:
                 BorderStyle: =BorderStyle.Dotted
                 BorderThickness: =1
                 Height: =92
-                Visible: =If(bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "Telefono IP",true,false)
+                Visible: =If(bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "TELEFONO IP",true,false)
                 Width: =328
                 X: =49
                 Y: =571

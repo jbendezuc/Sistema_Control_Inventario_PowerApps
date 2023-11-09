@@ -1447,7 +1447,7 @@ Vista_previa_carga_masiva As screen:
                 editar_button_1 As button:
                     Fill: =RGBA(54, 176, 75, 1)
                     Height: =25
-                    OnSelect: =Select(Parent);Set(var_galeria_inventario,ThisItem);Navigate(Actualizar_Bien_Informatico,ScreenTransition.Fade)
+                    OnSelect: =Select(Parent);Set(var_galeria_inventario,ThisItem);Navigate(Actualizar_Vista_Bien_Informatico,ScreenTransition.Fade)
                     Size: =12
                     Text: ="Editar"
                     Width: =100

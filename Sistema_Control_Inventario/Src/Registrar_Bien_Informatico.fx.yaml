@@ -758,7 +758,7 @@ Registrar_Bien_Informatico As screen:
                     Height: =32
                     OnSelect: |-
                         =If(
-                            bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "PC Escritorio" || bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "Laptop",
+                            bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "LAPTOP",
                             Patch(
                                 INVENTARIO_EQUIPOS_INFORMATICOS,
                                 Defaults(INVENTARIO_EQUIPOS_INFORMATICOS),
@@ -792,7 +792,7 @@ Registrar_Bien_Informatico As screen:
                                 }
                             ),
                             If(
-                                bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "Impresora",
+                                bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "IMPRESORA",
                                 Patch(
                                     INVENTARIO_EQUIPOS_INFORMATICOS,
                                     Defaults(INVENTARIO_EQUIPOS_INFORMATICOS),
@@ -823,7 +823,7 @@ Registrar_Bien_Informatico As screen:
                                     }
                                 ),
                                 If(
-                                    bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "Teclado",
+                                    bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "TECLADO",
                                     Patch(
                                         INVENTARIO_EQUIPOS_INFORMATICOS,
                                         Defaults(INVENTARIO_EQUIPOS_INFORMATICOS),
@@ -852,7 +852,7 @@ Registrar_Bien_Informatico As screen:
                                         }
                                     ),
                                     If(
-                                        bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "Monitor",
+                                        bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "MONITOR",
                                         Patch(
                                             INVENTARIO_EQUIPOS_INFORMATICOS,
                                             Defaults(INVENTARIO_EQUIPOS_INFORMATICOS),
@@ -881,7 +881,7 @@ Registrar_Bien_Informatico As screen:
                                             }
                                         ),
                                         If(
-                                            bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "Telefono IP",
+                                            bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "TELEFONO IP",
                                             Patch(
                                                 INVENTARIO_EQUIPOS_INFORMATICOS,
                                                 Defaults(INVENTARIO_EQUIPOS_INFORMATICOS),
