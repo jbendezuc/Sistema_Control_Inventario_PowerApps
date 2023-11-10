@@ -84,7 +84,7 @@ Validacion_Correcta_INVENTARIO As screen:
         AutoStart: =true
         Duration: =3000
         Height: =68
-        OnTimerEnd: =Navigate(Inventario)
+        OnTimerEnd: =If(actualizar_inventario = 1,Navigate(Inventario),Navigate(Vista_previa_carga_masiva))
         OnTimerStart: =true
         Visible: =false
         Width: =175

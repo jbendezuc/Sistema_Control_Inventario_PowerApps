@@ -22948,7 +22948,7 @@
       "StyleName": "defaultTextStyle",
       "Type": "ControlInfo"
     },
-    "tipo_area_combobox_1": {
+    "tipo_area_bombobox_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -23046,7 +23046,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "tipo_area_combobox_1",
+      "Name": "tipo_area_bombobox_1",
       "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -23243,12 +23243,12 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "ChevronHoverFill",
+          "PropertyName": "ChevronFill",
           "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
-          "PropertyName": "ChevronFill",
+          "PropertyName": "ChevronHoverFill",
           "RuleProviderType": "Unknown"
         },
         {
@@ -23258,12 +23258,12 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "FocusedBorderColor",
+          "PropertyName": "HoverBorderColor",
           "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
-          "PropertyName": "HoverBorderColor",
+          "PropertyName": "FocusedBorderColor",
           "RuleProviderType": "Unknown"
         }
       ],

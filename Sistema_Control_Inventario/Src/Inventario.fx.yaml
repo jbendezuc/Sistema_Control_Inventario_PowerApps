@@ -1884,9 +1884,12 @@ Inventario As screen:
         BorderColor: =ColorFade(Self.Fill, -94%)
         Fill: =RGBA(172, 62, 11, 1)
         OnSelect: |-
-            =Set(exportar_excel,JSON(Gallery1.AllItems,JSONFormat.IgnoreBinaryData & JSONFormat.IgnoreUnsupportedTypes));
+            =Set(var_spinner,true);
+            UpdateContext({resetearControles:true});UpdateContext({resetearControles:false});Reset(buscar_inventario);
+            Set(exportar_excel,JSON(Gallery1.AllItems,JSONFormat.IgnoreBinaryData & JSONFormat.IgnoreUnsupportedTypes));
             //exportarCSVEXCEL_2.Run(exportar_excel)
-            Launch(exportarExcel.Run(exportar_excel).link)
+            Launch(exportarExcel.Run(exportar_excel).link);
+            Set(var_spinner,false)
         Text: ="Descargar"
         X: =1155
         Y: =37
@@ -1910,4 +1913,43 @@ Inventario As screen:
         X: =952
         Y: =37
         ZIndex: =37
+
+    Spinner As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =46
+
+        Rectangle2_2 As rectangle:
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(0, 0, 0, 0.62)
+            Height: =768
+            Visible: =var_spinner
+            Width: =1366
+            ZIndex: =38
+
+        Label7_2 As label:
+            Align: =Align.Center
+            AutoHeight: =true
+            Color: =RGBA(141, 198, 63, 1)
+            DisplayMode: =DisplayMode.View
+            FontWeight: =FontWeight.Bold
+            Height: =41
+            Size: =25
+            Text: ="Descargando Inventario..."
+            Visible: =var_spinner
+            Width: =449
+            X: =460
+            Y: =397
+            ZIndex: =44
+
+        Image5 As image:
+            Height: =184
+            Image: ='Spin-1s-200px'
+            Visible: =var_spinner
+            Width: =192
+            X: =578
+            Y: =213
+            ZIndex: =45
 

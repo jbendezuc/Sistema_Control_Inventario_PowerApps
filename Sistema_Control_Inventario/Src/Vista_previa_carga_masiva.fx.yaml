@@ -783,7 +783,6 @@ Vista_previa_carga_masiva As screen:
                 LoadingSpinner: =LoadingSpinner.Data
                 TemplateSize: =28
                 Width: =5428
-                X: =Parent.X
                 Y: =Titulos_1.Height
                 ZIndex: =2
 
@@ -1447,7 +1446,19 @@ Vista_previa_carga_masiva As screen:
                 editar_button_1 As button:
                     Fill: =RGBA(54, 176, 75, 1)
                     Height: =25
-                    OnSelect: =Select(Parent);Set(var_galeria_inventario,ThisItem);Navigate(Actualizar_Vista_Bien_Informatico,ScreenTransition.Fade)
+                    OnSelect: |-
+                        =Select(Parent);
+                        Set(
+                            var_galeria_inventario,
+                            ThisItem
+                        );
+                        Navigate(
+                            Actualizar_Vista_Bien_Informatico,
+                            ScreenTransition.Fade
+                        );
+                        //ACTUALIZAR CONTROLES
+                        UpdateContext({resetearControles: true});
+                        UpdateContext({resetearControles: false})
                     Size: =12
                     Text: ="Editar"
                     Width: =100
@@ -1534,12 +1545,11 @@ Vista_previa_carga_masiva As screen:
         Color: =RGBA(152, 208, 70, 1)
         Fill: =RGBA(0, 13, 75, 1)
         FontWeight: =FontWeight.Bold
-        Height: =60
+        Height: =79
         Size: =25
         Text: ="CARGA MASIVA"
-        Width: =385
-        X: =960
-        Y: =17
+        Width: =397
+        X: =968
         ZIndex: =2
 
     Label1_2 As label:
@@ -1728,8 +1738,8 @@ Vista_previa_carga_masiva As screen:
             =If(var_vista_inventario=1,Navigate(Pantalla_Inicio,ScreenTransition.Fade),Navigate(Inventario,ScreenTransition.Fade));Set(var_vista_inventario,0);Reset(DataCardValue33);UpdateContext({resetearControles:true});UpdateContext({resetearControles:false});Reset(buscar_inventario_1)
         Rotation: =180
         Width: =60
-        X: =41
-        Y: =17
+        X: =26
+        Y: =34
         ZIndex: =24
 
     elegir_local_1 As dropdown:
@@ -1886,12 +1896,12 @@ Vista_previa_carga_masiva As screen:
         ZIndex: =36
 
     DataCardValue33 As attachments:
-        BorderColor: =Color.Blue
-        BorderThickness: =1
+        AddAttachmentText: ="Adjuntar un archivo Excel"
+        BorderColor: =RGBA(141, 198, 63, 1)
         DropTargetBackgroundColor: =RGBA(0, 0, 0, 1)
         FocusedBorderThickness: =3
         FontWeight: =FontWeight.Semibold
-        Height: =83
+        Height: =70
         IsInDataCard: =true
         Items: =
         MaxAttachments: =1
@@ -1900,18 +1910,20 @@ Vista_previa_carga_masiva As screen:
         PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
         PaddingRight: =5
         PaddingTop: =5
-        Size: =10
+        Size: =9
         Tooltip: =
         Width: =343
-        X: =187
-        Y: =17
+        X: =340
+        Y: =15
         ZIndex: =40
 
     carga_datos_button As button:
         DisplayMode: =If(!IsBlank(First(DataCardValue33.Attachments).Value), DisplayMode.Edit, DisplayMode.Disabled)
-        Fill: =RGBA(0, 121, 187, 1)
+        Fill: =RGBA(127, 178, 57, 1)
+        Height: =30
         OnSelect: |-
-            =ClearCollect(carga_datos_nuevo,crearArchivo_cargaMasiva.Run(
+            =Set(var_spinner,true);
+            ClearCollect(carga_datos_nuevo,crearArchivo_cargaMasiva.Run(
                 First(DataCardValue33.Attachments).Name,
                 {
                     file:{
@@ -1921,15 +1933,18 @@ Vista_previa_carga_masiva As screen:
                     }
                 }
             ));
-            Reset(DataCardValue33)
+            Reset(DataCardValue33);
+            Set(var_spinner,false);
+        Size: =13
         Text: ="Cargar Datos"
-        X: =538
-        Y: =27
+        X: =698
+        Y: =15
         ZIndex: =41
 
     registrar_datos_button As button:
         DisplayMode: =If(CountRows(carga_datos_nuevo) > 0, DisplayMode.Edit, DisplayMode.Disabled)
-        Fill: =RGBA(54, 176, 75, 1)
+        Fill: =RGBA(127, 178, 57, 1)
+        Height: =30
         OnSelect: |-
             =ForAll(
                 carga_datos_nuevo,
@@ -1976,8 +1991,57 @@ Vista_previa_carga_masiva As screen:
                 ScreenTransition.Fade
             );
             Reset(buscar_inventario)
+        Size: =13
         Text: ="Registrar"
-        X: =747
-        Y: =27
+        X: =700
+        Y: =55
         ZIndex: =42
+
+    Image3 As image:
+        DisplayMode: =DisplayMode.View
+        Height: =77
+        Image: ='icone-excel-vert'
+        Width: =86
+        X: =254
+        Y: =10
+        ZIndex: =43
+
+    Spinner_1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =47
+
+        Rectangle2_3 As rectangle:
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(0, 0, 0, 0.62)
+            Height: =768
+            Visible: =var_spinner
+            Width: =1366
+            ZIndex: =44
+
+        Label7_3 As label:
+            Align: =Align.Center
+            AutoHeight: =true
+            Color: =RGBA(141, 198, 63, 1)
+            DisplayMode: =DisplayMode.View
+            FontWeight: =FontWeight.Bold
+            Height: =41
+            Size: =25
+            Text: ="Cargando Datos..."
+            Visible: =var_spinner
+            Width: =449
+            X: =460
+            Y: =397
+            ZIndex: =45
+
+        Image5_1 As image:
+            Height: =184
+            Image: ='Spin-1s-200px'
+            Visible: =var_spinner
+            Width: =192
+            X: =578
+            Y: =213
+            ZIndex: =46
 
