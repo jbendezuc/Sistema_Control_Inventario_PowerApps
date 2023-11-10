@@ -783,6 +783,7 @@ Vista_previa_carga_masiva As screen:
                 LoadingSpinner: =LoadingSpinner.Data
                 TemplateSize: =28
                 Width: =5428
+                X: =Parent.X
                 Y: =Titulos_1.Height
                 ZIndex: =2
 
@@ -2015,7 +2016,7 @@ Vista_previa_carga_masiva As screen:
 
         Rectangle2_3 As rectangle:
             DisplayMode: =DisplayMode.View
-            Fill: =RGBA(0, 0, 0, 0.62)
+            Fill: =RGBA(0, 0, 0, 0.75)
             Height: =768
             Visible: =var_spinner
             Width: =1366

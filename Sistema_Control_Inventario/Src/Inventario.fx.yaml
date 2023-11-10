@@ -1923,7 +1923,7 @@ Inventario As screen:
 
         Rectangle2_2 As rectangle:
             DisplayMode: =DisplayMode.View
-            Fill: =RGBA(0, 0, 0, 0.62)
+            Fill: =RGBA(0, 0, 0, 0.76)
             Height: =768
             Visible: =var_spinner
             Width: =1366
