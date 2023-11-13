@@ -127,6 +127,7 @@ Actualizar_Bien_Informatico As screen:
                 ZIndex: =5
 
             piso_combobox_1 As dropdown:
+                AllowEmptySelection: =true
                 BorderThickness: =1
                 Default: =var_registro_inventario.PISO
                 Height: =25
@@ -150,6 +151,7 @@ Actualizar_Bien_Informatico As screen:
                 ZIndex: =7
 
             area_combobox_1 As dropdown:
+                AllowEmptySelection: =true
                 BorderThickness: =1
                 Default: =var_registro_inventario.AREA
                 Height: =25
@@ -174,6 +176,7 @@ Actualizar_Bien_Informatico As screen:
                 ZIndex: =9
 
             tipo_area_bombobox_1 As dropdown:
+                AllowEmptySelection: =true
                 BorderThickness: =1
                 Default: =var_registro_inventario.TIPO_AREA
                 Height: =25
@@ -197,6 +200,7 @@ Actualizar_Bien_Informatico As screen:
                 ZIndex: =11
 
             pabellon_combobox_1 As dropdown:
+                AllowEmptySelection: =true
                 BorderThickness: =1
                 Default: =var_registro_inventario.PABELLON
                 Height: =25
@@ -358,6 +362,7 @@ Actualizar_Bien_Informatico As screen:
                 ZIndex: =23
 
             marca_combobox_1 As dropdown:
+                AllowEmptySelection: =true
                 BorderThickness: =1
                 Default: =var_registro_inventario.MARCA
                 Height: =23
@@ -381,6 +386,7 @@ Actualizar_Bien_Informatico As screen:
                 ZIndex: =25
 
             modelo_combobox_1 As dropdown:
+                AllowEmptySelection: =true
                 BorderThickness: =1
                 Default: =var_registro_inventario.MODELO
                 Height: =23

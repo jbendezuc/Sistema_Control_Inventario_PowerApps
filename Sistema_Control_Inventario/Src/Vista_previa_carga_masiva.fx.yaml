@@ -1991,7 +1991,7 @@ Vista_previa_carga_masiva As screen:
                 Validacion_Correcta_INVENTARIO,
                 ScreenTransition.Fade
             );
-            Reset(buscar_inventario)
+            Reset(buscar_inventario);Set(actualizar_inventario,2)
         Size: =13
         Text: ="Registrar"
         X: =700

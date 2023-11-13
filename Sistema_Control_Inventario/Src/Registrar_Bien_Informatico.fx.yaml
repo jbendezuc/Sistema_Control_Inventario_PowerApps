@@ -192,6 +192,7 @@ Registrar_Bien_Informatico As screen:
                 ZIndex: =11
 
             pabellon_combobox As dropdown:
+                AllowEmptySelection: =true
                 BorderThickness: =1
                 Height: =25
                 Items: =PABELLONES
@@ -941,7 +942,7 @@ Registrar_Bien_Informatico As screen:
                                 )
                             )
                         );
-                        UpdateContext({resetearControles:true});UpdateContext({resetearControles:false});Navigate(Validacion_Correcta_INVENTARIO,ScreenTransition.Fade);Reset(buscar_inventario)
+                        UpdateContext({resetearControles:true});UpdateContext({resetearControles:false});Navigate(Validacion_Correcta_INVENTARIO,ScreenTransition.Fade);Reset(buscar_inventario);Set(actualizar_inventario,1)
                         /*
                         --ACTUALIZAR
                         If(var_limpiar_img_RT=1;Set(var_firma_responsable_1;JSON(Firma_Responsable_1.Image;JSONFormat.IncludeBinaryData));Set(var_firma_responsable_1;varFichaTecnica.FIRMARESPONSABLE));;
