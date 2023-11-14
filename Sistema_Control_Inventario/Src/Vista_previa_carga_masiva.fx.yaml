@@ -1592,6 +1592,7 @@ Vista_previa_carga_masiva As screen:
             =false
             
         Reset: =resetearControles
+        Size: =10
         Width: =188
         X: =145
         Y: =105
@@ -1753,6 +1754,7 @@ Vista_previa_carga_masiva As screen:
             =false
             
         Reset: =resetearControles
+        Size: =10
         Width: =188
         X: =425
         Y: =107
@@ -1795,6 +1797,7 @@ Vista_previa_carga_masiva As screen:
             =false
             
         Reset: =resetearControles
+        Size: =10
         Width: =188
         X: =425
         Y: =150
@@ -1824,6 +1827,7 @@ Vista_previa_carga_masiva As screen:
             =false
             
         Reset: =resetearControles
+        Size: =10
         Width: =188
         X: =701
         Y: =105
@@ -1852,6 +1856,7 @@ Vista_previa_carga_masiva As screen:
             =false
             
         Reset: =resetearControles
+        Size: =10
         Width: =188
         X: =701
         Y: =148
@@ -1881,6 +1886,7 @@ Vista_previa_carga_masiva As screen:
             =false
             
         Reset: =resetearControles
+        Size: =10
         Width: =188
         X: =1017
         Y: =100

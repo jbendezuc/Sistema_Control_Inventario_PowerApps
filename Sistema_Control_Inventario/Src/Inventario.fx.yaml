@@ -1586,6 +1586,7 @@ Inventario As screen:
             =false
             
         Reset: =resetearControles
+        Size: =10
         Width: =188
         X: =145
         Y: =105
@@ -1747,6 +1748,7 @@ Inventario As screen:
             =false
             
         Reset: =resetearControles
+        Size: =10
         Width: =188
         X: =425
         Y: =107
@@ -1789,6 +1791,7 @@ Inventario As screen:
             =false
             
         Reset: =resetearControles
+        Size: =10
         Width: =188
         X: =425
         Y: =150
@@ -1818,6 +1821,7 @@ Inventario As screen:
             =false
             
         Reset: =resetearControles
+        Size: =10
         Width: =188
         X: =701
         Y: =105
@@ -1846,6 +1850,7 @@ Inventario As screen:
             =false
             
         Reset: =resetearControles
+        Size: =10
         Width: =188
         X: =701
         Y: =148
@@ -1875,6 +1880,7 @@ Inventario As screen:
             =false
             
         Reset: =resetearControles
+        Size: =10
         Width: =188
         X: =1017
         Y: =100
