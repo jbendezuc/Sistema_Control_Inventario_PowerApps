@@ -792,7 +792,7 @@ Vista_previa_carga_masiva As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =28
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.ID
                     Width: =50
                     ZIndex: =1
@@ -802,7 +802,7 @@ Vista_previa_carga_masiva As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =28
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.LOCAL
                     Width: =100
                     X: =ID_text_1.Width+2
@@ -814,7 +814,7 @@ Vista_previa_carga_masiva As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =28
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.FACULTAD
                     Width: =120
                     X: =ID_text_1.Width+2+local_text_1.Width+2
@@ -826,7 +826,7 @@ Vista_previa_carga_masiva As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =28
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.PISO
                     Width: =120
                     X: =ID_text_1.Width+2+local_text_1.Width+2+facultad_text_1.Width+2
@@ -838,7 +838,7 @@ Vista_previa_carga_masiva As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =28
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.AREA
                     X: =ID_text_1.Width+2+local_text_1.Width+2+facultad_text_1.Width+2+piso_text_1.Width+2
                     Y: =ID_text_1.Y
@@ -849,7 +849,7 @@ Vista_previa_carga_masiva As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =28
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.PABELLON
                     X: =ID_text_1.Width+2+local_text_1.Width+2+facultad_text_1.Width+2+piso_text_1.Width+2+area_text_1.Width+2+tipo_area_text_1.Width+2
                     Y: =ID_text_1.Y
@@ -860,7 +860,7 @@ Vista_previa_carga_masiva As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =28
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.NOMBRE_AREA
                     Width: =200
                     X: =ID_text_1.Width+2+local_text_1.Width+2+facultad_text_1.Width+2+piso_text_1.Width+2+area_text_1.Width+2+tipo_area_text_1.Width+2+pabellon_text_1.Width+2
@@ -872,7 +872,7 @@ Vista_previa_carga_masiva As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =28
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.BIEN_INFORMATICO
                     Width: =180
                     X: =ID_text_1.Width+2+local_text_1.Width+2+facultad_text_1.Width+2+piso_text_1.Width+2+area_text_1.Width+2+tipo_area_text_1.Width+2+pabellon_text_1.Width+2+nombre_area_text_1.Width+2
@@ -884,7 +884,7 @@ Vista_previa_carga_masiva As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =28
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.PATRIMONIO
                     X: =ID_text_1.Width+2+local_text_1.Width+2+facultad_text_1.Width+2+piso_text_1.Width+2+area_text_1.Width+2+tipo_area_text_1.Width+2+pabellon_text_1.Width+2+nombre_area_text_1.Width+2+bien_informatico_text_1.Width+2
                     Y: =ID_text_1.Y
@@ -895,7 +895,7 @@ Vista_previa_carga_masiva As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =28
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.PATRIMONIO_REFERENCIA
                     X: =ID_text_1.Width+2+local_text_1.Width+2+facultad_text_1.Width+2+piso_text_1.Width+2+area_text_1.Width+2+tipo_area_text_1.Width+2+pabellon_text_1.Width+2+nombre_area_text_1.Width+2+bien_informatico_text_1.Width+2+patrimonio_text_1.Width+2
                     Y: =ID_text_1.Y
@@ -906,7 +906,7 @@ Vista_previa_carga_masiva As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =28
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.MARCA
                     X: =ID_text_1.Width+2+local_text_1.Width+2+facultad_text_1.Width+2+piso_text_1.Width+2+area_text_1.Width+2+tipo_area_text_1.Width+2+pabellon_text_1.Width+2+nombre_area_text_1.Width+2+bien_informatico_text_1.Width+2+patrimonio_text_1.Width+2+patrimonio_referencia_text_1.Width+2
                     Y: =ID_text_1.Y
@@ -917,7 +917,7 @@ Vista_previa_carga_masiva As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =28
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.MODELO
                     X: =ID_text_1.Width+2+local_text_1.Width+2+facultad_text_1.Width+2+piso_text_1.Width+2+area_text_1.Width+2+tipo_area_text_1.Width+2+pabellon_text_1.Width+2+nombre_area_text_1.Width+2+bien_informatico_text_1.Width+2+patrimonio_text_1.Width+2+patrimonio_referencia_text_1.Width+2+marca_text_1.Width+2
                     Y: =ID_text_1.Y
@@ -928,7 +928,7 @@ Vista_previa_carga_masiva As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =28
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.NUM_SERIE
                     Width: =180
                     X: =ID_text_1.Width+2+local_text_1.Width+2+facultad_text_1.Width+2+piso_text_1.Width+2+area_text_1.Width+2+tipo_area_text_1.Width+2+pabellon_text_1.Width+2+nombre_area_text_1.Width+2+bien_informatico_text_1.Width+2+patrimonio_text_1.Width+2+patrimonio_referencia_text_1.Width+2+marca_text_1.Width+2+modelo_text_1.Width+2
@@ -940,7 +940,7 @@ Vista_previa_carga_masiva As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =28
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.DISCO_DURO
                     Visible: |-
                         =If(elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO = "LAPTOP" || IsBlank(elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO),true,false)
@@ -959,7 +959,7 @@ Vista_previa_carga_masiva As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =28
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.MEMORIA_RAM
                     Visible: =If(elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO = "LAPTOP" || IsBlank(elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO),true,false)
                     X: |-
@@ -976,7 +976,7 @@ Vista_previa_carga_masiva As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =28
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.PROCESADOR
                     Visible: =If(elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO = "LAPTOP" || IsBlank(elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO),true,false)
                     X: |-
@@ -993,7 +993,7 @@ Vista_previa_carga_masiva As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =28
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.GENERACION_PROCESADOR
                     Visible: =If(elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO = "LAPTOP" || IsBlank(elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO),true,false)
                     X: |-
@@ -1010,7 +1010,7 @@ Vista_previa_carga_masiva As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =28
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.HOSTNAME_CPU
                     Visible: =If(elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO = "LAPTOP" || IsBlank(elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO),true,false)
                     X: |-
@@ -1027,7 +1027,7 @@ Vista_previa_carga_masiva As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =28
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.IP_BIEN_INFORMATICO
                     Visible: =If(elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO = "LAPTOP" || elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO = "IMPRESORA" || elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO = "TELEFONO IP" || IsBlank(elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO),true,false)
                     X: |-
@@ -1048,7 +1048,7 @@ Vista_previa_carga_masiva As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =28
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.ANEXO_TELEFONO
                     Visible: =If(elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO = "TELEFONO IP" || IsBlank(elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO),true,false)
                     X: |-
@@ -1069,7 +1069,7 @@ Vista_previa_carga_masiva As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =28
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.TIPO_IMPRESORA
                     Visible: =If(elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO = "IMPRESORA" || IsBlank(elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO),true,false)
                     Width: =200
@@ -1091,7 +1091,7 @@ Vista_previa_carga_masiva As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =28
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.TIPO_CONECTOR_IMPRESORA
                     Visible: =If(elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO = "IMPRESORA" || IsBlank(elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO),true,false)
                     X: |-
@@ -1112,7 +1112,7 @@ Vista_previa_carga_masiva As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =28
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.TIPO_CONECTOR_TECLADO
                     Visible: =If(elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO = "TECLADO" || IsBlank(elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO),true,false)
                     X: |-
@@ -1133,7 +1133,7 @@ Vista_previa_carga_masiva As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =28
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.TIPO_CONECTOR_MONITOR
                     Visible: =If(elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO = "MONITOR" || IsBlank(elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO),true,false)
                     X: |-
@@ -1154,7 +1154,7 @@ Vista_previa_carga_masiva As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =28
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.ESTADO
                     X: |-
                         =If(
@@ -1190,7 +1190,7 @@ Vista_previa_carga_masiva As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =28
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.SITUACION_ACTUAL
                     Width: =120
                     X: |-
@@ -1227,7 +1227,7 @@ Vista_previa_carga_masiva As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =28
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.FICHA_BAJA
                     Width: =120
                     X: |-
@@ -1264,7 +1264,7 @@ Vista_previa_carga_masiva As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =28
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.JEFE_INMEDIATO
                     Width: =250
                     X: |-
@@ -1301,7 +1301,7 @@ Vista_previa_carga_masiva As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =28
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.USUARIO_RESPONSABLE
                     Width: =250
                     X: |-
@@ -1338,7 +1338,7 @@ Vista_previa_carga_masiva As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =28
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.TECNICO_RESPONSABLE
                     Width: =250
                     X: |-
@@ -1375,7 +1375,7 @@ Vista_previa_carga_masiva As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =28
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.CORREO_TECNICO
                     Width: =250
                     X: |-
@@ -1535,7 +1535,7 @@ Vista_previa_carga_masiva As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =28
                     OnSelect: =Select(Parent)
-                    Size: =10
+                    Size: =9
                     Text: =ThisItem.TIPO_AREA
                     X: =ID_text_1.Width+2+local_text_1.Width+2+facultad_text_1.Width+2+piso_text_1.Width+2+area_text_1.Width+2
                     Y: =ID_text_1.Y
@@ -1991,7 +1991,7 @@ Vista_previa_carga_masiva As screen:
                 Validacion_Correcta_INVENTARIO,
                 ScreenTransition.Fade
             );
-            Reset(buscar_inventario);Set(actualizar_inventario,2)
+            Reset(buscar_inventario);Set(actualizar_inventario,1)
         Size: =13
         Text: ="Registrar"
         X: =700

@@ -6,6 +6,11 @@
       <object name="ManualTriggerInput">
         <property name="text" type="string" />
       </object>
+      <string name="ResponseActionOutput_link_def" />
+      <object name="ResponseActionOutput">
+        <property name="link" type="string" />
+      </object>
+      <object name="Run_responses_default_def" />
     </jsonTypes>
   </grammars>
   <resources siena:authenticationProviderHref="#PowerAppAuth" base="https://msmanaged-na.azure-apim.net/apim/logicflows">
@@ -19,10 +24,13 @@
           </param>
           <representation mediaType="application/json">
             <param style="plain" name="text" path="/text" type="xs:string" required="true">
-              <doc title="dataExcel" />
+              <doc title="correo_user" />
             </param>
           </representation>
         </request>
+        <response>
+          <representation mediaType="application/json" element="service:ResponseActionOutput" />
+        </response>
       </method>
     </resource>
   </resources>

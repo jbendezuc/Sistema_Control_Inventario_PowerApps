@@ -788,7 +788,7 @@ Inventario As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =30
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.ID
                     Width: =50
                     ZIndex: =1
@@ -798,7 +798,7 @@ Inventario As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =30
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.LOCAL
                     Width: =100
                     X: =ID_text.Width+2
@@ -810,7 +810,7 @@ Inventario As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =30
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.FACULTAD
                     Width: =120
                     X: =ID_text.Width+2+local_text.Width+2
@@ -822,7 +822,7 @@ Inventario As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =30
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.PISO
                     Width: =120
                     X: =ID_text.Width+2+local_text.Width+2+facultad_text.Width+2
@@ -834,7 +834,7 @@ Inventario As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =30
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.AREA
                     X: =ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2
                     Y: =ID_text.Y
@@ -845,7 +845,7 @@ Inventario As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =30
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.PABELLON
                     X: =ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2+tipo_area_text.Width+2
                     Y: =ID_text.Y
@@ -856,7 +856,7 @@ Inventario As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =30
                     OnSelect: =Select(Parent)
-                    Size: =8
+                    Size: =9
                     Text: =ThisItem.NOMBRE_AREA
                     Width: =200
                     X: =ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2+tipo_area_text.Width+2+pabellon_text.Width+2
@@ -868,7 +868,7 @@ Inventario As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =30
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.BIEN_INFORMATICO
                     Width: =180
                     X: =ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2+tipo_area_text.Width+2+pabellon_text.Width+2+nombre_area_text.Width+2
@@ -880,7 +880,7 @@ Inventario As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =30
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.PATRIMONIO
                     X: =ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2+tipo_area_text.Width+2+pabellon_text.Width+2+nombre_area_text.Width+2+bien_informatico_text.Width+2
                     Y: =ID_text.Y
@@ -891,7 +891,7 @@ Inventario As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =30
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.PATRIMONIO_REFERENCIA
                     X: =ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2+tipo_area_text.Width+2+pabellon_text.Width+2+nombre_area_text.Width+2+bien_informatico_text.Width+2+patrimonio_text.Width+2
                     Y: =ID_text.Y
@@ -902,7 +902,7 @@ Inventario As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =30
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.MARCA
                     X: =ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2+tipo_area_text.Width+2+pabellon_text.Width+2+nombre_area_text.Width+2+bien_informatico_text.Width+2+patrimonio_text.Width+2+patrimonio_referencia_text.Width+2
                     Y: =ID_text.Y
@@ -913,7 +913,7 @@ Inventario As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =30
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.MODELO
                     X: =ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2+tipo_area_text.Width+2+pabellon_text.Width+2+nombre_area_text.Width+2+bien_informatico_text.Width+2+patrimonio_text.Width+2+patrimonio_referencia_text.Width+2+marca_text.Width+2
                     Y: =ID_text.Y
@@ -936,7 +936,7 @@ Inventario As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =30
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.DISCO_DURO
                     Visible: |-
                         =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "LAPTOP" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
@@ -955,7 +955,7 @@ Inventario As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =30
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.MEMORIA_RAM
                     Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "LAPTOP" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
                     X: |-
@@ -972,7 +972,7 @@ Inventario As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =30
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.PROCESADOR
                     Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "LAPTOP" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
                     X: |-
@@ -989,7 +989,7 @@ Inventario As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =30
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.GENERACION_PROCESADOR
                     Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "LAPTOP" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
                     X: |-
@@ -1006,7 +1006,7 @@ Inventario As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =30
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.HOSTNAME_CPU
                     Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "LAPTOP" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
                     X: |-
@@ -1023,7 +1023,7 @@ Inventario As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =30
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.IP_BIEN_INFORMATICO
                     Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "LAPTOP" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "IMPRESORA" || elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "TELEFONO IP" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
                     X: |-
@@ -1044,7 +1044,7 @@ Inventario As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =30
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.ANEXO_TELEFONO
                     Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "TELEFONO IP" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
                     X: |-
@@ -1065,7 +1065,7 @@ Inventario As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =30
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.TIPO_IMPRESORA
                     Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "IMPRESORA" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
                     Width: =200
@@ -1087,7 +1087,7 @@ Inventario As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =30
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.TIPO_CONECTOR_IMPRESORA
                     Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "IMPRESORA" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
                     X: |-
@@ -1108,7 +1108,7 @@ Inventario As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =30
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.TIPO_CONECTOR_TECLADO
                     Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "TECLADO" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
                     X: |-
@@ -1129,7 +1129,7 @@ Inventario As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =30
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.TIPO_CONECTOR_MONITOR
                     Visible: =If(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO = "MONITOR" || IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO),true,false)
                     X: |-
@@ -1150,7 +1150,7 @@ Inventario As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =30
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.ESTADO
                     X: |-
                         =If(
@@ -1186,7 +1186,7 @@ Inventario As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =30
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.SITUACION_ACTUAL
                     Width: =120
                     X: |-
@@ -1223,7 +1223,7 @@ Inventario As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =30
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.FICHA_BAJA
                     Width: =120
                     X: |-
@@ -1334,7 +1334,7 @@ Inventario As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =30
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.TECNICO_RESPONSABLE
                     Width: =250
                     X: |-
@@ -1371,7 +1371,7 @@ Inventario As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =30
                     OnSelect: =Select(Parent)
-                    Size: =12
+                    Size: =9
                     Text: =ThisItem.CORREO_TECNICO
                     Width: =250
                     X: |-
@@ -1519,7 +1519,7 @@ Inventario As screen:
                     Fill: =RGBA(186, 202, 226, 1)
                     Height: =30
                     OnSelect: =Select(Parent)
-                    Size: =10
+                    Size: =9
                     Text: =ThisItem.TIPO_AREA
                     X: =ID_text.Width+2+local_text.Width+2+facultad_text.Width+2+piso_text.Width+2+area_text.Width+2
                     Y: =ID_text.Y
@@ -1886,9 +1886,11 @@ Inventario As screen:
         OnSelect: |-
             =Set(var_spinner,true);
             UpdateContext({resetearControles:true});UpdateContext({resetearControles:false});Reset(buscar_inventario);
-            Set(exportar_excel,JSON(Gallery1.AllItems,JSONFormat.IgnoreBinaryData & JSONFormat.IgnoreUnsupportedTypes));
-            //exportarCSVEXCEL_2.Run(exportar_excel)
-            Launch(exportarExcel.Run(exportar_excel).link);
+            //Set(exportar_excel;JSON(Gallery1.AllItems;JSONFormat.IgnoreBinaryData & JSONFormat.IgnoreUnsupportedTypes));;
+            //Set(correo_user;JSON(User().Email;JSONFormat.IgnoreBinaryData & JSONFormat.IgnoreUnsupportedTypes));;
+            Set(correo_user,User().Email);
+            Launch(exportarCSVEXCEL_2.Run(correo_user).link);
+            //Launch(exportarExcel.Run(exportar_excel).link);;
             Set(var_spinner,false)
         Text: ="Descargar"
         X: =1155
