@@ -233,7 +233,7 @@ Actualizar_Bien_Informatico As screen:
                 RadiusTopLeft: =3
                 RadiusTopRight: =3
                 Reset: =resetearControles
-                Size: =10
+                Size: =8
                 Width: =228
                 X: =126
                 Y: =264
@@ -715,7 +715,7 @@ Actualizar_Bien_Informatico As screen:
                     RadiusTopLeft: =3
                     RadiusTopRight: =3
                     Reset: =resetearControles
-                    Size: =10
+                    Size: =8
                     Width: =205
                     X: =113
                     Y: =170
@@ -741,7 +741,7 @@ Actualizar_Bien_Informatico As screen:
                     RadiusBottomRight: =3
                     RadiusTopLeft: =3
                     RadiusTopRight: =3
-                    Size: =10
+                    Size: =8
                     Width: =205
                     X: =113
                     Y: =211
@@ -757,7 +757,7 @@ Actualizar_Bien_Informatico As screen:
                     RadiusTopLeft: =3
                     RadiusTopRight: =3
                     Reset: =resetearControles
-                    Size: =10
+                    Size: =8
                     Width: =205
                     X: =113
                     Y: =132
