@@ -123,6 +123,7 @@ Pantalla_Inicio As screen:
         ZIndex: =12
 
     Button3_2 As button:
+        DisplayMode: =If(User().Email = "proyectos.ocgti@unfv.edu.pe" || User().Email = "cfranco.ocgti@unfv.edu.pe" || User().Email = "analista2.ocgti@unfv.edu.pe" || User().Email = "analista6.ocgti@unfv.edu.pe",DisplayMode.Edit,DisplayMode.View)
         Fill: =RGBA(9, 33, 98, 1)
         Height: =45
         OnSelect: =Navigate(Vista_previa_carga_masiva,ScreenTransition.Fade);Set(var_vista_inventario,1);ClearCollect(carga_datos_nuevo, [])

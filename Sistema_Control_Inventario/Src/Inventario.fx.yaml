@@ -1918,6 +1918,7 @@ Inventario As screen:
         Fill: =RGBA(196, 170, 90, 1)
         OnSelect: =Navigate(Vista_previa_carga_masiva,ScreenTransition.Fade);ClearCollect(carga_datos_nuevo, [])
         Text: ="Cargar Excel"
+        Visible: =If(User().Email = "proyectos.ocgti@unfv.edu.pe" || User().Email = "cfranco.ocgti@unfv.edu.pe" || User().Email = "analista2.ocgti@unfv.edu.pe" || User().Email = "analista6.ocgti@unfv.edu.pe",true,false)
         X: =952
         Y: =37
         ZIndex: =37

@@ -434,7 +434,7 @@ Actualizar_Bien_Informatico As screen:
                 FontWeight: =FontWeight.Semibold
                 Height: =23
                 Size: =8
-                Text: =If(Len(patrimonio_referencia_1.Text) = 6,If(IsBlank(LookUp(INVENTARIO_EQUIPOS_INFORMATICOS, NUM_SERIE = n_serie_texto_1.Text)), "N° de Serie Valido","N° de Serie Ya existe"),"")
+                Text: =If(Len(n_serie_texto_1.Text) >= 6,If(IsBlank(LookUp(INVENTARIO_EQUIPOS_INFORMATICOS, NUM_SERIE = n_serie_texto_1.Text)), "N° de Serie Valido","N° de Serie Ya existe"),"")
                 Width: =215
                 X: =139
                 Y: =518
@@ -471,6 +471,7 @@ Actualizar_Bien_Informatico As screen:
                     ZIndex: =1
 
                 disco_duro_combobox_1 As dropdown:
+                    AllowEmptySelection: =true
                     BorderThickness: =1
                     Default: =var_registro_inventario.DISCO_DURO
                     Height: =25
@@ -493,6 +494,7 @@ Actualizar_Bien_Informatico As screen:
                     ZIndex: =3
 
                 memoria_ram_combobox_1 As dropdown:
+                    AllowEmptySelection: =true
                     BorderThickness: =1
                     Default: =var_registro_inventario.MEMORIA_RAM
                     Height: =25
@@ -515,6 +517,7 @@ Actualizar_Bien_Informatico As screen:
                     ZIndex: =5
 
                 procesador_combobox_1 As dropdown:
+                    AllowEmptySelection: =true
                     BorderThickness: =1
                     Default: =var_registro_inventario.PROCESADOR
                     Height: =25
@@ -537,6 +540,7 @@ Actualizar_Bien_Informatico As screen:
                     ZIndex: =7
 
                 generacion_procesador_combobox_1 As dropdown:
+                    AllowEmptySelection: =true
                     BorderThickness: =1
                     Default: =var_registro_inventario.GENERACION_PROCESADOR
                     Height: =25
@@ -635,6 +639,7 @@ Actualizar_Bien_Informatico As screen:
                     ZIndex: =1
 
                 estado_combobox_1 As dropdown:
+                    AllowEmptySelection: =true
                     BorderThickness: =1
                     Default: =var_registro_inventario.ESTADO
                     Height: =25
@@ -658,6 +663,7 @@ Actualizar_Bien_Informatico As screen:
                     ZIndex: =3
 
                 estado_situcional_combobox_1 As dropdown:
+                    AllowEmptySelection: =true
                     BorderThickness: =1
                     Default: =var_registro_inventario.SITUACION_ACTUAL    
                     Height: =25
@@ -995,6 +1001,7 @@ Actualizar_Bien_Informatico As screen:
                     ZIndex: =1
 
                 tipo_impresora_combobox_1 As dropdown:
+                    AllowEmptySelection: =true
                     BorderThickness: =1
                     Default: =var_registro_inventario.TIPO_IMPRESORA
                     Height: =25
@@ -1017,6 +1024,7 @@ Actualizar_Bien_Informatico As screen:
                     ZIndex: =3
 
                 conexion_impresora_combobox_1 As dropdown:
+                    AllowEmptySelection: =true
                     BorderThickness: =1
                     Default: =var_registro_inventario.TIPO_CONECTOR_IMPRESORA
                     Height: =25
@@ -1092,6 +1100,7 @@ Actualizar_Bien_Informatico As screen:
                     ZIndex: =1
 
                 conector_teclado_combobox_1 As dropdown:
+                    AllowEmptySelection: =true
                     BorderThickness: =1
                     Default: =var_registro_inventario.TIPO_CONECTOR_TECLADO
                     Height: =25
@@ -1123,6 +1132,7 @@ Actualizar_Bien_Informatico As screen:
                     ZIndex: =1
 
                 conector_monitor_combobox_1 As dropdown:
+                    AllowEmptySelection: =true
                     BorderThickness: =1
                     Default: =var_registro_inventario.TIPO_CONECTOR_MONITOR
                     Height: =25

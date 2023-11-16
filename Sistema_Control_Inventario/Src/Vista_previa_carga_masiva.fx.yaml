@@ -1953,7 +1953,8 @@ Vista_previa_carga_masiva As screen:
         Fill: =RGBA(127, 178, 57, 1)
         Height: =30
         OnSelect: |-
-            =ForAll(
+            =Set(var_spinner,true);
+            ForAll(
                 carga_datos_nuevo,
                 Patch(
                     INVENTARIO_EQUIPOS_INFORMATICOS,
@@ -1993,6 +1994,7 @@ Vista_previa_carga_masiva As screen:
                     }
                 )
             );
+            Set(var_spinner,false);
             Navigate(
                 Validacion_Correcta_INVENTARIO,
                 ScreenTransition.Fade

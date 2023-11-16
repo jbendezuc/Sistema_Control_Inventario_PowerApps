@@ -125,6 +125,7 @@ Registrar_Bien_Informatico As screen:
                 ZIndex: =5
 
             piso_combobox As dropdown:
+                AllowEmptySelection: =true
                 BorderThickness: =1
                 Height: =25
                 Items: =PISOS
@@ -351,6 +352,7 @@ Registrar_Bien_Informatico As screen:
                 ZIndex: =23
 
             marca_combobox As dropdown:
+                AllowEmptySelection: =true
                 BorderThickness: =1
                 Height: =23
                 Items: |-
@@ -373,6 +375,7 @@ Registrar_Bien_Informatico As screen:
                 ZIndex: =25
 
             modelo_combobox As dropdown:
+                AllowEmptySelection: =true
                 BorderThickness: =1
                 Height: =23
                 Items: =Filter(MODELO_MARCA,MARCA=marca_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult')
@@ -419,7 +422,7 @@ Registrar_Bien_Informatico As screen:
                 FontWeight: =FontWeight.Semibold
                 Height: =23
                 Size: =8
-                Text: =If(Len(patrimonio_referencia.Text) = 6,If(IsBlank(LookUp(INVENTARIO_EQUIPOS_INFORMATICOS, NUM_SERIE = n_serie_texto.Text)), "N° de Serie Valido","N° de Serie Ya existe"),"")
+                Text: =If(Len(n_serie_texto.Text) >= 6,If(IsBlank(LookUp(INVENTARIO_EQUIPOS_INFORMATICOS, NUM_SERIE = n_serie_texto.Text)), "N° de Serie Valido","N° de Serie Ya existe"),"")
                 Width: =215
                 X: =139
                 Y: =518
@@ -456,6 +459,7 @@ Registrar_Bien_Informatico As screen:
                     ZIndex: =1
 
                 disco_duro_combobox As dropdown:
+                    AllowEmptySelection: =true
                     BorderThickness: =1
                     Height: =25
                     Items: =DISCOS_DUROS
@@ -477,6 +481,7 @@ Registrar_Bien_Informatico As screen:
                     ZIndex: =3
 
                 memoria_ram_combobox As dropdown:
+                    AllowEmptySelection: =true
                     BorderThickness: =1
                     Height: =25
                     Items: =MEMORIAS_RAM
@@ -498,6 +503,7 @@ Registrar_Bien_Informatico As screen:
                     ZIndex: =5
 
                 procesador_combobox As dropdown:
+                    AllowEmptySelection: =true
                     BorderThickness: =1
                     Height: =25
                     Items: =PROCESADORES
@@ -519,6 +525,7 @@ Registrar_Bien_Informatico As screen:
                     ZIndex: =7
 
                 generacion_procesador_combobox As dropdown:
+                    AllowEmptySelection: =true
                     BorderThickness: =1
                     Height: =25
                     Items: =GENERACIONES_PROCESADOR
@@ -977,6 +984,7 @@ Registrar_Bien_Informatico As screen:
                     ZIndex: =1
 
                 tipo_impresora_combobox As dropdown:
+                    AllowEmptySelection: =true
                     BorderThickness: =1
                     Height: =25
                     Items: =TIPOS_IMPRESORA
@@ -998,6 +1006,7 @@ Registrar_Bien_Informatico As screen:
                     ZIndex: =3
 
                 conexion_impresora_combobox As dropdown:
+                    AllowEmptySelection: =true
                     BorderThickness: =1
                     Height: =25
                     Items: =CONEXIONES_IMPRESORA
@@ -1072,6 +1081,7 @@ Registrar_Bien_Informatico As screen:
                     ZIndex: =1
 
                 conector_teclado_combobox As dropdown:
+                    AllowEmptySelection: =true
                     BorderThickness: =1
                     Height: =25
                     Items: =CONECTORES_TECLADO
@@ -1102,6 +1112,7 @@ Registrar_Bien_Informatico As screen:
                     ZIndex: =1
 
                 conector_monitor_combobox As dropdown:
+                    AllowEmptySelection: =true
                     BorderThickness: =1
                     Height: =25
                     Items: =CONECTORES_MONITOR
