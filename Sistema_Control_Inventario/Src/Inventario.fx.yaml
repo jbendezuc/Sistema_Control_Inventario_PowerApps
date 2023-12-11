@@ -1612,7 +1612,7 @@ Inventario As screen:
         Text: |
             =
             If(
-                "proyectos.ocgti@unfv.edu.pe" = User().Email || "cfranco@unfv.edu.pe" = User().Email,
+                "proyectos.ocgti@unfv.edu.pe" = User().Email || "cfranco@unfv.edu.pe" = User().Email || User().Email = "analista2.ocgti@unfv.edu.pe" || User().Email = "analista6.ocgti@unfv.edu.pe",
             CountIf(
                 Gallery1.AllItems,
                 (IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO) || BIEN_INFORMATICO = elegir_bien_informatico.SelectedText.BIEN_INFORMATICO) && (IsBlank(elegir_local.SelectedText.Value) || LOCAL = elegir_local.SelectedText.Value) && (IsBlank(elegir_facultad.SelectedText.Value) || FACULTAD = elegir_facultad.SelectedText.Value) && (IsBlank(elegir_area.SelectedText.Value) || AREA = elegir_area.SelectedText.Value) && (IsBlank(elegir_tipo_area.SelectedText.Value) || TIPO_AREA = elegir_tipo_area.SelectedText.Value) && (IsBlank(elegir_estado.SelectedText.Value) || ESTADO = elegir_estado.SelectedText.Value) && (IsBlank(buscar_inventario.Text) || PATRIMONIO = buscar_inventario.Text)
