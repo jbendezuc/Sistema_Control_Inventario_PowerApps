@@ -1609,21 +1609,18 @@ Inventario As screen:
         Fill: =RGBA(227, 234, 243, 1)
         Height: =35
         Size: =12
-        Text: |-
-            =If(
+        Text: |
+            =
+            If(
                 "proyectos.ocgti@unfv.edu.pe" = User().Email || "cfranco@unfv.edu.pe" = User().Email,
             CountIf(
-                INVENTARIO_EQUIPOS_INFORMATICOS,
+                Gallery1.AllItems,
                 (IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO) || BIEN_INFORMATICO = elegir_bien_informatico.SelectedText.BIEN_INFORMATICO) && (IsBlank(elegir_local.SelectedText.Value) || LOCAL = elegir_local.SelectedText.Value) && (IsBlank(elegir_facultad.SelectedText.Value) || FACULTAD = elegir_facultad.SelectedText.Value) && (IsBlank(elegir_area.SelectedText.Value) || AREA = elegir_area.SelectedText.Value) && (IsBlank(elegir_tipo_area.SelectedText.Value) || TIPO_AREA = elegir_tipo_area.SelectedText.Value) && (IsBlank(elegir_estado.SelectedText.Value) || ESTADO = elegir_estado.SelectedText.Value) && (IsBlank(buscar_inventario.Text) || PATRIMONIO = buscar_inventario.Text)
             ),CountIf(
-                INVENTARIO_EQUIPOS_INFORMATICOS,
+                Gallery1.AllItems,
                 CORREO_TECNICO=User().Email,
                 (IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO) || BIEN_INFORMATICO = elegir_bien_informatico.SelectedText.BIEN_INFORMATICO) && (IsBlank(elegir_local.SelectedText.Value) || LOCAL = elegir_local.SelectedText.Value) && (IsBlank(elegir_facultad.SelectedText.Value) || FACULTAD = elegir_facultad.SelectedText.Value) && (IsBlank(elegir_area.SelectedText.Value) || AREA = elegir_area.SelectedText.Value) && (IsBlank(elegir_tipo_area.SelectedText.Value) || TIPO_AREA = elegir_tipo_area.SelectedText.Value) && (IsBlank(elegir_estado.SelectedText.Value) || ESTADO = elegir_estado.SelectedText.Value) && (IsBlank(buscar_inventario.Text) || PATRIMONIO = buscar_inventario.Text)
             ))
-            
-            /*
-            (IsBlank(elegir_bien_informatico.SelectedText.BIEN_INFORMATICO) || BIEN_INFORMATICO = elegir_bien_informatico.SelectedText.BIEN_INFORMATICO) && (IsBlank(elegir_local.SelectedText.Value) || LOCAL = elegir_local.SelectedText.Value) && (IsBlank(elegir_facultad.SelectedText.Value) || FACULTAD = elegir_facultad.SelectedText.Value) && (IsBlank(elegir_area.SelectedText.Value) || AREA = elegir_area.SelectedText.Value) && (IsBlank(elegir_tipo_area.SelectedText.Value) || TIPO_AREA = elegir_tipo_area.SelectedText.Value) && (IsBlank(elegir_estado.SelectedText.Value) || ESTADO = elegir_estado.SelectedText.Value) && (IsBlank(buscar_inventario.Text) || PATRIMONIO = buscar_inventario.Text)
-            */
         X: =145
         Y: =150
         ZIndex: =21
