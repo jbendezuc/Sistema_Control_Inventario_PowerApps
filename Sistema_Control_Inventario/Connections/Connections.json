@@ -13,40 +13,6 @@
     "dependents": [],
     "id": "245719fd-71a1-47c7-800d-aa4129159312"
   },
-  "73c1f099-5c23-4756-9eb7-b553c489398a": {
-    "connectionRef": {
-      "displayName": "Logic flows",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
-      "parameterHints": {
-        "a3a47bd4-af7f-4ed4-a803-86a9f94f8d5e": {
-          "value": "shared_sharepointonline"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "c79d830b-9e06-463e-badb-1af69c6ba962"
-        }
-      },
-      "parameterHintsV2": {
-        "shared_sharepointonline": {
-          "value": "a3a47bd4-af7f-4ed4-a803-86a9f94f8d5e"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "c79d830b-9e06-463e-badb-1af69c6ba962"
-        }
-      }
-    },
-    "datasets": {},
-    "dataSources": [
-      "exportarCSVEXCEL_2"
-    ],
-    "dependencies": {
-      "shared_sharepointonline": "a3a47bd4-af7f-4ed4-a803-86a9f94f8d5e"
-    },
-    "dependents": [],
-    "id": "73c1f099-5c23-4756-9eb7-b553c489398a"
-  },
   "a3a47bd4-af7f-4ed4-a803-86a9f94f8d5e": {
     "connectionRef": {
       "displayName": "SharePoint",
@@ -132,8 +98,7 @@
     "dependencies": {},
     "dependents": [
       "ec3daa64-61ce-4193-937c-3e9607cc6a5a",
-      "cdf630f0-362a-4058-8181-734a87090aaa",
-      "73c1f099-5c23-4756-9eb7-b553c489398a"
+      "cdf630f0-362a-4058-8181-734a87090aaa"
     ],
     "id": "a3a47bd4-af7f-4ed4-a803-86a9f94f8d5e"
   },

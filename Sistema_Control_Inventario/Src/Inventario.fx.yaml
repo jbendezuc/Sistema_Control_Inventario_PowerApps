@@ -1896,6 +1896,7 @@ Inventario As screen:
             //Set(exportar_excel;JSON(Gallery1.AllItems;JSONFormat.IgnoreBinaryData & JSONFormat.IgnoreUnsupportedTypes));;
             //Set(correo_user;JSON(User().Email;JSONFormat.IgnoreBinaryData & JSONFormat.IgnoreUnsupportedTypes));;
             Set(correo_user,User().Email);
+            Set(local_descarga,elegir_local.Selected.Result);
             Launch(exportarCSVEXCEL_2.Run(correo_user).link);
             //Launch(exportarExcel.Run(exportar_excel).link);;
             Set(var_spinner,false)
