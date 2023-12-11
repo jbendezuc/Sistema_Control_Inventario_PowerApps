@@ -60,6 +60,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "iconCheck1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -227,6 +228,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "iconCircle1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -368,6 +370,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Image1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -591,6 +594,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Image1_1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -831,6 +835,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_14",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1129,6 +1134,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "LblSuccessMsg1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1372,6 +1378,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Rectangle1_3",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1544,6 +1551,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Timer1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1778,6 +1786,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Validacion_Correcta_INVENTARIO",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [

@@ -151,6 +151,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "anexo_input",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -444,6 +445,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "area_combobox",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -760,6 +762,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "bien_informatico_combobox",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 15,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1049,6 +1052,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1261,6 +1265,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Canvas1_1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1443,6 +1448,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "conector_monitor_combobox",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1786,6 +1792,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "conector_teclado_combobox",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2129,6 +2136,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "conexion_impresora_combobox",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2383,6 +2391,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "DataCard1_1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2499,6 +2508,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "datos_estandar",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 35,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2739,6 +2749,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "disco_duro_combobox",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -3060,6 +3071,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "estado_combobox",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -3383,6 +3395,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "estado_situcional_combobox",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -3692,6 +3705,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "facultad_combobox",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -4030,6 +4044,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "generacion_procesador_combobox",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -4404,6 +4419,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "hostname_texto",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -4672,6 +4688,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "impresora_container",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 31,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -4973,6 +4990,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ip_impresora_texto",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -5295,6 +5313,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ip_impresora_validacion_label",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -5575,6 +5594,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ip_telefono_container",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 34,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -5876,6 +5896,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ip_telefono_input",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -6198,6 +6219,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ip_telefono_validacion",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -6586,6 +6608,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ip_texto",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -6908,6 +6931,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ip_validacion_label",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -7259,6 +7283,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "jefe_inmediato_input",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -7549,6 +7574,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label2",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -7825,6 +7851,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -8101,6 +8128,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -8398,6 +8426,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_10",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 19,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -8695,6 +8724,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_11",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 22,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -8992,6 +9022,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_12",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 23,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -9282,6 +9313,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_13",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 29,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -9558,6 +9590,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_2",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -9834,6 +9867,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_3",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -10110,6 +10144,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_4",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -10400,6 +10435,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_5",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -10690,6 +10726,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_6",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -10980,6 +11017,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_7",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 14,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -11277,6 +11315,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_8",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 16,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -11574,6 +11613,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_9",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 26,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -11850,6 +11890,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label4",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -12126,6 +12167,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label4_1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -12409,6 +12451,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label4_10",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -12699,6 +12742,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label4_11",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -12975,6 +13019,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label4_12",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -13251,6 +13296,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label4_13",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -13527,6 +13573,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label4_14",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -13803,6 +13850,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label4_15",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -14093,6 +14141,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label4_17",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -14383,6 +14432,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label4_19",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -14666,6 +14716,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label4_2",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -14956,6 +15007,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label4_20",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -15239,6 +15291,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label4_3",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -15522,6 +15575,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label4_4",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -15812,6 +15866,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label4_5",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -16088,6 +16143,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label4_6",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -16364,6 +16420,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label4_7",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -16647,6 +16704,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label4_8",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -16930,6 +16988,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label4_9",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -17223,6 +17282,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "local_combobox",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -17547,6 +17607,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "marca_combobox",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 24,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -17890,6 +17951,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "memoria_ram_combobox",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -18219,6 +18281,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "modelo_combobox",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 25,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -18515,6 +18578,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "monitor_container",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 33,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -18802,6 +18866,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "n_oficio_baja_input",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -19174,6 +19239,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "n_serie_texto",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 27,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -19523,6 +19589,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "nombre_area_texto",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 13,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -19824,6 +19891,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "pabellon_combobox",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -20207,6 +20275,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "patrimonio_referencia",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 20,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -20586,6 +20655,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "patrimonio_texto",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 17,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -20871,6 +20941,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "pc_escritorio_container",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 30,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -21097,6 +21168,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "piso_combobox",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -21440,6 +21512,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "procesador_combobox",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -21713,6 +21786,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Rectangle1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -21845,6 +21919,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Registrar_Bien_Informatico",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -21978,6 +22053,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Salir",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -22191,6 +22267,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Salir_1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -22396,6 +22473,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "teclado_container",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 32,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -22666,6 +22744,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "tecnico_responsable_input",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -22954,6 +23033,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "tipo_area_combobox",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -23292,6 +23372,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "tipo_impresora_combobox",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -23659,6 +23740,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "usuario_responsable_input",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -23964,6 +24046,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "validacion_n_serie_label",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 28,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -24274,6 +24357,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "validacion_patrimonio_label",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 18,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -24584,6 +24668,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "validacion_patrimonio_referencia_label",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 21,
       "PersistMetaDataIDKey": false,
       "Properties": [
