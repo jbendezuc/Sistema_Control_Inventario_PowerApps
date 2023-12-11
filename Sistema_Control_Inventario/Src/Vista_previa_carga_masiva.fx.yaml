@@ -1613,7 +1613,7 @@ Vista_previa_carga_masiva As screen:
         Size: =12
         Text: |-
             =If(
-                "proyectos.ocgti@unfv.edu.pe" = User().Email || "cfranco@unfv.edu.pe" = User().Email,
+                "proyectos.ocgti@unfv.edu.pe" = User().Email || "cfranco@unfv.edu.pe" = User().Email || "analista6.ocgti@unfv.edu.pe" = User().Email || "analista2.ocgti@unfv.edu.pe" = User().Email || "jbendezuc@unfv.edu.pe"= User().Email,
             CountIf(
                 carga_datos_nuevo,
                 (IsBlank(elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO) || BIEN_INFORMATICO = elegir_bien_informatico_1.SelectedText.BIEN_INFORMATICO) && (IsBlank(elegir_local_1.SelectedText.Value) || LOCAL = elegir_local_1.SelectedText.Value) && (IsBlank(elegir_facultad_1.SelectedText.Value) || FACULTAD = elegir_facultad_1.SelectedText.Value) && (IsBlank(elegir_area_1.SelectedText.Value) || AREA = elegir_area_1.SelectedText.Value) && (IsBlank(elegir_tipo_area_1.SelectedText.Value) || TIPO_AREA = elegir_tipo_area_1.SelectedText.Value) && (IsBlank(elegir_estado_1.SelectedText.Value) || ESTADO = elegir_estado_1.SelectedText.Value) && (IsBlank(buscar_inventario_1.Text) || PATRIMONIO = buscar_inventario_1.Text)
