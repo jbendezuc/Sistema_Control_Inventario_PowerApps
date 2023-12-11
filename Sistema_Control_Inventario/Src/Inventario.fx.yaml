@@ -1889,10 +1889,13 @@ Inventario As screen:
 
     Button2_1 As button:
         BorderColor: =ColorFade(Self.Fill, -94%)
+        DisplayMode: |+
+            =If(User().Email = "proyectos.ocgti@unfv.edu.pe" || User().Email = "cfranco@unfv.edu.pe" || User().Email = "analista2@unfv.edu.pe" || User().Email = "analista6@unfv.edu.pe",If(IsBlank(elegir_local.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult'),DisplayMode.Disabled,DisplayMode.Edit),DisplayMode.Edit)
+            
         Fill: =RGBA(172, 62, 11, 1)
         OnSelect: |-
             =Set(var_spinner,true);
-            UpdateContext({resetearControles:true});UpdateContext({resetearControles:false});Reset(buscar_inventario);
+            //UpdateContext({resetearControles:true});;UpdateContext({resetearControles:false});;Reset(buscar_inventario);;
             //Set(exportar_excel;JSON(Gallery1.AllItems;JSONFormat.IgnoreBinaryData & JSONFormat.IgnoreUnsupportedTypes));;
             //Set(correo_user;JSON(User().Email;JSONFormat.IgnoreBinaryData & JSONFormat.IgnoreUnsupportedTypes));;
             Set(correo_user,User().Email);
@@ -1901,7 +1904,8 @@ Inventario As screen:
             //Launch(exportarExcel.Run(exportar_excel).link);;
             Set(var_spinner,false)
         Text: ="Descargar"
-        X: =1155
+        Width: =162
+        X: =1153
         Y: =37
         ZIndex: =35
 

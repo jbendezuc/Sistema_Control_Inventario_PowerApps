@@ -3,8 +3,10 @@
   <grammars>
     <jsonTypes targetNamespace="https://msmanaged-na.azure-apim.net/apim/logicflows" xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
       <string name="ManualTriggerInput_text_def" />
+      <string name="ManualTriggerInput_text_1_def" />
       <object name="ManualTriggerInput">
         <property name="text" type="string" />
+        <property name="text_1" type="string" />
       </object>
       <string name="ResponseActionOutput_link_def" />
       <object name="ResponseActionOutput">
@@ -25,6 +27,9 @@
           <representation mediaType="application/json">
             <param style="plain" name="text" path="/text" type="xs:string" required="true">
               <doc title="correo_user" />
+            </param>
+            <param style="plain" name="text_1" path="/text_1" type="xs:string" required="true">
+              <doc title="local_descarga" />
             </param>
           </representation>
         </request>
