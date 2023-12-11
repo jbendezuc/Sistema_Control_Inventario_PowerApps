@@ -1897,7 +1897,7 @@ Inventario As screen:
             //Set(correo_user;JSON(User().Email;JSONFormat.IgnoreBinaryData & JSONFormat.IgnoreUnsupportedTypes));;
             Set(correo_user,User().Email);
             Set(local_descarga,elegir_local.Selected.Result);
-            Launch(exportarCSVEXCEL_2.Run(correo_user).link);
+            Launch(exportarCSVEXCEL_2.Run(correo_user,local_descarga).link);
             //Launch(exportarExcel.Run(exportar_excel).link);;
             Set(var_spinner,false)
         Text: ="Descargar"
