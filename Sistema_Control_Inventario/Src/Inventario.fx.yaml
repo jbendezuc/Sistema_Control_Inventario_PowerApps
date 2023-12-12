@@ -1899,7 +1899,8 @@ Inventario As screen:
             //Set(exportar_excel;JSON(Gallery1.AllItems;JSONFormat.IgnoreBinaryData & JSONFormat.IgnoreUnsupportedTypes));;
             //Set(correo_user;JSON(User().Email;JSONFormat.IgnoreBinaryData & JSONFormat.IgnoreUnsupportedTypes));;
             Set(correo_user,User().Email);
-            Set(local_descarga,elegir_local.Selected.Result);
+            //CONDICION SI ES ADMINITRADOR
+            If("proyectos.ocgti@unfv.edu.pe" = User().Email || "cfranco@unfv.edu.pe" = User().Email || User().Email = "analista2.ocgti@unfv.edu.pe" || User().Email = "analista6.ocgti@unfv.edu.pe",Set(local_descarga,elegir_local.Selected.Result),Set(local_descarga,"SL01"));
             Launch(exportarCSVEXCEL_2.Run(correo_user,local_descarga).link);
             //Launch(exportarExcel.Run(exportar_excel).link);;
             Set(var_spinner,false)
