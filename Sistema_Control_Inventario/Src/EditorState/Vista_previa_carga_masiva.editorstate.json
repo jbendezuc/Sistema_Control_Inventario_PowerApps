@@ -6951,7 +6951,7 @@
       "MetaDataIDKey": "",
       "Name": "editar_button_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 35,
+      "ParentIndex": 34,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9425,7 +9425,7 @@
       "MetaDataIDKey": "",
       "Name": "eliminar_button_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 34,
+      "ParentIndex": 35,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

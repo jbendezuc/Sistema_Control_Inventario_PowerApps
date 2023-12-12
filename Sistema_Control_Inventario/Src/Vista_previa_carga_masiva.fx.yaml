@@ -722,9 +722,9 @@ Vista_previa_carga_masiva As screen:
             Gallery1_1 As gallery.galleryVertical:
                 DelayItemLoading: =true
                 Height: =522
-                Items: |
+                Items: |-
                     =If(
-                        "proyectos.ocgti@unfv.edu.pe" = User().Email || "cfranco@unfv.edu.pe" = User().Email || "analista6.ocgti@unfv.edu.pe" = User().Email || "analista2.ocgti@unfv.edu.pe" = User().Email || "jbendezuc@unfv.edu.pe"= User().Email,
+                        "proyectos.ocgti@unfv.edu.pe" = User().Email || "cfranco@unfv.edu.pe" = User().Email || "analista6.ocgti@unfv.edu.pe" = User().Email || "analista2.ocgti@unfv.edu.pe" = User().Email || "jbendezuc@unfv.edu.pe" = User().Email,
                         SortByColumns(
                             Search(
                                 Filter(
@@ -747,7 +747,7 @@ Vista_previa_carga_masiva As screen:
                                 "PATRIMONIO"
                             ),
                             "ID",
-                            SortOrder.Descending
+                            SortOrder.Ascending
                         ),
                         SortByColumns(
                             Search(
@@ -772,7 +772,7 @@ Vista_previa_carga_masiva As screen:
                                 "PATRIMONIO"
                             ),
                             "ID",
-                            SortOrder.Descending
+                            SortOrder.Ascending
                         )
                     )
                 Layout: =Layout.Vertical
