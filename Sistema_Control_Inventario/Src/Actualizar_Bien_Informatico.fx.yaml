@@ -455,7 +455,7 @@ Actualizar_Bien_Informatico As screen:
                 BorderStyle: =BorderStyle.Dotted
                 BorderThickness: =1
                 Height: =250
-                Visible: =If(bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "LAPTOP",true,false)
+                Visible: =If(bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "LAPTOP" || bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "ALL IN ONE",true,false)
                 Width: =328
                 X: =49
                 Y: =571
@@ -626,7 +626,7 @@ Actualizar_Bien_Informatico As screen:
                 Height: =357
                 Width: =328
                 X: =49
-                Y: =If(bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "LAPTOP",pc_escritorio_container_1.Y+pc_escritorio_container_1.Height + 5,If(bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "IMPRESORA",impresora_container_1.Y+impresora_container_1.Height + 5,If(bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "TECLADO",teclado_container_1.Y+teclado_container_1.Height + 5,If(bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "MONITOR",monitor_container_1.Y+monitor_container_1.Height + 5,If(bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "TELEFONO IP",ip_telefono_container_1.Y+ip_telefono_container_1.Height + 5,571)))))
+                Y: =If(bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "LAPTOP" || bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "ALL IN ONE",pc_escritorio_container_1.Y+pc_escritorio_container_1.Height + 5,If(bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "IMPRESORA",impresora_container_1.Y+impresora_container_1.Height + 5,If(bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "TECLADO",teclado_container_1.Y+teclado_container_1.Height + 5,If(bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "MONITOR",monitor_container_1.Y+monitor_container_1.Height + 5,If(bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "TELEFONO IP",ip_telefono_container_1.Y+ip_telefono_container_1.Height + 5,571)))))
                 ZIndex: =32
 
                 Label4_32 As label:
@@ -787,7 +787,7 @@ Actualizar_Bien_Informatico As screen:
                     Height: =32
                     OnSelect: |-
                         =If(
-                            bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "LAPTOP",
+                            bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "LAPTOP" || bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "ALL IN ONE",
                             Patch(
                                 INVENTARIO_EQUIPOS_INFORMATICOS,
                                 LookUp(INVENTARIO_EQUIPOS_INFORMATICOS,ThisRecord.ID = var_registro_inventario.ID),

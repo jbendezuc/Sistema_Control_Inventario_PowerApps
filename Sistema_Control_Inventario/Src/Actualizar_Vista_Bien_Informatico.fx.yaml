@@ -62,7 +62,7 @@ Actualizar_Vista_Bien_Informatico As screen:
             BorderThickness: =0
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =1000
+            Height: =1176
             Width: =Parent.Width
             X: =0
             Y: =0
@@ -453,7 +453,7 @@ Actualizar_Vista_Bien_Informatico As screen:
                 BorderStyle: =BorderStyle.Dotted
                 BorderThickness: =1
                 Height: =250
-                Visible: =If(bien_informatico_combobox_2.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || bien_informatico_combobox_2.SelectedText.BIEN_INFORMATICO = "LAPTOP",true,false)
+                Visible: =If(bien_informatico_combobox_2.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || bien_informatico_combobox_2.SelectedText.BIEN_INFORMATICO = "LAPTOP" || bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "ALL IN ONE",true,false)
                 Width: =328
                 X: =49
                 Y: =571
@@ -621,10 +621,10 @@ Actualizar_Vista_Bien_Informatico As screen:
 
             datos_estandar_2 As groupContainer.manualLayoutContainer:
                 BorderStyle: =BorderStyle.Dotted
-                Height: =330
+                Height: =350
                 Width: =328
                 X: =49
-                Y: =If(bien_informatico_combobox_2.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || bien_informatico_combobox_2.SelectedText.BIEN_INFORMATICO = "LAPTOP",pc_escritorio_container_2.Y+pc_escritorio_container_2.Height + 5,If(bien_informatico_combobox_2.SelectedText.BIEN_INFORMATICO = "IMPRESORA",impresora_container_2.Y+impresora_container_2.Height + 5,If(bien_informatico_combobox_2.SelectedText.BIEN_INFORMATICO = "TECLADO",teclado_container_2.Y+teclado_container_2.Height + 5,If(bien_informatico_combobox_2.SelectedText.BIEN_INFORMATICO = "MONITOR",monitor_container_2.Y+monitor_container_2.Height + 5,If(bien_informatico_combobox_2.SelectedText.BIEN_INFORMATICO = "TELEFONO IP",ip_telefono_container_2.Y+ip_telefono_container_2.Height + 5,571)))))
+                Y: =If(bien_informatico_combobox_2.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || bien_informatico_combobox_2.SelectedText.BIEN_INFORMATICO = "LAPTOP" || bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "ALL IN ONE",pc_escritorio_container_2.Y+pc_escritorio_container_2.Height + 5,If(bien_informatico_combobox_2.SelectedText.BIEN_INFORMATICO = "IMPRESORA",impresora_container_2.Y+impresora_container_2.Height + 5,If(bien_informatico_combobox_2.SelectedText.BIEN_INFORMATICO = "TECLADO",teclado_container_2.Y+teclado_container_2.Height + 5,If(bien_informatico_combobox_2.SelectedText.BIEN_INFORMATICO = "MONITOR",monitor_container_2.Y+monitor_container_2.Height + 5,If(bien_informatico_combobox_2.SelectedText.BIEN_INFORMATICO = "TELEFONO IP",ip_telefono_container_2.Y+ip_telefono_container_2.Height + 5,571)))))
                 ZIndex: =32
 
                 Label4_51 As label:
@@ -731,7 +731,6 @@ Actualizar_Vista_Bien_Informatico As screen:
                 tecnico_responsable_input_2 As text:
                     BorderThickness: =1
                     Default: =var_galeria_inventario.TECNICO_RESPONSABLE
-                    DisplayMode: =DisplayMode.View
                     Height: =25
                     Mode: =TextMode.MultiLine
                     RadiusBottomLeft: =3
@@ -783,7 +782,7 @@ Actualizar_Vista_Bien_Informatico As screen:
                     Height: =32
                     OnSelect: |-
                         =If(
-                            bien_informatico_combobox_2.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || bien_informatico_combobox_2.SelectedText.BIEN_INFORMATICO = "LAPTOP",
+                            bien_informatico_combobox_2.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || bien_informatico_combobox_2.SelectedText.BIEN_INFORMATICO = "LAPTOP" || bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "ALL IN ONE",
                             Patch(
                                 carga_datos_nuevo,
                                 LookUp(carga_datos_nuevo,ThisRecord.ID = var_galeria_inventario.ID),
@@ -813,7 +812,7 @@ Actualizar_Vista_Bien_Informatico As screen:
                                     JEFE_INMEDIATO: Upper(jefe_inmediato_input_2.Text),
                                     USUARIO_RESPONSABLE: Upper(usuario_responsable_input_2.Text),
                                     TECNICO_RESPONSABLE: Upper(tecnico_responsable_input_2.Text),
-                                    CORREO_TECNICO: var_galeria_inventario.CORREO_TECNICO
+                                    CORREO_TECNICO: Lower(correo_tecnico_input_2.Text)
                                 }
                             ),
                             If(
@@ -837,14 +836,14 @@ Actualizar_Vista_Bien_Informatico As screen:
                                         NUM_SERIE: Upper(n_serie_texto_2.Text),
                                         IP_BIEN_INFORMATICO: ip_impresora_texto_2.Text,
                                         TIPO_IMPRESORA: tipo_impresora_combobox_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BTIPO_IMPRESORA',
-                                        TIPO_CONECTOR_IMPRESORA: conexion_impresora_combobox_2,
+                                        TIPO_CONECTOR_IMPRESORA: conexion_impresora_combobox_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BCONEXION_IMPRESORA',
                                         ESTADO: estado_combobox_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult',
                                         SITUACION_ACTUAL: estado_situcional_combobox_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BESTADO_SITUCIONAL',
                                         FICHA_BAJA: n_oficio_baja_input_2.Text,
                                         JEFE_INMEDIATO: Upper(jefe_inmediato_input_2.Text),
                                         USUARIO_RESPONSABLE: Upper(usuario_responsable_input_2.Text),
                                         TECNICO_RESPONSABLE: Upper(tecnico_responsable_input_2.Text),
-                                        CORREO_TECNICO: var_galeria_inventario.CORREO_TECNICO
+                                        CORREO_TECNICO: Lower(correo_tecnico_input_2.Text)
                                     }
                                 ),
                                 If(
@@ -873,7 +872,7 @@ Actualizar_Vista_Bien_Informatico As screen:
                                             JEFE_INMEDIATO: Upper(jefe_inmediato_input.Text),
                                             USUARIO_RESPONSABLE: Upper(usuario_responsable_input_2.Text),
                                             TECNICO_RESPONSABLE: Upper(tecnico_responsable_input_2.Text),
-                                            CORREO_TECNICO: var_galeria_inventario.CORREO_TECNICO
+                                            CORREO_TECNICO: Lower(correo_tecnico_input_2.Text)
                                         }
                                     ),
                                     If(
@@ -902,7 +901,7 @@ Actualizar_Vista_Bien_Informatico As screen:
                                                 JEFE_INMEDIATO: Upper(jefe_inmediato_input_2.Text),
                                                 USUARIO_RESPONSABLE: Upper(usuario_responsable_input_2.Text),
                                                 TECNICO_RESPONSABLE: Upper(tecnico_responsable_input_2.Text),
-                                                CORREO_TECNICO: var_galeria_inventario.CORREO_TECNICO
+                                                CORREO_TECNICO: Lower(correo_tecnico_input_2.Text)
                                             }
                                         ),
                                         If(
@@ -932,7 +931,7 @@ Actualizar_Vista_Bien_Informatico As screen:
                                                     JEFE_INMEDIATO: Upper(jefe_inmediato_input_2.Text),
                                                     USUARIO_RESPONSABLE: Upper(usuario_responsable_input_2.Text),
                                                     TECNICO_RESPONSABLE: Upper(tecnico_responsable_input_2.Text),
-                                                    CORREO_TECNICO: var_galeria_inventario.CORREO_TECNICO
+                                                    CORREO_TECNICO: Lower(correo_tecnico_input_2.Text)
                                                 }
                                             ),
                                             Patch(
@@ -958,7 +957,7 @@ Actualizar_Vista_Bien_Informatico As screen:
                                                     JEFE_INMEDIATO: Upper(jefe_inmediato_input_2.Text),
                                                     USUARIO_RESPONSABLE: Upper(usuario_responsable_input_2.Text),
                                                     TECNICO_RESPONSABLE: Upper(tecnico_responsable_input_2.Text),
-                                                    CORREO_TECNICO: var_galeria_inventario.CORREO_TECNICO
+                                                    CORREO_TECNICO: Lower(correo_tecnico_input_2.Text)
                                                 }
                                             )
                                         )
@@ -975,8 +974,33 @@ Actualizar_Vista_Bien_Informatico As screen:
                     Text: ="Actualizar"
                     Width: =136
                     X: =93
-                    Y: =276
+                    Y: =296
                     ZIndex: =15
+
+                Label4_59 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =29
+                    Size: =10
+                    Text: |-
+                        ="Correo Tecnico: "
+                    Width: =104
+                    Y: =251
+                    ZIndex: =16
+
+                correo_tecnico_input_2 As text:
+                    BorderThickness: =1
+                    Default: =var_galeria_inventario.CORREO_TECNICO
+                    Height: =25
+                    Mode: =TextMode.MultiLine
+                    RadiusBottomLeft: =3
+                    RadiusBottomRight: =3
+                    RadiusTopLeft: =3
+                    RadiusTopRight: =3
+                    Size: =8
+                    Width: =205
+                    X: =113
+                    Y: =255
+                    ZIndex: =17
 
             impresora_container_2 As groupContainer.manualLayoutContainer:
                 BorderStyle: =BorderStyle.Dotted
