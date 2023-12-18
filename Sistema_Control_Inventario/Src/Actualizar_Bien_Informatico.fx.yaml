@@ -623,7 +623,7 @@ Actualizar_Bien_Informatico As screen:
 
             datos_estandar_1 As groupContainer.manualLayoutContainer:
                 BorderStyle: =BorderStyle.Dotted
-                Height: =330
+                Height: =357
                 Width: =328
                 X: =49
                 Y: =If(bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "LAPTOP",pc_escritorio_container_1.Y+pc_escritorio_container_1.Height + 5,If(bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "IMPRESORA",impresora_container_1.Y+impresora_container_1.Height + 5,If(bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "TECLADO",teclado_container_1.Y+teclado_container_1.Height + 5,If(bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "MONITOR",monitor_container_1.Y+monitor_container_1.Height + 5,If(bien_informatico_combobox_1.SelectedText.BIEN_INFORMATICO = "TELEFONO IP",ip_telefono_container_1.Y+ip_telefono_container_1.Height + 5,571)))))
@@ -734,7 +734,7 @@ Actualizar_Bien_Informatico As screen:
                 tecnico_responsable_input_1 As text:
                     BorderThickness: =1
                     Default: =var_registro_inventario.TECNICO_RESPONSABLE
-                    DisplayMode: =DisplayMode.View
+                    DisplayMode: =If("proyectos.ocgti@unfv.edu.pe" = User().Email || "cfranco@unfv.edu.pe" = User().Email || User().Email = "analista2.ocgti@unfv.edu.pe" || User().Email = "analista6.ocgti@unfv.edu.pe",DisplayMode.Edit,DisplayMode.View)
                     Height: =25
                     Mode: =TextMode.MultiLine
                     RadiusBottomLeft: =3
@@ -816,7 +816,7 @@ Actualizar_Bien_Informatico As screen:
                                     JEFE_INMEDIATO: Upper(jefe_inmediato_input_1.Text),
                                     USUARIO_RESPONSABLE: Upper(usuario_responsable_input_1.Text),
                                     TECNICO_RESPONSABLE: Upper(tecnico_responsable_input_1.Text),
-                                    CORREO_TECNICO: var_registro_inventario.CORREO_TECNICO
+                                    CORREO_TECNICO: Lower(correo_tecnico_input_1.Text)
                                 }
                             ),
                             If(
@@ -847,7 +847,7 @@ Actualizar_Bien_Informatico As screen:
                                         JEFE_INMEDIATO: Upper(jefe_inmediato_input_1.Text),
                                         USUARIO_RESPONSABLE: Upper(usuario_responsable_input_1.Text),
                                         TECNICO_RESPONSABLE: Upper(tecnico_responsable_input_1.Text),
-                                        CORREO_TECNICO: var_registro_inventario.CORREO_TECNICO
+                                        CORREO_TECNICO: Lower(correo_tecnico_input_1.Text)
                                     }
                                 ),
                                 If(
@@ -876,7 +876,7 @@ Actualizar_Bien_Informatico As screen:
                                             JEFE_INMEDIATO: Upper(jefe_inmediato_input.Text),
                                             USUARIO_RESPONSABLE: Upper(usuario_responsable_input_1.Text),
                                             TECNICO_RESPONSABLE: Upper(tecnico_responsable_input_1.Text),
-                                            CORREO_TECNICO: var_registro_inventario.CORREO_TECNICO
+                                            CORREO_TECNICO: Lower(correo_tecnico_input_1.Text)
                                         }
                                     ),
                                     If(
@@ -905,7 +905,7 @@ Actualizar_Bien_Informatico As screen:
                                                 JEFE_INMEDIATO: Upper(jefe_inmediato_input_1.Text),
                                                 USUARIO_RESPONSABLE: Upper(usuario_responsable_input_1.Text),
                                                 TECNICO_RESPONSABLE: Upper(tecnico_responsable_input_1.Text),
-                                                CORREO_TECNICO: var_registro_inventario.CORREO_TECNICO
+                                                CORREO_TECNICO: Lower(correo_tecnico_input_1.Text)
                                             }
                                         ),
                                         If(
@@ -935,7 +935,7 @@ Actualizar_Bien_Informatico As screen:
                                                     JEFE_INMEDIATO: Upper(jefe_inmediato_input_1.Text),
                                                     USUARIO_RESPONSABLE: Upper(usuario_responsable_input_1.Text),
                                                     TECNICO_RESPONSABLE: Upper(tecnico_responsable_input_1.Text),
-                                                    CORREO_TECNICO: var_registro_inventario.CORREO_TECNICO
+                                                    CORREO_TECNICO: Lower(correo_tecnico_input_1.Text)
                                                 }
                                             ),
                                             Patch(
@@ -961,7 +961,7 @@ Actualizar_Bien_Informatico As screen:
                                                     JEFE_INMEDIATO: Upper(jefe_inmediato_input_1.Text),
                                                     USUARIO_RESPONSABLE: Upper(usuario_responsable_input_1.Text),
                                                     TECNICO_RESPONSABLE: Upper(tecnico_responsable_input_1.Text),
-                                                    CORREO_TECNICO: var_registro_inventario.CORREO_TECNICO
+                                                    CORREO_TECNICO: Lower(correo_tecnico_input_1.Text)
                                                 }
                                             )
                                         )
@@ -978,8 +978,34 @@ Actualizar_Bien_Informatico As screen:
                     Text: ="Actualizar"
                     Width: =136
                     X: =93
-                    Y: =276
+                    Y: =303
                     ZIndex: =15
+
+                Label4_58 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =29
+                    Size: =10
+                    Text: |-
+                        ="Correo Tecnico: "
+                    Width: =104
+                    Y: =251
+                    ZIndex: =16
+
+                correo_tecnico_input_1 As text:
+                    BorderThickness: =1
+                    Default: =var_registro_inventario.CORREO_TECNICO
+                    DisplayMode: =If("proyectos.ocgti@unfv.edu.pe" = User().Email || "cfranco@unfv.edu.pe" = User().Email || User().Email = "analista2.ocgti@unfv.edu.pe" || User().Email = "analista6.ocgti@unfv.edu.pe",DisplayMode.Edit,DisplayMode.View)
+                    Height: =25
+                    Mode: =TextMode.MultiLine
+                    RadiusBottomLeft: =3
+                    RadiusBottomRight: =3
+                    RadiusTopLeft: =3
+                    RadiusTopRight: =3
+                    Size: =8
+                    Width: =205
+                    X: =113
+                    Y: =255
+                    ZIndex: =17
 
             impresora_container_1 As groupContainer.manualLayoutContainer:
                 BorderStyle: =BorderStyle.Dotted

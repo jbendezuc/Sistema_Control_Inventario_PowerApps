@@ -4174,6 +4174,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.datos_estandar_1.correo_tecnico_input_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.datos_estandar_1.correo_tecnico_input_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Actualizar_Bien_Informatico",
+                "type": "Actualizar_Bien_Informatico.Canvas1_2.DataCard1_2.datos_estandar_1.correo_tecnico_input_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.Mirage"
                 }
               ],

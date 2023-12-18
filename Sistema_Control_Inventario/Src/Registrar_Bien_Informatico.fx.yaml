@@ -796,7 +796,7 @@ Registrar_Bien_Informatico As screen:
                                     JEFE_INMEDIATO: Upper(jefe_inmediato_input.Text),
                                     USUARIO_RESPONSABLE: Upper(usuario_responsable_input.Text),
                                     TECNICO_RESPONSABLE: Upper(tecnico_responsable_input.Text),
-                                    CORREO_TECNICO: correo_tecnico_input.Text
+                                    CORREO_TECNICO: Lower(correo_tecnico_input.Text)
                                 }
                             ),
                             If(
@@ -827,7 +827,7 @@ Registrar_Bien_Informatico As screen:
                                         JEFE_INMEDIATO: Upper(jefe_inmediato_input.Text),
                                         USUARIO_RESPONSABLE: Upper(usuario_responsable_input.Text),
                                         TECNICO_RESPONSABLE: Upper(tecnico_responsable_input.Text),
-                                        CORREO_TECNICO: correo_tecnico_input.Text
+                                        CORREO_TECNICO: Lower(correo_tecnico_input.Text)
                                     }
                                 ),
                                 If(
@@ -856,7 +856,7 @@ Registrar_Bien_Informatico As screen:
                                             JEFE_INMEDIATO: Upper(jefe_inmediato_input.Text),
                                             USUARIO_RESPONSABLE: Upper(usuario_responsable_input.Text),
                                             TECNICO_RESPONSABLE: Upper(tecnico_responsable_input.Text),
-                                            CORREO_TECNICO: correo_tecnico_input.Text
+                                            CORREO_TECNICO: Lower(correo_tecnico_input.Text)
                                         }
                                     ),
                                     If(
@@ -885,7 +885,7 @@ Registrar_Bien_Informatico As screen:
                                                 JEFE_INMEDIATO: Upper(jefe_inmediato_input.Text),
                                                 USUARIO_RESPONSABLE: Upper(usuario_responsable_input.Text),
                                                 TECNICO_RESPONSABLE: Upper(tecnico_responsable_input.Text),
-                                                CORREO_TECNICO: correo_tecnico_input.Text
+                                                CORREO_TECNICO: Lower(correo_tecnico_input.Text)
                                             }
                                         ),
                                         If(
@@ -915,7 +915,7 @@ Registrar_Bien_Informatico As screen:
                                                     JEFE_INMEDIATO: Upper(jefe_inmediato_input.Text),
                                                     USUARIO_RESPONSABLE: Upper(usuario_responsable_input.Text),
                                                     TECNICO_RESPONSABLE: Upper(tecnico_responsable_input.Text),
-                                                    CORREO_TECNICO: correo_tecnico_input.Text
+                                                    CORREO_TECNICO: Lower(correo_tecnico_input.Text)
                                                 }
                                             ),
                                             Patch(
@@ -941,7 +941,7 @@ Registrar_Bien_Informatico As screen:
                                                     JEFE_INMEDIATO: Upper(jefe_inmediato_input.Text),
                                                     USUARIO_RESPONSABLE: Upper(usuario_responsable_input.Text),
                                                     TECNICO_RESPONSABLE: Upper(tecnico_responsable_input.Text),
-                                                    CORREO_TECNICO: correo_tecnico_input.Text
+                                                    CORREO_TECNICO: Lower(correo_tecnico_input.Text)
                                                 }
                                             )
                                         )
