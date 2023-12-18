@@ -378,7 +378,7 @@ Registrar_Bien_Informatico As screen:
                 AllowEmptySelection: =true
                 BorderThickness: =1
                 Height: =23
-                Items: =Filter(MODELO_MARCA,MARCA=marca_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult')
+                Items: =SortByColumns(Filter(MODELO_MARCA,MARCA=marca_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult'),"Title")
                 Reset: =resetearControles
                 Size: =7
                 Width: =141
