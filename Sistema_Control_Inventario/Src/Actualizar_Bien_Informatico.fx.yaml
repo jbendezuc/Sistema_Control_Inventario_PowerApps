@@ -107,7 +107,7 @@ Actualizar_Bien_Informatico As screen:
                 BorderThickness: =1
                 Default: =var_registro_inventario.FACULTAD
                 Height: =25
-                Items: =Filter(LOCAL_SEDE,LOCAL=local_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult')
+                Items: =SortByColumns(Filter(LOCAL_SEDE,LOCAL=local_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult'),"Title")
                 Reset: =resetearControles
                 Size: =10
                 Width: =228
@@ -180,7 +180,7 @@ Actualizar_Bien_Informatico As screen:
                 BorderThickness: =1
                 Default: =var_registro_inventario.TIPO_AREA
                 Height: =25
-                Items: =Filter(OFICINAS,AREA=area_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult')
+                Items: =SortByColumns(Filter(OFICINAS,AREA=area_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult'),"Title")
                 Reset: =resetearControles
                 Size: =10
                 Width: =228
@@ -390,7 +390,7 @@ Actualizar_Bien_Informatico As screen:
                 BorderThickness: =1
                 Default: =var_registro_inventario.MODELO
                 Height: =23
-                Items: =Filter(MODELO_MARCA,MARCA=marca_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult')
+                Items: =SortByColumns(Filter(MODELO_MARCA,MARCA=marca_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult'),"Title")
                 Reset: =resetearControles
                 Size: =7
                 Width: =141

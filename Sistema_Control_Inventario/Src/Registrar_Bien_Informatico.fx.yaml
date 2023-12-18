@@ -105,7 +105,7 @@ Registrar_Bien_Informatico As screen:
             facultad_combobox As dropdown:
                 BorderThickness: =1
                 Height: =25
-                Items: =Filter(LOCAL_SEDE,LOCAL=local_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult')
+                Items: =SortByColumns(Filter(LOCAL_SEDE,LOCAL=local_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult'),"Title")
                 Reset: =resetearControles
                 Size: =10
                 Width: =228
@@ -173,7 +173,7 @@ Registrar_Bien_Informatico As screen:
             tipo_area_combobox As dropdown:
                 BorderThickness: =1
                 Height: =25
-                Items: =Filter(OFICINAS,AREA=area_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult')
+                Items: =SortByColumns(Filter(OFICINAS,AREA=area_combobox.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult'),"Title")
                 Reset: =resetearControles
                 Size: =10
                 Width: =228
