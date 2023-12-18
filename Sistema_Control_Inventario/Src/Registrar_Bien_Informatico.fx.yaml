@@ -607,7 +607,7 @@ Registrar_Bien_Informatico As screen:
 
             datos_estandar As groupContainer.manualLayoutContainer:
                 BorderStyle: =BorderStyle.Dotted
-                Height: =390
+                Height: =357
                 Width: =328
                 X: =49
                 Y: =If(bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "LAPTOP",pc_escritorio_container.Y+pc_escritorio_container.Height + 5,If(bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "IMPRESORA",impresora_container.Y+impresora_container.Height + 5,If(bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "TECLADO",teclado_container.Y+teclado_container.Height + 5,If(bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "MONITOR",monitor_container.Y+monitor_container.Height + 5,If(bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "TELEFONO IP",ip_telefono_container.Y+ip_telefono_container.Height + 5,571)))))
@@ -961,7 +961,7 @@ Registrar_Bien_Informatico As screen:
                     Text: ="Registrar"
                     Width: =136
                     X: =93
-                    Y: =331
+                    Y: =307
                     ZIndex: =15
 
                 Label4_57 As label:
