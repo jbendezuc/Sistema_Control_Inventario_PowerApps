@@ -1079,7 +1079,7 @@ Actualizar_Bien_Informatico As screen:
                     BorderColor: =If(Len(ip_impresora_texto_1.Text) = 15,If(IsBlank(LookUp(INVENTARIO_EQUIPOS_INFORMATICOS, IP_BIEN_INFORMATICO = ip_impresora_texto_1.Text)), Color.Green,Color.Red),Color.Black)
                     BorderThickness: =If(Len(ip_impresora_texto_1.Text)=15,4,1)
                     Default: =var_registro_inventario.IP_BIEN_INFORMATICO
-                    DisplayMode: =If(conexion_impresora_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BCONEXION_IMPRESORA' = "Red",DisplayMode.Edit,DisplayMode.Disabled)
+                    DisplayMode: =If(conexion_impresora_combobox_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BCONEXION_IMPRESORA' = "RED",DisplayMode.Edit,DisplayMode.Disabled)
                     Height: =25
                     MaxLength: =15
                     Mode: =TextMode.MultiLine
