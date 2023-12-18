@@ -62,7 +62,7 @@ Registrar_Bien_Informatico As screen:
             BorderThickness: =0
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =1000
+            Height: =1231
             Width: =Parent.Width
             X: =0
             Y: =0
@@ -607,7 +607,7 @@ Registrar_Bien_Informatico As screen:
 
             datos_estandar As groupContainer.manualLayoutContainer:
                 BorderStyle: =BorderStyle.Dotted
-                Height: =330
+                Height: =390
                 Width: =328
                 X: =49
                 Y: =If(bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "PC ESCRITORIO" || bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "LAPTOP",pc_escritorio_container.Y+pc_escritorio_container.Height + 5,If(bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "IMPRESORA",impresora_container.Y+impresora_container.Height + 5,If(bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "TECLADO",teclado_container.Y+teclado_container.Height + 5,If(bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "MONITOR",monitor_container.Y+monitor_container.Height + 5,If(bien_informatico_combobox.SelectedText.BIEN_INFORMATICO = "TELEFONO IP",ip_telefono_container.Y+ip_telefono_container.Height + 5,571)))))
@@ -714,7 +714,7 @@ Registrar_Bien_Informatico As screen:
                 tecnico_responsable_input As text:
                     BorderThickness: =1
                     Default: =User().FullName
-                    DisplayMode: =DisplayMode.View
+                    DisplayMode: =If("proyectos.ocgti@unfv.edu.pe" = User().Email || "cfranco@unfv.edu.pe" = User().Email || User().Email = "analista2.ocgti@unfv.edu.pe" || User().Email = "analista6.ocgti@unfv.edu.pe",DisplayMode.Edit,DisplayMode.View)
                     Height: =25
                     Mode: =TextMode.MultiLine
                     RadiusBottomLeft: =3
@@ -796,7 +796,7 @@ Registrar_Bien_Informatico As screen:
                                     JEFE_INMEDIATO: Upper(jefe_inmediato_input.Text),
                                     USUARIO_RESPONSABLE: Upper(usuario_responsable_input.Text),
                                     TECNICO_RESPONSABLE: Upper(tecnico_responsable_input.Text),
-                                    CORREO_TECNICO: User().Email
+                                    CORREO_TECNICO: correo_tecnico_input.Text
                                 }
                             ),
                             If(
@@ -827,7 +827,7 @@ Registrar_Bien_Informatico As screen:
                                         JEFE_INMEDIATO: Upper(jefe_inmediato_input.Text),
                                         USUARIO_RESPONSABLE: Upper(usuario_responsable_input.Text),
                                         TECNICO_RESPONSABLE: Upper(tecnico_responsable_input.Text),
-                                        CORREO_TECNICO: User().Email
+                                        CORREO_TECNICO: correo_tecnico_input.Text
                                     }
                                 ),
                                 If(
@@ -856,7 +856,7 @@ Registrar_Bien_Informatico As screen:
                                             JEFE_INMEDIATO: Upper(jefe_inmediato_input.Text),
                                             USUARIO_RESPONSABLE: Upper(usuario_responsable_input.Text),
                                             TECNICO_RESPONSABLE: Upper(tecnico_responsable_input.Text),
-                                            CORREO_TECNICO: User().Email
+                                            CORREO_TECNICO: correo_tecnico_input.Text
                                         }
                                     ),
                                     If(
@@ -885,7 +885,7 @@ Registrar_Bien_Informatico As screen:
                                                 JEFE_INMEDIATO: Upper(jefe_inmediato_input.Text),
                                                 USUARIO_RESPONSABLE: Upper(usuario_responsable_input.Text),
                                                 TECNICO_RESPONSABLE: Upper(tecnico_responsable_input.Text),
-                                                CORREO_TECNICO: User().Email
+                                                CORREO_TECNICO: correo_tecnico_input.Text
                                             }
                                         ),
                                         If(
@@ -915,7 +915,7 @@ Registrar_Bien_Informatico As screen:
                                                     JEFE_INMEDIATO: Upper(jefe_inmediato_input.Text),
                                                     USUARIO_RESPONSABLE: Upper(usuario_responsable_input.Text),
                                                     TECNICO_RESPONSABLE: Upper(tecnico_responsable_input.Text),
-                                                    CORREO_TECNICO: User().Email
+                                                    CORREO_TECNICO: correo_tecnico_input.Text
                                                 }
                                             ),
                                             Patch(
@@ -941,7 +941,7 @@ Registrar_Bien_Informatico As screen:
                                                     JEFE_INMEDIATO: Upper(jefe_inmediato_input.Text),
                                                     USUARIO_RESPONSABLE: Upper(usuario_responsable_input.Text),
                                                     TECNICO_RESPONSABLE: Upper(tecnico_responsable_input.Text),
-                                                    CORREO_TECNICO: User().Email
+                                                    CORREO_TECNICO: correo_tecnico_input.Text
                                                 }
                                             )
                                         )
@@ -961,8 +961,34 @@ Registrar_Bien_Informatico As screen:
                     Text: ="Registrar"
                     Width: =136
                     X: =93
-                    Y: =272
+                    Y: =331
                     ZIndex: =15
+
+                Label4_57 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =29
+                    Size: =10
+                    Text: |-
+                        ="Correo Tecnico: "
+                    Width: =104
+                    Y: =249
+                    ZIndex: =16
+
+                correo_tecnico_input As text:
+                    BorderThickness: =1
+                    Default: =User().Email
+                    DisplayMode: =If("proyectos.ocgti@unfv.edu.pe" = User().Email || "cfranco@unfv.edu.pe" = User().Email || User().Email = "analista2.ocgti@unfv.edu.pe" || User().Email = "analista6.ocgti@unfv.edu.pe",DisplayMode.Edit,DisplayMode.View)
+                    Height: =25
+                    Mode: =TextMode.MultiLine
+                    RadiusBottomLeft: =3
+                    RadiusBottomRight: =3
+                    RadiusTopLeft: =3
+                    RadiusTopRight: =3
+                    Size: =8
+                    Width: =205
+                    X: =113
+                    Y: =253
+                    ZIndex: =17
 
             impresora_container As groupContainer.manualLayoutContainer:
                 BorderStyle: =BorderStyle.Dotted
