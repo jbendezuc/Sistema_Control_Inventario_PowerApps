@@ -721,6 +721,7 @@ Registrar_Bien_Informatico As screen:
                     RadiusBottomRight: =3
                     RadiusTopLeft: =3
                     RadiusTopRight: =3
+                    Reset: =resetearControles
                     Size: =8
                     Width: =205
                     X: =113
@@ -984,6 +985,7 @@ Registrar_Bien_Informatico As screen:
                     RadiusBottomRight: =3
                     RadiusTopLeft: =3
                     RadiusTopRight: =3
+                    Reset: =resetearControles
                     Size: =8
                     Width: =205
                     X: =113
